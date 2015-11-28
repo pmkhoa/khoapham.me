@@ -1,0 +1,18 @@
+{{ partial "header.html" . }}
+<section id="main">
+    <div class="Article-wrapper">
+        <div class="Article-container">
+            <div class="Article-content Article-summary-wrapper wrap clearfix">
+                {{ range first 10 .Data.Pages }}
+                    {{ if eq .Type "blog" }}
+                        <div class="Article-summary">
+                            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                            <p>{{ .Summary }}</p>
+                        </div>
+                    {{ end }}
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+{{ partial "footer.html" . }}

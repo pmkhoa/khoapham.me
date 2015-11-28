@@ -1,0 +1,12 @@
+{{ partial "header.html" . }}
+<main class="main-content">
+    {{ range .Data.Pages.GroupByDate "2006" }}
+        {{ range .Pages }}
+            <article class="story">
+                <h2 class="story__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                {{ .Summary }}
+            </article>
+        {{ end }}
+    {{ end }}
+</main>
+{{ partial "footer.html" . }}

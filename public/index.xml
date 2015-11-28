@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Khoa Pham</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Khoa Pham</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Nov 2015 00:06:51 -0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>If Rudyard Kipling</title>
+      <link>http://localhost:1313/blog/If-Rudyard-Kipling/</link>
+      <pubDate>Sat, 28 Nov 2015 00:06:51 -0800</pubDate>
+      
+      <guid>http://localhost:1313/blog/If-Rudyard-Kipling/</guid>
+      <description>&lt;p&gt;If you can keep your head when all about you&lt;br /&gt;
+Are losing theirs and blaming it on you;&lt;br /&gt;
+If you can trust yourself when all men doubt you,&lt;br /&gt;
+But make allowance for their doubting too:&lt;br /&gt;
+If you can wait and not be tired by waiting,&lt;br /&gt;
+Or, being lied about, don&amp;rsquo;t deal in lies,&lt;br /&gt;
+Or being hated don&amp;rsquo;t give way to hating,&lt;br /&gt;
+And yet don&amp;rsquo;t look too good, nor talk too wise;&lt;/p&gt;
+
+&lt;p&gt;If you can dream—and not make dreams your master;&lt;br /&gt;
+If you can think—and not make thoughts your aim,&lt;br /&gt;
+If you can meet with Triumph and Disaster&lt;br /&gt;
+And treat those two impostors just the same:&lt;br /&gt;
+If you can bear to hear the truth you&amp;rsquo;ve spoken&lt;br /&gt;
+Twisted by knaves to make a trap for fools,&lt;br /&gt;
+Or watch the things you gave your life to, broken,&lt;br /&gt;
+And stoop and build&amp;rsquo;em up with worn-out tools;&lt;/p&gt;
+
+&lt;p&gt;If you can make one heap of all your winnings&lt;br /&gt;
+And risk it on one turn of pitch-and-toss,&lt;br /&gt;
+And lose, and start again at your beginnings,&lt;br /&gt;
+And never breathe a word about your loss:&lt;br /&gt;
+If you can force your heart and nerve and sinew&lt;br /&gt;
+To serve your turn long after they are gone,&lt;br /&gt;
+And so hold on when there is nothing in you&lt;br /&gt;
+Except the Will which says to them: &amp;ldquo;Hold on!&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;If you can talk with crowds and keep your virtue,&lt;br /&gt;
+Or walk with Kings—nor lose the common touch,&lt;br /&gt;
+If neither foes nor loving friends can hurt you,&lt;br /&gt;
+If all men count with you, but none too much:&lt;br /&gt;
+If you can fill the unforgiving minute&lt;br /&gt;
+With sixty seconds&amp;rsquo; worth of distance run,&lt;br /&gt;
+Yours is the Earth and everything that&amp;rsquo;s in it,&lt;br /&gt;
+And—which is more—you&amp;rsquo;ll be a Man, my son!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Rudyard Kipling&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>About - Khoa Pham</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Sun, 15 Nov 2015 22:02:58 -0800</pubDate>
+      
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;section class=&#34;Page-about&#34;&gt;
+    &lt;div class=&#34;about-inner-content wrap clearfix&#34;&gt;
+        &lt;p&gt;Hi There! I&#39;m Khoa Pham, a web developer in Portland Oregon.&lt;br&gt; I&#39;m currently working at &lt;a href=&#34;http://networkredux.com&#34; target=&#34;_blank&#34;&gt;Network Redux&lt;/a&gt; on a project called &lt;a href=&#34;http://seastar.io&#34; target=&#34;_blank&#34;&gt;Seastar.io&lt;/a&gt;,
+a managed Apache Cassandra Hosting. You can also find me on 
+    &lt;a target=&#34;_blank&#34; href=&#34;https://twitter.com/pmkhoa&#34;&gt;Twitter&lt;/a&gt;,
+    &lt;a target=&#34;_blank&#34; href=&#34;http://www.linkedin.com/in/pmkhoa&#34;&gt;Linkedin&lt;/a&gt;,
+    and &lt;a target=&#34;_blank&#34; href=&#34;https://github.com/pmkhoa&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+
+    &lt;p&gt;In the past few years, I was lucky to work with lot of talented people to finish these projects:&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div id=&#34;main-container&#34;&gt;
+        &lt;div class=&#34;works-wrapper&#34;&gt;
+            &lt;ul class=&#34;works&#34;&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
