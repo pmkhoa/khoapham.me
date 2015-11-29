@@ -1,0 +1,10 @@
+{{ partial "header.html" . }}
+<div class="Article-wrapper">
+    <div class="Article-container">
+        <div class="Article-content wrap clearfix">
+            <h1 class="Article-title">{{ .Title }}</h1>
+            {{ .Content }}
+        </div>
+    </div>
+</div>
+{{ partial "footer.html" . }}
