@@ -3,12 +3,14 @@
     <div class="Article-wrapper">
         <div class="Article-container">
             <div class="Article-content Article-summary-wrapper wrap clearfix">
-                {{ range first 10 .Data.Pages }}
+                {{ range .Data.Pages }}
                     {{ if eq .Type "blog" }}
+                    <a href="{{ .Permalink }}" class="link-to-article">
                         <div class="Article-summary">
-                            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                            <h3>{{ .Title }}</h3>
                             <p>{{ .Summary }}</p>
                         </div>
+                    </a>
                     {{ end }}
                 {{ end }}
             </div>

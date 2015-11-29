@@ -6,16 +6,35 @@
     <description>Recent content in Blogs on Khoa Pham</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Nov 2015 00:06:51 -0800</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2015 11:20:06 -0800</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>If Rudyard Kipling</title>
-      <link>http://localhost:1313/blog/If-Rudyard-Kipling/</link>
+      <title>test</title>
+      <link>http://localhost:1313/blog/test/</link>
+      <pubDate>Sat, 28 Nov 2015 11:20:06 -0800</pubDate>
+      
+      <guid>http://localhost:1313/blog/test/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a felis mauris. Phasellus mattis, est et imperdiet maximus, ligula elit pellentesque lectus, sit amet ornare enim tellus dignissim turpis. Donec in dictum metus. Maecenas eget neque bibendum, congue lectus at, molestie metus. Curabitur in porta dui. Mauris ut quam vel ex vulputate aliquam in eu mauris. Donec vel hendrerit ante.&lt;/p&gt;
+
+&lt;p&gt;Mauris tincidunt, mi vitae dignissim gravida, arcu est aliquet augue, ut viverra nulla sapien ut mauris. Morbi dignissim felis arcu, posuere imperdiet tortor blandit sit amet. Mauris consequat dui et nisl dictum, eget tempus justo elementum. Aenean eget enim justo. Ut ligula tortor, cursus quis neque vel, ornare eleifend dolor. Phasellus ornare turpis eu velit aliquam aliquet. Maecenas hendrerit condimentum urna sed iaculis. Mauris ornare orci quis diam mattis, id interdum nulla ullamcorper. Mauris ullamcorper blandit neque sit amet pellentesque. Sed est risus, tempus non porttitor et, consectetur in orci. Vestibulum faucibus diam et tortor interdum dictum. Etiam tincidunt, ex a finibus porttitor, quam massa pulvinar nisl, congue fermentum enim sem id lectus. Mauris ante leo, varius eget viverra in, mattis in nunc. Quisque euismod odio tellus, sed mattis nunc rhoncus non.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My favorite poem</title>
+      <link>http://localhost:1313/blog/if/</link>
       <pubDate>Sat, 28 Nov 2015 00:06:51 -0800</pubDate>
       
-      <guid>http://localhost:1313/blog/If-Rudyard-Kipling/</guid>
-      <description>&lt;p&gt;If you can keep your head when all about you&lt;br /&gt;
+      <guid>http://localhost:1313/blog/if/</guid>
+      <description>
+
+&lt;p&gt;When it comes to my favority poem, &amp;ldquo;If - Rudyard Kipling&amp;rdquo; is definitely the one.&lt;br /&gt;
+It simply reminds me how to be a man, and a good person.&lt;/p&gt;
+
+&lt;h3 id=&#34;if:fb4de66872c8e3d29666fedc2315e187&#34;&gt;If&lt;/h3&gt;
+
+&lt;p&gt;If you can keep your head when all about you&lt;br /&gt;
 Are losing theirs and blaming it on you;&lt;br /&gt;
 If you can trust yourself when all men doubt you,&lt;br /&gt;
 But make allowance for their doubting too:&lt;br /&gt;
