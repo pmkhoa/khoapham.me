@@ -1,0 +1,167 @@
+<!doctype html>
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Setting up Amazon Web Services</title>
+        <meta name="keywords" content="Khoa Pham, web developer, frontend developer, UX, UI, web developer Portland" >
+<meta name="description" content="Khoa Pham is a senior developer focusing on UX and writing clean code using latest technologies like Golang, Rails, EmberJS, and Postgres."/>
+<meta name="viewport" content="width=device-width initial-scale=1.0" />
+<link rel="canonical" href="http://www.khoapham.me/" />
+<link rel="author" href="https://plus.google.com/103713398374675106375/"/>
+
+
+<meta property="og:title" content="Khoa Pham - Web Developer" >
+<meta property="og:site_name" content="Khoa Pham">
+<meta property="og:url" content="http://www.khoapham.me" >
+<meta property="og:description" content="Khoa Pham is a senior developer focusing on UX and writing clean code using latest technologies like Golang, Rails, EmberJS, and Postgres." >
+<meta property="og:image" content="https://avatars0.githubusercontent.com/u/1144585" >
+<meta property="og:type" content="website" >
+<meta property="og:locale" content="en_US" >
+
+<meta property="twitter:card" content="summary" >
+<meta property="twitter:title" content="Khoa Pham is a senior developer focusing on UX and writing good code." >
+<meta property="twitter:description" content="Khoa Pham is a senior developer focusing on UX and writing clean code using latest technologies like Golang, Rails, EmberJS, and Postgres." >
+<meta property="twitter:creator" content="@pmkhoa" >
+<meta property="twitter:url" content="http://www.khoapham.me" >
+<meta property="twitter:image" content="https://avatars0.githubusercontent.com/u/1144585" >
+
+
+        <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="http://localhost:1313//css/all.css">
+    </head>
+    <body lang="en">
+        <nav class="header" role="banner">
+            <div class="inner-header wrap clearfix">
+                <a id="logo" href="http://localhost:1313/">KHOA  PHAM</a>
+                <ul class="header-nav">
+                    <li class="nav-item"><a href="http://localhost:1313/blog" title="Blog">Blog</a></li>
+                    <li class="nav-item"><a href="http://localhost:1313/about" title="About">About</a></li>
+                </ul>
+            </div>
+        </nav>
+
+<div class="Article-wrapper">
+    <div class="Article-container">
+        <div class="Article-content wrap clearfix">
+            <h1 class="Article-title">Setting up Amazon Web Services</h1>
+            
+
+<p>To setting up Amazon Web Services, the process of setting up an EC2 on Amazon Web Services (AWS) is not complicated, all you need to get a server up and running are Apache, PHP,  MySQL.
+Here are some initial steps that help you get started:</p>
+
+<p>###1. SSH connect to you EC2 instance.
+To connect to your instance, you need the private key and the elastic IP address that associate with your instance. You can create an associated elastic IP address right in your Amazon Console Management.</p>
+
+<pre><code>ssh -i [FILE NAME].pem ec2-user@[IP ADDRESS]
+</code></pre>
+
+<p>###2. Once you&rsquo;re connected, install update on your instance.</p>
+
+<pre><code>sudo yum -y update
+</code></pre>
+
+<h3 id="3-install-php-amp-its-package:58edc5cf2a6b6a10cc179e0b94cd1b93">3. Install PHP &amp; its package.</h3>
+
+<pre><code>sudo yum install php php-mysql php-xml php-mcrypt php-mbstring php-cli php-devel php-pdo php-pear
+sudo pear install Log
+sudo yum install -y pcre-devel
+</code></pre>
+
+<h3 id="4-install-apache-http:58edc5cf2a6b6a10cc179e0b94cd1b93">4. Install Apache http.</h3>
+
+<pre><code>sudo yum install httpd
+</code></pre>
+
+<h3 id="5-install-mysql:58edc5cf2a6b6a10cc179e0b94cd1b93">5. Install MySQL</h3>
+
+<pre><code>sudo yum install mysql-server mysql-devel mysql
+</code></pre>
+
+<h3 id="6-install-php-apc-module:58edc5cf2a6b6a10cc179e0b94cd1b93">6. Install PHP APC module</h3>
+
+<pre><code>sudo yum install php-pecl-apc
+</code></pre>
+
+<h3 id="7-configure-mysql-and-php:58edc5cf2a6b6a10cc179e0b94cd1b93">7. Configure MySQL and PHP</h3>
+
+<p> Before you get everything running, make sure to check the PHP and MySQL configuration files.</p>
+
+<ul>
+<li><p>The PHP configuration file is php.ini, which is located under /etc/php.ini. Open the php.ini and increase memory limit to: 128M (or bigger if you wish to).</p>
+
+<pre>sudo vim /etc/php.ini
+memory_limit = 128M</pre></li>
+
+<li><p>The MySQL configuration file is my.cnf located under /etc/my.cnf. Change it to this:</p>
+
+<pre>[mysqld]
+datadir=/var/lib/mysql
+socket=/var/lib/mysql/mysql.sock
+
+# Disabling symbolic-links is recommended to prevent assorted security risks
+symbolic-links=0
+# Settings user and group are ignored when systemd is used.
+# If you need to run mysqld under a different user or group,
+# customize your systemd unit file for mysqld according to the
+# instructions in http://fedoraproject.org/wiki/Systemd
+skip-external-locking
+long_query_time=1
+slow_query_log
+slow_query_log_file=/var/log/log-slow-queries.log
+log-bin=mysql-bin
+server-id= 1
+key_buffer_size = 256M
+max_allowed_packet = 3M
+table_open_cache = 64
+read_buffer_size = 4M
+read_rnd_buffer_size = 8M
+myisam_sort_buffer_size = 16M
+thread_cache_size = 8
+query_cache_size= 32M
+thread_concurrency = 8
+[mysqld_safe]
+log-error=/var/log/mysqld.log
+pid-file=/var/run/mysqld/mysqld.pid
+myisam_recover_options</pre></li>
+</ul>
+
+<p>Now you have all packages installed, you can start your web server by starting mysql-server and httpd.</p>
+
+<pre><code>sudo service mysqld start
+sudo service httpd start
+</code></pre>
+
+<p>Auto start mysql server, and httpd.</p>
+
+<pre><code>sudo /sbin/chkconfig --levels 235 mysqld on
+sudo /sbin/chkconfig --levels 235 httpd on
+</code></pre>
+
+        </div>
+    </div>
+</div>
+    <footer>
+    <p class="footer-copyright">Carefully crafted by <a href="http://localhost:1313/about">Khoa Pham</a></p>
+    </footer>
+
+        <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-41349606-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+    <script type="text/javascript">
+        hljs.initHighlightingOnLoad(); 
+    </script>
+  <script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+</html>
+

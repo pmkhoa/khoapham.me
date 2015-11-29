@@ -1,0 +1,140 @@
+<!doctype html>
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Middleman Localization</title>
+        <meta name="keywords" content="Khoa Pham, web developer, frontend developer, UX, UI, web developer Portland" >
+<meta name="description" content="Khoa Pham is a senior developer focusing on UX and writing clean code using latest technologies like Golang, Rails, EmberJS, and Postgres."/>
+<meta name="viewport" content="width=device-width initial-scale=1.0" />
+<link rel="canonical" href="http://www.khoapham.me/" />
+<link rel="author" href="https://plus.google.com/103713398374675106375/"/>
+
+
+<meta property="og:title" content="Khoa Pham - Web Developer" >
+<meta property="og:site_name" content="Khoa Pham">
+<meta property="og:url" content="http://www.khoapham.me" >
+<meta property="og:description" content="Khoa Pham is a senior developer focusing on UX and writing clean code using latest technologies like Golang, Rails, EmberJS, and Postgres." >
+<meta property="og:image" content="https://avatars0.githubusercontent.com/u/1144585" >
+<meta property="og:type" content="website" >
+<meta property="og:locale" content="en_US" >
+
+<meta property="twitter:card" content="summary" >
+<meta property="twitter:title" content="Khoa Pham is a senior developer focusing on UX and writing good code." >
+<meta property="twitter:description" content="Khoa Pham is a senior developer focusing on UX and writing clean code using latest technologies like Golang, Rails, EmberJS, and Postgres." >
+<meta property="twitter:creator" content="@pmkhoa" >
+<meta property="twitter:url" content="http://www.khoapham.me" >
+<meta property="twitter:image" content="https://avatars0.githubusercontent.com/u/1144585" >
+
+
+        <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="http://localhost:1313//css/all.css">
+    </head>
+    <body lang="en">
+        <nav class="header" role="banner">
+            <div class="inner-header wrap clearfix">
+                <a id="logo" href="http://localhost:1313/">KHOA  PHAM</a>
+                <ul class="header-nav">
+                    <li class="nav-item"><a href="http://localhost:1313/blog" title="Blog">Blog</a></li>
+                    <li class="nav-item"><a href="http://localhost:1313/about" title="About">About</a></li>
+                </ul>
+            </div>
+        </nav>
+
+<div class="Article-wrapper">
+    <div class="Article-container">
+        <div class="Article-content wrap clearfix">
+            <h1 class="Article-title">Middleman Localization</h1>
+            <p>Recently when developing a site using middleman, my client wonder that if we can do localization for the website. Fortunately, Middleman comes with the localization extension i18n which is pretty simple to integrate it into the site. Although there&rsquo;s a quick overview of Middleman Localization available on the <a href="http://middlemanapp.com/" target="_blank">middlemanapp.com</a>, I still find it a little bit confused for Middleman beginners. Here are quick steps how to set it up:</p>
+
+<p><strong>1. Activate i18n and update your bundle.</strong></p>
+
+<p>To activate, going to your config.rb file, then add at the end of file.
+<pre>activate :i18n</pre>
+Open terminal and direct to your middleman app, then run.
+<pre>$ bundle update</pre></p>
+
+<p><strong>2. Organize your middleman folders so that it knows where translated files located.</strong></p>
+
+<ul>
+<li>All the translated files should be located inside &ldquo;locales&rdquo; folders, in your root directory of your source code. For example, the structure of my directory:
+<pre>source
+build
+config.rb
+Gemfile
+Gemfile.lock
+locales</pre></li>
+<li>Then you need to put all your template files in one folder called localizable.</li>
+</ul>
+
+<p><img style="border: 1px solid #d4d4d4;" alt="Localizable" src="http://localhost:1313/assets/img/Localizable-1024x337.png" width="1024" height="337" /></p>
+
+<p><strong>3. Add translation text into your translated files:</strong></p>
+
+<ul>
+<li>Go to your &ldquo;locales&rdquo; folder, and create files called: en.yml, and es.yml, these will include all translation text of English and Spanish for your site.</li>
+</ul>
+
+<p>For example, in my en.yml file, it contains:
+<pre>&mdash;
+en:
+  siteName: &ldquo;Khoa Pham&rdquo;
+  footer:
+    privacy: &ldquo;Privacy&rdquo;
+    legal_disclosure: &ldquo;Legal Disclosure&rdquo;
+    terms_of_use: &ldquo;Terms of Use&rdquo;
+    copyright: &ldquo;Copyright&rdquo;</pre></p>
+
+<ul>
+<li>In my es.yml, it contains:
+<pre>&mdash;
+en:
+  siteName: &ldquo;Khoa Pham&rdquo;
+  footer:
+    privacy: &ldquo;Privacidad&rdquo;
+    legal_disclosure: &ldquo;Aviso legal&rdquo;
+    terms_of_use: &ldquo;Términos de uso&rdquo;
+    copyright: &ldquo;Copyright&rdquo;</pre></li>
+</ul>
+
+<p><strong>4. Output translation text to your template files.</strong></p>
+
+<p>Since you already put your template files into the localizable folders, now you can go to files in that folder and output localizable text. My site only has one template file called index.html.erb:</p>
+
+<p>To output translated text from the translated files, we use: &lt;%= I18n.t(&ldquo;your_key_here&rdquo;) %&gt;. For example,
+<pre>&lt;%= I18n.t(&ldquo;siteName&rdquo;) %&gt;
+&lt;%= I18n.t(&ldquo;footer.privacy&rdquo;) %&gt;
+&lt;%= I18n.t(&ldquo;footer.legal_disclosure&rdquo;) %&gt;
+&lt;%= I18n.t(&ldquo;footer.terms_of_use&rdquo;) %&gt;
+&lt;%= I18n.t(&ldquo;footer.copyright&rdquo;) %&gt;</pre></p>
+
+<p><strong>5. Testing.</strong></p>
+
+<p>Now if you run your Middleman server again, you will see it offers two localizations, English and Spanish; the default is English.</p>
+
+<p><img class=" wp-image-214 alignnone" style="border: 1px solid #d4d4d4;" alt="Middleman Locales" src="http://www.khoapham.me/wp-content/uploads/2013/06/Middleman-Locales.png" width="529" height="77" /></p>
+
+<p>You can view your site under Spanish by going to: <a href="http://localhost:4567/es/index.html">http://localhost:4567/es/index.html</a></p>
+
+        </div>
+    </div>
+</div>
+    <footer>
+    <p class="footer-copyright">Carefully crafted by <a href="http://localhost:1313/about">Khoa Pham</a></p>
+    </footer>
+
+        <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-41349606-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  <script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+</html>
+
