@@ -1,0 +1,9 @@
+---
+baseurl: "http://www.khoapham.me"
+canonifyurls: true
+contentdir: "content"
+languageCode: "en-us"
+layoutdir: "layouts"
+publishdir: "public"
+title: "Khoa Pham"
+---
