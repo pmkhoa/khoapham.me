@@ -20,7 +20,7 @@ body {
     font-family: $serif;
     font-weight: 400;
     font-size: 1.05em;
-    line-height: 1.475;
+    line-height: golden-ratio(1.05, 1);
     margin: 0;
 }
 
