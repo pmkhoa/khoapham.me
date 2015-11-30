@@ -244,7 +244,7 @@ future of Javascript, and I love it.&lt;/p&gt;
 &lt;p&gt;In this short blog, I use ES6 to demonstrate some new features of ES6 by writing
 the linked list data structure.&lt;/p&gt;
 
-&lt;div class=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/assets/img/LinkedLists-deletingnode.png&#34; alt=&#34;Linked List&#34; /&gt;&lt;/div&gt;
+&lt;div class=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/LinkedLists-deletingnode.png&#34; alt=&#34;Linked List&#34; /&gt;&lt;/div&gt;
 
 &lt;h3 id=&#34;classes:9647d1112a4a980bd718fcc5a37418df&#34;&gt;Classes&lt;/h3&gt;
 
@@ -888,7 +888,7 @@ locales&lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;Then you need to put all your template files in one folder called localizable.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img style=&#34;border: 1px solid #d4d4d4;&#34; alt=&#34;Localizable&#34; src=&#34;http://localhost:1313/assets/img/Localizable-1024x337.png&#34; width=&#34;1024&#34; height=&#34;337&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img style=&#34;border: 1px solid #d4d4d4;&#34; alt=&#34;Localizable&#34; src=&#34;http://localhost:1313/img/Localizable-1024x337.png&#34; width=&#34;1024&#34; height=&#34;337&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;3. Add translation text into your translated files:&lt;/strong&gt;&lt;/p&gt;
 
@@ -928,12 +928,6 @@ en:
 &amp;lt;%= I18n.t(&amp;ldquo;footer.legal_disclosure&amp;rdquo;) %&amp;gt;
 &amp;lt;%= I18n.t(&amp;ldquo;footer.terms_of_use&amp;rdquo;) %&amp;gt;
 &amp;lt;%= I18n.t(&amp;ldquo;footer.copyright&amp;rdquo;) %&amp;gt;&lt;/pre&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;5. Testing.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Now if you run your Middleman server again, you will see it offers two localizations, English and Spanish; the default is English.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#34; wp-image-214 alignnone&#34; style=&#34;border: 1px solid #d4d4d4;&#34; alt=&#34;Middleman Locales&#34; src=&#34;http://www.khoapham.me/wp-content/uploads/2013/06/Middleman-Locales.png&#34; width=&#34;529&#34; height=&#34;77&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;You can view your site under Spanish by going to: &lt;a href=&#34;http://localhost:4567/es/index.html&#34;&gt;http://localhost:4567/es/index.html&lt;/a&gt;&lt;/p&gt;
 </description>
