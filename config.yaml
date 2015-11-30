@@ -6,4 +6,6 @@ languageCode: "en-us"
 layoutdir: "layouts"
 publishdir: "public"
 title: "Khoa Pham"
+
+MetadataFormat: "yaml"
 ---

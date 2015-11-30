@@ -12,7 +12,7 @@ future of Javascript, and I love it.
 In this short blog, I use ES6 to demonstrate some new features of ES6 by writing
 the linked list data structure.
 
-<div class="center"><img src="/assets/img/LinkedLists-deletingnode.png" alt="Linked List" /></div>
+<div class="center"><img src="/img/LinkedLists-deletingnode.png" alt="Linked List" /></div>
 
 ### Classes ###
 ES6 finally allows you to declare your object using class keyword. This is one

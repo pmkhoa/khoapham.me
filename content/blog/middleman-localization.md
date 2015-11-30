@@ -26,7 +26,7 @@ Gemfile.lock
 locales</pre>
 - Then you need to put all your template files in one folder called localizable.
 
-<img style="border: 1px solid #d4d4d4;" alt="Localizable" src="/assets/img/Localizable-1024x337.png" width="1024" height="337" />
+<img style="border: 1px solid #d4d4d4;" alt="Localizable" src="/img/Localizable-1024x337.png" width="1024" height="337" />
 
 <strong>3. Add translation text into your translated files:</strong>
 
@@ -63,11 +63,5 @@ To output translated text from the translated files, we use: &lt;%= I18n.t("your
 &lt;%= I18n.t("footer.legal_disclosure") %&gt;
 &lt;%= I18n.t("footer.terms_of_use") %&gt;
 &lt;%= I18n.t("footer.copyright") %&gt;</pre>
-
-<strong>5. Testing.</strong>
-
-Now if you run your Middleman server again, you will see it offers two localizations, English and Spanish; the default is English.
-
-<img class=" wp-image-214 alignnone" style="border: 1px solid #d4d4d4;" alt="Middleman Locales" src="http://www.khoapham.me/wp-content/uploads/2013/06/Middleman-Locales.png" width="529" height="77" />
 
 You can view your site under Spanish by going to: http://localhost:4567/es/index.html
