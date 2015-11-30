@@ -2,98 +2,98 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.khoapham.me/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2015-11-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.khoapham.me/blog/minimalist-in-design-and-development/</loc>
+    <loc>http://localhost:1313/blog/minimalist-in-design-and-development/</loc>
     <lastmod>2015-11-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.khoapham.me/blog/set-up-nginx-with-centos/</loc>
+    <loc>http://localhost:1313/blog/set-up-nginx-with-centos/</loc>
     <lastmod>2015-11-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.khoapham.me/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2015-11-15T22:02:58-08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.khoapham.me/blog/es6-review-part-2/</loc>
+    <loc>http://localhost:1313/blog/es6-review-part-2/</loc>
     <lastmod>2015-07-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.khoapham.me/blog/es6-review-part-1/</loc>
+    <loc>http://localhost:1313/blog/es6-review-part-1/</loc>
     <lastmod>2015-03-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.khoapham.me/blog/tower-of-hanoi/</loc>
+    <loc>http://localhost:1313/blog/tower-of-hanoi/</loc>
     <lastmod>2014-12-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.khoapham.me/blog/menuOnScroll-jquery-plugin/</loc>
+    <loc>http://localhost:1313/blog/menuOnScroll-jquery-plugin/</loc>
     <lastmod>2014-11-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.khoapham.me/blog/vim-common-helpful-leader/</loc>
+    <loc>http://localhost:1313/blog/vim-common-helpful-leader/</loc>
     <lastmod>2014-11-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.khoapham.me/blog/how-i-switched-to-vim-in-2-weeks/</loc>
+    <loc>http://localhost:1313/blog/how-i-switched-to-vim-in-2-weeks/</loc>
     <lastmod>2014-10-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.khoapham.me/blog/deploy-middleman-to-heroku/</loc>
+    <loc>http://localhost:1313/blog/deploy-middleman-to-heroku/</loc>
     <lastmod>2014-10-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.khoapham.me/blog/completely-setup-resque-and-resque-scheduler/</loc>
+    <loc>http://localhost:1313/blog/completely-setup-resque-and-resque-scheduler/</loc>
     <lastmod>2014-09-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.khoapham.me/blog/create-app-with-meteor/</loc>
+    <loc>http://localhost:1313/blog/create-app-with-meteor/</loc>
     <lastmod>2013-10-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.khoapham.me/blog/inspiration-video-from-steve-jobs/</loc>
+    <loc>http://localhost:1313/blog/inspiration-video-from-steve-jobs/</loc>
     <lastmod>2013-07-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.khoapham.me/blog/middleman-localization/</loc>
+    <loc>http://localhost:1313/blog/middleman-localization/</loc>
     <lastmod>2013-06-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.khoapham.me/blog/sync-middleman-with-amazon-s3/</loc>
+    <loc>http://localhost:1313/blog/sync-middleman-with-amazon-s3/</loc>
     <lastmod>2013-05-27T22:18:14-08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.khoapham.me/blog/setting-up-amazon-web-services/</loc>
+    <loc>http://localhost:1313/blog/setting-up-amazon-web-services/</loc>
     <lastmod>2013-05-17T23:14:51-08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.khoapham.me/blog/learning-to-see/</loc>
+    <loc>http://localhost:1313/blog/learning-to-see/</loc>
     <lastmod>2013-05-17T23:12:14-08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.khoapham.me/blog/if/</loc>
+    <loc>http://localhost:1313/blog/if/</loc>
     <lastmod>2013-05-17T00:06:51-08:00</lastmod>
   </url>
   
