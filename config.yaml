@@ -8,6 +8,7 @@ publishdir: "public"
 title: "Khoa Pham"
 
 Params:
+    Author: "Khoa Pham"
     ShowRelatedPost: true
 
 MetadataFormat: "yaml"

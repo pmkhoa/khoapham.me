@@ -5,14 +5,14 @@ name = "Minimalist Blog"
 license = "MIT"
 licenselink = "https://github.com/pmkhoa/hugo-minimalist/blob/master/LICENSE.md"
 description = ""
-homepage = "http://khoapham.com/"
-tags = ["", ""]
-features = ["", ""]
+homepage = "http://khoapham.me/"
+tags = ["Blog", "Personal Website"]
+features = ["Simplicity", "Customizable"]
 min_version = 0.13
 
 [author]
-  name = ""
-  homepage = ""
+  name = "Khoa Pham"
+  homepage = "http://khoapham.me"
 
 # If porting an existing theme
 [original]
