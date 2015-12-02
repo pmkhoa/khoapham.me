@@ -1,7 +1,7 @@
 ---
 title: ES6 Review Part 2
 date: 2015-07-20
-tags: Javascript, ES6
+tags: [Javascript, ES6]
 ---
 
 

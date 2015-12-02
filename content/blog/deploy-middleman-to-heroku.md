@@ -1,7 +1,7 @@
 ---
 title: Deploy Middleman to Heroku
 date: 2014-10-14
-tags: Rails, Heroku, Middlemanapp
+tags: [Rails, Heroku, Middlemanapp, Ruby, Devops]
 ---
 
 Heroku is a great cloud service, it uses git for version control and deployment which is very handy for me to just update my blog in one command.

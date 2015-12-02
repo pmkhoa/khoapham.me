@@ -1,7 +1,7 @@
 ---
 title: Create App With Meteor
 date: 2013-10-16
-tags: Web Development, Meteor, Javascript, Tutorial
+tags: [Web Development, Meteor, Javascript, Tutorial, Resource]
 ---
 
 When I started to build the DearJJAbrams.com site, I came across a very simple functionality which was the realtime counter. This realtime counter worked as follow, when the user submitted their email, the counter would increase 1. However, this counter had to automatically update and synchronize with the server whenever anyone around the world submit their email, in other words, I had to create real time app with Meteor.

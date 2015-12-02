@@ -1,7 +1,7 @@
 ---
 title: Vim Commmon Helpful Leader
 date: 2014-11-12
-tags: vim, vim-tips, vim-leaders 
+tags: [Vim, Vim Tips, Resource]
 ---
 
 I have really enjoyed using Vim for a month now, and I have to admit that I

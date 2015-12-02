@@ -1,7 +1,7 @@
 ---
 title: Set up Nginx with Centos
 date: 2015-11-18
-Tags: DevOps, Nginx
+tags: [Devops, Nginx, Web Development, Server]
 ---
 
 Recently I had a chance to have my hand on setting up a web server using Nginx

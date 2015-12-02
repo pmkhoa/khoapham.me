@@ -1,7 +1,7 @@
 ---
 title: How I switched to vim in 2 weeks 
 date: 2014-10-29 
-tags: Vim, Rails 
+tags: [Vim, Motivation]
 ---
 
 I have played with Vim so many times since I was in college, in fact that I

@@ -1,7 +1,7 @@
 ---
 title: Middleman Localization
 date: 2013-06-05
-tags: Web Development, Middleman
+tags: [Web Development, Middleman]
 ---
 
 Recently when developing a site using middleman, my client wonder that if we can do localization for the website. Fortunately, Middleman comes with the localization extension i18n which is pretty simple to integrate it into the site. 

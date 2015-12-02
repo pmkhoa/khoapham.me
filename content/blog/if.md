@@ -1,9 +1,9 @@
-+++
-date = "2013-05-17T00:06:51-08:00"
-draft = false 
-title = "My favorite poem"
-
-+++
+---
+date: "2013-05-17T00:06:51-08:00"
+draft: false 
+title: "My favorite poem"
+tags: [Favorite, Bookmark, Motivation]
+---
 
 When it comes to my favority poem, "If - Rudyard Kipling" is definitely the one.  
 It simply reminds me how to be a man, and a good person.

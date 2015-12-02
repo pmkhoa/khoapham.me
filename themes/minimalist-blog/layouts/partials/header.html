@@ -3,10 +3,20 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ .Title }}</title>
+        <title>
+            {{ if eq .URL "/" }}
+                {{ .Site.Title }}
+            {{ else if eq .URL "/blog/" }}
+                Blog - {{ .Site.Title }}
+            {{ else }}
+                {{ .Title }} - {{ .Site.Title }}
+            {{ end }}
+        </title>
+
         {{ partial "head_meta.html" }}
         <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/all.css">
+        <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/custom.css">
     </head>
     <body lang="en">
         <nav class="header" role="banner">

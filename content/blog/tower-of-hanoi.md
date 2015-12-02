@@ -1,8 +1,7 @@
 ---
 title: Tower of Hanoi
 date: 2014-12-02
-published: false
-tags: Ruby, Recursion, Fun 
+tags: [Ruby, Recursion, Fun]
 ---
 
 One of my favorite childhood game was the [Tower of Hanoi](http://en.wikipedia.org/wiki/Tower_of_Hanoi) which I loved playing it

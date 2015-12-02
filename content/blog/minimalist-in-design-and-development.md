@@ -1,7 +1,7 @@
 ---
 title: Minimalist in design and development
 date: 2015-11-21
-tags: Design, Development, Minimalist
+tags: [Design, Minimalist, Motivation]
 ---
 
 My website has gone through countless design iterations, not because its look

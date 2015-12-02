@@ -7,5 +7,8 @@ layoutdir: "layouts"
 publishdir: "public"
 title: "Khoa Pham"
 
+Params:
+    ShowRelatedPost: true
+
 MetadataFormat: "yaml"
 ---

@@ -2,7 +2,7 @@
 date: "2013-05-17T23:14:51-08:00"
 title: Setting up Amazon Web Services
 draft: false
-tags: AWS, Web Service, Apache, HTTP, MySQL
+tags: [Devops, AWS, Web Development, Web Service, Apache, HTTP, MySQL, Server]
 ---
 
 To setting up Amazon Web Services, the process of setting up an EC2 on Amazon Web Services (AWS) is not complicated, all you need to get a server up and running are Apache, PHP,  MySQL.

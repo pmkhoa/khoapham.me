@@ -1,7 +1,7 @@
 ---
 title: Sync Middleman with Amazon S3
 date: 2013-05-27T22:18:14-08:00
-tags: Web Development, Middleman, AWS, S3
+tags: [Web Development, Middleman, AWS, S3]
 ---
 
 One thing that I love using Middleman and Amazon S3 is that they're a perfect combination for building and hosting a static HTML5 site.  

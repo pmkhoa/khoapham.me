@@ -1,7 +1,7 @@
 ---
 title: ES6 Review Part 1
 date: 2015-03-03
-tags: Javascript, ES6
+tags: [Javascript, ES6]
 ---
 
 ECMAScript 6 (ES6) is the upcoming version of ECMACScript standard which is
