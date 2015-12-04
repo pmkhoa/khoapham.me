@@ -1,7 +1,7 @@
 +++
 date = "2015-11-15T22:02:58-08:00"
 draft = false
-title = "About - Khoa Pham"
+title = "About"
 
 +++
 <section class="Page-about">

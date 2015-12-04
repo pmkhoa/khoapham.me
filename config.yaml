@@ -5,11 +5,17 @@ contentdir: "content"
 languageCode: "en-us"
 layoutdir: "layouts"
 publishdir: "public"
-title: "Khoa Pham"
+Title: "Khoa Pham"
 
 Params:
     Author: "Khoa Pham"
+    Description: "Khoa Pham is a senior developer focusing on UX and writing clean code using latest technologies like Golang, Rails, EmberJS, and Postgres"
+    TwitterHandler: "@pmkhoa"
+    AuthorImage: "https://avatars0.githubusercontent.com/u/1144585"
+    GooglePlus: "https://plus.google.com/103713398374675106375/"
+    Keywords: "Khoa Pham, web developer, frontend developer, UX, UI, web developer Portland"
     ShowRelatedPost: true
+    SiteName: "Khoa Pham - Web Developer"
 
 MetadataFormat: "yaml"
 ---
