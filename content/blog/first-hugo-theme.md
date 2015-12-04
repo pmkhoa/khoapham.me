@@ -6,10 +6,9 @@ tags: [Motivation, Golang, Hugo, Design]
 ---
 
 When I started to get back to blogging again, I felt my website
-took a little long to compile. As a revolution of redesigning my blog, I want to switch my blog platform<!--more--> , which was built using [Middleman](http://middlemanapp.com), to something 
-faster, therefore, I chose [Hugo](http://gohugo.io) as a new static site
-generator for my new blog. I'm really pleased with the transition so far. It
-just blazingly fast, and it makes everything from writing to deployment easier for me.
+took a little long to compile. As a revolution of redesigning my blog, I want to switch my blog platform to something faster. <!--more-->
+My blog was previously developed using [Middleman](http://middlemanapp.com), and now it's powered by [Hugo](http://gohugo.io), a faster static site
+generator. I'm really pleased with the transition so far.
 
 I also wrote a simple Hugo theme called [Hugo
 Minimalist](https://github.com/pmkhoa/hugo-minimalist), this is just a mimic of

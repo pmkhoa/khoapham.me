@@ -16,10 +16,9 @@
                 <pubDate>Thu, 03 Dec 2015 23:13:30 PST</pubDate>
                 <guid>http://khoapham.me/blog/first-hugo-theme/</guid>
                 <description>&lt;p&gt;When I started to get back to blogging again, I felt my website
-took a little long to compile. As a revolution of redesigning my blog, I want to switch my blog platform , which was built using &lt;a href=&#34;http://middlemanapp.com&#34;&gt;Middleman&lt;/a&gt;, to something
-faster, therefore, I chose &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt; as a new static site
-generator for my new blog. I&amp;rsquo;m really pleased with the transition so far. It
-just blazingly fast, and it makes everything from writing to deployment easier for me.&lt;/p&gt;
+took a little long to compile. As a revolution of redesigning my blog, I want to switch my blog platform to something faster.
+My blog was previously developed using &lt;a href=&#34;http://middlemanapp.com&#34;&gt;Middleman&lt;/a&gt;, and now it&amp;rsquo;s powered by &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;, a faster static site
+generator. I&amp;rsquo;m really pleased with the transition so far.&lt;/p&gt;
 
 &lt;p&gt;I also wrote a simple Hugo theme called &lt;a href=&#34;https://github.com/pmkhoa/hugo-minimalist&#34;&gt;Hugo
 Minimalist&lt;/a&gt;, this is just a mimic of
