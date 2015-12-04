@@ -1,5 +1,5 @@
 ---
-baseurl: "http://www.khoapham.me"
+baseurl: "http://khoapham.me"
 canonifyurls: true
 contentdir: "content"
 languageCode: "en-us"
