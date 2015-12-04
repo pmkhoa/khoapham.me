@@ -15,9 +15,8 @@
                 <link>http://khoapham.me/blog/first-hugo-theme/</link>
                 <pubDate>Thu, 03 Dec 2015 23:13:30 PST</pubDate>
                 <guid>http://khoapham.me/blog/first-hugo-theme/</guid>
-                <description>&lt;p&gt;When I started to get back to blogging again, I felt my personal blog website
-which was built using &lt;a href=&#34;https://middlemanapp.com&#34;&gt;Middleman&lt;/a&gt; take a little long to
-compile. As a revolution of redesigning my blog, I also wanted to compile it
+                <description>&lt;p&gt;When I started to get back to blogging again, I felt my website
+took a little long to compile. As a revolution of redesigning my blog, I want to switch my blog platform , which was built using &lt;a href=&#34;http://middlemanapp.com&#34;&gt;Middleman&lt;/a&gt;, to something
 faster, therefore, I chose &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt; as a new static site
 generator for my new blog. I&amp;rsquo;m really pleased with the transition so far. It
 just blazingly fast, and it makes everything from writing to deployment easier for me.&lt;/p&gt;
