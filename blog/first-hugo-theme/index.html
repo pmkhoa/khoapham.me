@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>
             
-                ES6 Review Part 1 - Khoa Pham
+                My First Hugo Theme - Khoa Pham
             
         </title>
 
@@ -58,128 +58,31 @@
 <div class="Article-wrapper">
     <div class="Article-container">
         <div class="Article-content wrap clearfix">
-            <h1 class="Article-title">ES6 Review Part 1</h1>
-            
+            <h1 class="Article-title">My First Hugo Theme</h1>
+            <p>When I started to get back to blogging again, I felt my personal blog website
+which was built using <a href="https://middlemanapp.com">Middleman</a> take a little long to
+compile. As a revolution of redesigning my blog, I also wanted to compile it
+faster, therefore, I chose <a href="http://gohugo.io">Hugo</a> as a new static site
+generator for my new blog. I&rsquo;m really pleased with the transition so far. It
+just blazingly fast, and it makes everything from writing to deployment easier for me.</p>
 
-<p>ECMAScript 6 (ES6) is the upcoming version of ECMACScript standard which is
-supposed to be ready soon. There are number of significant changes in
-this new standard version of Javascript. So far I can tell, this is indeed the
-future of Javascript, and I love it.</p>
+<p>I also wrote a simple Hugo theme called <a href="https://github.com/pmkhoa/hugo-minimalist">Hugo
+Minimalist</a>, this is just a mimic of
+my current blog style, which I explained in <a href="http://khoapham.me/blog/minimalist-in-design-and-development/">Minimalist in
+design</a>. Of
+course, it&rsquo;s free to use if you want to try.</p>
 
-<p>In this short blog, I use ES6 to demonstrate some new features of ES6 by writing
-the linked list data structure.</p>
+<p>Another thing that I&rsquo;d like to share is the better workflow for my website
+deployment. With Middleman, I host the website on
+<a href="https://aws.amazon.com/s3/">S3</a>, use Markdown to write content, and use
+Middleman extension
+<a href="http://localhost:1313/blog/sync-middleman-with-amazon-s3/">s3_deployment</a> to deploy to S3, and then commit to github.
+The whole process wasn&rsquo;t taking too long, but it can be simplified.
+With Hugo, the website is hosted on Github (free), and I wrote a <a href="https://github.com/pmkhoa/khoapham.me/blob/master/deploy.sh">simple script</a> to deploy and commit to github just one command when the
+content is ready for production. I think the whole process is just better now.</p>
 
-<div class="center"><img src="http://khoapham.me/img/LinkedLists-deletingnode.png" alt="Linked List" /></div>
-
-<h3 id="classes:9647d1112a4a980bd718fcc5a37418df">Classes</h3>
-
-<p>ES6 finally allows you to declare your object using class keyword. This is one
-big step forward of Javascript.</p>
-
-<pre><code>class Node {
-  constructor(data, nextNode) {
-    this.data = data;
-    this.next = nextNode;
-  }
-}
-</code></pre>
-
-<p>The Class comes with the <code>constructor</code> method. This method will execute right
-after the object is initiated.</p>
-
-<h3 id="better-variable-scope-with-let:9647d1112a4a980bd718fcc5a37418df">Better variable scope with let</h3>
-
-<p>What is it wrong with <code>var</code> keyword? Here is a short example showing what wrong
-with var keyword:</p>
-
-<pre><code>function foo(flag) {
-  if (flag) {
-    var foobar = 2;
-  }
-  return foobar;
-};
-console.log(foo(true)); // Return 2
-</code></pre>
-
-<p>As we can see in the example above, the <code>foobar</code> variable is declared inside the
-if block, not the function scope. But it&rsquo;s still working when we <code>return foobar</code>
-at the end of function.</p>
-
-<p>However, this is not working in ES6 with the <code>let</code> keyword. Clearly, <code>let</code> gives us a better way to scope the variable correctly in
-Javascript.</p>
-
-<pre><code>function foo(flag) {
-  if (flag) {
-    let foobar = 2;
-  }
-  return foobar;
-}
-console.log(foo(true)); // Error. foobar is not defined.
-</code></pre>
-
-<p>Here is the full source code of how I implemented linked list in ES6.</p>
-
-<pre><code>class Node {
-  constructor(data, nextNode) {
-    this.data = data;
-    this.next = nextNode;
-  }
-}
-class LinkedList {
-  constructor() {
-    this.length = 0;
-    this.head = null;
-  }
-  insert(data) {
-    let node = new Node(data, null);
-    let currentNode;
-    if ( ! this.head  ) {
-      this.head = node;
-    }
-    else {
-      currentNode = this.head;
-      while ( currentNode.next ) {
-        currentNode = currentNode.next;
-      }
-      currentNode.next = node;
-    }
-    this.length++;
-  }
-  remove(index) {
-    if ( index &gt; -1 &amp;&amp; index &lt; this.length ) {
-      let currentNode = this.head,
-          previousNode,
-          i = 0;
-      if ( index === 0 ) {
-        this.head = currentNode.next;
-      } else {
-        while ( i++ &lt; index ) {
-          previousNode = currentNode;
-          currentNode = currentNode.next;
-        }
-        previousNode.next = currentNode.next;
-      }
-      this.length--;
-      return currentNode.data;
-    } else {
-      return null;
-    }
-  }
-
-  getAt(index) {
-    if ( index &gt; -1 &amp;&amp; index &lt; this.length ) {
-      let currentNode = this.head,
-          i = 0;
-      while (i++ &lt; index) {
-        currentNode = currentNode.next;
-      }
-      return currentNode.data;
-    } else {
-      return null;
-    }
-  }
-}
-</code></pre>
+<p>If you plan to write lot of blog posts, and want to use static site generator
+for it, I highly recommend <a href="http://gohugo.io">Hugo</a>.</p>
 
         </div>
         
@@ -199,25 +102,28 @@ class LinkedList {
                     
                     
                     
-                
-                    
-                    
-                    
-                
-                    
-                    
-                    
-                
-                    
-                    
-                    
-                        <a href="http://khoapham.me/blog/es6-review-part-2/" class="link-to-article">
+                        <a href="http://khoapham.me/blog/minimalist-in-design-and-development/" class="link-to-article">
     <div class="Article-summary">
-        <h3>ES6 Review Part 2</h3>
-        <p>This is a second review post for new ES6 features that I&rsquo;d love to share. You can find the first review here ES6 Review Part 1 Arrows I have been using arrow (-&gt;) and fat-arrow (=&gt;) key in Coffeescript for while, and I was happy when ES6 would support arrow key (=&gt;) as a short-hand of function keyword. Of course, if you’re familiar with arrow keys in Coffeescript, this feature will be similar.</p>
+        <h3>Minimalist in design and development</h3>
+        <p><p>My website has gone through countless design iterations, not because its look
+was outdated, but my sense of simplicity has changed from time to time, and I
+wanted my personal website to reflect that.</p>
+</p>
     </div>
 </a>
 
+                    
+                
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                
+                    
+                    
                     
                 
                     
@@ -250,23 +156,10 @@ especially for the single page website.</p>
                     
                     
                     
-                
-                    
-                    
-                    
-                
-                    
-                    
-                    
-                
-                    
-                    
-                    
-                        <a href="http://khoapham.me/blog/create-app-with-meteor/" class="link-to-article">
+                        <a href="http://khoapham.me/blog/how-i-switched-to-vim-in-2-weeks/" class="link-to-article">
     <div class="Article-summary">
-        <h3>Create App With Meteor</h3>
-        <p><p>When I started to build the DearJJAbrams.com site, I came across a very simple functionality which was the realtime counter. This realtime counter worked as follow, when the user submitted their email, the counter would increase 1. However, this counter had to automatically update and synchronize with the server whenever anyone around the world submit their email, in other words, I had to create real time app with Meteor.</p>
-</p>
+        <h3>How I switched to vim in 2 weeks</h3>
+        <p>I have played with Vim so many times since I was in college, in fact that I loved it every time I used it. However, I don&rsquo;t think I ever spent time long enough to get used to it. I&rsquo;ve seen people dancing their fingers on the keyboard using Vim, this made me wanted to try harder this time. Finally I totally switched to Vim as my main text editor. Here is the timeline that I setup my goal.</p>
     </div>
 </a>
 
@@ -287,6 +180,14 @@ especially for the single page website.</p>
                     
                     
                     
+                        <a href="http://khoapham.me/blog/inspiration-video-from-steve-jobs/" class="link-to-article">
+    <div class="Article-summary">
+        <h3>Inspiration videos from Steve Jobs</h3>
+        <p></p>
+    </div>
+</a>
+
+                    
                 
                     
                     
@@ -294,6 +195,38 @@ especially for the single page website.</p>
                 
                     
                     
+                    
+                
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                        <a href="http://khoapham.me/blog/learning-to-see/" class="link-to-article">
+    <div class="Article-summary">
+        <h3>Learning to See</h3>
+        <p><p>People asked me why I had a computer science degree but spending most of my time working as user experience developer.
+Here is the article that hooked me into it:</p>
+</p>
+    </div>
+</a>
+
+                    
+                
+                    
+                    
+                    
+                        <a href="http://khoapham.me/blog/if/" class="link-to-article">
+    <div class="Article-summary">
+        <h3>My favorite poem</h3>
+        <p><p>When it comes to my favority poem, &ldquo;If - Rudyard Kipling&rdquo; is definitely the one.<br />
+It simply reminds me how to be a man, and a good person.</p>
+</p>
+    </div>
+</a>
+
                     
                 
             </div>
