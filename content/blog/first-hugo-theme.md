@@ -5,7 +5,7 @@ title: My First Hugo Theme
 tags: [Motivation, Golang, Hugo, Design]
 ---
 
-When I started to get back to blogging again, I felt my website
+When I started to get back to blogging, I felt my website
 took a little long to compile. As a revolution of redesigning my blog, I want to switch my blog platform to something faster. <!--more-->
 My blog was previously developed using [Middleman](http://middlemanapp.com), and now it's powered by [Hugo](http://gohugo.io), a faster static site
 generator. I'm really pleased with the transition so far.
