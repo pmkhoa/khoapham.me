@@ -377,6 +377,11 @@ body {
   font-weight: 400;
   font-size: 1.05em;
   line-height: 1.6989;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  word-spacing: 1px;
   margin: 0; }
 
 .wrap {
@@ -474,7 +479,6 @@ a {
     .Article-container .Article-summary h3 {
       margin-top: 0; }
     .Article-container .Article-summary p {
-      color: #5b5b5b;
       margin: 0.5em 0; }
   .Article-container .Article-related {
     background-color: rgba(247, 247, 247, 0.6);
