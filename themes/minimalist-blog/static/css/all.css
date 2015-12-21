@@ -408,7 +408,7 @@ img {
 
 a {
   border-bottom: 1px solid #dddddd;
-  color: rgba(0, 0, 0, 0.75);
+  color: #101011;
   text-decoration: none; }
   a:hover {
     -webkit-transition: all 0.15s;
@@ -417,7 +417,7 @@ a {
     -webkit-transition-delay: 0s;
     -moz-transition-delay: 0s;
     transition-delay: 0s;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.75); }
+    border-bottom: 1px solid #101011; }
 
 .videoWrapper {
   position: relative;

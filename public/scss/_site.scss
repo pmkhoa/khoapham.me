@@ -2,8 +2,7 @@
 @import "mixins";
 @import "typography";
 
-$black-fallback: #222222;
-$black: rgba(0, 0, 0, 0.75);
+$black: #101011;
 $border-color: rgba(0, 0, 0, 0.05);
 $light-gray: rgba(0, 0, 0, 0.6);
 
@@ -16,7 +15,7 @@ html {
     box-sizing: inherit;
 }
 body {
-    color: #101011;
+    color: $black;
     font-family: $serif;
     font-weight: 400;
     font-size: 1.05em;
