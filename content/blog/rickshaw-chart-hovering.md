@@ -1,6 +1,6 @@
 ---
 date: 2015-12-23T12:00:31-08:00
-draft: true
+draft: false 
 title: Rickshaw Chart Hovering Multiple Values
 tags: [Guide, Javascript]
 ---
