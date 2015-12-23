@@ -6,8 +6,288 @@
         <language>en-us</language>
         <author>Khoa Pham</author>
         <rights>(C) 2015</rights>
-        <updated>2015-12-03 23:13:30 -0800 PST</updated>
+        <updated>2015-12-23 12:00:31 -0800 PST</updated>
 
+        
+            
+            <item>
+                <title>Rickshaw Chart Hovering Multiple Values</title>
+                <link>http://khoapham.me/blog/rickshaw-chart-hovering/</link>
+                <pubDate>Wed, 23 Dec 2015 12:00:31 PST</pubDate>
+                <guid>http://khoapham.me/blog/rickshaw-chart-hovering/</guid>
+                <description>&lt;p&gt;&lt;a href=&#34;http://d3js.org/&#34;&gt;D3&lt;/a&gt; is a great javascript library for creating data visualization chart. I have
+been a big fan of it for over a year now. However, whenever I need to develop a
+quick chart prototype, I use an alternative library called
+&lt;a href=&#34;http://code.shutterstock.com/rickshaw/examples/&#34;&gt;Rickshaw&lt;/a&gt;. It&amp;rsquo;s an
+extension from D3, so you can get greatness from both of them.&lt;/p&gt;
+
+&lt;p&gt;One thing that I was challenging me recently that I needed to create a chart
+when user hovered on it, it would reveal all y-values at the cursor position.&lt;/p&gt;
+
+&lt;div id=&#34;chart_container&#34;&gt;
+    &lt;div id=&#34;chart&#34;&gt;&lt;/div&gt;&lt;br&gt;
+    &lt;div id=&#34;legend&#34;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;style&gt;
+#chart_container {
+    width: 600px;
+    max-width: 100%;
+}
+.swatch {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 8px 0 0;
+}
+.label {
+    display: inline-block;
+}
+#legend {
+    text-align: center;
+}
+.rickshaw_graph .detail {
+    background: none;
+}
+.line-wrapper {
+    opacity: 1;
+    background: #f3f7f8;
+    padding: 7px 10px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    white-space: nowrap;
+    left: 10px;
+    position: absolute;
+    min-width: 300px;
+}
+.line-wrapper .line {
+    position: relative;
+    margin-top: 3px;
+}
+.line-wrapper .swatch {
+    border-radius: 10px;
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 3px;
+}
+.line-wrapper .label {
+    font-weight: 600;
+    padding-left: 18px;
+}
+.line-wrapper .label   span {
+    font-weight: 400;
+}
+.line-wrapper .label .metric-legend-label {
+    margin-right: 5px;
+    padding-right: 5px;
+}
+.line-wrapper .label .metric-legend-label .text {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+&lt;/style&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;http://khoapham.me/blog-vendor/rickshaw.min.css&#34;&gt;
+&lt;script src=&#34;http://khoapham.me/blog-vendor/d3.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;http://khoapham.me/blog-vendor/rickshaw.min.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;script type=&#34;text/javascript&#34;&gt;
+
+    // set up our data series with 50 random data points
+
+    var seriesData = [ [], [], [] ];
+    var random = new Rickshaw.Fixtures.RandomData(150);
+
+    for (var i = 0; i &lt; 150; i++) {
+        random.addData(seriesData);
+    }
+
+    // instantiate our graph!
+
+    var graph = new Rickshaw.Graph( {
+        element: document.getElementById(&#34;chart&#34;),
+        width: 600,
+        height: 300,
+        renderer: &#39;line&#39;,
+        series: [
+            {
+                color: &#34;#c05020&#34;,
+                data: seriesData[0],
+                name: &#39;New York&#39;
+            }, {
+                color: &#34;#30c020&#34;,
+                data: seriesData[1],
+                name: &#39;London&#39;
+            }, {
+                color: &#34;#6060c0&#34;,
+                data: seriesData[2],
+                name: &#39;Tokyo&#39;
+            }
+        ]
+    } );
+
+    graph.render();
+
+    var Hover = Rickshaw.Class.create(Rickshaw.Graph.HoverDetail, {
+
+        render: function(args) {
+
+            var lines = document.createElement(&#39;div&#39;);
+            lines.className = &#39;line-wrapper&#39;;
+            lines.innerHTML = args.formattedXValue;
+            lines.style.top = args.mouseY + &#34;px&#34;;
+            this.element.appendChild(lines);
+            var boundingRect = this.element.parentNode.getBoundingClientRect();
+            if ( args.mouseX &gt; ( boundingRect.width * 2 / 3 ) ) {
+                this.element.classList.remove(&#39;left&#39;);
+                this.element.classList.add(&#39;right&#39;);
+            } else {
+                this.element.classList.remove(&#39;right&#39;);
+                this.element.classList.add(&#39;left&#39;);
+            }
+
+            args.detail.sort(function(a, b) { return a.order - b.order }).forEach( function(d) {
+
+                var line = document.createElement(&#39;div&#39;);
+                line.className = &#39;line&#39;;
+
+                var swatch = document.createElement(&#39;div&#39;);
+                swatch.className = &#39;swatch&#39;;
+                swatch.style.backgroundColor = d.series.color;
+
+                var label = document.createElement(&#39;div&#39;);
+                label.className = &#39;label&#39;;
+                label.innerHTML = d.name + &#34;: &#34;+ d.formattedYValue;
+
+                line.appendChild(swatch);
+                line.appendChild(label);
+
+                lines.appendChild(line);
+
+                var dot = document.createElement(&#39;div&#39;);
+                dot.className = &#39;dot&#39;;
+                dot.style.top = graph.y(d.value.y0 + d.value.y) + &#39;px&#39;;
+                dot.style.borderColor = d.series.color;
+
+                this.element.appendChild(dot);
+
+                dot.className = &#39;dot active&#39;;
+
+                // Assume left alignment until the element has been displayed and
+                // bounding box calculations are possible.
+
+                this.show();
+
+            }, this );
+        }
+    });
+
+    var hover = new Hover( { graph: graph } ); 
+
+&lt;/script&gt;
+
+&lt;p&gt;The source code for this was simple, as seen below:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div id=&amp;quot;chart_container&amp;quot;&amp;gt;
+    &amp;lt;div id=&amp;quot;chart&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;br&amp;gt;
+    &amp;lt;div id=&amp;quot;legend&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;!--break--&gt;
+
+&lt;pre&gt;&lt;code&gt;// set up our data series with 50 random data points
+
+var seriesData = [ [], [], [] ];
+var random = new Rickshaw.Fixtures.RandomData(150);
+
+for (var i = 0; i &amp;lt; 150; i++) {
+    random.addData(seriesData);
+}
+
+// instantiate our graph!
+
+var graph = new Rickshaw.Graph( {
+    element: document.getElementById(&amp;quot;chart&amp;quot;),
+    width: 600,
+    height: 300,
+    renderer: &#39;line&#39;,
+    series: [
+        {
+            color: &amp;quot;#c05020&amp;quot;,
+            data: seriesData[0],
+            name: &#39;New York&#39;
+        }, {
+            color: &amp;quot;#30c020&amp;quot;,
+            data: seriesData[1],
+            name: &#39;London&#39;
+        }, {
+            color: &amp;quot;#6060c0&amp;quot;,
+            data: seriesData[2],
+            name: &#39;Tokyo&#39;
+        }
+    ]
+} );
+
+graph.render();
+var Hover = Rickshaw.Class.create(Rickshaw.Graph.HoverDetail, {
+    render: function(args) {
+        var lines = document.createElement(&#39;div&#39;);
+        lines.className = &#39;line-wrapper&#39;;
+        lines.innerHTML = args.formattedXValue;
+        lines.style.top = args.mouseY + &amp;quot;px&amp;quot;;
+        this.element.appendChild(lines);
+        var boundingRect = this.element.parentNode.getBoundingClientRect();
+        if ( args.mouseX &amp;gt; ( boundingRect.width * 2 / 3 ) ) {
+            this.element.classList.remove(&#39;left&#39;);
+            this.element.classList.add(&#39;right&#39;);
+        } else {
+            this.element.classList.remove(&#39;right&#39;);
+            this.element.classList.add(&#39;left&#39;);
+        }
+
+        args.detail.sort(function(a, b) { return a.order - b.order }).forEach( function(d) {
+
+            var line = document.createElement(&#39;div&#39;);
+            line.className = &#39;line&#39;;
+
+            var swatch = document.createElement(&#39;div&#39;);
+            swatch.className = &#39;swatch&#39;;
+            swatch.style.backgroundColor = d.series.color;
+
+            var label = document.createElement(&#39;div&#39;);
+            label.className = &#39;label&#39;;
+            label.innerHTML = d.name + &amp;quot;: &amp;quot;+ d.formattedYValue;
+
+            line.appendChild(swatch);
+            line.appendChild(label);
+
+            lines.appendChild(line);
+
+            var dot = document.createElement(&#39;div&#39;);
+            dot.className = &#39;dot&#39;;
+            dot.style.top = graph.y(d.value.y0 + d.value.y) + &#39;px&#39;;
+            dot.style.borderColor = d.series.color;
+
+            this.element.appendChild(dot);
+
+            dot.className = &#39;dot active&#39;;
+
+            // Assume left alignment until the element has been displayed and
+            // bounding box calculations are possible.
+
+            this.show();
+
+        }, this );
+    }
+});
+
+var hover = new Hover( { graph: graph } ); 
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+            </item>
+            
         
             
             <item>
