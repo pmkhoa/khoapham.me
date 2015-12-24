@@ -25,7 +25,7 @@ extension from D3, so you can get greatness from both of them.&lt;/p&gt;
 when user hovered on it, it would reveal all y-values at the cursor position.&lt;/p&gt;
 
 &lt;div id=&#34;chart_container&#34;&gt;
-    &lt;div id=&#34;chart&#34;&gt;&lt;/div&gt;&lt;br&gt;
+    &lt;div id=&#34;chart&#34;&gt;&lt;/div&gt;
     &lt;div id=&#34;legend&#34;&gt;&lt;/div&gt;
 &lt;/div&gt;
 
@@ -190,8 +190,7 @@ when user hovered on it, it would reveal all y-values at the cursor position.&lt
 &lt;p&gt;The source code for this was simple, as seen below:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;&amp;lt;div id=&amp;quot;chart_container&amp;quot;&amp;gt;
-    &amp;lt;div id=&amp;quot;chart&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;br&amp;gt;
-    &amp;lt;div id=&amp;quot;legend&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+    &amp;lt;div id=&amp;quot;chart&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
 &amp;lt;/div&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
