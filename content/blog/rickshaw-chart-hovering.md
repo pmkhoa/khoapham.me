@@ -16,10 +16,9 @@ One thing that I was challenging me recently that I needed to create a chart
 when user hovered on it, it would reveal all y-values at the cursor position.
 
 <div id="chart_container">
-	<div id="chart"></div><br>
+	<div id="chart"></div>
 	<div id="legend"></div>
 </div>
-
 
 <style>
 #chart_container {
@@ -182,8 +181,7 @@ when user hovered on it, it would reveal all y-values at the cursor position.
 The source code for this was simple, as seen below:
 
     <div id="chart_container">
-        <div id="chart"></div><br>
-        <div id="legend"></div>
+        <div id="chart"></div>
     </div>
 
 <!--break-->
