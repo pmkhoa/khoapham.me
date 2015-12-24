@@ -23,7 +23,6 @@ when user hovered on it, it would reveal all y-values at the cursor position.
 <style>
 #chart_container {
     background: rgba(0, 0, 0, 0.05);
-	width: 600px;
     max-width: 100%;
 }
 .swatch {
@@ -99,7 +98,7 @@ when user hovered on it, it would reveal all y-values at the cursor position.
 
     var graph = new Rickshaw.Graph( {
         element: document.getElementById("chart"),
-        width: 600,
+        width: Math.max(document.getElementById("chart").offsetWidth, 200),
         height: 300,
         renderer: 'line',
         series: [
