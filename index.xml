@@ -21,7 +21,7 @@ quick chart prototype, I use an alternative library called
 &lt;a href=&#34;http://code.shutterstock.com/rickshaw/examples/&#34;&gt;Rickshaw&lt;/a&gt;. It&amp;rsquo;s an
 extension from D3, so you can get greatness from both of them.&lt;/p&gt;
 
-&lt;p&gt;One thing that I was challenging me recently that I needed to create a chart
+&lt;p&gt;One thing that was challenging me recently that I needed to create a chart
 when user hovered on it, it would reveal all y-values at the cursor position.&lt;/p&gt;
 
 &lt;div id=&#34;chart_container&#34;&gt;
