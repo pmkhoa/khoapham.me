@@ -8,6 +8,7 @@ I have really enjoyed using Vim for a month now, and I have to admit that I
 love the feeling of learning new things from Vim everyday. Today I would love to
 share some of my favorite Vim Leaders that I found they're extremely helpful. You
 can add these into your .vimrc file, and give it a try.
+<!--more-->
 
 - Open another file in same directory
 

@@ -22,6 +22,7 @@ when user hovered on it, it would reveal all y-values at the cursor position.
 
 <style>
 #chart_container {
+    background: rgba(0, 0, 0, 0.05);
 	width: 600px;
     max-width: 100%;
 }
