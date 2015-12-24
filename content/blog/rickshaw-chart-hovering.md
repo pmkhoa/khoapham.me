@@ -12,7 +12,7 @@ quick chart prototype, I use an alternative library called
 extension from D3, so you can get greatness from both of them.
 <!--more-->
 
-One thing that I was challenging me recently that I needed to create a chart
+One thing that was challenging me recently that I needed to create a chart
 when user hovered on it, it would reveal all y-values at the cursor position.
 
 <div id="chart_container">
