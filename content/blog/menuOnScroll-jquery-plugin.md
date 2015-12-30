@@ -1,7 +1,7 @@
 ---
 title: MenuOnScroll - jQuery Plugin
 date: 2014-11-25
-tags: [Javascript, Jquery, Plugin, Motivation]
+tags: [Javascript, Jquery, Plugin]
 ---
 
 Today I just released menuOnScroll - jQuery plugin that automatically updates the menu

@@ -1,5 +1,5 @@
 ---
-title: Minimalist in design and development
+title: Minimalist in Design and Development
 date: 2015-11-21
 tags: [Design, Minimalist, Motivation]
 ---
