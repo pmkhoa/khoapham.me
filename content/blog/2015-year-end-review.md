@@ -33,7 +33,7 @@ My role is in charged for the front-end of product focusing on UX, and product b
 
 #### 3. Accomplishments
 
-- Launched: Classfare, Ratio Coffee, My OneSight, Seastar.io, [OMSI Zoo in
+- Launched: [Classfare](http://classfare.com), [Ratio Coffee](http://ratiocoffee.com), [My OneSight](http://my.onesight.org), [Seastar.io](http://seastar.io), [OMSI Zoo in
     You](http://programs.omsi.edu/professionals/traveling-exhibits/zoo-you-human-microbiome). 
 - Switched code editor from Sublime to Vim.
 - Switched personal blog from Middleman to Hugo.
@@ -47,10 +47,15 @@ My role is in charged for the front-end of product focusing on UX, and product b
 
 ### **Life**
 - I'm grateful that my works allow me to work remotely any days in the week, this
-helped me a lot with my work life balance.
+helped me a lot for my work-life balance.
 - My 2 years old has kept me busy through the year. She started to talk more, and
 asked more questions. Sometimes it was hard to answer all of her questions.
 - The 4 days vacation in Disneyland was precious family time.
+- One Seattle trip to visit friend.
 - Multiple day trips to Cannon beach were really great, especially when we
     brought small tent with us so we could take nap in it.
 - The Apple Watch motivated me to exercise more regularly.
+- Still ride bicycle to work everyday.
+
+It was a joyful year of 2015, and I look forward to the 2016. Happy New Year!!!
+
