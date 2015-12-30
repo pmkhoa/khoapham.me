@@ -6,8 +6,77 @@
         <language>en-us</language>
         <author>Khoa Pham</author>
         <rights>(C) 2015</rights>
-        <updated>2015-12-23 12:00:31 -0800 PST</updated>
+        <updated>2015-12-29 15:02:48 -0800 PST</updated>
 
+        
+            
+            <item>
+                <title>2015 Year-end Reflection</title>
+                <link>http://khoapham.me/blog/2015-year-end-reflection/</link>
+                <pubDate>Tue, 29 Dec 2015 15:02:48 PST</pubDate>
+                <guid>http://khoapham.me/blog/2015-year-end-reflection/</guid>
+                <description>
+
+&lt;p&gt;It was a great year of works, and an exciting year of life.&lt;/p&gt;
+
+&lt;h3 id=&#34;works:348974461ed702672eb01df982caa842&#34;&gt;&lt;strong&gt;Works&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;h4 id=&#34;1-leaving-the-agency-world:348974461ed702672eb01df982caa842&#34;&gt;1. Leaving the agency world&lt;/h4&gt;
+
+&lt;p&gt;I worked for great creative agencies such as Sincerely Truman, and The Program
+in Portland, Oregon for over 3 years. It was tough to leave the agency working
+environment style to join the team at Network Redux and worked on a startup project called Seastar.
+Working with creative agencies gave me lot of opportunities to explore new technologies, and ideas, it always excited me when trying something new. However, I always found myself in the contradict position that I not only wanted to try new technologies, but also wanted to master the one that I really cared and loved. For instance, here are the list of things that worked with in the agency world.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Javascript: BackboneJS, EmberJS, MeteorJS, NodeJS, ReactJS.&lt;/li&gt;
+&lt;li&gt;Back-end: PHP, Ruby, Javascript.&lt;/li&gt;
+&lt;li&gt;Frameworks: Rails, Wordpress, Meteor, Yii, Shopify, Squarespace, Facebook App,
+Twitter App.&lt;/li&gt;
+&lt;li&gt;Database: MongoDB, Mysql, Postgresql.&lt;/li&gt;
+&lt;li&gt;Lot of other libraries, and third-party applications.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I was at a point where I no longer wanted to scratch the surface of them, but focusing on several on that would shape my career in the future. That was when I made my best decision to join the Seastar team.&lt;/p&gt;
+
+&lt;h4 id=&#34;2-entering-the-start-up-world:348974461ed702672eb01df982caa842&#34;&gt;2. Entering the start-up world&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://startupljackson.com/post/135800367395/how-to-get-rich-in-tech-guaranteed?&#34;&gt;Start-up is
+tough&lt;/a&gt;. I basically live and breath with it.&lt;/p&gt;
+
+&lt;p&gt;Differently from what I worked in several previous, now I can focus on some technologies that I love such as EmberJS, Golang, Cassandra, and hopefully Swift too.&lt;/p&gt;
+
+&lt;p&gt;My role is in charged frontend developer, focusing on UX, and product brand and design. The challenging part of UX is that I have to understand users usage, and behevior by putting myself in user perspective for our products. I am very lucky to be a part of the Seastar team. Everyone is amazing, and I have learned so much when working with them. The experience is just priceless.&lt;/p&gt;
+
+&lt;h4 id=&#34;3-accomplishments:348974461ed702672eb01df982caa842&#34;&gt;3. Accomplishments&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Launched: Classfare, Ratio Coffee, My OneSight, Seastar.io, OMSI Zoo in You.&lt;/li&gt;
+&lt;li&gt;Switched code editor from Sublime to Vim.&lt;/li&gt;
+&lt;li&gt;Switched personal blog from Middleman to Hugo.&lt;/li&gt;
+&lt;li&gt;Deepened knowledge in Ember 2.0.&lt;/li&gt;
+&lt;li&gt;Worked as lead of UI &amp;amp; UX Developer.&lt;/li&gt;
+&lt;li&gt;Cassandra training &amp;amp; Cassandra Summit.&lt;/li&gt;
+&lt;li&gt;Started learning Golang, and Swift.&lt;/li&gt;
+&lt;li&gt;Implement data visualization D3, Rickshaw, and ThreeJS.&lt;/li&gt;
+&lt;li&gt;Animation with canvas and Tweenmax.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;life:348974461ed702672eb01df982caa842&#34;&gt;&lt;strong&gt;Life&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I&amp;rsquo;m grateful that my works allow me to work remotely any days in the week, this
+helped me a lot with my work life balance.&lt;/li&gt;
+&lt;li&gt;My 2 years old has kept me busy through the year. She started to talk more, and
+asked more questions. Sometimes it was hard to answer all of her questions.&lt;/li&gt;
+&lt;li&gt;The 4 days vacation in Disneyland was precious family time.&lt;/li&gt;
+&lt;li&gt;Multiple day trips to Cannon beach were really great, especially when we
+brought small tent with us so we could take nap in it.&lt;/li&gt;
+&lt;li&gt;The Apple Watch motivated me to exercise more regularly.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+            </item>
+            
         
             
             <item>
@@ -322,7 +391,7 @@ for it, I highly recommend &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&g
         
             
             <item>
-                <title>Minimalist in design and development</title>
+                <title>Minimalist in Design and Development</title>
                 <link>http://khoapham.me/blog/minimalist-in-design-and-development/</link>
                 <pubDate>Sat, 21 Nov 2015 00:00:00 UTC</pubDate>
                 <guid>http://khoapham.me/blog/minimalist-in-design-and-development/</guid>
