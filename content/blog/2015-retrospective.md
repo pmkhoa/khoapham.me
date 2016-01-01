@@ -33,8 +33,8 @@ My role is in charged for the front-end of product focusing on UX, and product b
 
 #### 3. Accomplishments
 
-- Launched: [Classfare](http://classfare.com), [Ratio Coffee](http://ratiocoffee.com), [My OneSight](http://my.onesight.org), [Seastar.io](http://seastar.io), [OMSI Zoo in
-    You](http://programs.omsi.edu/professionals/traveling-exhibits/zoo-you-human-microbiome). 
+- Launched: [OMSI Zoo in
+    You](http://programs.omsi.edu/professionals/traveling-exhibits/zoo-you-human-microbiome), [Classfare](http://classfare.com), [Ratio Coffee](http://ratiocoffee.com), [My OneSight](http://my.onesight.org), [Seastar.io](http://seastar.io).
 - Switched code editor from Sublime to Vim.
 - Switched personal blog from Middleman to Hugo.
 - Read 10 books: 3 fiction, 2 inspiration, 2 startup, 3 technical.
