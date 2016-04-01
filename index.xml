@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Khoa Pham </title>
-        <link>http://localhost:1313/</link>
+        <link>http://khoapham.me/</link>
         <language>en-us</language>
         <author>Khoa Pham</author>
         <rights>(C) 2015</rights>
@@ -12,9 +12,9 @@
             
             <item>
                 <title>2015 Retrospective</title>
-                <link>http://localhost:1313/blog/2015-retrospective/</link>
+                <link>http://khoapham.me/blog/2015-retrospective/</link>
                 <pubDate>Tue, 29 Dec 2015 15:02:48 PST</pubDate>
-                <guid>http://localhost:1313/blog/2015-retrospective/</guid>
+                <guid>http://khoapham.me/blog/2015-retrospective/</guid>
                 <description>
 
 &lt;p&gt;It was a great year of works, and an exciting year of life.&lt;/p&gt;
@@ -84,9 +84,9 @@ asked more questions. Sometimes it was hard to answer all of her questions.&lt;/
             
             <item>
                 <title>Rickshaw Chart Hovering Multiple Values</title>
-                <link>http://localhost:1313/blog/rickshaw-chart-hovering/</link>
+                <link>http://khoapham.me/blog/rickshaw-chart-hovering/</link>
                 <pubDate>Wed, 23 Dec 2015 12:00:31 PST</pubDate>
-                <guid>http://localhost:1313/blog/rickshaw-chart-hovering/</guid>
+                <guid>http://khoapham.me/blog/rickshaw-chart-hovering/</guid>
                 <description>&lt;p&gt;&lt;a href=&#34;http://d3js.org/&#34;&gt;D3&lt;/a&gt; is a great javascript library for creating data visualization chart. I have
 been a big fan of it for over a year now. However, whenever I need to develop a
 quick chart prototype, I use an alternative library called
@@ -160,9 +160,9 @@ when user hovered on it, it would reveal all y-values at the cursor position.&lt
 }
 &lt;/style&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;http://localhost:1313/blog-vendor/rickshaw.min.css&#34;&gt;
-&lt;script src=&#34;http://localhost:1313/blog-vendor/d3.min.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;http://localhost:1313/blog-vendor/rickshaw.min.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;http://khoapham.me/blog-vendor/rickshaw.min.css&#34;&gt;
+&lt;script src=&#34;http://khoapham.me/blog-vendor/d3.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;http://khoapham.me/blog-vendor/rickshaw.min.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;script type=&#34;text/javascript&#34;&gt;
 
@@ -363,9 +363,9 @@ var hover = new Hover( { graph: graph } );
             
             <item>
                 <title>My First Hugo Theme</title>
-                <link>http://localhost:1313/blog/first-hugo-theme/</link>
+                <link>http://khoapham.me/blog/first-hugo-theme/</link>
                 <pubDate>Thu, 03 Dec 2015 23:13:30 PST</pubDate>
-                <guid>http://localhost:1313/blog/first-hugo-theme/</guid>
+                <guid>http://khoapham.me/blog/first-hugo-theme/</guid>
                 <description>&lt;p&gt;When I started to get back to blogging, I felt my website
 took a little long to compile. As a revolution of redesigning my blog, I want to switch my blog platform to something faster.
 My blog was previously developed using &lt;a href=&#34;http://middlemanapp.com&#34;&gt;Middleman&lt;/a&gt;, and now it&amp;rsquo;s powered by &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;, a faster static site
@@ -395,9 +395,9 @@ for it, I highly recommend &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&g
             
             <item>
                 <title>Minimalist in Design and Development</title>
-                <link>http://localhost:1313/blog/minimalist-in-design-and-development/</link>
+                <link>http://khoapham.me/blog/minimalist-in-design-and-development/</link>
                 <pubDate>Sat, 21 Nov 2015 00:00:00 UTC</pubDate>
-                <guid>http://localhost:1313/blog/minimalist-in-design-and-development/</guid>
+                <guid>http://khoapham.me/blog/minimalist-in-design-and-development/</guid>
                 <description>&lt;p&gt;My website has gone through countless design iterations, not because its look
 was outdated, but my sense of simplicity has changed from time to time, and I
 wanted my personal website to reflect that.&lt;/p&gt;
@@ -418,9 +418,9 @@ javascript a year.&lt;/p&gt;
             
             <item>
                 <title>Set up Nginx with Centos</title>
-                <link>http://localhost:1313/blog/set-up-nginx-with-centos/</link>
+                <link>http://khoapham.me/blog/set-up-nginx-with-centos/</link>
                 <pubDate>Wed, 18 Nov 2015 00:00:00 UTC</pubDate>
-                <guid>http://localhost:1313/blog/set-up-nginx-with-centos/</guid>
+                <guid>http://khoapham.me/blog/set-up-nginx-with-centos/</guid>
                 <description>
 
 &lt;p&gt;Recently I had a chance to have my hand on setting up a web server using Nginx
@@ -566,13 +566,13 @@ $ setenforce 0
             
             <item>
                 <title>ES6 Review Part 2</title>
-                <link>http://localhost:1313/blog/es6-review-part-2/</link>
+                <link>http://khoapham.me/blog/es6-review-part-2/</link>
                 <pubDate>Mon, 20 Jul 2015 00:00:00 UTC</pubDate>
-                <guid>http://localhost:1313/blog/es6-review-part-2/</guid>
+                <guid>http://khoapham.me/blog/es6-review-part-2/</guid>
                 <description>
 
 &lt;p&gt;This is a second review post for new ES6 features that I&amp;rsquo;d love to share. You
-can find the first review here &lt;a href=&#34;http://localhost:1313/blog/es6-review-part-1/&#34;&gt;ES6 Review Part 1&lt;/a&gt;&lt;/p&gt;
+can find the first review here &lt;a href=&#34;http://khoapham.me/blog/es6-review-part-1/&#34;&gt;ES6 Review Part 1&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;arrows:83de84d25d18a19c71ad394c32345d1e&#34;&gt;Arrows&lt;/h3&gt;
 
@@ -619,9 +619,9 @@ can find the first review here &lt;a href=&#34;http://localhost:1313/blog/es6-re
             
             <item>
                 <title>ES6 Review Part 1</title>
-                <link>http://localhost:1313/blog/es6-review-part-1/</link>
+                <link>http://khoapham.me/blog/es6-review-part-1/</link>
                 <pubDate>Tue, 03 Mar 2015 00:00:00 UTC</pubDate>
-                <guid>http://localhost:1313/blog/es6-review-part-1/</guid>
+                <guid>http://khoapham.me/blog/es6-review-part-1/</guid>
                 <description>
 
 &lt;p&gt;ECMAScript 6 (ES6) is the upcoming version of ECMACScript standard which is
@@ -632,7 +632,7 @@ future of Javascript, and I love it.&lt;/p&gt;
 &lt;p&gt;In this short blog, I use ES6 to demonstrate some new features of ES6 by writing
 the linked list data structure.&lt;/p&gt;
 
-&lt;div class=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/LinkedLists-deletingnode.png&#34; alt=&#34;Linked List&#34; /&gt;&lt;/div&gt;
+&lt;div class=&#34;center&#34;&gt;&lt;img src=&#34;http://khoapham.me/img/LinkedLists-deletingnode.png&#34; alt=&#34;Linked List&#34; /&gt;&lt;/div&gt;
 
 &lt;h3 id=&#34;classes:9647d1112a4a980bd718fcc5a37418df&#34;&gt;Classes&lt;/h3&gt;
 
@@ -750,9 +750,9 @@ class LinkedList {
             
             <item>
                 <title>Tower of Hanoi</title>
-                <link>http://localhost:1313/blog/tower-of-hanoi/</link>
+                <link>http://khoapham.me/blog/tower-of-hanoi/</link>
                 <pubDate>Tue, 02 Dec 2014 00:00:00 UTC</pubDate>
-                <guid>http://localhost:1313/blog/tower-of-hanoi/</guid>
+                <guid>http://khoapham.me/blog/tower-of-hanoi/</guid>
                 <description>&lt;p&gt;One of my favorite childhood game was the &lt;a href=&#34;http://en.wikipedia.org/wiki/Tower_of_Hanoi&#34;&gt;Tower of Hanoi&lt;/a&gt; which I loved playing it
 with my neighbor friends all the time. Also, one of my very first project in college
 was implementing the tower of Hanoi in C, C++, or Java. I guess this game has sticked with
@@ -799,9 +799,9 @@ game.run
             
             <item>
                 <title>MenuOnScroll - jQuery Plugin</title>
-                <link>http://localhost:1313/blog/menuOnScroll-jquery-plugin/</link>
+                <link>http://khoapham.me/blog/menuOnScroll-jquery-plugin/</link>
                 <pubDate>Tue, 25 Nov 2014 00:00:00 UTC</pubDate>
-                <guid>http://localhost:1313/blog/menuOnScroll-jquery-plugin/</guid>
+                <guid>http://khoapham.me/blog/menuOnScroll-jquery-plugin/</guid>
                 <description>&lt;p&gt;Today I just released menuOnScroll - jQuery plugin that automatically updates the menu
 navigation when you scroll. This functionality is extremely common on the web,
 especially for the single page website.
@@ -825,9 +825,9 @@ out.&lt;/p&gt;
             
             <item>
                 <title>Vim Commmon Helpful Leader</title>
-                <link>http://localhost:1313/blog/vim-common-helpful-leader/</link>
+                <link>http://khoapham.me/blog/vim-common-helpful-leader/</link>
                 <pubDate>Wed, 12 Nov 2014 00:00:00 UTC</pubDate>
-                <guid>http://localhost:1313/blog/vim-common-helpful-leader/</guid>
+                <guid>http://khoapham.me/blog/vim-common-helpful-leader/</guid>
                 <description>&lt;p&gt;I have really enjoyed using Vim for a month now, and I have to admit that I
 love the feeling of learning new things from Vim everyday. Today I would love to
 share some of my favorite Vim Leaders that I found they&amp;rsquo;re extremely helpful. You
@@ -863,9 +863,9 @@ map &amp;lt;Leader&amp;gt;n :call RenameFile()&amp;lt;cr&amp;gt;
             
             <item>
                 <title>How I switched to vim in 2 weeks</title>
-                <link>http://localhost:1313/blog/how-i-switched-to-vim-in-2-weeks/</link>
+                <link>http://khoapham.me/blog/how-i-switched-to-vim-in-2-weeks/</link>
                 <pubDate>Wed, 29 Oct 2014 00:00:00 UTC</pubDate>
-                <guid>http://localhost:1313/blog/how-i-switched-to-vim-in-2-weeks/</guid>
+                <guid>http://khoapham.me/blog/how-i-switched-to-vim-in-2-weeks/</guid>
                 <description>&lt;p&gt;I have played with Vim so many times since I was in college, in fact that I
 loved it every time I used it. However, I don&amp;rsquo;t think I ever spent time
 long enough to get used to it. I&amp;rsquo;ve seen people dancing their fingers on the
@@ -927,9 +927,9 @@ surprised how much faster you can use with your&lt;/li&gt;
             
             <item>
                 <title>Deploy Middleman to Heroku</title>
-                <link>http://localhost:1313/blog/deploy-middleman-to-heroku/</link>
+                <link>http://khoapham.me/blog/deploy-middleman-to-heroku/</link>
                 <pubDate>Tue, 14 Oct 2014 00:00:00 UTC</pubDate>
-                <guid>http://localhost:1313/blog/deploy-middleman-to-heroku/</guid>
+                <guid>http://khoapham.me/blog/deploy-middleman-to-heroku/</guid>
                 <description>&lt;p&gt;Heroku is a great cloud service, it uses git for version control and deployment which is very handy for me to just update my blog in one command.
 Here are some simple step that you can set it up.&lt;/p&gt;
 
@@ -996,9 +996,9 @@ run lambda{ |env|
             
             <item>
                 <title>Completely setup Resque &#43; Resque Schedule and Resque Mailer</title>
-                <link>http://localhost:1313/blog/completely-setup-resque-and-resque-scheduler/</link>
+                <link>http://khoapham.me/blog/completely-setup-resque-and-resque-scheduler/</link>
                 <pubDate>Wed, 10 Sep 2014 00:00:00 UTC</pubDate>
-                <guid>http://localhost:1313/blog/completely-setup-resque-and-resque-scheduler/</guid>
+                <guid>http://khoapham.me/blog/completely-setup-resque-and-resque-scheduler/</guid>
                 <description>&lt;p&gt;When developing Rails app, there will be a chance that you will need to setup
 job scheduler using Resque. In this post, I&amp;rsquo;d like to share my experience
 setting up Resque schedule, and resque mailer on my recent Rails application
@@ -1114,9 +1114,9 @@ scheduler: bundle exec rake resque:scheduler
             
             <item>
                 <title>Create App With Meteor</title>
-                <link>http://localhost:1313/blog/create-app-with-meteor/</link>
+                <link>http://khoapham.me/blog/create-app-with-meteor/</link>
                 <pubDate>Wed, 16 Oct 2013 00:00:00 UTC</pubDate>
-                <guid>http://localhost:1313/blog/create-app-with-meteor/</guid>
+                <guid>http://khoapham.me/blog/create-app-with-meteor/</guid>
                 <description>&lt;p&gt;When I started to build the DearJJAbrams.com site, I came across a very simple functionality which was the realtime counter. This realtime counter worked as follow, when the user submitted their email, the counter would increase 1. However, this counter had to automatically update and synchronize with the server whenever anyone around the world submit their email, in other words, I had to create real time app with Meteor.&lt;/p&gt;
 
 &lt;p&gt;At this point, things were getting little more complicated. The big question was how could the browser know when the database was updated in order to get synchronized? But, I was lucky to found out that &lt;a href=&#34;http://www.meteor.com&#34;&gt;Meteor&lt;/a&gt; was a perfect tool for this simple counter app.&lt;/p&gt;
@@ -1241,9 +1241,9 @@ Now it&amp;rsquo;s time to deploy the app, I used the Heroku server to deploy th
             
             <item>
                 <title>Inspiration videos from Steve Jobs</title>
-                <link>http://localhost:1313/blog/inspiration-video-from-steve-jobs/</link>
+                <link>http://khoapham.me/blog/inspiration-video-from-steve-jobs/</link>
                 <pubDate>Thu, 04 Jul 2013 00:00:00 UTC</pubDate>
-                <guid>http://localhost:1313/blog/inspiration-video-from-steve-jobs/</guid>
+                <guid>http://khoapham.me/blog/inspiration-video-from-steve-jobs/</guid>
                 <description>&lt;div class=&#34;videoWrapper&#34;&gt;
     &lt;iframe src=&#34;https://www.youtube.com/embed/KuNQgln6TL0?feature=player_embedded&#34; height=&#34;360&#34; width=&#34;640&#34; allowfullscreen=&#34;&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
@@ -1258,9 +1258,9 @@ Now it&amp;rsquo;s time to deploy the app, I used the Heroku server to deploy th
             
             <item>
                 <title>Middleman Localization</title>
-                <link>http://localhost:1313/blog/middleman-localization/</link>
+                <link>http://khoapham.me/blog/middleman-localization/</link>
                 <pubDate>Wed, 05 Jun 2013 00:00:00 UTC</pubDate>
-                <guid>http://localhost:1313/blog/middleman-localization/</guid>
+                <guid>http://khoapham.me/blog/middleman-localization/</guid>
                 <description>&lt;p&gt;Recently when developing a site using middleman, my client wonder that if we can do localization for the website. Fortunately, Middleman comes with the localization extension i18n which is pretty simple to integrate it into the site.&lt;/p&gt;
 
 &lt;p&gt;Although there&amp;rsquo;s a quick overview of Middleman Localization available on the &lt;a href=&#34;http://middlemanapp.com/&#34; target=&#34;_blank&#34;&gt;middlemanapp.com&lt;/a&gt;, I still find it a little bit confused for Middleman beginners. Here are quick steps how to set it up:&lt;/p&gt;
@@ -1285,7 +1285,7 @@ locales&lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;Then you need to put all your template files in one folder called localizable.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img style=&#34;border: 1px solid #d4d4d4;&#34; alt=&#34;Localizable&#34; src=&#34;http://localhost:1313/img/Localizable-1024x337.png&#34; width=&#34;1024&#34; height=&#34;337&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img style=&#34;border: 1px solid #d4d4d4;&#34; alt=&#34;Localizable&#34; src=&#34;http://khoapham.me/img/Localizable-1024x337.png&#34; width=&#34;1024&#34; height=&#34;337&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;3. Add translation text into your translated files:&lt;/strong&gt;&lt;/p&gt;
 
@@ -1334,9 +1334,9 @@ en:
             
             <item>
                 <title>Sync Middleman with Amazon S3</title>
-                <link>http://localhost:1313/blog/sync-middleman-with-amazon-s3/</link>
+                <link>http://khoapham.me/blog/sync-middleman-with-amazon-s3/</link>
                 <pubDate>Mon, 27 May 2013 22:18:14 -0800</pubDate>
-                <guid>http://localhost:1313/blog/sync-middleman-with-amazon-s3/</guid>
+                <guid>http://khoapham.me/blog/sync-middleman-with-amazon-s3/</guid>
                 <description>&lt;p&gt;One thing that I love using Middleman and Amazon S3 is that they&amp;rsquo;re a perfect combination for building and hosting a static HTML5 site.&lt;/p&gt;
 
 &lt;p&gt;Indeed, using Middleman, you can generate an HTML5 Boilerplate in one command:
@@ -1377,9 +1377,9 @@ end&lt;/pre&gt;&lt;/p&gt;
             
             <item>
                 <title>Setting up Amazon Web Services</title>
-                <link>http://localhost:1313/blog/setting-up-amazon-web-services/</link>
+                <link>http://khoapham.me/blog/setting-up-amazon-web-services/</link>
                 <pubDate>Fri, 17 May 2013 23:14:51 -0800</pubDate>
-                <guid>http://localhost:1313/blog/setting-up-amazon-web-services/</guid>
+                <guid>http://khoapham.me/blog/setting-up-amazon-web-services/</guid>
                 <description>
 
 &lt;p&gt;To setting up Amazon Web Services, the process of setting up an EC2 on Amazon Web Services (AWS) is not complicated, all you need to get a server up and running are Apache, PHP,  MySQL.
@@ -1479,9 +1479,9 @@ sudo /sbin/chkconfig --levels 235 httpd on
             
             <item>
                 <title>Learning to See</title>
-                <link>http://localhost:1313/blog/learning-to-see/</link>
+                <link>http://khoapham.me/blog/learning-to-see/</link>
                 <pubDate>Fri, 17 May 2013 23:12:14 -0800</pubDate>
-                <guid>http://localhost:1313/blog/learning-to-see/</guid>
+                <guid>http://khoapham.me/blog/learning-to-see/</guid>
                 <description>&lt;p&gt;People asked me why I had a computer science degree but spending most of my time working as user experience developer.
 Here is the article that hooked me into it: &lt;a href=&#34;https://ia.net/know-how/learning-to-see&#34;&gt;https://ia.net/know-how/learning-to-see&lt;/a&gt;.
 It has changed the way I saw thing since I read it. I highly recommend you read it too.&lt;/p&gt;
@@ -1496,9 +1496,9 @@ It has changed the way I saw thing since I read it. I highly recommend you read 
             
             <item>
                 <title>My favorite poem</title>
-                <link>http://localhost:1313/blog/if/</link>
+                <link>http://khoapham.me/blog/if/</link>
                 <pubDate>Fri, 17 May 2013 00:06:51 -0800</pubDate>
-                <guid>http://localhost:1313/blog/if/</guid>
+                <guid>http://khoapham.me/blog/if/</guid>
                 <description>
 
 &lt;p&gt;When it comes to my favority poem, &amp;ldquo;If - Rudyard Kipling&amp;rdquo; is definitely the one.&lt;br /&gt;
