@@ -1,7 +1,7 @@
 ---
 date: 2016-04-09T22:20:42-07:00
 draft: false
-title: Great Developer Comes From Great Attitude
+title: Great Attitude Makes Great Developers
 tags: [Motivation]
 ---
 
