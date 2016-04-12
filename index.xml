@@ -6,8 +6,97 @@
         <language>en-us</language>
         <author>Khoa Pham</author>
         <rights>(C) 2016</rights>
-        <updated>2016-04-09 22:20:42 -0700 PDT</updated>
+        <updated>2016-04-12 11:18:20 -0700 PDT</updated>
 
+        
+            
+            <item>
+                <title>Global Notification Using Ember Initializer and Service</title>
+                <link>http://khoapham.me/blog/global-notification-using-ember-initializer-and-service/</link>
+                <pubDate>Tue, 12 Apr 2016 11:18:20 PDT</pubDate>
+                <guid>http://khoapham.me/blog/global-notification-using-ember-initializer-and-service/</guid>
+                <description>
+
+&lt;p&gt;When developing Ember app, you may want to have a singleton to handle
+global state such as global notification, or error handling. This doesn&amp;rsquo;t fall
+into &lt;code&gt;Route&lt;/code&gt;, &lt;code&gt;Controller&lt;/code&gt;, or &lt;code&gt;Component&lt;/code&gt;. Ember offers an easy way to manage
+this using &lt;code&gt;Service&lt;/code&gt; and &lt;code&gt;Initializers&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h4 id=&#34;create-a-service-to-hold-notification-data:dc08fe7a7cb85374fa6d93118b027293&#34;&gt;Create a service to hold notification data&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;//app/services/global-notification.js
+import Ember from &#39;ember&#39;;
+
+export default Ember.Service.extend({
+    notification: null,
+    init() {
+        this.set(&#39;notification&#39;, null);
+    }
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;create-an-initializer-to-inject-global-notification-service-in-application:dc08fe7a7cb85374fa6d93118b027293&#34;&gt;Create an initializer to inject global notification service in application&lt;/h4&gt;
+
+&lt;p&gt;This allows us to use GlobalNotification service in route, and component.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;//app/initializers/global-notification.js
+import GlobalNotification from &#39;../services/global-notification&#39;;
+
+export function initialize(application) {
+    application.register(&#39;globalNotification:main&#39;, GlobalNotification, {singleton: true});
+    application.inject(&#39;component&#39;, &#39;GlobalNotification&#39;, &#39;service:global-notification&#39;);
+    application.inject(&#39;route&#39;, &#39;GlobalNotification&#39;, &#39;service:global-notification&#39;);
+}
+
+export default {
+    name: &#39;global-notification&#39;,
+    initialize
+};
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;using-our-global-notification-service:dc08fe7a7cb85374fa6d93118b027293&#34;&gt;Using our global notification service.&lt;/h4&gt;
+
+&lt;p&gt;Assuming you have a user settings form, and want to display notification when
+user changes settings.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;//app/components/user-settings.js
+import Ember from &#39;ember&#39;;
+export default Ember.Component.extend({
+    globalNotification: Ember.inject.service(&#39;global-notification&#39;),
+    actions: {
+        saveSettings() {
+            let accountInfo = this.getProperties(&amp;quot;firstName&amp;quot;, &amp;quot;lastName&amp;quot;, &amp;quot;email&amp;quot;, &amp;quot;password&amp;quot;);
+            Ember.$.ajax({
+                url: &amp;quot;/api/user&amp;quot;,
+                type: &amp;quot;POST&amp;quot;,
+                data: JSON.stringify(accountInfo)
+            }).then(function(response) {
+                // We want to set notification data to global notification
+                service.
+               this.set(&amp;quot;globalNotification.notification&amp;quot;, &amp;quot;User settings
+               saved&amp;quot;); 
+            });
+        }
+    }
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In the user setting forms, we can put &lt;code&gt;{{GlobalNotification.notification}}&lt;/code&gt;
+where we want to display the notification.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;//app/templates/components/user-settings.hbs
+&amp;lt;form id=&amp;quot;user-settings&amp;quot;&amp;gt;
+    &amp;lt;p class=&amp;quot;notification&amp;quot;&amp;gt;{{GlobalNotification.notification}}&amp;lt;/p&amp;gt;
+    ....
+&amp;lt;/form&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That is it. Now you can call &lt;code&gt;global-notification&lt;/code&gt; service anywhere in your
+application, and use its injection via &lt;code&gt;initializers&lt;/code&gt; to display the data in
+your template.&lt;/p&gt;
+</description>
+            </item>
+            
         
             
             <item>

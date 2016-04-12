@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>
             
-                Tower of Hanoi - Khoa Pham
+                Global Notification Using Ember Initializer and Service - Khoa Pham
             
         </title>
 
@@ -58,47 +58,87 @@
 <div class="Article-wrapper">
     <div class="Article-container">
         <div class="Article-content wrap clearfix">
-            <h1 class="Article-title">Tower of Hanoi</h1>
-            <p><time datetime="2014-12-02 00:00:00 &#43;0000 UTC"><em>December 2, 2014</em></time>
-            <p>One of my favorite childhood game was the <a href="http://en.wikipedia.org/wiki/Tower_of_Hanoi">Tower of Hanoi</a> which I loved playing it
-with my neighbor friends all the time. Also, one of my very first project in college
-was implementing the tower of Hanoi in C, C++, or Java. I guess this game has sticked with
-me for a very long time, so that today I decided to implement it again in my new
-favorite language - Ruby. In fact, it&rsquo;s simple, elegant, and easy to implement in ruby.</p>
+            <h1 class="Article-title">Global Notification Using Ember Initializer and Service</h1>
+            <p><time datetime="2016-04-12 11:18:20 -0700 PDT"><em>April 12, 2016</em></time>
+            
 
-<pre><code>class TowerOfHanoi
-  SRC = 0
-  DST = 2
-  TEMP = 1
+<p>When developing Ember app, you may want to have a singleton to handle
+global state such as global notification, or error handling. This doesn&rsquo;t fall
+into <code>Route</code>, <code>Controller</code>, or <code>Component</code>. Ember offers an easy way to manage
+this using <code>Service</code> and <code>Initializers</code>.</p>
 
-  def initialize(disks: 4)
-    @disks = disks
-  end
+<h4 id="create-a-service-to-hold-notification-data:dc08fe7a7cb85374fa6d93118b027293">Create a service to hold notification data</h4>
 
-  def run
-    move(@disks, SRC, DST, TEMP)
-  end
+<pre><code>//app/services/global-notification.js
+import Ember from 'ember';
 
-  def move(disks, src, dst, temp)
-    return moveFromTo(src, dst) if disks == 1
-    move(disks-1, src, temp, dst)
-    moveFromTo(src, dst)
-    move(disks-1, temp, dst, src)
-  end
-
-  def moveFromTo(src, dst)
-    puts &quot;Move from #{src} to #{dst}&quot;
-  end
-end
+export default Ember.Service.extend({
+    notification: null,
+    init() {
+        this.set('notification', null);
+    }
+});
 </code></pre>
 
-<p>To run the program, open your terminal and try it in your irb:</p>
+<h4 id="create-an-initializer-to-inject-global-notification-service-in-application:dc08fe7a7cb85374fa6d93118b027293">Create an initializer to inject global notification service in application</h4>
 
-<pre><code>$ irb
-require_relative 'TowerOfHanoi'
-game = TowerOfHanoi.new # or game = TowerOfHanoi.new(disks: 4)
-game.run
+<p>This allows us to use GlobalNotification service in route, and component.</p>
+
+<pre><code>//app/initializers/global-notification.js
+import GlobalNotification from '../services/global-notification';
+
+export function initialize(application) {
+    application.register('globalNotification:main', GlobalNotification, {singleton: true});
+    application.inject('component', 'GlobalNotification', 'service:global-notification');
+    application.inject('route', 'GlobalNotification', 'service:global-notification');
+}
+
+export default {
+    name: 'global-notification',
+    initialize
+};
 </code></pre>
+
+<h4 id="using-our-global-notification-service:dc08fe7a7cb85374fa6d93118b027293">Using our global notification service.</h4>
+
+<p>Assuming you have a user settings form, and want to display notification when
+user changes settings.</p>
+
+<pre><code>//app/components/user-settings.js
+import Ember from 'ember';
+export default Ember.Component.extend({
+    globalNotification: Ember.inject.service('global-notification'),
+    actions: {
+        saveSettings() {
+            let accountInfo = this.getProperties(&quot;firstName&quot;, &quot;lastName&quot;, &quot;email&quot;, &quot;password&quot;);
+            Ember.$.ajax({
+                url: &quot;/api/user&quot;,
+                type: &quot;POST&quot;,
+                data: JSON.stringify(accountInfo)
+            }).then(function(response) {
+                // We want to set notification data to global notification
+                service.
+               this.set(&quot;globalNotification.notification&quot;, &quot;User settings
+               saved&quot;); 
+            });
+        }
+    }
+});
+</code></pre>
+
+<p>In the user setting forms, we can put <code>{{GlobalNotification.notification}}</code>
+where we want to display the notification.</p>
+
+<pre><code>//app/templates/components/user-settings.hbs
+&lt;form id=&quot;user-settings&quot;&gt;
+    &lt;p class=&quot;notification&quot;&gt;{{GlobalNotification.notification}}&lt;/p&gt;
+    ....
+&lt;/form&gt;
+</code></pre>
+
+<p>That is it. Now you can call <code>global-notification</code> service anywhere in your
+application, and use its injection via <code>initializers</code> to display the data in
+your template.</p>
 
         </div>
         
@@ -122,61 +162,9 @@ game.run
                     
                     
                     
-                
-                    
-                    
-                    
-                
-                    
-                    
-                    
-                
-                    
-                    
-                    
-                
-                    
-                    
-                    
-                
-                    
-                    
-                    
-                
-                    
-                    
-                    
-                
-                    
-                    
-                    
-                
-                    
-                    
-                    
-                
-                    
-                    
-                    
-                
-                    
-                    
-                    
-                
-                    
-                    
-                    
-                
-                    
-                    
-                    
-                
-                    
-                    
-                    
-                        <a href="http://khoapham.me/blog/deploy-middleman-to-heroku" class="link-to-article">
+                        <a href="http://khoapham.me/blog/what-missing-at-emberconf-2016" class="link-to-article">
     <div class="Article-summary">
-        <h3>Deploy Middleman to Heroku</h3>
+        <h3>What Missing at Emberconf 2016</h3>
     </div>
 </a>
 
@@ -185,9 +173,13 @@ game.run
                     
                     
                     
-                        <a href="http://khoapham.me/blog/completely-setup-resque-and-resque-scheduler" class="link-to-article">
+                
+                    
+                    
+                    
+                        <a href="http://khoapham.me/blog/rickshaw-chart-hovering" class="link-to-article">
     <div class="Article-summary">
-        <h3>Completely setup Resque &#43; Resque Schedule and Resque Mailer</h3>
+        <h3>Rickshaw Chart Hovering Multiple Values</h3>
     </div>
 </a>
 
@@ -195,6 +187,82 @@ game.run
                 
                     
                     
+                    
+                
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                        <a href="http://khoapham.me/blog/es6-review-part-2" class="link-to-article">
+    <div class="Article-summary">
+        <h3>ES6 Review Part 2</h3>
+    </div>
+</a>
+
+                    
+                
+                    
+                    
+                    
+                        <a href="http://khoapham.me/blog/es6-review-part-1" class="link-to-article">
+    <div class="Article-summary">
+        <h3>ES6 Review Part 1</h3>
+    </div>
+</a>
+
+                    
+                
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                        <a href="http://khoapham.me/blog/menuOnScroll-jquery-plugin" class="link-to-article">
+    <div class="Article-summary">
+        <h3>MenuOnScroll - jQuery Plugin</h3>
+    </div>
+</a>
+
+                    
+                
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                        <a href="http://khoapham.me/blog/create-app-with-meteor" class="link-to-article">
+    <div class="Article-summary">
+        <h3>Create App With Meteor</h3>
+    </div>
+</a>
+
                     
                 
                     
