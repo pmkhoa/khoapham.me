@@ -1,12 +1,11 @@
 ---
-date: 2016-04-07T15:46:04-07:00
+date: 2016-04-02T15:46:04-02:00
 draft: false
 title: What Missing at Emberconf 2016
 tags: [EmberJS, Javascript]
 ---
 
-EmberConf 2016 was really a great conference.  There were about 950 attendees this year, and the conference was very well-organized. 
-<!--more-->
+EmberConf 2016 was really a great conference.  There were about 950 attendees this year, and the conference was very well-organized.<!--more-->
 
 I had a chance to talk with great people at the conference,
 especially core team members, Ember Simple Auth author, Brian at Dockyard, and
