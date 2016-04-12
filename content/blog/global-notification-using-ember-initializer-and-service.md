@@ -6,7 +6,7 @@ tags: [EmberJS, Javascript]
 ---
 
 When developing Ember app, you may want to have a singleton to handle
-global state such as global notification, or error handling. This doesn't fall
+global state such as global notification, or error handling.<!--more--> This doesn't fall
 into `Route`, `Controller`, or `Component`. Ember offers an easy way to manage
 this using `Service` and `Initializers`.
 
