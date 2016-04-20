@@ -70,13 +70,3 @@ opacity: 0; }
     margin-top: -10px;
     text-transform: uppercase;
 text-align: center; }
-
-.Article-summary  {
-    position: relative;
-}
-.Article-summary .blog-title {
-    margin-bottom: 5px;
-}
-.Article-summary .published-date {
-    margin-top: 0px;
-}
