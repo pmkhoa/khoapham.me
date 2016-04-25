@@ -78,6 +78,8 @@ git push origin master
 git subtree push --prefix=dist git@github.com:pmkhoa/meta-tags-generator.git gh-pages
 &lt;/code&gt;&lt;/pre&gt;
 
+&lt;p&gt;You can run deploy.sh script like this: &lt;code&gt;./deploy.sh -m &amp;quot;Update website&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
 &lt;p&gt;Happy coding &amp;amp; happy deploying!&lt;/p&gt;
 </description>
             </item>
@@ -87,7 +89,7 @@ git subtree push --prefix=dist git@github.com:pmkhoa/meta-tags-generator.git gh-
             <item>
                 <title>Meta Tags Generator</title>
                 <link>http://khoapham.me/blog/meta-tags-generator/</link>
-                <pubDate>Mon, 25 Apr 2016 13:11:54 PDT</pubDate>
+                <pubDate>Sun, 24 Apr 2016 13:11:54 PDT</pubDate>
                 <guid>http://khoapham.me/blog/meta-tags-generator/</guid>
                 <description>&lt;p&gt;&lt;a href=&#34;http://pmkhoa.github.io/meta-tags-generator/&#34;&gt;&lt;img src=&#34;http://khoapham.me/img/meta-tags-generator.png&#34; alt=&#34;Meta Tags Generator&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 

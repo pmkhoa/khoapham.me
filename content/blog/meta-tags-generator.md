@@ -1,5 +1,5 @@
 ---
-date: 2016-04-25T13:11:54-07:00
+date: 2016-04-24T13:11:54-07:00
 draft: false
 title: Meta Tags Generator
 tags: [EmberJS, Opensource, Motivation]

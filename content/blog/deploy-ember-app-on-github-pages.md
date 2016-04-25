@@ -69,5 +69,6 @@ To make it easier for deploying process, we can create an shell script to handle
     git push origin master
     git subtree push --prefix=dist git@github.com:pmkhoa/meta-tags-generator.git gh-pages
 
+You can run deploy.sh script like this: `./deploy.sh -m "Update website"`
 
 Happy coding & happy deploying!
