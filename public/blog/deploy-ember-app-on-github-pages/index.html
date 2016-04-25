@@ -88,13 +88,13 @@ git push origin gh-pages
 git co master
 
 //Make sure to change meta-tags-generator to reflect your repo
-git subtree add --prefix=public git@github.com:pmkhoa/meta-tags-generator.git gh-pages --squash
+git subtree add --prefix=dist git@github.com:pmkhoa/meta-tags-generator.git gh-pages --squash
 
 //Build ember app &amp; push to gh-pages
 ember build --prod
 git add -am &quot;Update latest /dist&quot;
 git push origin master
-git subtree push --prefix=public git@github.com:pmkhoa/meta-tags-generator.git gh-pages
+git subtree push --prefix=dist git@github.com:pmkhoa/meta-tags-generator.git gh-pages
 </code></pre>
 
 <p>To make it easier for deploying process, we can create an shell script to handle
