@@ -2,6 +2,7 @@
 date: 2016-04-25T13:11:54-07:00
 draft: false
 title: Meta Tags Generator
+tags: [EmberJS, Opensource, Motivation]
 ---
 
 [![Meta Tags Generator](/img/meta-tags-generator.png)](http://pmkhoa.github.io/meta-tags-generator/)

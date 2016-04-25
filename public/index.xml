@@ -6,8 +6,82 @@
         <language>en-us</language>
         <author>Khoa Pham</author>
         <rights>(C) 2016</rights>
-        <updated>2016-04-25 13:11:54 -0700 PDT</updated>
+        <updated>2016-04-25 15:46:17 -0700 PDT</updated>
 
+        
+            
+            <item>
+                <title>Deploy Ember App on Github Pages</title>
+                <link>http://khoapham.me/blog/deploy-ember-app-on-github-pages/</link>
+                <pubDate>Mon, 25 Apr 2016 15:46:17 PDT</pubDate>
+                <guid>http://khoapham.me/blog/deploy-ember-app-on-github-pages/</guid>
+                <description>&lt;p&gt;Github pages is ideal for hosting static websites. Especially if you&amp;rsquo;re
+developing a open source project, and want to have a simple website for it.&lt;/p&gt;
+
+&lt;p&gt;When using Ember Cli, the application is built into &lt;code&gt;/dist&lt;/code&gt; folder, this
+includes static assets such as index.html, application.js, etc&amp;hellip; Would it be
+nice if you create a gh-pages branch for just the &lt;code&gt;/dist&lt;/code&gt; folder?&lt;/p&gt;
+
+&lt;p&gt;Here are steps that I used to deploy my recent open source tool &lt;a href=&#34;http://pmkhoa.github.io/meta-tags-generator/&#34;&gt;Meta Tags
+Generator&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;//Update baseURL from config environment
+//Change meta-tags-generator to reflect your github page url
+//ENV.baseURL = &#39;/meta-tags-generator&#39;;
+
+//From master branch
+//Remove /dist from your .gitignore
+//Remove /dist folder
+git commit -am &amp;quot;Ready to deploy &amp;quot; &amp;amp;&amp;amp; git push origin master
+
+//Create orphan gh-pages branch
+git checkout --orphan gh-pages
+git rm --cached $(git ls-files)
+git add README.md
+git commit -am &amp;quot;Init gh-pages&amp;quot;
+git push origin gh-pages
+git co master
+
+//Make sure to change meta-tags-generator to reflect your repo
+git subtree add --prefix=public git@github.com:pmkhoa/meta-tags-generator.git gh-pages --squash
+
+//Build ember app &amp;amp; push to gh-pages
+ember build --prod
+git add -am &amp;quot;Update latest /dist&amp;quot;
+git push origin master
+git subtree push --prefix=public git@github.com:pmkhoa/meta-tags-generator.git gh-pages
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To make it easier for deploying process, we can create an shell script to handle
+&lt;code&gt;git commit&lt;/code&gt;, &lt;code&gt;ember build&lt;/code&gt;, and &lt;code&gt;git push&lt;/code&gt;. Create a deploy.sh file like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#!/bin/bash
+
+echo -e &amp;quot;\033[0;32mDeploying updates to Github...\033[0m&amp;quot;
+
+# Build the project.
+ember build --prod
+
+# Add changes to git.
+git add -A
+
+# Commit changes.
+msg=&amp;quot;rebuilding site `date`&amp;quot;
+if [ $# -eq 1 ]
+then msg=&amp;quot;$1&amp;quot;
+fi
+git commit -m &amp;quot;$msg&amp;quot;
+
+# Push source and build repos.
+# Make sure to change meta-tags-generator here to your repo name.
+git push origin master
+git subtree push --prefix=dist git@github.com:pmkhoa/meta-tags-generator.git gh-pages
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Happy coding &amp;amp; happy deploying!&lt;/p&gt;
+</description>
+            </item>
+            
         
             
             <item>

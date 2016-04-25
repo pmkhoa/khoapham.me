@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>
             
-                Setting up Amazon Web Services - Khoa Pham
+                Deploy Ember App on Github Pages - Khoa Pham
             
         </title>
 
@@ -58,100 +58,72 @@
 <div class="Article-wrapper">
     <div class="Article-container">
         <div class="Article-content wrap clearfix">
-            <h1 class="Article-title">Setting up Amazon Web Services</h1>
-            <time datetime="2013-05-17 23:14:51 -0800 -0800"><em>May 17, 2013</em></time>
-            
+            <h1 class="Article-title">Deploy Ember App on Github Pages</h1>
+            <time datetime="2016-04-25 15:46:17 -0700 PDT"><em>April 25, 2016</em></time>
+            <p>Github pages is ideal for hosting static websites. Especially if you&rsquo;re
+developing a open source project, and want to have a simple website for it.</p>
 
-<p>To setting up Amazon Web Services, the process of setting up an EC2 on Amazon Web Services (AWS) is not complicated, all you need to get a server up and running are Apache, PHP,  MySQL.
-Here are some initial steps that help you get started:</p>
+<p>When using Ember Cli, the application is built into <code>/dist</code> folder, this
+includes static assets such as index.html, application.js, etc&hellip; Would it be
+nice if you create a gh-pages branch for just the <code>/dist</code> folder?</p>
 
-<p>###1. SSH connect to you EC2 instance.
-To connect to your instance, you need the private key and the elastic IP address that associate with your instance. You can create an associated elastic IP address right in your Amazon Console Management.</p>
+<p>Here are steps that I used to deploy my recent open source tool <a href="http://pmkhoa.github.io/meta-tags-generator/">Meta Tags
+Generator</a>:</p>
 
-<pre><code>ssh -i [FILE NAME].pem ec2-user@[IP ADDRESS]
+<pre><code>//Update baseURL from config environment
+//Change meta-tags-generator to reflect your github page url
+//ENV.baseURL = '/meta-tags-generator';
+
+//From master branch
+//Remove /dist from your .gitignore
+//Remove /dist folder
+git commit -am &quot;Ready to deploy &quot; &amp;&amp; git push origin master
+
+//Create orphan gh-pages branch
+git checkout --orphan gh-pages
+git rm --cached $(git ls-files)
+git add README.md
+git commit -am &quot;Init gh-pages&quot;
+git push origin gh-pages
+git co master
+
+//Make sure to change meta-tags-generator to reflect your repo
+git subtree add --prefix=public git@github.com:pmkhoa/meta-tags-generator.git gh-pages --squash
+
+//Build ember app &amp; push to gh-pages
+ember build --prod
+git add -am &quot;Update latest /dist&quot;
+git push origin master
+git subtree push --prefix=public git@github.com:pmkhoa/meta-tags-generator.git gh-pages
 </code></pre>
 
-<p>###2. Once you&rsquo;re connected, install update on your instance.</p>
+<p>To make it easier for deploying process, we can create an shell script to handle
+<code>git commit</code>, <code>ember build</code>, and <code>git push</code>. Create a deploy.sh file like this:</p>
 
-<pre><code>sudo yum -y update
+<pre><code>#!/bin/bash
+
+echo -e &quot;\033[0;32mDeploying updates to Github...\033[0m&quot;
+
+# Build the project.
+ember build --prod
+
+# Add changes to git.
+git add -A
+
+# Commit changes.
+msg=&quot;rebuilding site `date`&quot;
+if [ $# -eq 1 ]
+then msg=&quot;$1&quot;
+fi
+git commit -m &quot;$msg&quot;
+
+# Push source and build repos.
+# Make sure to change meta-tags-generator here to your repo name.
+git push origin master
+git subtree push --prefix=dist git@github.com:pmkhoa/meta-tags-generator.git gh-pages
 </code></pre>
 
-<h3 id="3-install-php-amp-its-package:58edc5cf2a6b6a10cc179e0b94cd1b93">3. Install PHP &amp; its package.</h3>
-
-<pre><code>sudo yum install php php-mysql php-xml php-mcrypt php-mbstring php-cli php-devel php-pdo php-pear
-sudo pear install Log
-sudo yum install -y pcre-devel
-</code></pre>
-
-<h3 id="4-install-apache-http:58edc5cf2a6b6a10cc179e0b94cd1b93">4. Install Apache http.</h3>
-
-<pre><code>sudo yum install httpd
-</code></pre>
-
-<h3 id="5-install-mysql:58edc5cf2a6b6a10cc179e0b94cd1b93">5. Install MySQL</h3>
-
-<pre><code>sudo yum install mysql-server mysql-devel mysql
-</code></pre>
-
-<h3 id="6-install-php-apc-module:58edc5cf2a6b6a10cc179e0b94cd1b93">6. Install PHP APC module</h3>
-
-<pre><code>sudo yum install php-pecl-apc
-</code></pre>
-
-<h3 id="7-configure-mysql-and-php:58edc5cf2a6b6a10cc179e0b94cd1b93">7. Configure MySQL and PHP</h3>
-
-<p> Before you get everything running, make sure to check the PHP and MySQL configuration files.</p>
-
-<ul>
-<li><p>The PHP configuration file is php.ini, which is located under /etc/php.ini. Open the php.ini and increase memory limit to: 128M (or bigger if you wish to).</p>
-
-<pre>sudo vim /etc/php.ini
-memory_limit = 128M</pre></li>
-
-<li><p>The MySQL configuration file is my.cnf located under /etc/my.cnf. Change it to this:</p>
-
-<pre>[mysqld]
-datadir=/var/lib/mysql
-socket=/var/lib/mysql/mysql.sock
-
-# Disabling symbolic-links is recommended to prevent assorted security risks
-symbolic-links=0
-# Settings user and group are ignored when systemd is used.
-# If you need to run mysqld under a different user or group,
-# customize your systemd unit file for mysqld according to the
-# instructions in http://fedoraproject.org/wiki/Systemd
-skip-external-locking
-long_query_time=1
-slow_query_log
-slow_query_log_file=/var/log/log-slow-queries.log
-log-bin=mysql-bin
-server-id= 1
-key_buffer_size = 256M
-max_allowed_packet = 3M
-table_open_cache = 64
-read_buffer_size = 4M
-read_rnd_buffer_size = 8M
-myisam_sort_buffer_size = 16M
-thread_cache_size = 8
-query_cache_size= 32M
-thread_concurrency = 8
-[mysqld_safe]
-log-error=/var/log/mysqld.log
-pid-file=/var/run/mysqld/mysqld.pid
-myisam_recover_options</pre></li>
-</ul>
-
-<p>Now you have all packages installed, you can start your web server by starting mysql-server and httpd.</p>
-
-<pre><code>sudo service mysqld start
-sudo service httpd start
-</code></pre>
-
-<p>Auto start mysql server, and httpd.</p>
-
-<pre><code>sudo /sbin/chkconfig --levels 235 mysqld on
-sudo /sbin/chkconfig --levels 235 httpd on
-</code></pre>
+<p>Happy coding &amp; happy deploying!</p>
 
         </div>
         
@@ -167,9 +139,24 @@ sudo /sbin/chkconfig --levels 235 httpd on
                     
                     
                     
-                        <a href="http://khoapham.me/blog/deploy-ember-app-on-github-pages" class="link-to-article">
+                
+                    
+                    
+                    
+                        <a href="http://khoapham.me/blog/meta-tags-generator" class="link-to-article">
     <div class="Article-summary">
-        <h3>Deploy Ember App on Github Pages</h3>
+        <h3>Meta Tags Generator</h3>
+    </div>
+</a>
+
+                    
+                
+                    
+                    
+                    
+                        <a href="http://khoapham.me/blog/global-notification-using-ember-initializer-and-service" class="link-to-article">
+    <div class="Article-summary">
+        <h3>Global Notification Using Ember Initializer and Service</h3>
     </div>
 </a>
 
@@ -182,13 +169,12 @@ sudo /sbin/chkconfig --levels 235 httpd on
                     
                     
                     
-                
-                    
-                    
-                    
-                
-                    
-                    
+                        <a href="http://khoapham.me/blog/what-missing-at-emberconf-2016" class="link-to-article">
+    <div class="Article-summary">
+        <h3>What Missing at Emberconf 2016</h3>
+    </div>
+</a>
+
                     
                 
                     
@@ -264,42 +250,28 @@ sudo /sbin/chkconfig --levels 235 httpd on
                     
                     
                     
-                        <a href="http://khoapham.me/blog/create-app-with-meteor" class="link-to-article">
+                
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                        <a href="http://khoapham.me/blog/setting-up-amazon-web-services" class="link-to-article">
     <div class="Article-summary">
-        <h3>Create App With Meteor</h3>
+        <h3>Setting up Amazon Web Services</h3>
     </div>
 </a>
 
-                    
-                
-                    
-                    
-                    
-                
-                    
-                    
-                    
-                        <a href="http://khoapham.me/blog/middleman-localization" class="link-to-article">
-    <div class="Article-summary">
-        <h3>Middleman Localization</h3>
-    </div>
-</a>
-
-                    
-                
-                    
-                    
-                    
-                        <a href="http://khoapham.me/blog/sync-middleman-with-amazon-s3" class="link-to-article">
-    <div class="Article-summary">
-        <h3>Sync Middleman with Amazon S3</h3>
-    </div>
-</a>
-
-                    
-                
-                    
-                    
                     
                 
                     
