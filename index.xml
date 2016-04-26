@@ -15,12 +15,9 @@
                 <link>http://khoapham.me/blog/deploy-ember-app-on-github-pages/</link>
                 <pubDate>Mon, 25 Apr 2016 15:46:17 PDT</pubDate>
                 <guid>http://khoapham.me/blog/deploy-ember-app-on-github-pages/</guid>
-                <description>&lt;p&gt;Github pages is ideal for hosting static websites. Especially if you&amp;rsquo;re
-developing a open source project, and want to have a simple website for it.&lt;/p&gt;
+                <description>&lt;p&gt;Github pages is ideal for hosting static websites. Especially if you&amp;rsquo;re developing a open source project, and want to have a simple website for it.&lt;/p&gt;
 
-&lt;p&gt;When using Ember Cli, the application is built into &lt;code&gt;/dist&lt;/code&gt; folder, this
-includes static assets such as index.html, application.js, etc&amp;hellip; Would it be
-nice if you create a gh-pages branch for just the &lt;code&gt;/dist&lt;/code&gt; folder?&lt;/p&gt;
+&lt;p&gt;When using Ember Cli, the application is built into &lt;code&gt;/dist&lt;/code&gt; folder, this includes static assets such as index.html, application.js, etc&amp;hellip; Would it be nice if you create a gh-pages branch for just the &lt;code&gt;/dist&lt;/code&gt; folder?&lt;/p&gt;
 
 &lt;p&gt;Here are steps that I used to deploy my recent open source tool &lt;a href=&#34;http://pmkhoa.github.io/meta-tags-generator/&#34;&gt;Meta Tags
 Generator&lt;/a&gt;:&lt;/p&gt;
