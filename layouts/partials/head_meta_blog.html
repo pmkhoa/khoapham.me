@@ -1,19 +1,19 @@
+<title> {{ .Title }} - {{ .Site.Title }} </title>
 <meta name="keywords" content="{{ .Site.Params.Keywords}} " >
-<meta name="description" content="{{ .Site.Params.Description }} "/>
 <meta name="viewport" content="width=device-width initial-scale=1.0" />
 <link rel="canonical" href="{{ .Site.BaseURL }}" />
 <link rel="author" href="{{ .Site.Params.GooglePlus }}"/>
 
 <!--FACEBOOK-->
-<meta property="og:title" content="{{ .Site.Title }}" >
+<meta property="og:title" content="{{ .Title }}" >
 <meta property="og:site_name" content="{{ .Site.Params.SiteName }}">
 <meta property="og:url" content="{{ .Site.BaseURL }}" >
-<meta property="og:description" content="{{ .Site.Params.Description }}" >
+<meta property="og:description" content="Khoa Pham's Blog" >
 <meta property="og:type" content="website" >
 <meta property="og:locale" content="en_US" >
 <!--TWITTER-->
 <meta property="twitter:card" content="summary" >
-<meta property="twitter:title" content="{{ .Site.Params.SiteName }}" >
-<meta property="twitter:description" content="{{ .Site.Params.Description }}" >
+<meta property="twitter:title" content="{{ .Title }} - {{ .Site.Title }}" >
+<meta property="twitter:description" content="Khoa Pham's Blog" >
 <meta property="twitter:creator" content="{{ .Site.Params.TwitterHandler }}" >
 <meta property="twitter:url" content="{{ .Site.BaseURL }}" >

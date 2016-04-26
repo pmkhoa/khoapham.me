@@ -3,18 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>
-            {{ if eq .URL "/" }}
-                {{ .Site.Title }}
-            {{ else if eq .URL "/blog/" }}
-                Blog - {{ .Site.Title }}
-            {{ else }}
-                {{ .Title }} - {{ .Site.Title }}
-            {{ end }}
-        </title>
-
-        {{ partial "head_meta.html" . }}
-
+        {{ if eq .URL "/" }}
+            {{ partial "head_meta_index.html" . }}
+        {{ else if eq .URL "/blog/" }}
+            {{ partial "head_meta_blog.html" . }}
+        {{ else }}
+            {{ partial "head_meta_blog_single.html" . }}
+        {{ end }}
 
         <!-- Icons -->
         <link rel="shortcut icon" href="{{ .Site.BaseURL }}/img/favicon.ico">

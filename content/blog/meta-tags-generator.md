@@ -8,6 +8,7 @@ tags: [EmberJS, Opensource, Motivation]
 [![Meta Tags Generator](/img/meta-tags-generator.png)](http://pmkhoa.github.io/meta-tags-generator/)
 
 Meta tags are important because they help search engine to crawl your website properly, and make your website display correctly when sharing on social networks such as Facebook, Twitter, and Google Plus. This is why I created a simple tool to generate these standard meta tags & social tags.
+<!--more-->
 
 Here is the link to that tool:
 [http://pmkhoa.github.io/meta-tags-generator/](http://pmkhoa.github.io/meta-tags-generator/).

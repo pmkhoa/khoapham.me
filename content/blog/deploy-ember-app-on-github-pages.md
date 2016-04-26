@@ -5,12 +5,10 @@ title: Deploy Ember App on Github Pages
 tags: [EmberJS, Devops]
 ---
 
-Github pages is ideal for hosting static websites. Especially if you're
-developing a open source project, and want to have a simple website for it.
+Github pages is ideal for hosting static websites. Especially if you're developing a open source project, and want to have a simple website for it.
+<!--more-->
 
-When using Ember Cli, the application is built into `/dist` folder, this
-includes static assets such as index.html, application.js, etc... Would it be
-nice if you create a gh-pages branch for just the `/dist` folder? 
+When using Ember Cli, the application is built into `/dist` folder, this includes static assets such as index.html, application.js, etc... Would it be nice if you create a gh-pages branch for just the `/dist` folder?  
 
 Here are steps that I used to deploy my recent open source tool [Meta Tags
 Generator](http://pmkhoa.github.io/meta-tags-generator/):
