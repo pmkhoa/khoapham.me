@@ -15,9 +15,9 @@
                 <link>http://localhost:1313/blog/webpack-starter/</link>
                 <pubDate>Tue, 03 May 2016 22:31:31 PDT</pubDate>
                 <guid>http://localhost:1313/blog/webpack-starter/</guid>
-                <description>&lt;p&gt;Back in early 2015, when I started &lt;a href=&#34;http://localhost:1313/blog/es6-review-part-1&#34;&gt;writing Javascript in ES6&lt;/a&gt;; it was not easy to get everything running smoothly at that time. Today some developers still not sure where to get started using ES6 even though it&amp;rsquo;s widely adopted by Javascript community. I spent an evening writing a simple &lt;a href=&#34;https://github.com/pmkhoa/webpack-start&#34;&gt;Webpack Boilerplate&lt;/a&gt; to help new developers to use it for their new project easily.&lt;/p&gt;
+                <description>&lt;p&gt;Back in early 2015, when I started &lt;a href=&#34;http://localhost:1313/blog/es6-review-part-1&#34;&gt;writing Javascript in ES6&lt;/a&gt;; it was not easy to get everything running smoothly at that time. Today some developers are still not sure where to get started using ES6 even though it&amp;rsquo;s widely adopted by Javascript community. I spent an evening writing a simple &lt;a href=&#34;https://github.com/pmkhoa/webpack-start&#34;&gt;Webpack Boilerplate&lt;/a&gt; to help new developers to use it for their new projects.&lt;/p&gt;
 
-&lt;p&gt;What does this &lt;a href=&#34;https://github.com/pmkhoa/webpack-start&#34;&gt;minimalist boilerplate&lt;/a&gt; includes?&lt;/p&gt;
+&lt;p&gt;What does this &lt;a href=&#34;https://github.com/pmkhoa/webpack-start&#34;&gt;minimalist boilerplate&lt;/a&gt; include?&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Webpack core&lt;/li&gt;
