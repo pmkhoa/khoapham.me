@@ -6,8 +6,155 @@
         <language>en-us</language>
         <author>Khoa Pham</author>
         <rights>(C) 2016</rights>
-        <updated>2016-05-03 22:31:31 -0700 PDT</updated>
+        <updated>2016-06-27 12:09:16 -0700 PDT</updated>
 
+        
+            
+            <item>
+                <title>Full Stack Development with Ember and Go</title>
+                <link>http://khoapham.me/blog/full-stack-development-with-Ember-and-Go/</link>
+                <pubDate>Mon, 27 Jun 2016 12:09:16 PDT</pubDate>
+                <guid>http://khoapham.me/blog/full-stack-development-with-Ember-and-Go/</guid>
+                <description>
+
+&lt;p&gt;One of my personal 2016 resolution was learning Go, and get familiar with
+writing restful API using Go. After couple of months learning Go, I started a
+simple application that use Go, and Ember to develop a Todo app. Yes, you read
+it right, I&amp;rsquo;m also creating another Todo app. Yet this one is different from the
+other you have seen because it&amp;rsquo;s built with Go for backend api, and Ember for
+frontend.&lt;/p&gt;
+
+&lt;p&gt;The source code can be found here:
+&lt;a href=&#34;https://github.com/pmkhoa/restful-api-go-and-ember&#34;&gt;https://github.com/pmkhoa/restful-api-go-and-ember&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;backend-overview:46178a3a8a35be0a3dd526f3621aac57&#34;&gt;Backend overview&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;model&lt;/em&gt;: Todo model includes &lt;code&gt;Id&lt;/code&gt;, &lt;code&gt;Name&lt;/code&gt;, &lt;code&gt;Completed&lt;/code&gt;, &lt;code&gt;Due&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;package main
+import &amp;quot;time&amp;quot;
+type Todo struct {
+    Id          string `json:&amp;quot;id&amp;quot;`
+    Name        string `json:&amp;quot;name&amp;quot;`
+    Completed   bool `json:&amp;quot;completed&amp;quot;`
+    Due         time.Time `json:&amp;quot;due&amp;quot;`
+}
+type Todos []Todo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We create type Todo, and Todos to hold our Todo object, and Todo list&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;server&lt;/em&gt;: bootstrap http server, response to request made from the client.&lt;/p&gt;
+
+&lt;p&gt;For our server code, we use &lt;code&gt;httprouter&lt;/code&gt; to for our api handler, and enable CORS
+so that our frontend app can talk to the server when they&amp;rsquo;re on different
+domains.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;package main
+import (
+    ... // import our dependencies here
+)
+func main() {
+    router := httprouter.New()
+    router.GET(&amp;quot;/todos&amp;quot;, TodosIndex)
+    router.GET(&amp;quot;/todos/:todoId&amp;quot;, ShowTodo)
+    // More routes are defined similarly
+
+
+    // Enable the CORS
+    c := cors.New(cors.Options{
+        AllowedOrigins: []string{&amp;quot;*&amp;quot;},
+        AllowedMethods: []string{&amp;quot;GET&amp;quot;, &amp;quot;POST&amp;quot;, &amp;quot;DELETE&amp;quot;, &amp;quot;PUT&amp;quot;, &amp;quot;PATCH&amp;quot;, &amp;quot;OPTIONS&amp;quot;}
+    })
+}
+
+
+func TodosIndex(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
+    w.Header().Set(&amp;quot;Content-Type&amp;quot;, &amp;quot;application/json; charset=UTF-8&amp;quot;)
+    w.WriteHeader(http.StatusOK)
+    err := json.NewEncoder(w).Encode(todos)
+    if err != nil {
+        panic(err)
+    }
+}
+
+
+func ShowTodo(w http.ResponseWriter, r *http.Request, params httprouter.Params) {
+    todoId := params.ByName(&amp;quot;todoId&amp;quot;)
+    todo := RepoFindTodo(todoId)
+    w.Header().Set(&amp;quot;Content-Type&amp;quot;, &amp;quot;application/json; charset=UTF-8&amp;quot;)
+    w.WriteHeader(http.StatusOK)
+    err := json.NewEncoder(w).Encode(todo)
+    if err != nil {
+        panic(err)
+    }
+}
+// more handlers can be defined with other httprouter 
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Data fixture&lt;/em&gt;: findTodo, updateTodo, deleteTodo, createTodo.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m using a simple data fixture to handle model operations. There will be
+another blog post that integrate this application with Postgres for data
+persistent.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// repo.go
+package main
+import (
+    &amp;quot;fmt&amp;quot;
+    &amp;quot;strconv&amp;quot;
+)
+var currentId int // keep track of our current todo
+var todos Todos
+func init() {
+    // When initialize the app, we will create two sample todos
+    RepoCreateTodo(Todo{Name: &amp;quot;Test Todo 1&amp;quot;, Completed: false})
+    RepoCreateTodo(Todo{Name: &amp;quot;Test Todo 2&amp;quot;, Complete: false})
+}
+func RepoCreateTodo(t Todo) Todo {
+    currentId += 1
+    t.Id = strconv.Itoa(currentId)
+    todos = append(todos, t)
+    return t
+}
+func RepoFindTodo(id string) Todo {
+    for _, todo := range todos {
+        if todo.Id == id {
+            return todo
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;frontend-overview:46178a3a8a35be0a3dd526f3621aac57&#34;&gt;Frontend overview&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;webapp&lt;/em&gt;: Simple Ember app that lists all todos, and all user to create todo.
+If you&amp;rsquo;re interested in learning Ember for building frontend. Feel free to
+check out the github repo for this.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;future-development:46178a3a8a35be0a3dd526f3621aac57&#34;&gt;Future development&lt;/h3&gt;
+
+&lt;p&gt;Eventhough this was a very simple app, I have learnt a lot from building it from
+the ground up. Using Go for backend API is quite astonishing and simple, I think
+it&amp;rsquo;s a great choice for anyone who is looking for a fast, simple way to build
+API. There are a lot of things the can improve from this app.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Write README&lt;/li&gt;
+&lt;li&gt;Better handling errors for both backend &amp;amp; frontend&lt;/li&gt;
+&lt;li&gt;Write integration test &amp;amp; unit tests&lt;/li&gt;
+&lt;li&gt;Use Postgres for data persistent.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you&amp;rsquo;re interested in all the source code, feel free to check it out here:
+&lt;a href=&#34;https://github.com/pmkhoa/restful-api-go-and-ember&#34;&gt;https://github.com/pmkhoa/restful-api-go-and-ember&lt;/a&gt;&lt;/p&gt;
+</description>
+            </item>
+            
         
             
             <item>
