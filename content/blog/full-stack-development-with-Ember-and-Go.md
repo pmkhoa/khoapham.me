@@ -7,8 +7,9 @@ tags: [Tutorial, EmberJS, Go]
 
 One of my personal 2016 resolution was learning Go, and get familiar with
 writing restful API using Go. After couple of months learning Go, I started a
-simple application that use Go, and Ember to develop a Todo app. Yes, you read
-it right, I'm also creating another Todo app. Yet this one is different from the
+simple application that use Go, and Ember to develop a Todo app.
+<!--more-->
+Yes, you read it right, I'm also creating another Todo app. Yet this one is different from the
 other you have seen because it's built with Go for backend api, and Ember for
 frontend.
 
