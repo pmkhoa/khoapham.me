@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Khoa Pham </title>
-        <link>http://localhost:1313/</link>
+        <link>http://khoapham.me/index.xml</link>
         <language>en-us</language>
         <author>Khoa Pham</author>
         <rights>(C) 2016</rights>
@@ -12,23 +12,21 @@
             
             <item>
                 <title>Full Stack Development with Ember and Go</title>
-                <link>http://localhost:1313/blog/full-stack-development-with-Ember-and-Go/</link>
+                <link>http://khoapham.me/blog/full-stack-development-with-Ember-and-Go/</link>
                 <pubDate>Mon, 27 Jun 2016 12:09:16 PDT</pubDate>
-                <guid>http://localhost:1313/blog/full-stack-development-with-Ember-and-Go/</guid>
-                <description>
-
-&lt;p&gt;One of my personal 2016 resolution was learning Go, and get familiar with
+                <guid>http://khoapham.me/blog/full-stack-development-with-Ember-and-Go/</guid>
+                <description>&lt;p&gt;One of my personal 2016 resolution was learning Go, and get familiar with
 writing restful API using Go. After couple of months learning Go, I started a
-simple application that use Go, and Ember to develop a Todo app.&lt;/p&gt;
+simple application that use Go, and Ember to develop a Todo app.
 
-&lt;p&gt;Yes, you read it right, I&amp;rsquo;m also creating another Todo app. Yet this one is different from the
+Yes, you read it right, I&amp;rsquo;m also creating another Todo app. Yet this one is different from the
 other you have seen because it&amp;rsquo;s built with Go for backend api, and Ember for
 frontend.&lt;/p&gt;
 
 &lt;p&gt;The source code can be found here:
 &lt;a href=&#34;https://github.com/pmkhoa/restful-api-go-and-ember&#34;&gt;https://github.com/pmkhoa/restful-api-go-and-ember&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;backend-overview:46178a3a8a35be0a3dd526f3621aac57&#34;&gt;Backend overview&lt;/h3&gt;
+&lt;h3 id=&#34;backend-overview&#34;&gt;Backend overview&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;em&gt;model&lt;/em&gt;: Todo model includes &lt;code&gt;Id&lt;/code&gt;, &lt;code&gt;Name&lt;/code&gt;, &lt;code&gt;Completed&lt;/code&gt;, &lt;code&gt;Due&lt;/code&gt;&lt;/p&gt;
@@ -62,14 +60,12 @@ func main() {
     router.GET(&amp;quot;/todos/:todoId&amp;quot;, ShowTodo)
     // More routes are defined similarly
 
-
     // Enable the CORS
     c := cors.New(cors.Options{
         AllowedOrigins: []string{&amp;quot;*&amp;quot;},
         AllowedMethods: []string{&amp;quot;GET&amp;quot;, &amp;quot;POST&amp;quot;, &amp;quot;DELETE&amp;quot;, &amp;quot;PUT&amp;quot;, &amp;quot;PATCH&amp;quot;, &amp;quot;OPTIONS&amp;quot;}
     })
 }
-
 
 func TodosIndex(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
     w.Header().Set(&amp;quot;Content-Type&amp;quot;, &amp;quot;application/json; charset=UTF-8&amp;quot;)
@@ -79,7 +75,6 @@ func TodosIndex(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
         panic(err)
     }
 }
-
 
 func ShowTodo(w http.ResponseWriter, r *http.Request, params httprouter.Params) {
     todoId := params.ByName(&amp;quot;todoId&amp;quot;)
@@ -129,7 +124,7 @@ func RepoFindTodo(id string) Todo {
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;frontend-overview:46178a3a8a35be0a3dd526f3621aac57&#34;&gt;Frontend overview&lt;/h3&gt;
+&lt;h3 id=&#34;frontend-overview&#34;&gt;Frontend overview&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;webapp&lt;/em&gt;: Simple Ember app that lists all todos, and all user to create todo.
@@ -137,7 +132,7 @@ If you&amp;rsquo;re interested in learning Ember for building frontend. Feel fre
 check out the github repo for this.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;future-development:46178a3a8a35be0a3dd526f3621aac57&#34;&gt;Future development&lt;/h3&gt;
+&lt;h3 id=&#34;future-development&#34;&gt;Future development&lt;/h3&gt;
 
 &lt;p&gt;Eventhough this was a very simple app, I have learnt a lot from building it from
 the ground up. Using Go for backend API is quite astonishing and simple, I think
@@ -152,18 +147,17 @@ API. There are a lot of things the can improve from this app.&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;If you&amp;rsquo;re interested in all the source code, feel free to check it out here:
-&lt;a href=&#34;https://github.com/pmkhoa/restful-api-go-and-ember&#34;&gt;https://github.com/pmkhoa/restful-api-go-and-ember&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;a href=&#34;https://github.com/pmkhoa/restful-api-go-and-ember&#34;&gt;https://github.com/pmkhoa/restful-api-go-and-ember&lt;/a&gt;&lt;/p&gt;</description>
             </item>
             
         
             
             <item>
                 <title>Webpack Starter - Use ES6 Today</title>
-                <link>http://localhost:1313/blog/webpack-starter/</link>
+                <link>http://khoapham.me/blog/webpack-starter/</link>
                 <pubDate>Tue, 03 May 2016 22:31:31 PDT</pubDate>
-                <guid>http://localhost:1313/blog/webpack-starter/</guid>
-                <description>&lt;p&gt;Back in early 2015, when I started &lt;a href=&#34;http://localhost:1313/blog/es6-review-part-1&#34;&gt;writing Javascript in ES6&lt;/a&gt;; it was not easy to get everything running smoothly at that time. Today some developers are still not sure where to get started using ES6 even though it&amp;rsquo;s widely adopted by Javascript community. I spent an evening writing a simple &lt;a href=&#34;https://github.com/pmkhoa/webpack-start&#34;&gt;Webpack Boilerplate&lt;/a&gt; to help new developers to use it for their new projects.&lt;/p&gt;
+                <guid>http://khoapham.me/blog/webpack-starter/</guid>
+                <description>&lt;p&gt;Back in early 2015, when I started &lt;a href=&#34;http://khoapham.me/blog/es6-review-part-1&#34;&gt;writing Javascript in ES6&lt;/a&gt;; it was not easy to get everything running smoothly at that time. Today some developers are still not sure where to get started using ES6 even though it&amp;rsquo;s widely adopted by Javascript community. I spent an evening writing a simple &lt;a href=&#34;https://github.com/pmkhoa/webpack-start&#34;&gt;Webpack Boilerplate&lt;/a&gt; to help new developers to use it for their new projects.&lt;/p&gt;
 
 &lt;p&gt;What does this &lt;a href=&#34;https://github.com/pmkhoa/webpack-start&#34;&gt;minimalist boilerplate&lt;/a&gt; include?&lt;/p&gt;
 
@@ -189,10 +183,11 @@ projects.&lt;/p&gt;
             
             <item>
                 <title>Deploy Ember App on Github Pages</title>
-                <link>http://localhost:1313/blog/deploy-ember-app-on-github-pages/</link>
+                <link>http://khoapham.me/blog/deploy-ember-app-on-github-pages/</link>
                 <pubDate>Mon, 25 Apr 2016 15:46:17 PDT</pubDate>
-                <guid>http://localhost:1313/blog/deploy-ember-app-on-github-pages/</guid>
-                <description>&lt;p&gt;Github pages is ideal for hosting static websites. Especially if you&amp;rsquo;re developing a open source project, and want to have a simple website for it.&lt;/p&gt;
+                <guid>http://khoapham.me/blog/deploy-ember-app-on-github-pages/</guid>
+                <description>&lt;p&gt;Github pages is ideal for hosting static websites. Especially if you&amp;rsquo;re developing a open source project, and want to have a simple website for it.
+&lt;/p&gt;
 
 &lt;p&gt;When using Ember Cli, the application is built into &lt;code&gt;/dist&lt;/code&gt; folder, this includes static assets such as index.html, application.js, etc&amp;hellip; Would it be nice if you create a gh-pages branch for just the &lt;code&gt;/dist&lt;/code&gt; folder?&lt;/p&gt;
 
@@ -254,20 +249,20 @@ git subtree push --prefix=dist git@github.com:pmkhoa/meta-tags-generator.git gh-
 
 &lt;p&gt;You can run deploy.sh script like this: &lt;code&gt;./deploy.sh -m &amp;quot;Update website&amp;quot;&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;Happy coding &amp;amp; happy deploying!&lt;/p&gt;
-</description>
+&lt;p&gt;Happy coding &amp;amp; happy deploying!&lt;/p&gt;</description>
             </item>
             
         
             
             <item>
                 <title>Meta Tags Generator</title>
-                <link>http://localhost:1313/blog/meta-tags-generator/</link>
+                <link>http://khoapham.me/blog/meta-tags-generator/</link>
                 <pubDate>Sun, 24 Apr 2016 13:11:54 PDT</pubDate>
-                <guid>http://localhost:1313/blog/meta-tags-generator/</guid>
-                <description>&lt;p&gt;&lt;a href=&#34;http://pmkhoa.github.io/meta-tags-generator/&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/meta-tags-generator.png&#34; alt=&#34;Meta Tags Generator&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+                <guid>http://khoapham.me/blog/meta-tags-generator/</guid>
+                <description>&lt;p&gt;&lt;a href=&#34;http://pmkhoa.github.io/meta-tags-generator/&#34;&gt;&lt;img src=&#34;http://khoapham.me/img/meta-tags-generator.png&#34; alt=&#34;Meta Tags Generator&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Meta tags are important because they help search engine to crawl your website properly, and make your website display correctly when sharing on social networks such as Facebook, Twitter, and Google Plus. This is why I created a simple tool to generate these standard meta tags &amp;amp; social tags.&lt;/p&gt;
+&lt;p&gt;Meta tags are important because they help search engine to crawl your website properly, and make your website display correctly when sharing on social networks such as Facebook, Twitter, and Google Plus. This is why I created a simple tool to generate these standard meta tags &amp;amp; social tags.
+&lt;/p&gt;
 
 &lt;p&gt;Here is the link to that tool:
 &lt;a href=&#34;http://pmkhoa.github.io/meta-tags-generator/&#34;&gt;http://pmkhoa.github.io/meta-tags-generator/&lt;/a&gt;.&lt;/p&gt;
@@ -276,25 +271,22 @@ git subtree push --prefix=dist git@github.com:pmkhoa/meta-tags-generator.git gh-
 to fork it from here:
 &lt;a href=&#34;https://github.com/pmkhoa/meta-tags-generator&#34;&gt;https://github.com/pmkhoa/meta-tags-generator&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Happy developing &amp;amp; happy sharing!&lt;/p&gt;
-</description>
+&lt;p&gt;Happy developing &amp;amp; happy sharing!&lt;/p&gt;</description>
             </item>
             
         
             
             <item>
                 <title>Global Notification Using Ember Initializer and Service</title>
-                <link>http://localhost:1313/blog/global-notification-using-ember-initializer-and-service/</link>
+                <link>http://khoapham.me/blog/global-notification-using-ember-initializer-and-service/</link>
                 <pubDate>Tue, 12 Apr 2016 11:18:20 PDT</pubDate>
-                <guid>http://localhost:1313/blog/global-notification-using-ember-initializer-and-service/</guid>
-                <description>
-
-&lt;p&gt;When developing Ember app, you may want to have a singleton to handle
+                <guid>http://khoapham.me/blog/global-notification-using-ember-initializer-and-service/</guid>
+                <description>&lt;p&gt;When developing Ember app, you may want to have a singleton to handle
 global state such as global notification, or error handling. This doesn&amp;rsquo;t fall
 into &lt;code&gt;Route&lt;/code&gt;, &lt;code&gt;Controller&lt;/code&gt;, or &lt;code&gt;Component&lt;/code&gt;. Ember offers an easy way to manage
 this using &lt;code&gt;Service&lt;/code&gt; and &lt;code&gt;Initializers&lt;/code&gt;.&lt;/p&gt;
 
-&lt;h4 id=&#34;create-a-service-to-hold-notification-data:dc08fe7a7cb85374fa6d93118b027293&#34;&gt;Create a service to hold notification data&lt;/h4&gt;
+&lt;h4 id=&#34;create-a-service-to-hold-notification-data&#34;&gt;Create a service to hold notification data&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code&gt;//app/services/global-notification.js
 import Ember from &#39;ember&#39;;
@@ -307,7 +299,7 @@ export default Ember.Service.extend({
 });
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id=&#34;create-an-initializer-to-inject-global-notification-service-in-application:dc08fe7a7cb85374fa6d93118b027293&#34;&gt;Create an initializer to inject global notification service in application&lt;/h4&gt;
+&lt;h4 id=&#34;create-an-initializer-to-inject-global-notification-service-in-application&#34;&gt;Create an initializer to inject global notification service in application&lt;/h4&gt;
 
 &lt;p&gt;This allows us to use GlobalNotification service in route, and component.&lt;/p&gt;
 
@@ -326,7 +318,7 @@ export default {
 };
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id=&#34;using-our-global-notification-service:dc08fe7a7cb85374fa6d93118b027293&#34;&gt;Using our global notification service.&lt;/h4&gt;
+&lt;h4 id=&#34;using-our-global-notification-service&#34;&gt;Using our global notification service.&lt;/h4&gt;
 
 &lt;p&gt;Assuming you have a user settings form, and want to display notification when
 user changes settings.&lt;/p&gt;
@@ -365,19 +357,19 @@ where we want to display the notification.&lt;/p&gt;
 
 &lt;p&gt;That is it. Now you can call &lt;code&gt;global-notification&lt;/code&gt; service anywhere in your
 application, and use its injection via &lt;code&gt;initializers&lt;/code&gt; to display the data in
-your template.&lt;/p&gt;
-</description>
+your template.&lt;/p&gt;</description>
             </item>
             
         
             
             <item>
                 <title>Great Attitude Makes Great Developers</title>
-                <link>http://localhost:1313/blog/great-developer-comes-from-great-attitude/</link>
+                <link>http://khoapham.me/blog/great-developer-comes-from-great-attitude/</link>
                 <pubDate>Sat, 09 Apr 2016 22:20:42 PDT</pubDate>
-                <guid>http://localhost:1313/blog/great-developer-comes-from-great-attitude/</guid>
+                <guid>http://khoapham.me/blog/great-developer-comes-from-great-attitude/</guid>
                 <description>&lt;p&gt;I was struck with a simple story about working with great attitude would have a
-great impact on the outcome of the work.&lt;/p&gt;
+great impact on the outcome of the work.
+&lt;/p&gt;
 
 &lt;p&gt;Here is that little story:&lt;/p&gt;
 
@@ -400,17 +392,16 @@ or big. Simply because I wanted to make great things for people to use.&lt;/p&gt
 for doing their works. However, to get the work done properly, and perfectly, the third worker would be the one. That is why I think great attitude will have a great impact on the work. I also strongly believe this also applies for all everyone in general, and developer in particularly.&lt;/p&gt;
 
 &lt;p&gt;To all developers, when working on any projects, please give it a little more
-love. It will make your users happy too.&lt;/p&gt;
-</description>
+love. It will make your users happy too.&lt;/p&gt;</description>
             </item>
             
         
             
             <item>
                 <title>What Missing at Emberconf 2016</title>
-                <link>http://localhost:1313/blog/what-missing-at-emberconf-2016/</link>
+                <link>http://khoapham.me/blog/what-missing-at-emberconf-2016/</link>
                 <pubDate>Sat, 02 Apr 2016 15:46:04 -0200</pubDate>
-                <guid>http://localhost:1313/blog/what-missing-at-emberconf-2016/</guid>
+                <guid>http://khoapham.me/blog/what-missing-at-emberconf-2016/</guid>
                 <description>&lt;p&gt;EmberConf 2016 was really a great conference.  There were about 950 attendees this year, and the conference was very well-organized.&lt;/p&gt;
 
 &lt;p&gt;I had a chance to talk with great people at the conference,
@@ -442,24 +433,22 @@ there was no talk similar to about.&lt;/li&gt;
 &lt;p&gt;I wasn&amp;rsquo;t sure why these topics were not in the conference this year, but I do
 they will be in next year. In the meantime, I will probably just enjoy &lt;strong&gt;&lt;a href=&#34;https://github.com/tildeio/glimmer&#34;&gt;Glimmer 2&lt;/a&gt;&lt;/strong&gt;
 and &lt;strong&gt;&lt;a href=&#34;http://www.ember-fastboot.com/&#34;&gt;Fastboot&lt;/a&gt;&lt;/strong&gt;. Thanks to the Ember team for such hard works everyone putting
-into this to make the conference successful.&lt;/p&gt;
-</description>
+into this to make the conference successful.&lt;/p&gt;</description>
             </item>
             
         
             
             <item>
                 <title>2015 Retrospective</title>
-                <link>http://localhost:1313/blog/2015-retrospective/</link>
+                <link>http://khoapham.me/blog/2015-retrospective/</link>
                 <pubDate>Tue, 29 Dec 2015 15:02:48 PST</pubDate>
-                <guid>http://localhost:1313/blog/2015-retrospective/</guid>
-                <description>
+                <guid>http://khoapham.me/blog/2015-retrospective/</guid>
+                <description>&lt;p&gt;It was a great year of works, and an exciting year of life.
+&lt;/p&gt;
 
-&lt;p&gt;It was a great year of works, and an exciting year of life.&lt;/p&gt;
+&lt;h3 id=&#34;works&#34;&gt;&lt;strong&gt;Works&lt;/strong&gt;&lt;/h3&gt;
 
-&lt;h3 id=&#34;works:85616b7914db88bee4e096c0dbc57971&#34;&gt;&lt;strong&gt;Works&lt;/strong&gt;&lt;/h3&gt;
-
-&lt;h4 id=&#34;1-leaving-the-agency-world:85616b7914db88bee4e096c0dbc57971&#34;&gt;1. Leaving the agency world&lt;/h4&gt;
+&lt;h4 id=&#34;1-leaving-the-agency-world&#34;&gt;1. Leaving the agency world&lt;/h4&gt;
 
 &lt;p&gt;In the past few years, I worked for great creative agencies such as &lt;a href=&#34;http://sincerelytruman.com&#34;&gt;Sincerely Truman&lt;/a&gt;, and &lt;a href=&#34;http://theprogrampdx.com&#34;&gt;The Program&lt;/a&gt;
 in Portland, Oregon, it was tough to leave the agency working
@@ -476,7 +465,7 @@ Twitter App.&lt;/li&gt;
 
 &lt;p&gt;However, I always wanted to deepen my knowledge for the one that I most loved and cared about. That was when I made my best decision to join the &lt;a href=&#34;http://www.seastar.io/team/&#34;&gt;Seastar team&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h4 id=&#34;2-entering-the-start-up-world:85616b7914db88bee4e096c0dbc57971&#34;&gt;2. Entering the start-up world&lt;/h4&gt;
+&lt;h4 id=&#34;2-entering-the-start-up-world&#34;&gt;2. Entering the start-up world&lt;/h4&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://startupljackson.com/post/135800367395/how-to-get-rich-in-tech-guaranteed?&#34;&gt;Start-up is
 tough&lt;/a&gt;. I basically have to live and breath with it.&lt;/p&gt;
@@ -485,7 +474,7 @@ tough&lt;/a&gt;. I basically have to live and breath with it.&lt;/p&gt;
 
 &lt;p&gt;My role is in charged for the front-end of Seastar product, focusing on developing UX and design. I am very lucky to be a part of the Seastar team.&lt;/p&gt;
 
-&lt;h4 id=&#34;3-accomplishments:85616b7914db88bee4e096c0dbc57971&#34;&gt;3. Accomplishments&lt;/h4&gt;
+&lt;h4 id=&#34;3-accomplishments&#34;&gt;3. Accomplishments&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Launched: &lt;a href=&#34;http://programs.omsi.edu/professionals/traveling-exhibits/zoo-you-human-microbiome&#34;&gt;OMSI Zoo in
@@ -501,7 +490,7 @@ You&lt;/a&gt;, &lt;a href=&#34;http://classfare.com&#34;&gt;Classfare&lt;/a&gt;,
 &lt;li&gt;Implemented animation with canvas and Tweenmax.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;life:85616b7914db88bee4e096c0dbc57971&#34;&gt;&lt;strong&gt;Life&lt;/strong&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;life&#34;&gt;&lt;strong&gt;Life&lt;/strong&gt;&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;I&amp;rsquo;m grateful that my works allow me to work remotely any days in the week, this
@@ -514,22 +503,22 @@ asked more questions. Sometimes it was hard to answer all of her questions.&lt;/
 &lt;li&gt;Ride bicycle to work everyday.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;It was a joyful year of 2015, and I look forward to the 2016. Happy New Year!!!&lt;/p&gt;
-</description>
+&lt;p&gt;It was a joyful year of 2015, and I look forward to the 2016. Happy New Year!!!&lt;/p&gt;</description>
             </item>
             
         
             
             <item>
                 <title>Rickshaw Chart Hovering Multiple Values</title>
-                <link>http://localhost:1313/blog/rickshaw-chart-hovering/</link>
+                <link>http://khoapham.me/blog/rickshaw-chart-hovering/</link>
                 <pubDate>Wed, 23 Dec 2015 12:00:31 PST</pubDate>
-                <guid>http://localhost:1313/blog/rickshaw-chart-hovering/</guid>
+                <guid>http://khoapham.me/blog/rickshaw-chart-hovering/</guid>
                 <description>&lt;p&gt;&lt;a href=&#34;http://d3js.org/&#34;&gt;D3&lt;/a&gt; is a great javascript library for creating data visualization chart. I have
 been a big fan of it for over a year now. However, whenever I need to develop a
 quick chart prototype, I use an alternative library called
 &lt;a href=&#34;http://code.shutterstock.com/rickshaw/examples/&#34;&gt;Rickshaw&lt;/a&gt;. It&amp;rsquo;s an
-extension from D3, so you can get greatness from both of them.&lt;/p&gt;
+extension from D3, so you can get greatness from both of them.
+&lt;/p&gt;
 
 &lt;p&gt;One thing that was challenging me recently that I needed to create a chart
 when user hovered on it, it would reveal all y-values at the cursor position.&lt;/p&gt;
@@ -539,7 +528,7 @@ when user hovered on it, it would reveal all y-values at the cursor position.&lt
     &lt;div id=&#34;legend&#34;&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;&lt;style&gt;
+&lt;style&gt;
 #chart_container {
     background: rgba(0, 0, 0, 0.05);
     max-width: 100%;
@@ -596,11 +585,11 @@ when user hovered on it, it would reveal all y-values at the cursor position.&lt
     font-weight: 600;
     text-transform: capitalize;
 }
-&lt;/style&gt;&lt;/p&gt;
+&lt;/style&gt;
 
-&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;http://localhost:1313/blog-vendor/rickshaw.min.css&#34;&gt;
-&lt;script src=&#34;http://localhost:1313/blog-vendor/d3.min.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;http://localhost:1313/blog-vendor/rickshaw.min.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;http://khoapham.me/blog-vendor/rickshaw.min.css&#34;&gt;
+&lt;script src=&#34;http://khoapham.me/blog-vendor/d3.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;http://khoapham.me/blog-vendor/rickshaw.min.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;script type=&#34;text/javascript&#34;&gt;
 
@@ -793,19 +782,18 @@ var Hover = Rickshaw.Class.create(Rickshaw.Graph.HoverDetail, {
 });
 
 var hover = new Hover( { graph: graph } ); 
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+&lt;/code&gt;&lt;/pre&gt;</description>
             </item>
             
         
             
             <item>
                 <title>My First Hugo Theme</title>
-                <link>http://localhost:1313/blog/first-hugo-theme/</link>
+                <link>http://khoapham.me/blog/first-hugo-theme/</link>
                 <pubDate>Thu, 03 Dec 2015 23:13:30 PST</pubDate>
-                <guid>http://localhost:1313/blog/first-hugo-theme/</guid>
+                <guid>http://khoapham.me/blog/first-hugo-theme/</guid>
                 <description>&lt;p&gt;When I started to get back to blogging, I felt my website
-took a little long to compile. As a revolution of redesigning my blog, I want to switch my blog platform to something faster.
+took a little long to compile. As a revolution of redesigning my blog, I want to switch my blog platform to something faster. 
 My blog was previously developed using &lt;a href=&#34;http://middlemanapp.com&#34;&gt;Middleman&lt;/a&gt;, and now it&amp;rsquo;s powered by &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;, a faster static site
 generator. I&amp;rsquo;m really pleased with the transition so far.&lt;/p&gt;
 
@@ -825,20 +813,20 @@ With Hugo, the website is hosted on Github (free), and I wrote a &lt;a href=&#34
 content is ready for production. I think the whole process is just better now.&lt;/p&gt;
 
 &lt;p&gt;If you plan to write lot of blog posts, and want to use static site generator
-for it, I highly recommend &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;.&lt;/p&gt;
-</description>
+for it, I highly recommend &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;.&lt;/p&gt;</description>
             </item>
             
         
             
             <item>
                 <title>Minimalist in Design and Development</title>
-                <link>http://localhost:1313/blog/minimalist-in-design-and-development/</link>
+                <link>http://khoapham.me/blog/minimalist-in-design-and-development/</link>
                 <pubDate>Sat, 21 Nov 2015 00:00:00 UTC</pubDate>
-                <guid>http://localhost:1313/blog/minimalist-in-design-and-development/</guid>
+                <guid>http://khoapham.me/blog/minimalist-in-design-and-development/</guid>
                 <description>&lt;p&gt;My website has gone through countless design iterations, not because its look
 was outdated, but my sense of simplicity has changed from time to time, and I
-wanted my personal website to reflect that.&lt;/p&gt;
+wanted my personal website to reflect that.
+&lt;/p&gt;
 
 &lt;p&gt;Unlike previous versions in which I wanted to prove my dev skills by developing a
 fairly complicated website with lot of technologies under the hood, this time I rebuilt the website with a single purpose &amp;ldquo;minimalist in design and development&amp;rdquo;.&lt;/p&gt;
@@ -848,20 +836,17 @@ requests (total ~200KB) per page load in less than a second. Moreover, I wrote
 zero Javascript code in this website even though I usually write about 50,000 lines of
 javascript a year.&lt;/p&gt;
 
-&lt;p&gt;This doesn&amp;rsquo;t mean that writing less code is better, but this is a process that I will start to do from now &amp;ldquo;Just write the code that matters&amp;rdquo;.&lt;/p&gt;
-</description>
+&lt;p&gt;This doesn&amp;rsquo;t mean that writing less code is better, but this is a process that I will start to do from now &amp;ldquo;Just write the code that matters&amp;rdquo;.&lt;/p&gt;</description>
             </item>
             
         
             
             <item>
                 <title>Set up Nginx with Centos</title>
-                <link>http://localhost:1313/blog/set-up-nginx-with-centos/</link>
+                <link>http://khoapham.me/blog/set-up-nginx-with-centos/</link>
                 <pubDate>Wed, 18 Nov 2015 00:00:00 UTC</pubDate>
-                <guid>http://localhost:1313/blog/set-up-nginx-with-centos/</guid>
-                <description>
-
-&lt;p&gt;Recently I had a chance to have my hand on setting up a web server using Nginx
+                <guid>http://khoapham.me/blog/set-up-nginx-with-centos/</guid>
+                <description>&lt;p&gt;Recently I had a chance to have my hand on setting up a web server using Nginx
 and Centos. The requirements were simple:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -869,15 +854,17 @@ and Centos. The requirements were simple:&lt;/p&gt;
 &lt;li&gt;Each domain web folder is stored under different user account.&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;&lt;/p&gt;
+
 &lt;p&gt;In this post, I&amp;rsquo;d like to give you a walkthrough how to set up a server like
 this on any private Centos server:&lt;/p&gt;
 
-&lt;h4 id=&#34;1-first-thing-you-want-to-do-is-to-update-system:17e2dfb2d08aa3122cdd309b941e61d7&#34;&gt;1. First thing you want to do is to update system&lt;/h4&gt;
+&lt;h4 id=&#34;1-first-thing-you-want-to-do-is-to-update-system&#34;&gt;1. First thing you want to do is to update system&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code&gt;$ sudo yum update
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id=&#34;2-install-nginx:17e2dfb2d08aa3122cdd309b941e61d7&#34;&gt;2. Install nginx&lt;/h4&gt;
+&lt;h4 id=&#34;2-install-nginx&#34;&gt;2. Install nginx&lt;/h4&gt;
 
 &lt;p&gt;Create a yum repo for nginx at /etc/yum.repos.d/nginx.repo&lt;/p&gt;
 
@@ -911,7 +898,7 @@ $ sudo service nginx start
 
 &lt;p&gt;Congrats! You just got your nginx set up on your Centos server.&lt;/p&gt;
 
-&lt;h4 id=&#34;3-configure-nginx-and-setup-domains:17e2dfb2d08aa3122cdd309b941e61d7&#34;&gt;3. Configure nginx, and setup domains&lt;/h4&gt;
+&lt;h4 id=&#34;3-configure-nginx-and-setup-domains&#34;&gt;3. Configure nginx, and setup domains&lt;/h4&gt;
 
 &lt;p&gt;Default nginx configuration file is located at: /etc/nginx/nginx.conf. From the
 last line of nginx.conf is where other custom configurations are loaded. This is
@@ -979,7 +966,7 @@ $ vim example.com.conf
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id=&#34;4-fix-permission-issues:17e2dfb2d08aa3122cdd309b941e61d7&#34;&gt;4. Fix permission issues&lt;/h4&gt;
+&lt;h4 id=&#34;4-fix-permission-issues&#34;&gt;4. Fix permission issues&lt;/h4&gt;
 
 &lt;p&gt;Now if everything went well, when you visit your server, you should see the 403
 permission error. Calm down, this is expected. Since nginx doesn&amp;rsquo;t have access
@@ -994,8 +981,7 @@ $ sudo -u nginx stat /home/example/public # make sure your all access to public
 $ setenforce 0
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Congrats! Now you can try to access new server using: &lt;code&gt;curl localhost&lt;/code&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;Congrats! Now you can try to access new server using: &lt;code&gt;curl localhost&lt;/code&gt;&lt;/p&gt;</description>
             </item>
             
         
@@ -1004,15 +990,15 @@ $ setenforce 0
             
             <item>
                 <title>ES6 Review Part 2</title>
-                <link>http://localhost:1313/blog/es6-review-part-2/</link>
+                <link>http://khoapham.me/blog/es6-review-part-2/</link>
                 <pubDate>Mon, 20 Jul 2015 00:00:00 UTC</pubDate>
-                <guid>http://localhost:1313/blog/es6-review-part-2/</guid>
+                <guid>http://khoapham.me/blog/es6-review-part-2/</guid>
                 <description>
 
 &lt;p&gt;This is a second review post for new ES6 features that I&amp;rsquo;d love to share. You
-can find the first review here &lt;a href=&#34;http://localhost:1313/blog/es6-review-part-1/&#34;&gt;ES6 Review Part 1&lt;/a&gt;&lt;/p&gt;
+can find the first review here &lt;a href=&#34;http://khoapham.me/blog/es6-review-part-1/&#34;&gt;ES6 Review Part 1&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;arrows:83de84d25d18a19c71ad394c32345d1e&#34;&gt;Arrows&lt;/h3&gt;
+&lt;h3 id=&#34;arrows&#34;&gt;Arrows&lt;/h3&gt;
 
 &lt;p&gt;I have been using arrow (-&amp;gt;) and fat-arrow (=&amp;gt;) key in Coffeescript for while, and I was happy when ES6 would support arrow key (=&amp;gt;) as a short-hand of function keyword. Of course, if you’re familiar with arrow keys in Coffeescript, this feature will be similar. Here are some common use cases:&lt;/p&gt;
 
@@ -1026,7 +1012,7 @@ can find the first review here &lt;a href=&#34;http://localhost:1313/blog/es6-re
   sum(x, y); // return 5
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;strings:83de84d25d18a19c71ad394c32345d1e&#34;&gt;Strings&lt;/h3&gt;
+&lt;h3 id=&#34;strings&#34;&gt;Strings&lt;/h3&gt;
 
 &lt;p&gt;ES6 provides a better way to work with Strings, such as multiline strings, or string interpolation.&lt;/p&gt;
 
@@ -1036,7 +1022,7 @@ can find the first review here &lt;a href=&#34;http://localhost:1313/blog/es6-re
   `${x} + ${y} = ${sum(x, y)}`
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;better-managing-your-javascript-files-with-modules:83de84d25d18a19c71ad394c32345d1e&#34;&gt;Better managing your javascript files with modules&lt;/h3&gt;
+&lt;h3 id=&#34;better-managing-your-javascript-files-with-modules&#34;&gt;Better managing your javascript files with modules&lt;/h3&gt;
 
 &lt;p&gt;With ES6 Modules, it’s much easier to organize your javascript files across the app. For instance:&lt;/p&gt;
 
@@ -1057,9 +1043,9 @@ can find the first review here &lt;a href=&#34;http://localhost:1313/blog/es6-re
             
             <item>
                 <title>ES6 Review Part 1</title>
-                <link>http://localhost:1313/blog/es6-review-part-1/</link>
+                <link>http://khoapham.me/blog/es6-review-part-1/</link>
                 <pubDate>Tue, 03 Mar 2015 00:00:00 UTC</pubDate>
-                <guid>http://localhost:1313/blog/es6-review-part-1/</guid>
+                <guid>http://khoapham.me/blog/es6-review-part-1/</guid>
                 <description>
 
 &lt;p&gt;ECMAScript 6 (ES6) is the upcoming version of ECMACScript standard which is
@@ -1070,9 +1056,9 @@ future of Javascript, and I love it.&lt;/p&gt;
 &lt;p&gt;In this short blog, I use ES6 to demonstrate some new features of ES6 by writing
 the linked list data structure.&lt;/p&gt;
 
-&lt;div class=&#34;center&#34;&gt;&lt;img src=&#34;http://localhost:1313/img/LinkedLists-deletingnode.png&#34; alt=&#34;Linked List&#34; /&gt;&lt;/div&gt;
+&lt;div class=&#34;center&#34;&gt;&lt;img src=&#34;http://khoapham.me/img/LinkedLists-deletingnode.png&#34; alt=&#34;Linked List&#34; /&gt;&lt;/div&gt;
 
-&lt;h3 id=&#34;classes:9647d1112a4a980bd718fcc5a37418df&#34;&gt;Classes&lt;/h3&gt;
+&lt;h3 id=&#34;classes&#34;&gt;Classes&lt;/h3&gt;
 
 &lt;p&gt;ES6 finally allows you to declare your object using class keyword. This is one
 big step forward of Javascript.&lt;/p&gt;
@@ -1088,7 +1074,7 @@ big step forward of Javascript.&lt;/p&gt;
 &lt;p&gt;The Class comes with the &lt;code&gt;constructor&lt;/code&gt; method. This method will execute right
 after the object is initiated.&lt;/p&gt;
 
-&lt;h3 id=&#34;better-variable-scope-with-let:9647d1112a4a980bd718fcc5a37418df&#34;&gt;Better variable scope with let&lt;/h3&gt;
+&lt;h3 id=&#34;better-variable-scope-with-let&#34;&gt;Better variable scope with let&lt;/h3&gt;
 
 &lt;p&gt;What is it wrong with &lt;code&gt;var&lt;/code&gt; keyword? Here is a short example showing what wrong
 with var keyword:&lt;/p&gt;
@@ -1188,9 +1174,9 @@ class LinkedList {
             
             <item>
                 <title>Tower of Hanoi</title>
-                <link>http://localhost:1313/blog/tower-of-hanoi/</link>
+                <link>http://khoapham.me/blog/tower-of-hanoi/</link>
                 <pubDate>Tue, 02 Dec 2014 00:00:00 UTC</pubDate>
-                <guid>http://localhost:1313/blog/tower-of-hanoi/</guid>
+                <guid>http://khoapham.me/blog/tower-of-hanoi/</guid>
                 <description>&lt;p&gt;One of my favorite childhood game was the &lt;a href=&#34;http://en.wikipedia.org/wiki/Tower_of_Hanoi&#34;&gt;Tower of Hanoi&lt;/a&gt; which I loved playing it
 with my neighbor friends all the time. Also, one of my very first project in college
 was implementing the tower of Hanoi in C, C++, or Java. I guess this game has sticked with
@@ -1237,12 +1223,12 @@ game.run
             
             <item>
                 <title>MenuOnScroll - jQuery Plugin</title>
-                <link>http://localhost:1313/blog/menuOnScroll-jquery-plugin/</link>
+                <link>http://khoapham.me/blog/menuOnScroll-jquery-plugin/</link>
                 <pubDate>Tue, 25 Nov 2014 00:00:00 UTC</pubDate>
-                <guid>http://localhost:1313/blog/menuOnScroll-jquery-plugin/</guid>
+                <guid>http://khoapham.me/blog/menuOnScroll-jquery-plugin/</guid>
                 <description>&lt;p&gt;Today I just released menuOnScroll - jQuery plugin that automatically updates the menu
 navigation when you scroll. This functionality is extremely common on the web,
-especially for the single page website.
+especially for the single page website. 
 Since everyone just keeps build the similar thing over and over again, I think it&amp;rsquo;s better to create a simple plugin that will help to save our time.&lt;/p&gt;
 
 &lt;p&gt;This plugin is the first open source (MIT) project that I&amp;rsquo;ve done, and I am
@@ -1255,21 +1241,21 @@ factor that helps me to become a better developer.&lt;/p&gt;
 code&lt;/a&gt; if you want to check it
 out.&lt;/p&gt;
 
-&lt;p&gt;Cheers! Happy Thanksgiving!&lt;/p&gt;
-</description>
+&lt;p&gt;Cheers! Happy Thanksgiving!&lt;/p&gt;</description>
             </item>
             
         
             
             <item>
                 <title>Vim Commmon Helpful Leader</title>
-                <link>http://localhost:1313/blog/vim-common-helpful-leader/</link>
+                <link>http://khoapham.me/blog/vim-common-helpful-leader/</link>
                 <pubDate>Wed, 12 Nov 2014 00:00:00 UTC</pubDate>
-                <guid>http://localhost:1313/blog/vim-common-helpful-leader/</guid>
+                <guid>http://khoapham.me/blog/vim-common-helpful-leader/</guid>
                 <description>&lt;p&gt;I have really enjoyed using Vim for a month now, and I have to admit that I
 love the feeling of learning new things from Vim everyday. Today I would love to
 share some of my favorite Vim Leaders that I found they&amp;rsquo;re extremely helpful. You
-can add these into your .vimrc file, and give it a try.&lt;/p&gt;
+can add these into your .vimrc file, and give it a try.
+&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Open another file in same directory&lt;/p&gt;
@@ -1293,17 +1279,16 @@ define a helper function.&lt;/p&gt;
 endfunction
 map &amp;lt;Leader&amp;gt;n :call RenameFile()&amp;lt;cr&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
             </item>
             
         
             
             <item>
                 <title>How I switched to vim in 2 weeks</title>
-                <link>http://localhost:1313/blog/how-i-switched-to-vim-in-2-weeks/</link>
+                <link>http://khoapham.me/blog/how-i-switched-to-vim-in-2-weeks/</link>
                 <pubDate>Wed, 29 Oct 2014 00:00:00 UTC</pubDate>
-                <guid>http://localhost:1313/blog/how-i-switched-to-vim-in-2-weeks/</guid>
+                <guid>http://khoapham.me/blog/how-i-switched-to-vim-in-2-weeks/</guid>
                 <description>&lt;p&gt;I have played with Vim so many times since I was in college, in fact that I
 loved it every time I used it. However, I don&amp;rsquo;t think I ever spent time
 long enough to get used to it. I&amp;rsquo;ve seen people dancing their fingers on the
@@ -1365,11 +1350,13 @@ surprised how much faster you can use with your&lt;/li&gt;
             
             <item>
                 <title>Deploy Middleman to Heroku</title>
-                <link>http://localhost:1313/blog/deploy-middleman-to-heroku/</link>
+                <link>http://khoapham.me/blog/deploy-middleman-to-heroku/</link>
                 <pubDate>Tue, 14 Oct 2014 00:00:00 UTC</pubDate>
-                <guid>http://localhost:1313/blog/deploy-middleman-to-heroku/</guid>
+                <guid>http://khoapham.me/blog/deploy-middleman-to-heroku/</guid>
                 <description>&lt;p&gt;Heroku is a great cloud service, it uses git for version control and deployment which is very handy for me to just update my blog in one command.
 Here are some simple step that you can set it up.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;In your Gemfile, add puma and rake:&lt;/p&gt;
 
@@ -1426,17 +1413,16 @@ run lambda{ |env|
 
 &lt;p&gt;Now your site is ready to deploy to Heroku. Just create a Heroku app and add Heroku git remote link, and enjoy!&lt;/p&gt;
 
-&lt;p&gt;P.S. Don&amp;rsquo;t forget to add the build directory to your .gitignore&lt;/p&gt;
-</description>
+&lt;p&gt;P.S. Don&amp;rsquo;t forget to add the build directory to your .gitignore&lt;/p&gt;</description>
             </item>
             
         
             
             <item>
                 <title>Completely setup Resque &#43; Resque Schedule and Resque Mailer</title>
-                <link>http://localhost:1313/blog/completely-setup-resque-and-resque-scheduler/</link>
+                <link>http://khoapham.me/blog/completely-setup-resque-and-resque-scheduler/</link>
                 <pubDate>Wed, 10 Sep 2014 00:00:00 UTC</pubDate>
-                <guid>http://localhost:1313/blog/completely-setup-resque-and-resque-scheduler/</guid>
+                <guid>http://khoapham.me/blog/completely-setup-resque-and-resque-scheduler/</guid>
                 <description>&lt;p&gt;When developing Rails app, there will be a chance that you will need to setup
 job scheduler using Resque. In this post, I&amp;rsquo;d like to share my experience
 setting up Resque schedule, and resque mailer on my recent Rails application
@@ -1544,20 +1530,19 @@ scheduler: bundle exec rake resque:scheduler
 &lt;li&gt;&lt;a href=&#34;https://github.com/resque/resque&#34;&gt;Resque&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/resque/resque-scheduler&#34;&gt;Resque Scheduler&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/zapnap/resque_mailer&#34;&gt;Resque Mailer&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
+&lt;/ol&gt;</description>
             </item>
             
         
             
             <item>
                 <title>Create App With Meteor</title>
-                <link>http://localhost:1313/blog/create-app-with-meteor/</link>
+                <link>http://khoapham.me/blog/create-app-with-meteor/</link>
                 <pubDate>Wed, 16 Oct 2013 00:00:00 UTC</pubDate>
-                <guid>http://localhost:1313/blog/create-app-with-meteor/</guid>
-                <description>&lt;p&gt;When I started to build the DearJJAbrams.com site, I came across a very simple functionality which was the realtime counter. This realtime counter worked as follow, when the user submitted their email, the counter would increase 1. However, this counter had to automatically update and synchronize with the server whenever anyone around the world submit their email, in other words, I had to create real time app with Meteor.&lt;/p&gt;
+                <guid>http://khoapham.me/blog/create-app-with-meteor/</guid>
+                <description>&lt;p&gt;When I started to build the DearJJAbrams.com site, I came across a very simple functionality which was the realtime counter. This realtime counter worked as follow, when the user submitted their email, the counter would increase 1. However, this counter had to automatically update and synchronize with the server whenever anyone around the world submit their email, in other words, I had to create real time app with Meteor.
 
-&lt;p&gt;At this point, things were getting little more complicated. The big question was how could the browser know when the database was updated in order to get synchronized? But, I was lucky to found out that &lt;a href=&#34;http://www.meteor.com&#34;&gt;Meteor&lt;/a&gt; was a perfect tool for this simple counter app.&lt;/p&gt;
+At this point, things were getting little more complicated. The big question was how could the browser know when the database was updated in order to get synchronized? But, I was lucky to found out that &lt;a href=&#34;http://www.meteor.com&#34;&gt;Meteor&lt;/a&gt; was a perfect tool for this simple counter app.&lt;/p&gt;
 
 &lt;p&gt;In this article, I would like to share my little experience to create app with Meteor. You can see live example here at: &lt;a href=&#34;http://simple-counter.meteor.com&#34;&gt;http://simple-counter.meteor.com&lt;/a&gt;.
 The source code available at my &lt;a href=&#34;https://github.com/khoap/simple-counter&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
@@ -1671,37 +1656,36 @@ Meteor.methods({
 Now it&amp;rsquo;s time to deploy the app, I used the Heroku server to deploy the DearJJAbrams.com site, but in this simple app, I just use the Meteor server. Since it&amp;rsquo;s very easy &amp;amp; free:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ meteor deploy myapp.meteor.com
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+&lt;/code&gt;&lt;/pre&gt;</description>
             </item>
             
         
             
             <item>
                 <title>Inspiration videos from Steve Jobs</title>
-                <link>http://localhost:1313/blog/inspiration-video-from-steve-jobs/</link>
+                <link>http://khoapham.me/blog/inspiration-video-from-steve-jobs/</link>
                 <pubDate>Thu, 04 Jul 2013 00:00:00 UTC</pubDate>
-                <guid>http://localhost:1313/blog/inspiration-video-from-steve-jobs/</guid>
-                <description>&lt;div class=&#34;videoWrapper&#34;&gt;
+                <guid>http://khoapham.me/blog/inspiration-video-from-steve-jobs/</guid>
+                <description>&lt;p&gt;
+&lt;div class=&#34;videoWrapper&#34;&gt;
     &lt;iframe src=&#34;https://www.youtube.com/embed/KuNQgln6TL0?feature=player_embedded&#34; height=&#34;360&#34; width=&#34;640&#34; allowfullscreen=&#34;&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
 
 &lt;div class=&#34;videoWrapper&#34;&gt;
     &lt;iframe height=&#34;360&#34; width=&#34;640&#34; src=&#34;https://www.youtube.com/embed/FF-tKLISfPE&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-</description>
+&lt;/div&gt;</description>
             </item>
             
         
             
             <item>
                 <title>Middleman Localization</title>
-                <link>http://localhost:1313/blog/middleman-localization/</link>
+                <link>http://khoapham.me/blog/middleman-localization/</link>
                 <pubDate>Wed, 05 Jun 2013 00:00:00 UTC</pubDate>
-                <guid>http://localhost:1313/blog/middleman-localization/</guid>
-                <description>&lt;p&gt;Recently when developing a site using middleman, my client wonder that if we can do localization for the website. Fortunately, Middleman comes with the localization extension i18n which is pretty simple to integrate it into the site.&lt;/p&gt;
+                <guid>http://khoapham.me/blog/middleman-localization/</guid>
+                <description>&lt;p&gt;Recently when developing a site using middleman, my client wonder that if we can do localization for the website. Fortunately, Middleman comes with the localization extension i18n which is pretty simple to integrate it into the site.
 
-&lt;p&gt;Although there&amp;rsquo;s a quick overview of Middleman Localization available on the &lt;a href=&#34;http://middlemanapp.com/&#34; target=&#34;_blank&#34;&gt;middlemanapp.com&lt;/a&gt;, I still find it a little bit confused for Middleman beginners. Here are quick steps how to set it up:&lt;/p&gt;
+Although there&amp;rsquo;s a quick overview of Middleman Localization available on the &lt;a href=&#34;http://middlemanapp.com/&#34; target=&#34;_blank&#34;&gt;middlemanapp.com&lt;/a&gt;, I still find it a little bit confused for Middleman beginners. Here are quick steps how to set it up:&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;1. Activate i18n and update your bundle.&lt;/strong&gt;&lt;/p&gt;
 
@@ -1723,7 +1707,7 @@ locales&lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;Then you need to put all your template files in one folder called localizable.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img style=&#34;border: 1px solid #d4d4d4;&#34; alt=&#34;Localizable&#34; src=&#34;http://localhost:1313/img/Localizable-1024x337.png&#34; width=&#34;1024&#34; height=&#34;337&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img style=&#34;border: 1px solid #d4d4d4;&#34; alt=&#34;Localizable&#34; src=&#34;http://khoapham.me/img/Localizable-1024x337.png&#34; width=&#34;1024&#34; height=&#34;337&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;3. Add translation text into your translated files:&lt;/strong&gt;&lt;/p&gt;
 
@@ -1764,18 +1748,18 @@ en:
 &amp;lt;%= I18n.t(&amp;ldquo;footer.terms_of_use&amp;rdquo;) %&amp;gt;
 &amp;lt;%= I18n.t(&amp;ldquo;footer.copyright&amp;rdquo;) %&amp;gt;&lt;/pre&gt;&lt;/p&gt;
 
-&lt;p&gt;You can view your site under Spanish by going to: &lt;a href=&#34;http://localhost:4567/es/index.html&#34;&gt;http://localhost:4567/es/index.html&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;You can view your site under Spanish by going to: &lt;a href=&#34;http://localhost:4567/es/index.html&#34;&gt;http://localhost:4567/es/index.html&lt;/a&gt;&lt;/p&gt;</description>
             </item>
             
         
             
             <item>
                 <title>Sync Middleman with Amazon S3</title>
-                <link>http://localhost:1313/blog/sync-middleman-with-amazon-s3/</link>
+                <link>http://khoapham.me/blog/sync-middleman-with-amazon-s3/</link>
                 <pubDate>Mon, 27 May 2013 22:18:14 -0800</pubDate>
-                <guid>http://localhost:1313/blog/sync-middleman-with-amazon-s3/</guid>
-                <description>&lt;p&gt;One thing that I love using Middleman and Amazon S3 is that they&amp;rsquo;re a perfect combination for building and hosting a static HTML5 site.&lt;/p&gt;
+                <guid>http://khoapham.me/blog/sync-middleman-with-amazon-s3/</guid>
+                <description>&lt;p&gt;One thing that I love using Middleman and Amazon S3 is that they&amp;rsquo;re a perfect combination for building and hosting a static HTML5 site.&lt;br /&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Indeed, using Middleman, you can generate an HTML5 Boilerplate in one command:
 &lt;pre&gt;middleman init my_new_boilerplate_project &amp;ndash;template=html5&lt;/pre&gt;
@@ -1807,21 +1791,19 @@ end&lt;/pre&gt;&lt;/p&gt;
 &lt;pre&gt; bundle install&lt;/pre&gt;&lt;/p&gt;
 
 &lt;p&gt;Now you can sync your files to S3 using:
-&lt;pre&gt; middleman sync_s3&lt;/pre&gt;&lt;/p&gt;
-</description>
+&lt;pre&gt; middleman sync_s3&lt;/pre&gt;&lt;/p&gt;</description>
             </item>
             
         
             
             <item>
                 <title>Setting up Amazon Web Services</title>
-                <link>http://localhost:1313/blog/setting-up-amazon-web-services/</link>
+                <link>http://khoapham.me/blog/setting-up-amazon-web-services/</link>
                 <pubDate>Fri, 17 May 2013 23:14:51 -0800</pubDate>
-                <guid>http://localhost:1313/blog/setting-up-amazon-web-services/</guid>
-                <description>
-
-&lt;p&gt;To setting up Amazon Web Services, the process of setting up an EC2 on Amazon Web Services (AWS) is not complicated, all you need to get a server up and running are Apache, PHP,  MySQL.
-Here are some initial steps that help you get started:&lt;/p&gt;
+                <guid>http://khoapham.me/blog/setting-up-amazon-web-services/</guid>
+                <description>&lt;p&gt;To setting up Amazon Web Services, the process of setting up an EC2 on Amazon Web Services (AWS) is not complicated, all you need to get a server up and running are Apache, PHP,  MySQL.
+Here are some initial steps that help you get started:
+&lt;/p&gt;
 
 &lt;p&gt;###1. SSH connect to you EC2 instance.
 To connect to your instance, you need the private key and the elastic IP address that associate with your instance. You can create an associated elastic IP address right in your Amazon Console Management.&lt;/p&gt;
@@ -1834,29 +1816,29 @@ To connect to your instance, you need the private key and the elastic IP address
 &lt;pre&gt;&lt;code&gt;sudo yum -y update
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;3-install-php-amp-its-package:58edc5cf2a6b6a10cc179e0b94cd1b93&#34;&gt;3. Install PHP &amp;amp; its package.&lt;/h3&gt;
+&lt;h3 id=&#34;3-install-php-amp-its-package&#34;&gt;3. Install PHP &amp;amp; its package.&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;sudo yum install php php-mysql php-xml php-mcrypt php-mbstring php-cli php-devel php-pdo php-pear
 sudo pear install Log
 sudo yum install -y pcre-devel
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;4-install-apache-http:58edc5cf2a6b6a10cc179e0b94cd1b93&#34;&gt;4. Install Apache http.&lt;/h3&gt;
+&lt;h3 id=&#34;4-install-apache-http&#34;&gt;4. Install Apache http.&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;sudo yum install httpd
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;5-install-mysql:58edc5cf2a6b6a10cc179e0b94cd1b93&#34;&gt;5. Install MySQL&lt;/h3&gt;
+&lt;h3 id=&#34;5-install-mysql&#34;&gt;5. Install MySQL&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;sudo yum install mysql-server mysql-devel mysql
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;6-install-php-apc-module:58edc5cf2a6b6a10cc179e0b94cd1b93&#34;&gt;6. Install PHP APC module&lt;/h3&gt;
+&lt;h3 id=&#34;6-install-php-apc-module&#34;&gt;6. Install PHP APC module&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;sudo yum install php-pecl-apc
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;7-configure-mysql-and-php:58edc5cf2a6b6a10cc179e0b94cd1b93&#34;&gt;7. Configure MySQL and PHP&lt;/h3&gt;
+&lt;h3 id=&#34;7-configure-mysql-and-php&#34;&gt;7. Configure MySQL and PHP&lt;/h3&gt;
 
 &lt;p&gt; Before you get everything running, make sure to check the PHP and MySQL configuration files.&lt;/p&gt;
 
@@ -1909,40 +1891,37 @@ sudo service httpd start
 
 &lt;pre&gt;&lt;code&gt;sudo /sbin/chkconfig --levels 235 mysqld on
 sudo /sbin/chkconfig --levels 235 httpd on
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+&lt;/code&gt;&lt;/pre&gt;</description>
             </item>
             
         
             
             <item>
                 <title>Learning to See</title>
-                <link>http://localhost:1313/blog/learning-to-see/</link>
+                <link>http://khoapham.me/blog/learning-to-see/</link>
                 <pubDate>Fri, 17 May 2013 23:12:14 -0800</pubDate>
-                <guid>http://localhost:1313/blog/learning-to-see/</guid>
+                <guid>http://khoapham.me/blog/learning-to-see/</guid>
                 <description>&lt;p&gt;People asked me why I had a computer science degree but spending most of my time working as user experience developer.
 Here is the article that hooked me into it: &lt;a href=&#34;https://ia.net/know-how/learning-to-see&#34;&gt;https://ia.net/know-how/learning-to-see&lt;/a&gt;.
 It has changed the way I saw thing since I read it. I highly recommend you read it too.&lt;/p&gt;
 
 &lt;p&gt;Sincerely,&lt;/p&gt;
 
-&lt;p&gt;Khoa&lt;/p&gt;
-</description>
+&lt;p&gt;Khoa&lt;/p&gt;</description>
             </item>
             
         
             
             <item>
                 <title>My favorite poem</title>
-                <link>http://localhost:1313/blog/if/</link>
+                <link>http://khoapham.me/blog/if/</link>
                 <pubDate>Fri, 17 May 2013 00:06:51 -0800</pubDate>
-                <guid>http://localhost:1313/blog/if/</guid>
-                <description>
+                <guid>http://khoapham.me/blog/if/</guid>
+                <description>&lt;p&gt;When it comes to my favority poem, &amp;ldquo;If - Rudyard Kipling&amp;rdquo; is definitely the one.&lt;br /&gt;
+It simply reminds me how to be a man, and a good person.
+&lt;/p&gt;
 
-&lt;p&gt;When it comes to my favority poem, &amp;ldquo;If - Rudyard Kipling&amp;rdquo; is definitely the one.&lt;br /&gt;
-It simply reminds me how to be a man, and a good person.&lt;/p&gt;
-
-&lt;h3 id=&#34;if:fb4de66872c8e3d29666fedc2315e187&#34;&gt;If&lt;/h3&gt;
+&lt;h3 id=&#34;if&#34;&gt;If&lt;/h3&gt;
 
 &lt;p&gt;If you can keep your head when all about you&lt;br /&gt;
 Are losing theirs and blaming it on you;&lt;br /&gt;
@@ -1980,8 +1959,7 @@ With sixty seconds&amp;rsquo; worth of distance run,&lt;br /&gt;
 Yours is the Earth and everything that&amp;rsquo;s in it,&lt;br /&gt;
 And—which is more—you&amp;rsquo;ll be a Man, my son!&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Rudyard Kipling&lt;/strong&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;strong&gt;Rudyard Kipling&lt;/strong&gt;&lt;/p&gt;</description>
             </item>
             
         
