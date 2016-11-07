@@ -12,6 +12,7 @@ a managed Apache Cassandra Hosting. You can also find me on
     <a target="_blank" href="https://twitter.com/pmkhoa">Twitter</a>,
     <a target="_blank" href="http://www.linkedin.com/in/pmkhoa">Linkedin</a>,
     and <a target="_blank" href="https://github.com/pmkhoa">Github</a>.</p>
+    <p>My resume is available for <a href="/KhoaPham-resume.pdf" target="_blank">download here</a>.</p>
 
     <p>In the past few years, I was lucky to work with lot of talented people to finish these projects:</p>
     </div>
