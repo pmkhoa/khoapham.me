@@ -7,9 +7,7 @@
             <title> Global Notification Using Ember Initializer and Service - Khoa Pham </title>
 <meta name="keywords" content="Khoa Pham, web developer, frontend developer, UX, UI, web developer Portland " >
 <meta name="viewport" content="width=device-width initial-scale=1.0" />
-<meta property="description" content="When developing Ember app, you may want to have a singleton to handle
-global state such as global notification, or error handling.
-" >
+<meta property="description" content="" >
 <link rel="canonical" href="http://khoapham.me" />
 <link rel="author" href="https://plus.google.com/103713398374675106375/"/>
 
@@ -17,17 +15,13 @@ global state such as global notification, or error handling.
 <meta property="og:title" content="Global Notification Using Ember Initializer and Service" >
 <meta property="og:site_name" content="Khoa Pham">
 <meta property="og:url" content="http://khoapham.me" >
-<meta property="og:description" content="When developing Ember app, you may want to have a singleton to handle
-global state such as global notification, or error handling.
-" >
+<meta property="og:description" content="" >
 <meta property="og:type" content="website" >
 <meta property="og:locale" content="en_US" >
 
 <meta property="twitter:card" content="summary" >
 <meta property="twitter:title" content="Global Notification Using Ember Initializer and Service - Khoa Pham" >
-<meta property="twitter:description" content="When developing Ember app, you may want to have a singleton to handle
-global state such as global notification, or error handling.
-" >
+<meta property="twitter:description" content="" >
 <meta property="twitter:creator" content="@pmkhoa" >
 <meta property="twitter:url" content="http://khoapham.me" >
 
@@ -59,14 +53,12 @@ global state such as global notification, or error handling.
         <div class="Article-content wrap clearfix">
             <h1 class="Article-title">Global Notification Using Ember Initializer and Service</h1>
             <time datetime="2016-04-12 11:18:20 -0700 PDT"><em>April 12, 2016</em></time>
-            
-
-<p>When developing Ember app, you may want to have a singleton to handle
+            <p>When developing Ember app, you may want to have a singleton to handle
 global state such as global notification, or error handling. This doesn&rsquo;t fall
 into <code>Route</code>, <code>Controller</code>, or <code>Component</code>. Ember offers an easy way to manage
 this using <code>Service</code> and <code>Initializers</code>.</p>
 
-<h4 id="create-a-service-to-hold-notification-data:dc08fe7a7cb85374fa6d93118b027293">Create a service to hold notification data</h4>
+<h4 id="create-a-service-to-hold-notification-data">Create a service to hold notification data</h4>
 
 <pre><code>//app/services/global-notification.js
 import Ember from 'ember';
@@ -79,7 +71,7 @@ export default Ember.Service.extend({
 });
 </code></pre>
 
-<h4 id="create-an-initializer-to-inject-global-notification-service-in-application:dc08fe7a7cb85374fa6d93118b027293">Create an initializer to inject global notification service in application</h4>
+<h4 id="create-an-initializer-to-inject-global-notification-service-in-application">Create an initializer to inject global notification service in application</h4>
 
 <p>This allows us to use GlobalNotification service in route, and component.</p>
 
@@ -98,7 +90,7 @@ export default {
 };
 </code></pre>
 
-<h4 id="using-our-global-notification-service:dc08fe7a7cb85374fa6d93118b027293">Using our global notification service.</h4>
+<h4 id="using-our-global-notification-service">Using our global notification service.</h4>
 
 <p>Assuming you have a user settings form, and want to display notification when
 user changes settings.</p>
@@ -138,7 +130,6 @@ where we want to display the notification.</p>
 <p>That is it. Now you can call <code>global-notification</code> service anywhere in your
 application, and use its injection via <code>initializers</code> to display the data in
 your template.</p>
-
         </div>
         
         
@@ -153,7 +144,7 @@ your template.</p>
                     
                     
                     
-                        <a href="http://khoapham.me/blog/full-stack-development-with-Ember-and-Go" class="link-to-article">
+                        <a href="http://khoapham.me/blog/full-stack-development-with-Ember-and-Go/" class="link-to-article">
     <div class="Article-summary">
         <h3>Full Stack Development with Ember and Go</h3>
     </div>
@@ -164,7 +155,7 @@ your template.</p>
                     
                     
                     
-                        <a href="http://khoapham.me/blog/webpack-starter" class="link-to-article">
+                        <a href="http://khoapham.me/blog/webpack-starter/" class="link-to-article">
     <div class="Article-summary">
         <h3>Webpack Starter - Use ES6 Today</h3>
     </div>
@@ -175,7 +166,7 @@ your template.</p>
                     
                     
                     
-                        <a href="http://khoapham.me/blog/deploy-ember-app-on-github-pages" class="link-to-article">
+                        <a href="http://khoapham.me/blog/deploy-ember-app-on-github-pages/" class="link-to-article">
     <div class="Article-summary">
         <h3>Deploy Ember App on Github Pages</h3>
     </div>
@@ -186,7 +177,7 @@ your template.</p>
                     
                     
                     
-                        <a href="http://khoapham.me/blog/meta-tags-generator" class="link-to-article">
+                        <a href="http://khoapham.me/blog/meta-tags-generator/" class="link-to-article">
     <div class="Article-summary">
         <h3>Meta Tags Generator</h3>
     </div>
@@ -205,7 +196,7 @@ your template.</p>
                     
                     
                     
-                        <a href="http://khoapham.me/blog/what-missing-at-emberconf-2016" class="link-to-article">
+                        <a href="http://khoapham.me/blog/what-missing-at-emberconf-2016/" class="link-to-article">
     <div class="Article-summary">
         <h3>What Missing at Emberconf 2016</h3>
     </div>
@@ -220,7 +211,7 @@ your template.</p>
                     
                     
                     
-                        <a href="http://khoapham.me/blog/rickshaw-chart-hovering" class="link-to-article">
+                        <a href="http://khoapham.me/blog/rickshaw-chart-hovering/" class="link-to-article">
     <div class="Article-summary">
         <h3>Rickshaw Chart Hovering Multiple Values</h3>
     </div>
@@ -247,7 +238,7 @@ your template.</p>
                     
                     
                     
-                        <a href="http://khoapham.me/blog/es6-review-part-2" class="link-to-article">
+                        <a href="http://khoapham.me/blog/es6-review-part-2/" class="link-to-article">
     <div class="Article-summary">
         <h3>ES6 Review Part 2</h3>
     </div>
@@ -258,7 +249,7 @@ your template.</p>
                     
                     
                     
-                        <a href="http://khoapham.me/blog/es6-review-part-1" class="link-to-article">
+                        <a href="http://khoapham.me/blog/es6-review-part-1/" class="link-to-article">
     <div class="Article-summary">
         <h3>ES6 Review Part 1</h3>
     </div>
@@ -273,7 +264,7 @@ your template.</p>
                     
                     
                     
-                        <a href="http://khoapham.me/blog/menuOnScroll-jquery-plugin" class="link-to-article">
+                        <a href="http://khoapham.me/blog/menuOnScroll-jquery-plugin/" class="link-to-article">
     <div class="Article-summary">
         <h3>MenuOnScroll - jQuery Plugin</h3>
     </div>
@@ -300,7 +291,7 @@ your template.</p>
                     
                     
                     
-                        <a href="http://khoapham.me/blog/create-app-with-meteor" class="link-to-article">
+                        <a href="http://khoapham.me/blog/create-app-with-meteor/" class="link-to-article">
     <div class="Article-summary">
         <h3>Create App With Meteor</h3>
     </div>

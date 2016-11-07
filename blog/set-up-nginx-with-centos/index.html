@@ -14,6 +14,7 @@ and Centos. The requirements were simple:
 Server can serve multiple domains or subdomains.
 Each domain web folder is stored under different user account.
 
+
 " >
 <link rel="canonical" href="http://khoapham.me" />
 <link rel="author" href="https://plus.google.com/103713398374675106375/"/>
@@ -29,6 +30,7 @@ and Centos. The requirements were simple:
 Server can serve multiple domains or subdomains.
 Each domain web folder is stored under different user account.
 
+
 " >
 <meta property="og:type" content="website" >
 <meta property="og:locale" content="en_US" >
@@ -41,6 +43,7 @@ and Centos. The requirements were simple:
 
 Server can serve multiple domains or subdomains.
 Each domain web folder is stored under different user account.
+
 
 " >
 <meta property="twitter:creator" content="@pmkhoa" >
@@ -74,9 +77,7 @@ Each domain web folder is stored under different user account.
         <div class="Article-content wrap clearfix">
             <h1 class="Article-title">Set up Nginx with Centos</h1>
             <time datetime="2015-11-18 00:00:00 &#43;0000 UTC"><em>November 18, 2015</em></time>
-            
-
-<p>Recently I had a chance to have my hand on setting up a web server using Nginx
+            <p>Recently I had a chance to have my hand on setting up a web server using Nginx
 and Centos. The requirements were simple:</p>
 
 <ul>
@@ -84,15 +85,17 @@ and Centos. The requirements were simple:</p>
 <li>Each domain web folder is stored under different user account.</li>
 </ul>
 
+<p></p>
+
 <p>In this post, I&rsquo;d like to give you a walkthrough how to set up a server like
 this on any private Centos server:</p>
 
-<h4 id="1-first-thing-you-want-to-do-is-to-update-system:17e2dfb2d08aa3122cdd309b941e61d7">1. First thing you want to do is to update system</h4>
+<h4 id="1-first-thing-you-want-to-do-is-to-update-system">1. First thing you want to do is to update system</h4>
 
 <pre><code>$ sudo yum update
 </code></pre>
 
-<h4 id="2-install-nginx:17e2dfb2d08aa3122cdd309b941e61d7">2. Install nginx</h4>
+<h4 id="2-install-nginx">2. Install nginx</h4>
 
 <p>Create a yum repo for nginx at /etc/yum.repos.d/nginx.repo</p>
 
@@ -126,7 +129,7 @@ $ sudo service nginx start
 
 <p>Congrats! You just got your nginx set up on your Centos server.</p>
 
-<h4 id="3-configure-nginx-and-setup-domains:17e2dfb2d08aa3122cdd309b941e61d7">3. Configure nginx, and setup domains</h4>
+<h4 id="3-configure-nginx-and-setup-domains">3. Configure nginx, and setup domains</h4>
 
 <p>Default nginx configuration file is located at: /etc/nginx/nginx.conf. From the
 last line of nginx.conf is where other custom configurations are loaded. This is
@@ -194,7 +197,7 @@ $ vim example.com.conf
 }
 </code></pre>
 
-<h4 id="4-fix-permission-issues:17e2dfb2d08aa3122cdd309b941e61d7">4. Fix permission issues</h4>
+<h4 id="4-fix-permission-issues">4. Fix permission issues</h4>
 
 <p>Now if everything went well, when you visit your server, you should see the 403
 permission error. Calm down, this is expected. Since nginx doesn&rsquo;t have access
@@ -210,7 +213,6 @@ $ setenforce 0
 </code></pre>
 
 <p>Congrats! Now you can try to access new server using: <code>curl localhost</code></p>
-
         </div>
         
         
@@ -233,7 +235,7 @@ $ setenforce 0
                     
                     
                     
-                        <a href="http://khoapham.me/blog/deploy-ember-app-on-github-pages" class="link-to-article">
+                        <a href="http://khoapham.me/blog/deploy-ember-app-on-github-pages/" class="link-to-article">
     <div class="Article-summary">
         <h3>Deploy Ember App on Github Pages</h3>
     </div>
@@ -308,7 +310,7 @@ $ setenforce 0
                     
                     
                     
-                        <a href="http://khoapham.me/blog/deploy-middleman-to-heroku" class="link-to-article">
+                        <a href="http://khoapham.me/blog/deploy-middleman-to-heroku/" class="link-to-article">
     <div class="Article-summary">
         <h3>Deploy Middleman to Heroku</h3>
     </div>
@@ -323,7 +325,7 @@ $ setenforce 0
                     
                     
                     
-                        <a href="http://khoapham.me/blog/create-app-with-meteor" class="link-to-article">
+                        <a href="http://khoapham.me/blog/create-app-with-meteor/" class="link-to-article">
     <div class="Article-summary">
         <h3>Create App With Meteor</h3>
     </div>
@@ -338,7 +340,7 @@ $ setenforce 0
                     
                     
                     
-                        <a href="http://khoapham.me/blog/middleman-localization" class="link-to-article">
+                        <a href="http://khoapham.me/blog/middleman-localization/" class="link-to-article">
     <div class="Article-summary">
         <h3>Middleman Localization</h3>
     </div>
@@ -349,7 +351,7 @@ $ setenforce 0
                     
                     
                     
-                        <a href="http://khoapham.me/blog/sync-middleman-with-amazon-s3" class="link-to-article">
+                        <a href="http://khoapham.me/blog/sync-middleman-with-amazon-s3/" class="link-to-article">
     <div class="Article-summary">
         <h3>Sync Middleman with Amazon S3</h3>
     </div>
@@ -360,7 +362,7 @@ $ setenforce 0
                     
                     
                     
-                        <a href="http://khoapham.me/blog/setting-up-amazon-web-services" class="link-to-article">
+                        <a href="http://khoapham.me/blog/setting-up-amazon-web-services/" class="link-to-article">
     <div class="Article-summary">
         <h3>Setting up Amazon Web Services</h3>
     </div>

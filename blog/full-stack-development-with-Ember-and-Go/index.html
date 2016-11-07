@@ -10,7 +10,10 @@
 <meta property="description" content="One of my personal 2016 resolution was learning Go, and get familiar with
 writing restful API using Go. After couple of months learning Go, I started a
 simple application that use Go, and Ember to develop a Todo app.
-" >
+
+Yes, you read it right, I&rsquo;m also creating another Todo app. Yet this one is different from the
+other you have seen because it&rsquo;s built with Go for backend api, and Ember for
+frontend." >
 <link rel="canonical" href="http://khoapham.me" />
 <link rel="author" href="https://plus.google.com/103713398374675106375/"/>
 
@@ -21,7 +24,10 @@ simple application that use Go, and Ember to develop a Todo app.
 <meta property="og:description" content="One of my personal 2016 resolution was learning Go, and get familiar with
 writing restful API using Go. After couple of months learning Go, I started a
 simple application that use Go, and Ember to develop a Todo app.
-" >
+
+Yes, you read it right, I&rsquo;m also creating another Todo app. Yet this one is different from the
+other you have seen because it&rsquo;s built with Go for backend api, and Ember for
+frontend." >
 <meta property="og:type" content="website" >
 <meta property="og:locale" content="en_US" >
 
@@ -30,7 +36,10 @@ simple application that use Go, and Ember to develop a Todo app.
 <meta property="twitter:description" content="One of my personal 2016 resolution was learning Go, and get familiar with
 writing restful API using Go. After couple of months learning Go, I started a
 simple application that use Go, and Ember to develop a Todo app.
-" >
+
+Yes, you read it right, I&rsquo;m also creating another Todo app. Yet this one is different from the
+other you have seen because it&rsquo;s built with Go for backend api, and Ember for
+frontend." >
 <meta property="twitter:creator" content="@pmkhoa" >
 <meta property="twitter:url" content="http://khoapham.me" >
 
@@ -62,20 +71,18 @@ simple application that use Go, and Ember to develop a Todo app.
         <div class="Article-content wrap clearfix">
             <h1 class="Article-title">Full Stack Development with Ember and Go</h1>
             <time datetime="2016-06-27 12:09:16 -0700 PDT"><em>June 27, 2016</em></time>
-            
-
-<p>One of my personal 2016 resolution was learning Go, and get familiar with
+            <p>One of my personal 2016 resolution was learning Go, and get familiar with
 writing restful API using Go. After couple of months learning Go, I started a
-simple application that use Go, and Ember to develop a Todo app.</p>
+simple application that use Go, and Ember to develop a Todo app.
 
-<p>Yes, you read it right, I&rsquo;m also creating another Todo app. Yet this one is different from the
+Yes, you read it right, I&rsquo;m also creating another Todo app. Yet this one is different from the
 other you have seen because it&rsquo;s built with Go for backend api, and Ember for
 frontend.</p>
 
 <p>The source code can be found here:
 <a href="https://github.com/pmkhoa/restful-api-go-and-ember">https://github.com/pmkhoa/restful-api-go-and-ember</a></p>
 
-<h3 id="backend-overview:46178a3a8a35be0a3dd526f3621aac57">Backend overview</h3>
+<h3 id="backend-overview">Backend overview</h3>
 
 <ul>
 <li><p><em>model</em>: Todo model includes <code>Id</code>, <code>Name</code>, <code>Completed</code>, <code>Due</code></p>
@@ -109,14 +116,12 @@ func main() {
     router.GET(&quot;/todos/:todoId&quot;, ShowTodo)
     // More routes are defined similarly
 
-
     // Enable the CORS
     c := cors.New(cors.Options{
         AllowedOrigins: []string{&quot;*&quot;},
         AllowedMethods: []string{&quot;GET&quot;, &quot;POST&quot;, &quot;DELETE&quot;, &quot;PUT&quot;, &quot;PATCH&quot;, &quot;OPTIONS&quot;}
     })
 }
-
 
 func TodosIndex(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
     w.Header().Set(&quot;Content-Type&quot;, &quot;application/json; charset=UTF-8&quot;)
@@ -126,7 +131,6 @@ func TodosIndex(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
         panic(err)
     }
 }
-
 
 func ShowTodo(w http.ResponseWriter, r *http.Request, params httprouter.Params) {
     todoId := params.ByName(&quot;todoId&quot;)
@@ -176,7 +180,7 @@ func RepoFindTodo(id string) Todo {
 </code></pre></li>
 </ul>
 
-<h3 id="frontend-overview:46178a3a8a35be0a3dd526f3621aac57">Frontend overview</h3>
+<h3 id="frontend-overview">Frontend overview</h3>
 
 <ul>
 <li><em>webapp</em>: Simple Ember app that lists all todos, and all user to create todo.
@@ -184,7 +188,7 @@ If you&rsquo;re interested in learning Ember for building frontend. Feel free to
 check out the github repo for this.</li>
 </ul>
 
-<h3 id="future-development:46178a3a8a35be0a3dd526f3621aac57">Future development</h3>
+<h3 id="future-development">Future development</h3>
 
 <p>Eventhough this was a very simple app, I have learnt a lot from building it from
 the ground up. Using Go for backend API is quite astonishing and simple, I think
@@ -200,7 +204,6 @@ API. There are a lot of things the can improve from this app.</p>
 
 <p>If you&rsquo;re interested in all the source code, feel free to check it out here:
 <a href="https://github.com/pmkhoa/restful-api-go-and-ember">https://github.com/pmkhoa/restful-api-go-and-ember</a></p>
-
         </div>
         
         
@@ -223,7 +226,7 @@ API. There are a lot of things the can improve from this app.</p>
                     
                     
                     
-                        <a href="http://khoapham.me/blog/deploy-ember-app-on-github-pages" class="link-to-article">
+                        <a href="http://khoapham.me/blog/deploy-ember-app-on-github-pages/" class="link-to-article">
     <div class="Article-summary">
         <h3>Deploy Ember App on Github Pages</h3>
     </div>
@@ -234,7 +237,7 @@ API. There are a lot of things the can improve from this app.</p>
                     
                     
                     
-                        <a href="http://khoapham.me/blog/meta-tags-generator" class="link-to-article">
+                        <a href="http://khoapham.me/blog/meta-tags-generator/" class="link-to-article">
     <div class="Article-summary">
         <h3>Meta Tags Generator</h3>
     </div>
@@ -245,7 +248,7 @@ API. There are a lot of things the can improve from this app.</p>
                     
                     
                     
-                        <a href="http://khoapham.me/blog/global-notification-using-ember-initializer-and-service" class="link-to-article">
+                        <a href="http://khoapham.me/blog/global-notification-using-ember-initializer-and-service/" class="link-to-article">
     <div class="Article-summary">
         <h3>Global Notification Using Ember Initializer and Service</h3>
     </div>
@@ -260,7 +263,7 @@ API. There are a lot of things the can improve from this app.</p>
                     
                     
                     
-                        <a href="http://khoapham.me/blog/what-missing-at-emberconf-2016" class="link-to-article">
+                        <a href="http://khoapham.me/blog/what-missing-at-emberconf-2016/" class="link-to-article">
     <div class="Article-summary">
         <h3>What Missing at Emberconf 2016</h3>
     </div>
@@ -327,7 +330,7 @@ API. There are a lot of things the can improve from this app.</p>
                     
                     
                     
-                        <a href="http://khoapham.me/blog/create-app-with-meteor" class="link-to-article">
+                        <a href="http://khoapham.me/blog/create-app-with-meteor/" class="link-to-article">
     <div class="Article-summary">
         <h3>Create App With Meteor</h3>
     </div>
