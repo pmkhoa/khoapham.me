@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Khoa Pham </title>
+        <link>http://khoapham.me/tags/s3/index.xml</link>
+        <language>en-us</language>
+        <author>Khoa Pham</author>
+        <rights>(C) 2016</rights>
+        <updated>0001-01-01 00:00:00 &#43;0000 UTC</updated>
+
+        
+            
+            <item>
+                <title>Sync Middleman with Amazon S3</title>
+                <link>http://khoapham.me/blog/sync-middleman-with-amazon-s3/</link>
+                <pubDate>Mon, 27 May 2013 22:18:14 -0800</pubDate>
+                <guid>http://khoapham.me/blog/sync-middleman-with-amazon-s3/</guid>
+                <description>&lt;p&gt;One thing that I love using Middleman and Amazon S3 is that they&amp;rsquo;re a perfect combination for building and hosting a static HTML5 site.&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Indeed, using Middleman, you can generate an HTML5 Boilerplate in one command:
+&lt;pre&gt;middleman init my_new_boilerplate_project &amp;ndash;template=html5&lt;/pre&gt;
+After generate a template, you can start up your development server by using command:
+&lt;pre&gt;bundle exec middleman server (or just) middleman server&lt;/pre&gt;
+When you finish your site, you can build your site using command:
+&lt;pre&gt;bundle exec middleman build&lt;/pre&gt;
+Is it better you can sync Middleman with Amazon S3 automatically when you build your site, so that you don&amp;rsquo;t need to use any other FTP clients to upload these files manually? Yes, &lt;a href=&#34;https://github.com/karlfreeman/middleman-sync&#34;&gt;middleman s3_sync&lt;/a&gt; can do it for you:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;In your Gemfile, add following lines:&lt;/strong&gt;
+  &lt;pre&gt;gem &amp;lsquo;middleman-s3_sync&amp;rsquo;&lt;/pre&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;In your config.rb file, activate your middleman s3 sync&lt;/strong&gt;
+&lt;pre&gt;activate :s3_sync do |s3_sync|
+  s3_sync.bucket                     = &amp;lsquo;your_s3_bucket_name&amp;rsquo; # The name of the S3 bucket you are targetting. This is globally unique.
+  s3_sync.region                     = &amp;lsquo;us-west-2&amp;rsquo;     # The AWS region for your bucket.
+  s3_sync.aws_access_key_id          = &amp;lsquo;your_access_key_id&amp;rsquo;
+  s3_sync.aws_secret_access_key      = &amp;lsquo;your_secret_access_key&amp;rsquo;
+  s3_sync.delete                     = false # We delete stray files by default.
+  s3_sync.after_build                = false # We chain after the build step by default. This may not be your desired behavior&amp;hellip;
+  s3_sync.prefer_gzip                = true
+  s3_sync.path_style                 = true
+  s3_sync.reduced_redundancy_storage = false
+  s3_sync.acl                        = &amp;lsquo;public-read&amp;rsquo;
+  s3_sync.encryption                 = false
+end&lt;/pre&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Make sure you install all the necessary gems to your app.&lt;/strong&gt;
+&lt;pre&gt; bundle install&lt;/pre&gt;&lt;/p&gt;
+
+&lt;p&gt;Now you can sync your files to S3 using:
+&lt;pre&gt; middleman sync_s3&lt;/pre&gt;&lt;/p&gt;</description>
+            </item>
+            
+        
+
+    </channel>
+</rss>

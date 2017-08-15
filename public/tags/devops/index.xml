@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Khoa Pham </title>
+        <link>http://khoapham.me/tags/devops/index.xml</link>
+        <language>en-us</language>
+        <author>Khoa Pham</author>
+        <rights>(C) 2016</rights>
+        <updated>0001-01-01 00:00:00 &#43;0000 UTC</updated>
+
+        
+            
+            <item>
+                <title>Deploy Ember App on Github Pages</title>
+                <link>http://khoapham.me/blog/deploy-ember-app-on-github-pages/</link>
+                <pubDate>Mon, 25 Apr 2016 15:46:17 PDT</pubDate>
+                <guid>http://khoapham.me/blog/deploy-ember-app-on-github-pages/</guid>
+                <description>&lt;p&gt;Github pages is ideal for hosting static websites. Especially if you&amp;rsquo;re developing a open source project, and want to have a simple website for it.
+&lt;/p&gt;
+
+&lt;p&gt;When using Ember Cli, the application is built into &lt;code&gt;/dist&lt;/code&gt; folder, this includes static assets such as index.html, application.js, etc&amp;hellip; Would it be nice if you create a gh-pages branch for just the &lt;code&gt;/dist&lt;/code&gt; folder?&lt;/p&gt;
+
+&lt;p&gt;Here are steps that I used to deploy my recent open source tool &lt;a href=&#34;http://pmkhoa.github.io/meta-tags-generator/&#34;&gt;Meta Tags
+Generator&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;//Update baseURL from config environment
+//Change meta-tags-generator to reflect your github page url
+//ENV.baseURL = &#39;/meta-tags-generator&#39;;
+
+//From master branch
+//Remove /dist from your .gitignore
+//Remove /dist folder
+git commit -am &amp;quot;Ready to deploy &amp;quot; &amp;amp;&amp;amp; git push origin master
+
+//Create orphan gh-pages branch
+git checkout --orphan gh-pages
+git rm --cached $(git ls-files)
+git add README.md
+git commit -am &amp;quot;Init gh-pages&amp;quot;
+git push origin gh-pages
+git co master
+
+//Make sure to change meta-tags-generator to reflect your repo
+git subtree add --prefix=dist git@github.com:pmkhoa/meta-tags-generator.git gh-pages --squash
+
+//Build ember app &amp;amp; push to gh-pages
+ember build --prod
+git add -am &amp;quot;Update latest /dist&amp;quot;
+git push origin master
+git subtree push --prefix=dist git@github.com:pmkhoa/meta-tags-generator.git gh-pages
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To make it easier for deploying process, we can create an shell script to handle
+&lt;code&gt;git commit&lt;/code&gt;, &lt;code&gt;ember build&lt;/code&gt;, and &lt;code&gt;git push&lt;/code&gt;. Create a deploy.sh file like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#!/bin/bash
+
+echo -e &amp;quot;\033[0;32mDeploying updates to Github...\033[0m&amp;quot;
+
+# Build the project.
+ember build --prod
+
+# Add changes to git.
+git add -A
+
+# Commit changes.
+msg=&amp;quot;rebuilding site `date`&amp;quot;
+if [ $# -eq 1 ]
+then msg=&amp;quot;$1&amp;quot;
+fi
+git commit -m &amp;quot;$msg&amp;quot;
+
+# Push source and build repos.
+# Make sure to change meta-tags-generator here to your repo name.
+git push origin master
+git subtree push --prefix=dist git@github.com:pmkhoa/meta-tags-generator.git gh-pages
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can run deploy.sh script like this: &lt;code&gt;./deploy.sh -m &amp;quot;Update website&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Happy coding &amp;amp; happy deploying!&lt;/p&gt;</description>
+            </item>
+            
+        
+            
+            <item>
+                <title>Set up Nginx with Centos</title>
+                <link>http://khoapham.me/blog/set-up-nginx-with-centos/</link>
+                <pubDate>Wed, 18 Nov 2015 00:00:00 UTC</pubDate>
+                <guid>http://khoapham.me/blog/set-up-nginx-with-centos/</guid>
+                <description>&lt;p&gt;Recently I had a chance to have my hand on setting up a web server using Nginx
+and Centos. The requirements were simple:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Server can serve multiple domains or subdomains.&lt;/li&gt;
+&lt;li&gt;Each domain web folder is stored under different user account.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;In this post, I&amp;rsquo;d like to give you a walkthrough how to set up a server like
+this on any private Centos server:&lt;/p&gt;
+
+&lt;h4 id=&#34;1-first-thing-you-want-to-do-is-to-update-system&#34;&gt;1. First thing you want to do is to update system&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;$ sudo yum update
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;2-install-nginx&#34;&gt;2. Install nginx&lt;/h4&gt;
+
+&lt;p&gt;Create a yum repo for nginx at /etc/yum.repos.d/nginx.repo&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ sudo vi /etc/yum.repos.d/nginx.repo
+# Add following content
+[nginx]
+name=nginx repo
+baseurl=http://nginx.org/packages/centos/$releasever/$basearch/
+gpgcheck=0
+enabled=1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Install nginx&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ sudo yum install nginx
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Enable nginx service&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ sudo chkconfig nginx on
+# Now you can use
+# service nginx start
+# service nginx stop
+# service nginx restart
+# service nginx status
+# service nginx reload
+
+# Now you can run
+$ sudo service nginx start
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Congrats! You just got your nginx set up on your Centos server.&lt;/p&gt;
+
+&lt;h4 id=&#34;3-configure-nginx-and-setup-domains&#34;&gt;3. Configure nginx, and setup domains&lt;/h4&gt;
+
+&lt;p&gt;Default nginx configuration file is located at: /etc/nginx/nginx.conf. From the
+last line of nginx.conf is where other custom configurations are loaded. This is
+where we will setup our domains or subdomains.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s setup our first domain (example.com). We create a user call example to
+manage this domain.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ sudo adduser example
+$ passwd example
+# Make sure to add your public key to this user so you can ssh to it
+
+$ cd /home/example
+$ mkdir public
+$ vim index.html
+# Add &amp;lt;h1&amp;gt;Hello world&amp;lt;/h1&amp;gt;
+# If you are using su or centos account to create these files,
+# do not forget to change those file &amp;amp; folder owner to example, using chmod.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now we want to create a nginx config for example.com domain at
+/etc/nginx/conf.d&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ cd /ect/nginx/conf.d
+$ mv default.conf example.default # disable default nginx message
+$ vim example.com.conf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Change the example.com.conf as follow&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;server {
+
+    # ipv4
+    listen 80 default_server;
+
+    # ipv6
+    listen [::]:80 default_server;
+
+    #    listen 80 default_server;
+    server_name localhost example.com www.example.com;
+
+    access_log /var/log/nginx/example.com-access.log  main;
+    error_log /var/log/nginx/example.com-error.log debug;
+
+    client_max_body_size 20m;
+
+    location / {
+        root /home/example/public/;
+        index  index.html index.htm;
+    }
+
+    # redirect server error pages to the static page /50x.html
+    #
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+
+    # deny access to .htaccess files, if Apache&#39;s document root
+    # concurs with nginx&#39;s one
+    #
+    # location ~ /\.ht {
+    #    deny  all;
+    # }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;4-fix-permission-issues&#34;&gt;4. Fix permission issues&lt;/h4&gt;
+
+&lt;p&gt;Now if everything went well, when you visit your server, you should see the 403
+permission error. Calm down, this is expected. Since nginx doesn&amp;rsquo;t have access
+to the user folder at /home/example/public, the server will return permission
+error. We need to add nginx user to example user group.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ gpasswd -a nginx example # Add nginx user to example group
+$ chown -R example:example /home/example
+$ chmod g+x /home/example &amp;amp;&amp;amp; chmod g+x /home/example/public
+$ sudo -u nginx stat /home/example/public # make sure your all access to public
+# Disable SE Linux enforce
+$ setenforce 0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Congrats! Now you can try to access new server using: &lt;code&gt;curl localhost&lt;/code&gt;&lt;/p&gt;</description>
+            </item>
+            
+        
+            
+            <item>
+                <title>Deploy Middleman to Heroku</title>
+                <link>http://khoapham.me/blog/deploy-middleman-to-heroku/</link>
+                <pubDate>Tue, 14 Oct 2014 00:00:00 UTC</pubDate>
+                <guid>http://khoapham.me/blog/deploy-middleman-to-heroku/</guid>
+                <description>&lt;p&gt;Heroku is a great cloud service, it uses git for version control and deployment which is very handy for me to just update my blog in one command.
+Here are some simple step that you can set it up.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;In your Gemfile, add puma and rake:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;gem &#39;puma&#39;,      &#39;~&amp;gt; 2.7&#39;
+gem &#39;rake&#39;,      &#39;~&amp;gt; 10.1&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Create a Procfile, and add this code&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;web: bundle exec puma -p $PORT
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Since we&amp;rsquo;re going to tell Heroku to use our build folder under our Middlemanapp, we will use the rake task to compile our build assets. Under your root app, create: Rakefile&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;namespace :assets do
+  task :precompile do
+    sh &#39;middleman build&#39;
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Finally we need to setup a Rack server to tell Heroku to load our build folder, and its assets&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;module Rack
+  class TryStatic
+    def initialize(app, options)
+      @app = app
+      @try = [&#39;&#39;, *options.delete(:try)]
+      @static = ::Rack::Static.new(lambda { [404, {}, []] }, options)
+    end
+    def call(env)
+      orig_path = env[&#39;PATH_INFO&#39;]
+      found = nil
+      @try.each do |path|
+        resp = @static.call(env.merge!({&#39;PATH_INFO&#39; =&amp;gt; orig_path + path}))
+        break if 404 != resp[0] &amp;amp;&amp;amp; found = resp
+      end
+      found or @app.call(env.merge!(&#39;PATH_INFO&#39; =&amp;gt; orig_path))
+    end
+  end
+end
+use Rack::Deflater
+use Rack::TryStatic, :root =&amp;gt; &amp;quot;build&amp;quot;, :urls =&amp;gt; %w[/], :try =&amp;gt; [&#39;.html&#39;, &#39;index.html&#39;, &#39;/index.html&#39;]
+# Run your own Rack app here or use this one to serve 404 messages:
+run lambda{ |env|
+  not_found_page = File.expand_path(&amp;quot;../build/404.html&amp;quot;, __FILE__)
+  if File.exist?(not_found_page)
+    [ 404, { &#39;Content-Type&#39;  =&amp;gt; &#39;text/html&#39;}, [File.read(not_found_page)] ]
+  else
+    [ 404, { &#39;Content-Type&#39;  =&amp;gt; &#39;text/html&#39; }, [&#39;404 - page not found&#39;] ]
+  end
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now your site is ready to deploy to Heroku. Just create a Heroku app and add Heroku git remote link, and enjoy!&lt;/p&gt;
+
+&lt;p&gt;P.S. Don&amp;rsquo;t forget to add the build directory to your .gitignore&lt;/p&gt;</description>
+            </item>
+            
+        
+            
+            <item>
+                <title>Setting up Amazon Web Services</title>
+                <link>http://khoapham.me/blog/setting-up-amazon-web-services/</link>
+                <pubDate>Fri, 17 May 2013 23:14:51 -0800</pubDate>
+                <guid>http://khoapham.me/blog/setting-up-amazon-web-services/</guid>
+                <description>&lt;p&gt;To setting up Amazon Web Services, the process of setting up an EC2 on Amazon Web Services (AWS) is not complicated, all you need to get a server up and running are Apache, PHP,  MySQL.
+Here are some initial steps that help you get started:
+&lt;/p&gt;
+
+&lt;p&gt;###1. SSH connect to you EC2 instance.
+To connect to your instance, you need the private key and the elastic IP address that associate with your instance. You can create an associated elastic IP address right in your Amazon Console Management.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ssh -i [FILE NAME].pem ec2-user@[IP ADDRESS]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;###2. Once you&amp;rsquo;re connected, install update on your instance.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo yum -y update
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;3-install-php-amp-its-package&#34;&gt;3. Install PHP &amp;amp; its package.&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo yum install php php-mysql php-xml php-mcrypt php-mbstring php-cli php-devel php-pdo php-pear
+sudo pear install Log
+sudo yum install -y pcre-devel
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;4-install-apache-http&#34;&gt;4. Install Apache http.&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo yum install httpd
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;5-install-mysql&#34;&gt;5. Install MySQL&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo yum install mysql-server mysql-devel mysql
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;6-install-php-apc-module&#34;&gt;6. Install PHP APC module&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo yum install php-pecl-apc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;7-configure-mysql-and-php&#34;&gt;7. Configure MySQL and PHP&lt;/h3&gt;
+
+&lt;p&gt; Before you get everything running, make sure to check the PHP and MySQL configuration files.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;The PHP configuration file is php.ini, which is located under /etc/php.ini. Open the php.ini and increase memory limit to: 128M (or bigger if you wish to).&lt;/p&gt;
+
+&lt;pre&gt;sudo vim /etc/php.ini
+memory_limit = 128M&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The MySQL configuration file is my.cnf located under /etc/my.cnf. Change it to this:&lt;/p&gt;
+
+&lt;pre&gt;[mysqld]
+datadir=/var/lib/mysql
+socket=/var/lib/mysql/mysql.sock
+
+# Disabling symbolic-links is recommended to prevent assorted security risks
+symbolic-links=0
+# Settings user and group are ignored when systemd is used.
+# If you need to run mysqld under a different user or group,
+# customize your systemd unit file for mysqld according to the
+# instructions in http://fedoraproject.org/wiki/Systemd
+skip-external-locking
+long_query_time=1
+slow_query_log
+slow_query_log_file=/var/log/log-slow-queries.log
+log-bin=mysql-bin
+server-id= 1
+key_buffer_size = 256M
+max_allowed_packet = 3M
+table_open_cache = 64
+read_buffer_size = 4M
+read_rnd_buffer_size = 8M
+myisam_sort_buffer_size = 16M
+thread_cache_size = 8
+query_cache_size= 32M
+thread_concurrency = 8
+[mysqld_safe]
+log-error=/var/log/mysqld.log
+pid-file=/var/run/mysqld/mysqld.pid
+myisam_recover_options&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Now you have all packages installed, you can start your web server by starting mysql-server and httpd.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo service mysqld start
+sudo service httpd start
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Auto start mysql server, and httpd.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo /sbin/chkconfig --levels 235 mysqld on
+sudo /sbin/chkconfig --levels 235 httpd on
+&lt;/code&gt;&lt;/pre&gt;</description>
+            </item>
+            
+        
+
+    </channel>
+</rss>

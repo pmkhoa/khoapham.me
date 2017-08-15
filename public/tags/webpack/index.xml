@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Khoa Pham </title>
+        <link>http://khoapham.me/tags/webpack/index.xml</link>
+        <language>en-us</language>
+        <author>Khoa Pham</author>
+        <rights>(C) 2016</rights>
+        <updated>0001-01-01 00:00:00 &#43;0000 UTC</updated>
+
+        
+            
+            <item>
+                <title>Webpack Starter - Use ES6 Today</title>
+                <link>http://khoapham.me/blog/webpack-starter/</link>
+                <pubDate>Tue, 03 May 2016 22:31:31 PDT</pubDate>
+                <guid>http://khoapham.me/blog/webpack-starter/</guid>
+                <description>&lt;p&gt;Back in early 2015, when I started &lt;a href=&#34;http://khoapham.me/blog/es6-review-part-1&#34;&gt;writing Javascript in ES6&lt;/a&gt;; it was not easy to get everything running smoothly at that time. Today some developers are still not sure where to get started using ES6 even though it&amp;rsquo;s widely adopted by Javascript community. I spent an evening writing a simple &lt;a href=&#34;https://github.com/pmkhoa/webpack-start&#34;&gt;Webpack Boilerplate&lt;/a&gt; to help new developers to use it for their new projects.&lt;/p&gt;
+
+&lt;p&gt;What does this &lt;a href=&#34;https://github.com/pmkhoa/webpack-start&#34;&gt;minimalist boilerplate&lt;/a&gt; include?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Webpack core&lt;/li&gt;
+&lt;li&gt;Webpack dev server&lt;/li&gt;
+&lt;li&gt;Webpack module loader&lt;/li&gt;
+&lt;li&gt;SASS compiler&lt;/li&gt;
+&lt;li&gt;ES6 (using Babel)&lt;/li&gt;
+&lt;li&gt;Livereload&lt;/li&gt;
+&lt;li&gt;Production build ready&lt;/li&gt;
+&lt;li&gt;Example code for loading modules &amp;amp; scss&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This is, hopefully, enough for ES6 newcomers can give it a try for their
+projects.&lt;/p&gt;
+
+&lt;p&gt;Happy coding &amp;amp; happy sharing.&lt;/p&gt;
+</description>
+            </item>
+            
+        
+
+    </channel>
+</rss>

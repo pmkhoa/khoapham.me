@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Khoa Pham </title>
+        <link>http://khoapham.me/tags/jquery/index.xml</link>
+        <language>en-us</language>
+        <author>Khoa Pham</author>
+        <rights>(C) 2016</rights>
+        <updated>0001-01-01 00:00:00 &#43;0000 UTC</updated>
+
+        
+            
+            <item>
+                <title>MenuOnScroll - jQuery Plugin</title>
+                <link>http://khoapham.me/blog/menuOnScroll-jquery-plugin/</link>
+                <pubDate>Tue, 25 Nov 2014 00:00:00 UTC</pubDate>
+                <guid>http://khoapham.me/blog/menuOnScroll-jquery-plugin/</guid>
+                <description>&lt;p&gt;Today I just released menuOnScroll - jQuery plugin that automatically updates the menu
+navigation when you scroll. This functionality is extremely common on the web,
+especially for the single page website. 
+Since everyone just keeps build the similar thing over and over again, I think it&amp;rsquo;s better to create a simple plugin that will help to save our time.&lt;/p&gt;
+
+&lt;p&gt;This plugin is the first open source (MIT) project that I&amp;rsquo;ve done, and I am
+super excited about this. Writing open source code really help me to write my
+code cleaner because I kept refactoring my code over and over again in order to
+make it not only easy to read but also to maintain. This is very important
+factor that helps me to become a better developer.&lt;/p&gt;
+
+&lt;p&gt;I hope you will find this plugin useful in some way. Here is the &lt;a href=&#34;https://github.com/pmkhoa/jquery-menuOnScroll&#34;&gt;source
+code&lt;/a&gt; if you want to check it
+out.&lt;/p&gt;
+
+&lt;p&gt;Cheers! Happy Thanksgiving!&lt;/p&gt;</description>
+            </item>
+            
+        
+
+    </channel>
+</rss>

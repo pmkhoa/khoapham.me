@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Khoa Pham </title>
+        <link>http://khoapham.me/tags/javascript/index.xml</link>
+        <language>en-us</language>
+        <author>Khoa Pham</author>
+        <rights>(C) 2016</rights>
+        <updated>0001-01-01 00:00:00 &#43;0000 UTC</updated>
+
+        
+            
+            <item>
+                <title>Webpack Starter - Use ES6 Today</title>
+                <link>http://khoapham.me/blog/webpack-starter/</link>
+                <pubDate>Tue, 03 May 2016 22:31:31 PDT</pubDate>
+                <guid>http://khoapham.me/blog/webpack-starter/</guid>
+                <description>&lt;p&gt;Back in early 2015, when I started &lt;a href=&#34;http://khoapham.me/blog/es6-review-part-1&#34;&gt;writing Javascript in ES6&lt;/a&gt;; it was not easy to get everything running smoothly at that time. Today some developers are still not sure where to get started using ES6 even though it&amp;rsquo;s widely adopted by Javascript community. I spent an evening writing a simple &lt;a href=&#34;https://github.com/pmkhoa/webpack-start&#34;&gt;Webpack Boilerplate&lt;/a&gt; to help new developers to use it for their new projects.&lt;/p&gt;
+
+&lt;p&gt;What does this &lt;a href=&#34;https://github.com/pmkhoa/webpack-start&#34;&gt;minimalist boilerplate&lt;/a&gt; include?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Webpack core&lt;/li&gt;
+&lt;li&gt;Webpack dev server&lt;/li&gt;
+&lt;li&gt;Webpack module loader&lt;/li&gt;
+&lt;li&gt;SASS compiler&lt;/li&gt;
+&lt;li&gt;ES6 (using Babel)&lt;/li&gt;
+&lt;li&gt;Livereload&lt;/li&gt;
+&lt;li&gt;Production build ready&lt;/li&gt;
+&lt;li&gt;Example code for loading modules &amp;amp; scss&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This is, hopefully, enough for ES6 newcomers can give it a try for their
+projects.&lt;/p&gt;
+
+&lt;p&gt;Happy coding &amp;amp; happy sharing.&lt;/p&gt;
+</description>
+            </item>
+            
+        
+            
+            <item>
+                <title>Global Notification Using Ember Initializer and Service</title>
+                <link>http://khoapham.me/blog/global-notification-using-ember-initializer-and-service/</link>
+                <pubDate>Tue, 12 Apr 2016 11:18:20 PDT</pubDate>
+                <guid>http://khoapham.me/blog/global-notification-using-ember-initializer-and-service/</guid>
+                <description>&lt;p&gt;When developing Ember app, you may want to have a singleton to handle
+global state such as global notification, or error handling. This doesn&amp;rsquo;t fall
+into &lt;code&gt;Route&lt;/code&gt;, &lt;code&gt;Controller&lt;/code&gt;, or &lt;code&gt;Component&lt;/code&gt;. Ember offers an easy way to manage
+this using &lt;code&gt;Service&lt;/code&gt; and &lt;code&gt;Initializers&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h4 id=&#34;create-a-service-to-hold-notification-data&#34;&gt;Create a service to hold notification data&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;//app/services/global-notification.js
+import Ember from &#39;ember&#39;;
+
+export default Ember.Service.extend({
+    notification: null,
+    init() {
+        this.set(&#39;notification&#39;, null);
+    }
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;create-an-initializer-to-inject-global-notification-service-in-application&#34;&gt;Create an initializer to inject global notification service in application&lt;/h4&gt;
+
+&lt;p&gt;This allows us to use GlobalNotification service in route, and component.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;//app/initializers/global-notification.js
+import GlobalNotification from &#39;../services/global-notification&#39;;
+
+export function initialize(application) {
+    application.register(&#39;globalNotification:main&#39;, GlobalNotification, {singleton: true});
+    application.inject(&#39;component&#39;, &#39;GlobalNotification&#39;, &#39;service:global-notification&#39;);
+    application.inject(&#39;route&#39;, &#39;GlobalNotification&#39;, &#39;service:global-notification&#39;);
+}
+
+export default {
+    name: &#39;global-notification&#39;,
+    initialize
+};
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;using-our-global-notification-service&#34;&gt;Using our global notification service.&lt;/h4&gt;
+
+&lt;p&gt;Assuming you have a user settings form, and want to display notification when
+user changes settings.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;//app/components/user-settings.js
+import Ember from &#39;ember&#39;;
+export default Ember.Component.extend({
+    globalNotification: Ember.inject.service(&#39;global-notification&#39;),
+    actions: {
+        saveSettings() {
+            let accountInfo = this.getProperties(&amp;quot;firstName&amp;quot;, &amp;quot;lastName&amp;quot;, &amp;quot;email&amp;quot;, &amp;quot;password&amp;quot;);
+            Ember.$.ajax({
+                url: &amp;quot;/api/user&amp;quot;,
+                type: &amp;quot;POST&amp;quot;,
+                data: JSON.stringify(accountInfo)
+            }).then(function(response) {
+                // We want to set notification data to global notification
+                service.
+               this.set(&amp;quot;globalNotification.notification&amp;quot;, &amp;quot;User settings
+               saved&amp;quot;); 
+            });
+        }
+    }
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In the user setting forms, we can put &lt;code&gt;{{GlobalNotification.notification}}&lt;/code&gt;
+where we want to display the notification.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;//app/templates/components/user-settings.hbs
+&amp;lt;form id=&amp;quot;user-settings&amp;quot;&amp;gt;
+    &amp;lt;p class=&amp;quot;notification&amp;quot;&amp;gt;{{GlobalNotification.notification}}&amp;lt;/p&amp;gt;
+    ....
+&amp;lt;/form&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That is it. Now you can call &lt;code&gt;global-notification&lt;/code&gt; service anywhere in your
+application, and use its injection via &lt;code&gt;initializers&lt;/code&gt; to display the data in
+your template.&lt;/p&gt;</description>
+            </item>
+            
+        
+            
+            <item>
+                <title>What Missing at Emberconf 2016</title>
+                <link>http://khoapham.me/blog/what-missing-at-emberconf-2016/</link>
+                <pubDate>Sat, 02 Apr 2016 15:46:04 -0200</pubDate>
+                <guid>http://khoapham.me/blog/what-missing-at-emberconf-2016/</guid>
+                <description>&lt;p&gt;EmberConf 2016 was really a great conference.  There were about 950 attendees this year, and the conference was very well-organized.&lt;/p&gt;
+
+&lt;p&gt;I had a chance to talk with great people at the conference,
+especially core team members, Ember Simple Auth author, Brian at Dockyard, and
+other amazing developers. Some of the talks were very informative, such as:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Opening Keynote by Yehuda Katz and Tom Dale&lt;/li&gt;
+&lt;li&gt;Using Service Workers in Ember by John Kleinschmidt&lt;/li&gt;
+&lt;li&gt;Compose Yourself with Ember and D3 by Ivan Vanderbyl&lt;/li&gt;
+&lt;li&gt;Idiomatic Ember: Sweet Spot of Performance and Productivity by Lauren Tan&lt;/li&gt;
+&lt;li&gt;The Future of Ember Templating by Godfrey Chan &amp;amp; Yehuda Katz&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I was surprised that there were quite lot of talks only scratched the surface of
+Ember. Here are list of missing topics that I wish they were discussed at the
+conference:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ember Service&lt;/li&gt;
+&lt;li&gt;Ember Data&lt;/li&gt;
+&lt;li&gt;Ember Initializers&lt;/li&gt;
+&lt;li&gt;Experience with deprecation when migrating from Ember v1 - v2&lt;/li&gt;
+&lt;li&gt;Component best practice. Lauren Tan had put together
+&lt;a href=&#34;https://github.com/poteto/component-best-practices&#34;&gt;this repo&lt;/a&gt;, however
+there was no talk similar to about.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I wasn&amp;rsquo;t sure why these topics were not in the conference this year, but I do
+they will be in next year. In the meantime, I will probably just enjoy &lt;strong&gt;&lt;a href=&#34;https://github.com/tildeio/glimmer&#34;&gt;Glimmer 2&lt;/a&gt;&lt;/strong&gt;
+and &lt;strong&gt;&lt;a href=&#34;http://www.ember-fastboot.com/&#34;&gt;Fastboot&lt;/a&gt;&lt;/strong&gt;. Thanks to the Ember team for such hard works everyone putting
+into this to make the conference successful.&lt;/p&gt;</description>
+            </item>
+            
+        
+            
+            <item>
+                <title>Rickshaw Chart Hovering Multiple Values</title>
+                <link>http://khoapham.me/blog/rickshaw-chart-hovering/</link>
+                <pubDate>Wed, 23 Dec 2015 12:00:31 PST</pubDate>
+                <guid>http://khoapham.me/blog/rickshaw-chart-hovering/</guid>
+                <description>&lt;p&gt;&lt;a href=&#34;http://d3js.org/&#34;&gt;D3&lt;/a&gt; is a great javascript library for creating data visualization chart. I have
+been a big fan of it for over a year now. However, whenever I need to develop a
+quick chart prototype, I use an alternative library called
+&lt;a href=&#34;http://code.shutterstock.com/rickshaw/examples/&#34;&gt;Rickshaw&lt;/a&gt;. It&amp;rsquo;s an
+extension from D3, so you can get greatness from both of them.
+&lt;/p&gt;
+
+&lt;p&gt;One thing that was challenging me recently that I needed to create a chart
+when user hovered on it, it would reveal all y-values at the cursor position.&lt;/p&gt;
+
+&lt;div id=&#34;chart_container&#34;&gt;
+    &lt;div id=&#34;chart&#34;&gt;&lt;/div&gt;
+    &lt;div id=&#34;legend&#34;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+#chart_container {
+    background: rgba(0, 0, 0, 0.05);
+    max-width: 100%;
+}
+.swatch {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 8px 0 0;
+}
+.label {
+    display: inline-block;
+}
+#legend {
+    text-align: center;
+}
+.rickshaw_graph .detail {
+    background: none;
+}
+.line-wrapper {
+    opacity: 1;
+    background: #f3f7f8;
+    padding: 7px 10px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    white-space: nowrap;
+    left: 10px;
+    position: absolute;
+    min-width: 300px;
+}
+.line-wrapper .line {
+    position: relative;
+    margin-top: 3px;
+}
+.line-wrapper .swatch {
+    border-radius: 10px;
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 3px;
+}
+.line-wrapper .label {
+    font-weight: 600;
+    padding-left: 18px;
+}
+.line-wrapper .label   span {
+    font-weight: 400;
+}
+.line-wrapper .label .metric-legend-label {
+    margin-right: 5px;
+    padding-right: 5px;
+}
+.line-wrapper .label .metric-legend-label .text {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+&lt;/style&gt;
+
+&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;http://khoapham.me/blog-vendor/rickshaw.min.css&#34;&gt;
+&lt;script src=&#34;http://khoapham.me/blog-vendor/d3.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;http://khoapham.me/blog-vendor/rickshaw.min.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;script type=&#34;text/javascript&#34;&gt;
+
+    // set up our data series with 50 random data points
+
+    var seriesData = [ [], [], [] ];
+    var random = new Rickshaw.Fixtures.RandomData(150);
+
+    for (var i = 0; i &lt; 150; i++) {
+        random.addData(seriesData);
+    }
+
+    // instantiate our graph!
+
+    var graph = new Rickshaw.Graph( {
+        element: document.getElementById(&#34;chart&#34;),
+        width: Math.max(document.getElementById(&#34;chart&#34;).offsetWidth, 200),
+        height: 300,
+        renderer: &#39;line&#39;,
+        series: [
+            {
+                color: &#34;#c05020&#34;,
+                data: seriesData[0],
+                name: &#39;New York&#39;
+            }, {
+                color: &#34;#30c020&#34;,
+                data: seriesData[1],
+                name: &#39;London&#39;
+            }, {
+                color: &#34;#6060c0&#34;,
+                data: seriesData[2],
+                name: &#39;Tokyo&#39;
+            }
+        ]
+    } );
+
+    graph.render();
+
+    var Hover = Rickshaw.Class.create(Rickshaw.Graph.HoverDetail, {
+
+        render: function(args) {
+
+            var lines = document.createElement(&#39;div&#39;);
+            lines.className = &#39;line-wrapper&#39;;
+            lines.innerHTML = args.formattedXValue;
+            lines.style.top = args.mouseY + &#34;px&#34;;
+            this.element.appendChild(lines);
+            var boundingRect = this.element.parentNode.getBoundingClientRect();
+            if ( args.mouseX &gt; ( boundingRect.width * 2 / 3 ) ) {
+                this.element.classList.remove(&#39;left&#39;);
+                this.element.classList.add(&#39;right&#39;);
+            } else {
+                this.element.classList.remove(&#39;right&#39;);
+                this.element.classList.add(&#39;left&#39;);
+            }
+
+            args.detail.sort(function(a, b) { return a.order - b.order }).forEach( function(d) {
+
+                var line = document.createElement(&#39;div&#39;);
+                line.className = &#39;line&#39;;
+
+                var swatch = document.createElement(&#39;div&#39;);
+                swatch.className = &#39;swatch&#39;;
+                swatch.style.backgroundColor = d.series.color;
+
+                var label = document.createElement(&#39;div&#39;);
+                label.className = &#39;label&#39;;
+                label.innerHTML = d.name + &#34;: &#34;+ d.formattedYValue;
+
+                line.appendChild(swatch);
+                line.appendChild(label);
+
+                lines.appendChild(line);
+
+                var dot = document.createElement(&#39;div&#39;);
+                dot.className = &#39;dot&#39;;
+                dot.style.top = graph.y(d.value.y0 + d.value.y) + &#39;px&#39;;
+                dot.style.borderColor = d.series.color;
+
+                this.element.appendChild(dot);
+
+                dot.className = &#39;dot active&#39;;
+
+                // Assume left alignment until the element has been displayed and
+                // bounding box calculations are possible.
+
+                this.show();
+
+            }, this );
+        }
+    });
+
+    var hover = new Hover( { graph: graph } ); 
+
+&lt;/script&gt;
+
+&lt;p&gt;The source code for this was simple, as seen below:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div id=&amp;quot;chart_container&amp;quot;&amp;gt;
+    &amp;lt;div id=&amp;quot;chart&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;!--break--&gt;
+
+&lt;pre&gt;&lt;code&gt;// set up our data series with 50 random data points
+
+var seriesData = [ [], [], [] ];
+var random = new Rickshaw.Fixtures.RandomData(150);
+
+for (var i = 0; i &amp;lt; 150; i++) {
+    random.addData(seriesData);
+}
+
+// instantiate our graph!
+
+var graph = new Rickshaw.Graph( {
+    element: document.getElementById(&amp;quot;chart&amp;quot;),
+    width: 600,
+    height: 300,
+    renderer: &#39;line&#39;,
+    series: [
+        {
+            color: &amp;quot;#c05020&amp;quot;,
+            data: seriesData[0],
+            name: &#39;New York&#39;
+        }, {
+            color: &amp;quot;#30c020&amp;quot;,
+            data: seriesData[1],
+            name: &#39;London&#39;
+        }, {
+            color: &amp;quot;#6060c0&amp;quot;,
+            data: seriesData[2],
+            name: &#39;Tokyo&#39;
+        }
+    ]
+} );
+
+graph.render();
+var Hover = Rickshaw.Class.create(Rickshaw.Graph.HoverDetail, {
+    render: function(args) {
+        var lines = document.createElement(&#39;div&#39;);
+        lines.className = &#39;line-wrapper&#39;;
+        lines.innerHTML = args.formattedXValue;
+        lines.style.top = args.mouseY + &amp;quot;px&amp;quot;;
+        this.element.appendChild(lines);
+        var boundingRect = this.element.parentNode.getBoundingClientRect();
+        if ( args.mouseX &amp;gt; ( boundingRect.width * 2 / 3 ) ) {
+            this.element.classList.remove(&#39;left&#39;);
+            this.element.classList.add(&#39;right&#39;);
+        } else {
+            this.element.classList.remove(&#39;right&#39;);
+            this.element.classList.add(&#39;left&#39;);
+        }
+
+        args.detail.sort(function(a, b) { return a.order - b.order }).forEach( function(d) {
+
+            var line = document.createElement(&#39;div&#39;);
+            line.className = &#39;line&#39;;
+
+            var swatch = document.createElement(&#39;div&#39;);
+            swatch.className = &#39;swatch&#39;;
+            swatch.style.backgroundColor = d.series.color;
+
+            var label = document.createElement(&#39;div&#39;);
+            label.className = &#39;label&#39;;
+            label.innerHTML = d.name + &amp;quot;: &amp;quot;+ d.formattedYValue;
+
+            line.appendChild(swatch);
+            line.appendChild(label);
+
+            lines.appendChild(line);
+
+            var dot = document.createElement(&#39;div&#39;);
+            dot.className = &#39;dot&#39;;
+            dot.style.top = graph.y(d.value.y0 + d.value.y) + &#39;px&#39;;
+            dot.style.borderColor = d.series.color;
+
+            this.element.appendChild(dot);
+
+            dot.className = &#39;dot active&#39;;
+
+            // Assume left alignment until the element has been displayed and
+            // bounding box calculations are possible.
+
+            this.show();
+
+        }, this );
+    }
+});
+
+var hover = new Hover( { graph: graph } ); 
+&lt;/code&gt;&lt;/pre&gt;</description>
+            </item>
+            
+        
+            
+            <item>
+                <title>ES6 Review Part 2</title>
+                <link>http://khoapham.me/blog/es6-review-part-2/</link>
+                <pubDate>Mon, 20 Jul 2015 00:00:00 UTC</pubDate>
+                <guid>http://khoapham.me/blog/es6-review-part-2/</guid>
+                <description>
+
+&lt;p&gt;This is a second review post for new ES6 features that I&amp;rsquo;d love to share. You
+can find the first review here &lt;a href=&#34;http://khoapham.me/blog/es6-review-part-1/&#34;&gt;ES6 Review Part 1&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;arrows&#34;&gt;Arrows&lt;/h3&gt;
+
+&lt;p&gt;I have been using arrow (-&amp;gt;) and fat-arrow (=&amp;gt;) key in Coffeescript for while, and I was happy when ES6 would support arrow key (=&amp;gt;) as a short-hand of function keyword. Of course, if you’re familiar with arrow keys in Coffeescript, this feature will be similar. Here are some common use cases:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  $(“button”).on(“click”, (event) =&amp;gt; {
+    runApp();
+  });
+
+  var sum = (x, y) =&amp;gt; { return x + y; };
+  let x = 2;
+  let y = 3;
+  sum(x, y); // return 5
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;strings&#34;&gt;Strings&lt;/h3&gt;
+
+&lt;p&gt;ES6 provides a better way to work with Strings, such as multiline strings, or string interpolation.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  `Multiline javascript
+    strings`
+
+  `${x} + ${y} = ${sum(x, y)}`
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;better-managing-your-javascript-files-with-modules&#34;&gt;Better managing your javascript files with modules&lt;/h3&gt;
+
+&lt;p&gt;With ES6 Modules, it’s much easier to organize your javascript files across the app. For instance:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  // lib/utility.js
+  export function sum(x, y) {
+    return x + y;
+  }
+  // app.js
+  import * as utility from “lib/utility”;
+  console.log(`2 + 3 = ${utility.sum(2, 3)}`)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Of course, there are more exciting features coming in ES6. I don’t tend to review them all, instead the one that I found myself using most of the time. To see other features, you can visit this &lt;a href=&#34;https://github.com/lukehoban/es6features#template-strings&#34;&gt;Github page&lt;/a&gt;.&lt;/p&gt;
+</description>
+            </item>
+            
+        
+            
+            <item>
+                <title>ES6 Review Part 1</title>
+                <link>http://khoapham.me/blog/es6-review-part-1/</link>
+                <pubDate>Tue, 03 Mar 2015 00:00:00 UTC</pubDate>
+                <guid>http://khoapham.me/blog/es6-review-part-1/</guid>
+                <description>
+
+&lt;p&gt;ECMAScript 6 (ES6) is the upcoming version of ECMACScript standard which is
+supposed to be ready soon. There are number of significant changes in
+this new standard version of Javascript. So far I can tell, this is indeed the
+future of Javascript, and I love it.&lt;/p&gt;
+
+&lt;p&gt;In this short blog, I use ES6 to demonstrate some new features of ES6 by writing
+the linked list data structure.&lt;/p&gt;
+
+&lt;div class=&#34;center&#34;&gt;&lt;img src=&#34;http://khoapham.me/img/LinkedLists-deletingnode.png&#34; alt=&#34;Linked List&#34; /&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;classes&#34;&gt;Classes&lt;/h3&gt;
+
+&lt;p&gt;ES6 finally allows you to declare your object using class keyword. This is one
+big step forward of Javascript.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class Node {
+  constructor(data, nextNode) {
+    this.data = data;
+    this.next = nextNode;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The Class comes with the &lt;code&gt;constructor&lt;/code&gt; method. This method will execute right
+after the object is initiated.&lt;/p&gt;
+
+&lt;h3 id=&#34;better-variable-scope-with-let&#34;&gt;Better variable scope with let&lt;/h3&gt;
+
+&lt;p&gt;What is it wrong with &lt;code&gt;var&lt;/code&gt; keyword? Here is a short example showing what wrong
+with var keyword:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function foo(flag) {
+  if (flag) {
+    var foobar = 2;
+  }
+  return foobar;
+};
+console.log(foo(true)); // Return 2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As we can see in the example above, the &lt;code&gt;foobar&lt;/code&gt; variable is declared inside the
+if block, not the function scope. But it&amp;rsquo;s still working when we &lt;code&gt;return foobar&lt;/code&gt;
+at the end of function.&lt;/p&gt;
+
+&lt;p&gt;However, this is not working in ES6 with the &lt;code&gt;let&lt;/code&gt; keyword. Clearly, &lt;code&gt;let&lt;/code&gt; gives us a better way to scope the variable correctly in
+Javascript.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function foo(flag) {
+  if (flag) {
+    let foobar = 2;
+  }
+  return foobar;
+}
+console.log(foo(true)); // Error. foobar is not defined.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here is the full source code of how I implemented linked list in ES6.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class Node {
+  constructor(data, nextNode) {
+    this.data = data;
+    this.next = nextNode;
+  }
+}
+class LinkedList {
+  constructor() {
+    this.length = 0;
+    this.head = null;
+  }
+  insert(data) {
+    let node = new Node(data, null);
+    let currentNode;
+    if ( ! this.head  ) {
+      this.head = node;
+    }
+    else {
+      currentNode = this.head;
+      while ( currentNode.next ) {
+        currentNode = currentNode.next;
+      }
+      currentNode.next = node;
+    }
+    this.length++;
+  }
+  remove(index) {
+    if ( index &amp;gt; -1 &amp;amp;&amp;amp; index &amp;lt; this.length ) {
+      let currentNode = this.head,
+          previousNode,
+          i = 0;
+      if ( index === 0 ) {
+        this.head = currentNode.next;
+      } else {
+        while ( i++ &amp;lt; index ) {
+          previousNode = currentNode;
+          currentNode = currentNode.next;
+        }
+        previousNode.next = currentNode.next;
+      }
+      this.length--;
+      return currentNode.data;
+    } else {
+      return null;
+    }
+  }
+
+  getAt(index) {
+    if ( index &amp;gt; -1 &amp;amp;&amp;amp; index &amp;lt; this.length ) {
+      let currentNode = this.head,
+          i = 0;
+      while (i++ &amp;lt; index) {
+        currentNode = currentNode.next;
+      }
+      return currentNode.data;
+    } else {
+      return null;
+    }
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+            </item>
+            
+        
+            
+            <item>
+                <title>MenuOnScroll - jQuery Plugin</title>
+                <link>http://khoapham.me/blog/menuOnScroll-jquery-plugin/</link>
+                <pubDate>Tue, 25 Nov 2014 00:00:00 UTC</pubDate>
+                <guid>http://khoapham.me/blog/menuOnScroll-jquery-plugin/</guid>
+                <description>&lt;p&gt;Today I just released menuOnScroll - jQuery plugin that automatically updates the menu
+navigation when you scroll. This functionality is extremely common on the web,
+especially for the single page website. 
+Since everyone just keeps build the similar thing over and over again, I think it&amp;rsquo;s better to create a simple plugin that will help to save our time.&lt;/p&gt;
+
+&lt;p&gt;This plugin is the first open source (MIT) project that I&amp;rsquo;ve done, and I am
+super excited about this. Writing open source code really help me to write my
+code cleaner because I kept refactoring my code over and over again in order to
+make it not only easy to read but also to maintain. This is very important
+factor that helps me to become a better developer.&lt;/p&gt;
+
+&lt;p&gt;I hope you will find this plugin useful in some way. Here is the &lt;a href=&#34;https://github.com/pmkhoa/jquery-menuOnScroll&#34;&gt;source
+code&lt;/a&gt; if you want to check it
+out.&lt;/p&gt;
+
+&lt;p&gt;Cheers! Happy Thanksgiving!&lt;/p&gt;</description>
+            </item>
+            
+        
+            
+            <item>
+                <title>Create App With Meteor</title>
+                <link>http://khoapham.me/blog/create-app-with-meteor/</link>
+                <pubDate>Wed, 16 Oct 2013 00:00:00 UTC</pubDate>
+                <guid>http://khoapham.me/blog/create-app-with-meteor/</guid>
+                <description>&lt;p&gt;When I started to build the DearJJAbrams.com site, I came across a very simple functionality which was the realtime counter. This realtime counter worked as follow, when the user submitted their email, the counter would increase 1. However, this counter had to automatically update and synchronize with the server whenever anyone around the world submit their email, in other words, I had to create real time app with Meteor.
+
+At this point, things were getting little more complicated. The big question was how could the browser know when the database was updated in order to get synchronized? But, I was lucky to found out that &lt;a href=&#34;http://www.meteor.com&#34;&gt;Meteor&lt;/a&gt; was a perfect tool for this simple counter app.&lt;/p&gt;
+
+&lt;p&gt;In this article, I would like to share my little experience to create app with Meteor. You can see live example here at: &lt;a href=&#34;http://simple-counter.meteor.com&#34;&gt;http://simple-counter.meteor.com&lt;/a&gt;.
+The source code available at my &lt;a href=&#34;https://github.com/khoap/simple-counter&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1. Firstly, setting up Meteor app:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Install and set up a Meteor app is extremely easy, you can follow the quick start from Meteor to setup you first app. &lt;a href=&#34;http://docs.meteor.com&#34;&gt;Meteor Documentation8&lt;/a&gt;
+If you prefer to use the &lt;a href=&#34;http://oortcloud.github.io/meteorite/&#34;&gt;meteorite&lt;/a&gt; to initially create Meteor app, you can install Meteorite using following command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ npm install -g meteorite
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then create a Meteor app by using:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ mrt create counter-app
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;2. Structure Meteor app.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;When creating meteor app, you will have a simple structure of your app. However, you may want to re-organize things around to make things easier to work with.
+Here is an example of my meteor app structure:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;counter-app
+  client/
+      lib/
+      stylesheet/
+      simple-counter.js
+  public/
+      fonts/
+      images/
+  server/
+      simple-counter.js
+  index.html
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can see more about the app structure from &lt;a href=&#34;http://docs.meteor.com&#34;&gt;meteor documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3. On the client side.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We display the counter value queried from the database, and handle the input event that people submit their email. Moreover, we want to create a publish &amp;amp; subscribe relationship between the Meteor server &amp;amp; client for the Counts documents in database.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// Declare the Counts documents to hold the subscription from the server.
+Counts = new Meteor.Collection(&amp;quot;counts&amp;quot;);
+Meteor.subscribe(&amp;quot;counts&amp;quot;);
+// Output the counter value to the handlebar template.
+Template.CounterWrapper.CounterValue = function () {
+  if (Counts.findOne()) {
+    return Counts.findOne().countValue;
+  }
+};
+// Handle the submit button event. If the email is correct, then call function on server side.
+// submitEmail, passing a param: email.
+Template.bodyContainer.events({
+  &#39;click .submit-counter&#39; : function () {
+    var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+    var email = $(&amp;quot;#email&amp;quot;).val();
+    if ( (email != &amp;quot;&amp;quot;) &amp;amp;amp;&amp;amp;amp; (emailReg.test(email)) ) {
+      Meteor.call(&#39;submitEmail&#39;, email, function(error) {
+        if (error) {
+          $(&amp;quot;.notice-email-duplicate-input&amp;quot;).fadeIn(600);
+        }
+        else {
+          $(&amp;quot;.notice-empty-input&amp;quot;).fadeOut(500);
+          $(&amp;quot;.notice-email-duplicate-input&amp;quot;).fadeOut(600);
+        }
+      });
+    }
+    else {
+      $(&amp;quot;.notice-empty-input&amp;quot;).fadeIn(600);
+    }
+    return false;
+  }
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;4. On the server side.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We will define the method &amp;lsquo;submitEmail&amp;rsquo; that is called in the client side to insert the email into the database.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// We have two documents to handle the emails &amp;amp;amp; counter values. Emails will be kept privately.
+Emails = new Meteor.Collection(&amp;quot;emails&amp;quot;);
+Counts = new Meteor.Collection(&amp;quot;counts&amp;quot;);
+// Set up publish to the client.
+Meteor.publish(&amp;quot;counts&amp;quot;, function() {
+  return Counts.find({});
+});
+
+// When Meteor startup, we want to make sure that the counts is matched with the current number of emails in Email documents.
+Meteor.startup(function () {
+  if (Counts.find().count() === 0) {
+    Counts.insert({name: &#39;counter&#39;, countValue: Emails.find().count()});
+  }
+});
+
+// Declare Meteor method, to input the email into database.
+Meteor.methods({
+  submitEmail: function (email) {
+    var currentCount = Counts.findOne();
+    if (Emails.find({email : email}).count() &amp;amp;gt;= 1) {
+      throw new Meteor.Error(404, &amp;quot;error&amp;quot;);
+    }
+    else {
+      Counts.update({_id: currentCount._id}, {$inc: {countValue: 1}});
+      var user_id = Emails.insert({email: email});
+    }
+  }
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;5. Deploying the app.&lt;/strong&gt;
+Now it&amp;rsquo;s time to deploy the app, I used the Heroku server to deploy the DearJJAbrams.com site, but in this simple app, I just use the Meteor server. Since it&amp;rsquo;s very easy &amp;amp; free:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ meteor deploy myapp.meteor.com
+&lt;/code&gt;&lt;/pre&gt;</description>
+            </item>
+            
+        
+
+    </channel>
+</rss>

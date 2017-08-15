@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Khoa Pham </title>
+        <link>http://khoapham.me/tags/meteor/index.xml</link>
+        <language>en-us</language>
+        <author>Khoa Pham</author>
+        <rights>(C) 2016</rights>
+        <updated>0001-01-01 00:00:00 &#43;0000 UTC</updated>
+
+        
+            
+            <item>
+                <title>Create App With Meteor</title>
+                <link>http://khoapham.me/blog/create-app-with-meteor/</link>
+                <pubDate>Wed, 16 Oct 2013 00:00:00 UTC</pubDate>
+                <guid>http://khoapham.me/blog/create-app-with-meteor/</guid>
+                <description>&lt;p&gt;When I started to build the DearJJAbrams.com site, I came across a very simple functionality which was the realtime counter. This realtime counter worked as follow, when the user submitted their email, the counter would increase 1. However, this counter had to automatically update and synchronize with the server whenever anyone around the world submit their email, in other words, I had to create real time app with Meteor.
+
+At this point, things were getting little more complicated. The big question was how could the browser know when the database was updated in order to get synchronized? But, I was lucky to found out that &lt;a href=&#34;http://www.meteor.com&#34;&gt;Meteor&lt;/a&gt; was a perfect tool for this simple counter app.&lt;/p&gt;
+
+&lt;p&gt;In this article, I would like to share my little experience to create app with Meteor. You can see live example here at: &lt;a href=&#34;http://simple-counter.meteor.com&#34;&gt;http://simple-counter.meteor.com&lt;/a&gt;.
+The source code available at my &lt;a href=&#34;https://github.com/khoap/simple-counter&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1. Firstly, setting up Meteor app:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Install and set up a Meteor app is extremely easy, you can follow the quick start from Meteor to setup you first app. &lt;a href=&#34;http://docs.meteor.com&#34;&gt;Meteor Documentation8&lt;/a&gt;
+If you prefer to use the &lt;a href=&#34;http://oortcloud.github.io/meteorite/&#34;&gt;meteorite&lt;/a&gt; to initially create Meteor app, you can install Meteorite using following command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ npm install -g meteorite
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then create a Meteor app by using:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ mrt create counter-app
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;2. Structure Meteor app.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;When creating meteor app, you will have a simple structure of your app. However, you may want to re-organize things around to make things easier to work with.
+Here is an example of my meteor app structure:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;counter-app
+  client/
+      lib/
+      stylesheet/
+      simple-counter.js
+  public/
+      fonts/
+      images/
+  server/
+      simple-counter.js
+  index.html
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can see more about the app structure from &lt;a href=&#34;http://docs.meteor.com&#34;&gt;meteor documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3. On the client side.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We display the counter value queried from the database, and handle the input event that people submit their email. Moreover, we want to create a publish &amp;amp; subscribe relationship between the Meteor server &amp;amp; client for the Counts documents in database.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// Declare the Counts documents to hold the subscription from the server.
+Counts = new Meteor.Collection(&amp;quot;counts&amp;quot;);
+Meteor.subscribe(&amp;quot;counts&amp;quot;);
+// Output the counter value to the handlebar template.
+Template.CounterWrapper.CounterValue = function () {
+  if (Counts.findOne()) {
+    return Counts.findOne().countValue;
+  }
+};
+// Handle the submit button event. If the email is correct, then call function on server side.
+// submitEmail, passing a param: email.
+Template.bodyContainer.events({
+  &#39;click .submit-counter&#39; : function () {
+    var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+    var email = $(&amp;quot;#email&amp;quot;).val();
+    if ( (email != &amp;quot;&amp;quot;) &amp;amp;amp;&amp;amp;amp; (emailReg.test(email)) ) {
+      Meteor.call(&#39;submitEmail&#39;, email, function(error) {
+        if (error) {
+          $(&amp;quot;.notice-email-duplicate-input&amp;quot;).fadeIn(600);
+        }
+        else {
+          $(&amp;quot;.notice-empty-input&amp;quot;).fadeOut(500);
+          $(&amp;quot;.notice-email-duplicate-input&amp;quot;).fadeOut(600);
+        }
+      });
+    }
+    else {
+      $(&amp;quot;.notice-empty-input&amp;quot;).fadeIn(600);
+    }
+    return false;
+  }
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;4. On the server side.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We will define the method &amp;lsquo;submitEmail&amp;rsquo; that is called in the client side to insert the email into the database.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// We have two documents to handle the emails &amp;amp;amp; counter values. Emails will be kept privately.
+Emails = new Meteor.Collection(&amp;quot;emails&amp;quot;);
+Counts = new Meteor.Collection(&amp;quot;counts&amp;quot;);
+// Set up publish to the client.
+Meteor.publish(&amp;quot;counts&amp;quot;, function() {
+  return Counts.find({});
+});
+
+// When Meteor startup, we want to make sure that the counts is matched with the current number of emails in Email documents.
+Meteor.startup(function () {
+  if (Counts.find().count() === 0) {
+    Counts.insert({name: &#39;counter&#39;, countValue: Emails.find().count()});
+  }
+});
+
+// Declare Meteor method, to input the email into database.
+Meteor.methods({
+  submitEmail: function (email) {
+    var currentCount = Counts.findOne();
+    if (Emails.find({email : email}).count() &amp;amp;gt;= 1) {
+      throw new Meteor.Error(404, &amp;quot;error&amp;quot;);
+    }
+    else {
+      Counts.update({_id: currentCount._id}, {$inc: {countValue: 1}});
+      var user_id = Emails.insert({email: email});
+    }
+  }
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;5. Deploying the app.&lt;/strong&gt;
+Now it&amp;rsquo;s time to deploy the app, I used the Heroku server to deploy the DearJJAbrams.com site, but in this simple app, I just use the Meteor server. Since it&amp;rsquo;s very easy &amp;amp; free:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ meteor deploy myapp.meteor.com
+&lt;/code&gt;&lt;/pre&gt;</description>
+            </item>
+            
+        
+
+    </channel>
+</rss>
