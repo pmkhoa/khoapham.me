@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://khoapham.me/</loc>
-    <lastmod>2016-06-27T12:09:16-07:00</lastmod>
+    <loc>http://khoapham.me/blog/2016-retrospective/</loc>
+    <lastmod>2016-12-29T15:02:48-08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://khoapham.me/blog/full-stack-development-with-Ember-and-Go/</loc>
+    <loc>http://khoapham.me/blog/full-stack-development-with-ember-and-go/</loc>
     <lastmod>2016-06-27T12:09:16-07:00</lastmod>
   </url>
   
@@ -87,7 +88,7 @@
   </url>
   
   <url>
-    <loc>http://khoapham.me/blog/menuOnScroll-jquery-plugin/</loc>
+    <loc>http://khoapham.me/blog/menuonscroll-jquery-plugin/</loc>
     <lastmod>2014-11-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -144,6 +145,281 @@
   <url>
     <loc>http://khoapham.me/blog/if/</loc>
     <lastmod>2013-05-17T00:06:51-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/apache/</loc>
+    <lastmod>2013-05-17T23:14:51-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/aws/</loc>
+    <lastmod>2013-05-27T22:18:14-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/blog/</loc>
+    <lastmod>2016-12-29T15:02:48-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/bookmark/</loc>
+    <lastmod>2013-07-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/design/</loc>
+    <lastmod>2015-12-03T23:13:30-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/devops/</loc>
+    <lastmod>2016-04-25T15:46:17-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/emberjs/</loc>
+    <lastmod>2016-06-27T12:09:16-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/es6/</loc>
+    <lastmod>2016-05-03T22:31:31-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/favorite/</loc>
+    <lastmod>2013-05-17T00:06:51-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/fun/</loc>
+    <lastmod>2014-12-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/go/</loc>
+    <lastmod>2016-06-27T12:09:16-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/golang/</loc>
+    <lastmod>2015-12-03T23:13:30-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/guide/</loc>
+    <lastmod>2015-12-23T12:00:31-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/heroku/</loc>
+    <lastmod>2014-10-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/http/</loc>
+    <lastmod>2013-05-17T23:14:51-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/hugo/</loc>
+    <lastmod>2015-12-03T23:13:30-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/javascript/</loc>
+    <lastmod>2016-05-03T22:31:31-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/jquery/</loc>
+    <lastmod>2014-11-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/</loc>
+    <lastmod>2016-12-29T15:02:48-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/meteor/</loc>
+    <lastmod>2013-10-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/middleman/</loc>
+    <lastmod>2013-06-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/middlemanapp/</loc>
+    <lastmod>2014-10-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/minimalist/</loc>
+    <lastmod>2015-11-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/motivation/</loc>
+    <lastmod>2016-12-29T15:02:48-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/mysql/</loc>
+    <lastmod>2013-05-17T23:14:51-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/nginx/</loc>
+    <lastmod>2015-11-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/opensource/</loc>
+    <lastmod>2016-04-24T13:11:54-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/plugin/</loc>
+    <lastmod>2014-11-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/rails/</loc>
+    <lastmod>2014-10-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/recursion/</loc>
+    <lastmod>2014-12-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/resource/</loc>
+    <lastmod>2014-11-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/resque/</loc>
+    <lastmod>2014-09-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/resque-mailer/</loc>
+    <lastmod>2014-09-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/resque-scheduler/</loc>
+    <lastmod>2014-09-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/ruby/</loc>
+    <lastmod>2014-12-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/s3/</loc>
+    <lastmod>2013-05-27T22:18:14-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/server/</loc>
+    <lastmod>2015-11-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/</loc>
+    <lastmod>2013-05-17T23:14:51-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/tutorial/</loc>
+    <lastmod>2016-06-27T12:09:16-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/video/</loc>
+    <lastmod>2013-07-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/vim/</loc>
+    <lastmod>2014-11-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/vim-tips/</loc>
+    <lastmod>2014-11-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/web-development/</loc>
+    <lastmod>2015-11-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/web-service/</loc>
+    <lastmod>2013-05-17T23:14:51-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://khoapham.me/tags/webpack/</loc>
+    <lastmod>2016-05-03T22:31:31-07:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>

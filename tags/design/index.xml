@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Khoa Pham </title>
+        <link>http://khoapham.me/tags/design/</link>
+        <language>en-us</language>
+        <author>Khoa Pham</author>
+        <rights>(C) 2016</rights>
+        <updated>2015-12-03 23:13:30 -0800 PST</updated>
+
+        
+            
+            <item>
+                <title>My First Hugo Theme</title>
+                <link>http://khoapham.me/blog/first-hugo-theme/</link>
+                <pubDate>Thu, 03 Dec 2015 23:13:30 PST</pubDate>
+                <guid>http://khoapham.me/blog/first-hugo-theme/</guid>
+                <description>&lt;p&gt;When I started to get back to blogging, I felt my website
+took a little long to compile. As a revolution of redesigning my blog, I want to switch my blog platform to something faster. 
+My blog was previously developed using &lt;a href=&#34;http://middlemanapp.com&#34;&gt;Middleman&lt;/a&gt;, and now it&amp;rsquo;s powered by &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;, a faster static site
+generator. I&amp;rsquo;m really pleased with the transition so far.&lt;/p&gt;
+
+&lt;p&gt;I also wrote a simple Hugo theme called &lt;a href=&#34;https://github.com/pmkhoa/hugo-minimalist&#34;&gt;Hugo
+Minimalist&lt;/a&gt;, this is just a mimic of
+my current blog style, which I explained in &lt;a href=&#34;http://khoapham.me/blog/minimalist-in-design-and-development/&#34;&gt;Minimalist in
+design&lt;/a&gt;. Of
+course, it&amp;rsquo;s free to use if you want to try.&lt;/p&gt;
+
+&lt;p&gt;Another thing that I&amp;rsquo;d like to share is the better workflow for my website
+deployment. With Middleman, I host the website on
+&lt;a href=&#34;https://aws.amazon.com/s3/&#34;&gt;S3&lt;/a&gt;, use Markdown to write content, and use
+Middleman extension
+&lt;a href=&#34;http://localhost:1313/blog/sync-middleman-with-amazon-s3/&#34;&gt;s3_deployment&lt;/a&gt; to deploy to S3, and then commit to github.
+The whole process wasn&amp;rsquo;t taking too long, but it can be simplified.
+With Hugo, the website is hosted on Github (free), and I wrote a &lt;a href=&#34;https://github.com/pmkhoa/khoapham.me/blob/master/deploy.sh&#34;&gt;simple script&lt;/a&gt; to deploy and commit to github just one command when the
+content is ready for production. I think the whole process is just better now.&lt;/p&gt;
+
+&lt;p&gt;If you plan to write lot of blog posts, and want to use static site generator
+for it, I highly recommend &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;.&lt;/p&gt;</description>
+            </item>
+            
+        
+            
+            <item>
+                <title>Minimalist in Design and Development</title>
+                <link>http://khoapham.me/blog/minimalist-in-design-and-development/</link>
+                <pubDate>Sat, 21 Nov 2015 00:00:00 UTC</pubDate>
+                <guid>http://khoapham.me/blog/minimalist-in-design-and-development/</guid>
+                <description>&lt;p&gt;My website has gone through countless design iterations, not because its look
+was outdated, but my sense of simplicity has changed from time to time, and I
+wanted my personal website to reflect that.
+&lt;/p&gt;
+
+&lt;p&gt;Unlike previous versions in which I wanted to prove my dev skills by developing a
+fairly complicated website with lot of technologies under the hood, this time I rebuilt the website with a single purpose &amp;ldquo;minimalist in design and development&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;As a result, my website now becomes much more simpler, and requires only 6 - 8
+requests (total ~200KB) per page load in less than a second. Moreover, I wrote
+zero Javascript code in this website even though I usually write about 50,000 lines of
+javascript a year.&lt;/p&gt;
+
+&lt;p&gt;This doesn&amp;rsquo;t mean that writing less code is better, but this is a process that I will start to do from now &amp;ldquo;Just write the code that matters&amp;rdquo;.&lt;/p&gt;</description>
+            </item>
+            
+        
+            
+            <item>
+                <title>Learning to See</title>
+                <link>http://khoapham.me/blog/learning-to-see/</link>
+                <pubDate>Fri, 17 May 2013 23:12:14 -0800</pubDate>
+                <guid>http://khoapham.me/blog/learning-to-see/</guid>
+                <description>&lt;p&gt;People asked me why I had a computer science degree but spending most of my time working as user experience developer.
+Here is the article that hooked me into it: &lt;a href=&#34;https://ia.net/know-how/learning-to-see&#34;&gt;https://ia.net/know-how/learning-to-see&lt;/a&gt;.
+It has changed the way I saw thing since I read it. I highly recommend you read it too.&lt;/p&gt;
+
+&lt;p&gt;Sincerely,&lt;/p&gt;
+
+&lt;p&gt;Khoa&lt;/p&gt;</description>
+            </item>
+            
+        
+
+    </channel>
+</rss>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Khoa Pham </title>
+        <link>http://khoapham.me/tags/video/</link>
+        <language>en-us</language>
+        <author>Khoa Pham</author>
+        <rights>(C) 2016</rights>
+        <updated>2013-07-04 00:00:00 &#43;0000 UTC</updated>
+
+        
+            
+            <item>
+                <title>Inspiration videos from Steve Jobs</title>
+                <link>http://khoapham.me/blog/inspiration-video-from-steve-jobs/</link>
+                <pubDate>Thu, 04 Jul 2013 00:00:00 UTC</pubDate>
+                <guid>http://khoapham.me/blog/inspiration-video-from-steve-jobs/</guid>
+                <description>&lt;p&gt;
+&lt;div class=&#34;videoWrapper&#34;&gt;
+    &lt;iframe src=&#34;https://www.youtube.com/embed/KuNQgln6TL0?feature=player_embedded&#34; height=&#34;360&#34; width=&#34;640&#34; allowfullscreen=&#34;&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;&lt;/p&gt;
+
+&lt;div class=&#34;videoWrapper&#34;&gt;
+    &lt;iframe height=&#34;360&#34; width=&#34;640&#34; src=&#34;https://www.youtube.com/embed/FF-tKLISfPE&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;</description>
+            </item>
+            
+        
+
+    </channel>
+</rss>

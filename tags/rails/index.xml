@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Khoa Pham </title>
+        <link>http://khoapham.me/tags/rails/</link>
+        <language>en-us</language>
+        <author>Khoa Pham</author>
+        <rights>(C) 2016</rights>
+        <updated>2014-10-14 00:00:00 &#43;0000 UTC</updated>
+
+        
+            
+            <item>
+                <title>Deploy Middleman to Heroku</title>
+                <link>http://khoapham.me/blog/deploy-middleman-to-heroku/</link>
+                <pubDate>Tue, 14 Oct 2014 00:00:00 UTC</pubDate>
+                <guid>http://khoapham.me/blog/deploy-middleman-to-heroku/</guid>
+                <description>&lt;p&gt;Heroku is a great cloud service, it uses git for version control and deployment which is very handy for me to just update my blog in one command.
+Here are some simple step that you can set it up.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;In your Gemfile, add puma and rake:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;gem &#39;puma&#39;,      &#39;~&amp;gt; 2.7&#39;
+gem &#39;rake&#39;,      &#39;~&amp;gt; 10.1&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Create a Procfile, and add this code&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;web: bundle exec puma -p $PORT
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Since we&amp;rsquo;re going to tell Heroku to use our build folder under our Middlemanapp, we will use the rake task to compile our build assets. Under your root app, create: Rakefile&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;namespace :assets do
+  task :precompile do
+    sh &#39;middleman build&#39;
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Finally we need to setup a Rack server to tell Heroku to load our build folder, and its assets&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;module Rack
+  class TryStatic
+    def initialize(app, options)
+      @app = app
+      @try = [&#39;&#39;, *options.delete(:try)]
+      @static = ::Rack::Static.new(lambda { [404, {}, []] }, options)
+    end
+    def call(env)
+      orig_path = env[&#39;PATH_INFO&#39;]
+      found = nil
+      @try.each do |path|
+        resp = @static.call(env.merge!({&#39;PATH_INFO&#39; =&amp;gt; orig_path + path}))
+        break if 404 != resp[0] &amp;amp;&amp;amp; found = resp
+      end
+      found or @app.call(env.merge!(&#39;PATH_INFO&#39; =&amp;gt; orig_path))
+    end
+  end
+end
+use Rack::Deflater
+use Rack::TryStatic, :root =&amp;gt; &amp;quot;build&amp;quot;, :urls =&amp;gt; %w[/], :try =&amp;gt; [&#39;.html&#39;, &#39;index.html&#39;, &#39;/index.html&#39;]
+# Run your own Rack app here or use this one to serve 404 messages:
+run lambda{ |env|
+  not_found_page = File.expand_path(&amp;quot;../build/404.html&amp;quot;, __FILE__)
+  if File.exist?(not_found_page)
+    [ 404, { &#39;Content-Type&#39;  =&amp;gt; &#39;text/html&#39;}, [File.read(not_found_page)] ]
+  else
+    [ 404, { &#39;Content-Type&#39;  =&amp;gt; &#39;text/html&#39; }, [&#39;404 - page not found&#39;] ]
+  end
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now your site is ready to deploy to Heroku. Just create a Heroku app and add Heroku git remote link, and enjoy!&lt;/p&gt;
+
+&lt;p&gt;P.S. Don&amp;rsquo;t forget to add the build directory to your .gitignore&lt;/p&gt;</description>
+            </item>
+            
+        
+            
+            <item>
+                <title>Completely setup Resque &#43; Resque Schedule and Resque Mailer</title>
+                <link>http://khoapham.me/blog/completely-setup-resque-and-resque-scheduler/</link>
+                <pubDate>Wed, 10 Sep 2014 00:00:00 UTC</pubDate>
+                <guid>http://khoapham.me/blog/completely-setup-resque-and-resque-scheduler/</guid>
+                <description>&lt;p&gt;When developing Rails app, there will be a chance that you will need to setup
+job scheduler using Resque. In this post, I&amp;rsquo;d like to share my experience
+setting up Resque schedule, and resque mailer on my recent Rails application
+ &lt;a href=&#34;https://my.onesight.org/en&#34;&gt;My OneSight&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In your Gemfile, add these gems:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;gem &#39;resque&#39;, :require =&amp;gt; &amp;quot;resque/server&amp;quot;
+gem &#39;resque_mailer&#39;
+gem &#39;resque-scheduler&#39;, :require =&amp;gt; &#39;resque/scheduler/server’
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Create config/resque.yml, to store redis environment.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;defaults: &amp;amp;defaults
+  host: localhost
+  port: 6379
+  db: 6
+development:
+  &amp;lt;&amp;lt;: *defaults
+test:
+  &amp;lt;&amp;lt;: *defaults
+staging:
+  &amp;lt;&amp;lt;: *defaults
+production:
+  &amp;lt;&amp;lt;: *defaults
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Create config/initializers/resque.rb to bootstrap your resque:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;require &#39;resque/failure/multiple&#39;
+require &#39;resque/failure/redis&#39;
+Resque::Failure::Multiple.classes = [Resque::Failure::Redis]
+Resque::Failure.backend = Resque::Failure::Multiple
+Dir[File.join(Rails.root, &#39;app&#39;, &#39;jobs&#39;, &#39;*.rb&#39;)].each { |file| require file }
+config = YAML.load(File.open(&amp;quot;#{Rails.root}/config/resque.yml&amp;quot;))[Rails.env]
+Resque.redis = Redis.new(host: config[&#39;host&#39;], port: config[&#39;port&#39;], db: config[&#39;db&#39;])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Create AsyncMailer to send mail via resque mailer&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class AsyncMailer &amp;lt; ActionMailer::Base
+  include Resque::Mailer
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then, replace all current ActionMailer, to AsyncMailer. Ex: mailers/communication_mailer.rb&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class CommunicationMailer&amp;lt; AsyncMailer
+  ...
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Create rake task for resque setup: /lib/tasks/resque.rake , and create resque-scheduler&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;require &amp;quot;resque/tasks&amp;quot;
+require &#39;resque/scheduler/tasks&#39;
+
+task &amp;quot;resque:setup&amp;quot; =&amp;gt; :environment do
+  require &#39;resque&#39;
+  require &#39;resque-scheduler&#39;
+  Resque.schedule = YAML.load_file(Rails.root.join &#39;config&#39;, &#39;resque_schedule.yml&#39;)
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Create a resque scheduler jobs /config/resque_schedule.yml:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;complete_profile_reminder:
+  every: 30s
+  class: MyJob
+  queue: user_notifications
+  args:
+  description: Runs the perform method in MyJob
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The MyJob class is defined under: /app/controllers/jobs&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class MyJob
+  def self.perform
+    # Do anything here
+    puts &amp;quot;Email user to complete their profile&amp;quot;
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Route resque-web interface inside Rails.
+Since we already required &amp;ldquo;resque/server”, and &amp;lsquo;resque/scheduler/server’, in our Gemfile. We can just route the resque inside our routes.rb&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mount Resque::Server.new =&amp;gt; &#39;/resque’
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Bonus: Setup Procfile to use foreman to start rails server and resque. Create your Procfile as follow:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;web: bundle exec unicorn -p $PORT -c ./config/unicorn.rb
+redis: redis-server
+worker: env TERM_CHILD=1 QUEUES=* bundle exec rake resque:work
+scheduler: bundle exec rake resque:scheduler
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Resources&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/resque/resque&#34;&gt;Resque&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/resque/resque-scheduler&#34;&gt;Resque Scheduler&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/zapnap/resque_mailer&#34;&gt;Resque Mailer&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</description>
+            </item>
+            
+        
+
+    </channel>
+</rss>

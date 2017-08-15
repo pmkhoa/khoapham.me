@@ -2,19 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Khoa Pham </title>
-        <link>http://khoapham.me/index.xml</link>
+        <link>http://khoapham.me/</link>
         <language>en-us</language>
         <author>Khoa Pham</author>
         <rights>(C) 2016</rights>
-        <updated>2016-06-27 12:09:16 -0700 PDT</updated>
+        <updated>2016-12-29 15:02:48 -0800 PST</updated>
 
         
             
             <item>
+                <title>2016 Retrospective</title>
+                <link>http://khoapham.me/blog/2016-retrospective/</link>
+                <pubDate>Thu, 29 Dec 2016 15:02:48 PST</pubDate>
+                <guid>http://khoapham.me/blog/2016-retrospective/</guid>
+                <description>&lt;p&gt;2016 was a great year of change.&lt;/p&gt;
+</description>
+            </item>
+            
+        
+            
+            <item>
                 <title>Full Stack Development with Ember and Go</title>
-                <link>http://khoapham.me/blog/full-stack-development-with-Ember-and-Go/</link>
+                <link>http://khoapham.me/blog/full-stack-development-with-ember-and-go/</link>
                 <pubDate>Mon, 27 Jun 2016 12:09:16 PDT</pubDate>
-                <guid>http://khoapham.me/blog/full-stack-development-with-Ember-and-Go/</guid>
+                <guid>http://khoapham.me/blog/full-stack-development-with-ember-and-go/</guid>
                 <description>&lt;p&gt;One of my personal 2016 resolution was learning Go, and get familiar with
 writing restful API using Go. After couple of months learning Go, I started a
 simple application that use Go, and Ember to develop a Todo app.
@@ -1223,9 +1234,9 @@ game.run
             
             <item>
                 <title>MenuOnScroll - jQuery Plugin</title>
-                <link>http://khoapham.me/blog/menuOnScroll-jquery-plugin/</link>
+                <link>http://khoapham.me/blog/menuonscroll-jquery-plugin/</link>
                 <pubDate>Tue, 25 Nov 2014 00:00:00 UTC</pubDate>
-                <guid>http://khoapham.me/blog/menuOnScroll-jquery-plugin/</guid>
+                <guid>http://khoapham.me/blog/menuonscroll-jquery-plugin/</guid>
                 <description>&lt;p&gt;Today I just released menuOnScroll - jQuery plugin that automatically updates the menu
 navigation when you scroll. This functionality is extremely common on the web,
 especially for the single page website. 

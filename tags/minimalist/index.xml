@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Khoa Pham </title>
+        <link>http://khoapham.me/tags/minimalist/</link>
+        <language>en-us</language>
+        <author>Khoa Pham</author>
+        <rights>(C) 2016</rights>
+        <updated>2015-11-21 00:00:00 &#43;0000 UTC</updated>
+
+        
+            
+            <item>
+                <title>Minimalist in Design and Development</title>
+                <link>http://khoapham.me/blog/minimalist-in-design-and-development/</link>
+                <pubDate>Sat, 21 Nov 2015 00:00:00 UTC</pubDate>
+                <guid>http://khoapham.me/blog/minimalist-in-design-and-development/</guid>
+                <description>&lt;p&gt;My website has gone through countless design iterations, not because its look
+was outdated, but my sense of simplicity has changed from time to time, and I
+wanted my personal website to reflect that.
+&lt;/p&gt;
+
+&lt;p&gt;Unlike previous versions in which I wanted to prove my dev skills by developing a
+fairly complicated website with lot of technologies under the hood, this time I rebuilt the website with a single purpose &amp;ldquo;minimalist in design and development&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;As a result, my website now becomes much more simpler, and requires only 6 - 8
+requests (total ~200KB) per page load in less than a second. Moreover, I wrote
+zero Javascript code in this website even though I usually write about 50,000 lines of
+javascript a year.&lt;/p&gt;
+
+&lt;p&gt;This doesn&amp;rsquo;t mean that writing less code is better, but this is a process that I will start to do from now &amp;ldquo;Just write the code that matters&amp;rdquo;.&lt;/p&gt;</description>
+            </item>
+            
+        
+
+    </channel>
+</rss>
