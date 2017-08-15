@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Khoa Pham </title>
-        <link>http://khoapham.me/tags/tutorial/</link>
+        <link>http://khoapham.me/tags/tutorial/index.xml</link>
         <language>en-us</language>
         <author>Khoa Pham</author>
         <rights>(C) 2016</rights>
-        <updated>2016-06-27 12:09:16 -0700 PDT</updated>
+        <updated>0001-01-01 00:00:00 &#43;0000 UTC</updated>
 
         
             
             <item>
                 <title>Full Stack Development with Ember and Go</title>
-                <link>http://khoapham.me/blog/full-stack-development-with-ember-and-go/</link>
+                <link>http://khoapham.me/blog/full-stack-development-with-Ember-and-Go/</link>
                 <pubDate>Mon, 27 Jun 2016 12:09:16 PDT</pubDate>
-                <guid>http://khoapham.me/blog/full-stack-development-with-ember-and-go/</guid>
+                <guid>http://khoapham.me/blog/full-stack-development-with-Ember-and-Go/</guid>
                 <description>&lt;p&gt;One of my personal 2016 resolution was learning Go, and get familiar with
 writing restful API using Go. After couple of months learning Go, I started a
 simple application that use Go, and Ember to develop a Todo app.
