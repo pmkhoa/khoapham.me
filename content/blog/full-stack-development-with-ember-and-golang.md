@@ -1,7 +1,7 @@
 ---
 date: 2016-06-27T12:09:16-07:00
 draft: false
-title: Full Stack Development with Ember and Go
+title: Full Stack Development with Ember and Golang
 tags: [Tutorial, EmberJS, Go]
 ---
 
