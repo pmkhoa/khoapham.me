@@ -10,7 +10,7 @@ global state such as global notification, or error handling.<!--more--> This doe
 into `Route`, `Controller`, or `Component`. Ember offers an easy way to manage
 this using `Service` and `Initializers`.
 
-#### Create a service to hold notification data   
+## Create a service to hold notification data   
 
     //app/services/global-notification.js
     import Ember from 'ember';
@@ -22,7 +22,7 @@ this using `Service` and `Initializers`.
         }
     });
 
-#### Create an initializer to inject global notification service in application
+## Create an initializer to inject global notification service in application
 This allows us to use GlobalNotification service in route, and component.
 
     //app/initializers/global-notification.js
@@ -39,7 +39,7 @@ This allows us to use GlobalNotification service in route, and component.
         initialize
     };
 
-#### Using our global notification service.
+## Using our global notification service.
 Assuming you have a user settings form, and want to display notification when
 user changes settings.
 
