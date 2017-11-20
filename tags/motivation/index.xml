@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Khoa Pham </title>
-        <link>http://khoapham.me/tags/motivation/index.xml</link>
+        <link>http://khoapham.me/tags/motivation/</link>
         <language>en-us</language>
         <author>Khoa Pham</author>
         <rights>(C) 2016</rights>
-        <updated>0001-01-01 00:00:00 &#43;0000 UTC</updated>
+        <updated>2016-04-24 13:11:54 -0700 PDT</updated>
 
         
             
@@ -75,9 +75,9 @@ love. It will make your users happy too.&lt;/p&gt;</description>
                 <description>&lt;p&gt;It was a great year of works, and an exciting year of life.
 &lt;/p&gt;
 
-&lt;h3 id=&#34;works&#34;&gt;&lt;strong&gt;Works&lt;/strong&gt;&lt;/h3&gt;
+&lt;h2 id=&#34;works&#34;&gt;&lt;strong&gt;Works&lt;/strong&gt;&lt;/h2&gt;
 
-&lt;h4 id=&#34;1-leaving-the-agency-world&#34;&gt;1. Leaving the agency world&lt;/h4&gt;
+&lt;h3 id=&#34;1-leaving-the-agency-world&#34;&gt;1. Leaving the agency world&lt;/h3&gt;
 
 &lt;p&gt;In the past few years, I worked for great creative agencies such as &lt;a href=&#34;http://sincerelytruman.com&#34;&gt;Sincerely Truman&lt;/a&gt;, and &lt;a href=&#34;http://theprogrampdx.com&#34;&gt;The Program&lt;/a&gt;
 in Portland, Oregon, it was tough to leave the agency working
@@ -94,7 +94,7 @@ Twitter App.&lt;/li&gt;
 
 &lt;p&gt;However, I always wanted to deepen my knowledge for the one that I most loved and cared about. That was when I made my best decision to join the &lt;a href=&#34;http://www.seastar.io/team/&#34;&gt;Seastar team&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h4 id=&#34;2-entering-the-start-up-world&#34;&gt;2. Entering the start-up world&lt;/h4&gt;
+&lt;h3 id=&#34;2-entering-the-start-up-world&#34;&gt;2. Entering the start-up world&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://startupljackson.com/post/135800367395/how-to-get-rich-in-tech-guaranteed?&#34;&gt;Start-up is
 tough&lt;/a&gt;. I basically have to live and breath with it.&lt;/p&gt;
@@ -103,7 +103,7 @@ tough&lt;/a&gt;. I basically have to live and breath with it.&lt;/p&gt;
 
 &lt;p&gt;My role is in charged for the front-end of Seastar product, focusing on developing UX and design. I am very lucky to be a part of the Seastar team.&lt;/p&gt;
 
-&lt;h4 id=&#34;3-accomplishments&#34;&gt;3. Accomplishments&lt;/h4&gt;
+&lt;h3 id=&#34;3-accomplishments&#34;&gt;3. Accomplishments&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Launched: &lt;a href=&#34;http://programs.omsi.edu/professionals/traveling-exhibits/zoo-you-human-microbiome&#34;&gt;OMSI Zoo in
@@ -119,7 +119,7 @@ You&lt;/a&gt;, &lt;a href=&#34;http://classfare.com&#34;&gt;Classfare&lt;/a&gt;,
 &lt;li&gt;Implemented animation with canvas and Tweenmax.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;life&#34;&gt;&lt;strong&gt;Life&lt;/strong&gt;&lt;/h3&gt;
+&lt;h2 id=&#34;life&#34;&gt;&lt;strong&gt;Life&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;I&amp;rsquo;m grateful that my works allow me to work remotely any days in the week, this

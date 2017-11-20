@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Khoa Pham </title>
-        <link>http://khoapham.me/tags/go/index.xml</link>
+        <link>http://khoapham.me/tags/go/</link>
         <language>en-us</language>
         <author>Khoa Pham</author>
         <rights>(C) 2016</rights>
-        <updated>0001-01-01 00:00:00 &#43;0000 UTC</updated>
+        <updated>2016-06-27 12:09:16 -0700 PDT</updated>
 
         
             
             <item>
                 <title>Full Stack Development with Ember and Go</title>
-                <link>http://khoapham.me/blog/full-stack-development-with-Ember-and-Go/</link>
+                <link>http://khoapham.me/blog/full-stack-development-with-ember-and-go/</link>
                 <pubDate>Mon, 27 Jun 2016 12:09:16 PDT</pubDate>
-                <guid>http://khoapham.me/blog/full-stack-development-with-Ember-and-Go/</guid>
+                <guid>http://khoapham.me/blog/full-stack-development-with-ember-and-go/</guid>
                 <description>&lt;p&gt;One of my personal 2016 resolution was learning Go, and get familiar with
 writing restful API using Go. After couple of months learning Go, I started a
 simple application that use Go, and Ember to develop a Todo app.
@@ -26,12 +26,14 @@ frontend.&lt;/p&gt;
 &lt;p&gt;The source code can be found here:
 &lt;a href=&#34;https://github.com/pmkhoa/restful-api-go-and-ember&#34;&gt;https://github.com/pmkhoa/restful-api-go-and-ember&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;backend-overview&#34;&gt;Backend overview&lt;/h3&gt;
+&lt;h2 id=&#34;backend-overview&#34;&gt;Backend overview&lt;/h2&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;em&gt;model&lt;/em&gt;: Todo model includes &lt;code&gt;Id&lt;/code&gt;, &lt;code&gt;Name&lt;/code&gt;, &lt;code&gt;Completed&lt;/code&gt;, &lt;code&gt;Due&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;model&#34;&gt;Model&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;package main
+&lt;p&gt;Todo model includes &lt;code&gt;Id&lt;/code&gt;, &lt;code&gt;Name&lt;/code&gt;, &lt;code&gt;Completed&lt;/code&gt;, &lt;code&gt;Due&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+package main
 import &amp;quot;time&amp;quot;
 type Todo struct {
     Id          string `json:&amp;quot;id&amp;quot;`
@@ -42,15 +44,17 @@ type Todo struct {
 type Todos []Todo
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;We create type Todo, and Todos to hold our Todo object, and Todo list&lt;/p&gt;&lt;/li&gt;
+&lt;p&gt;We create type Todo, and Todos to hold our Todo object, and Todo list&lt;/p&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;em&gt;server&lt;/em&gt;: bootstrap http server, response to request made from the client.&lt;/p&gt;
+&lt;h3 id=&#34;server&#34;&gt;Server&lt;/h3&gt;
 
-&lt;p&gt;For our server code, we use &lt;code&gt;httprouter&lt;/code&gt; to for our api handler, and enable CORS
+&lt;p&gt;Bootstrap http server, response to request made from the client.
+For our server code, we use &lt;code&gt;httprouter&lt;/code&gt; to for our api handler, and enable CORS
 so that our frontend app can talk to the server when they&amp;rsquo;re on different
 domains.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;package main
+&lt;pre&gt;&lt;code&gt;
+package main
 import (
     ... // import our dependencies here
 )
@@ -87,13 +91,13 @@ func ShowTodo(w http.ResponseWriter, r *http.Request, params httprouter.Params) 
     }
 }
 // more handlers can be defined with other httprouter 
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;em&gt;Data fixture&lt;/em&gt;: findTodo, updateTodo, deleteTodo, createTodo.&lt;/p&gt;
+&lt;h3 id=&#34;data-fixture&#34;&gt;Data fixture&lt;/h3&gt;
 
-&lt;p&gt;I&amp;rsquo;m using a simple data fixture to handle model operations. There will be
-another blog post that integrate this application with Postgres for data
-persistent.&lt;/p&gt;
+&lt;p&gt;Definining Data fixture for &lt;code&gt;findTodo&lt;/code&gt;, &lt;code&gt;updateTodo&lt;/code&gt;, &lt;code&gt;deleteTodo&lt;/code&gt;, &lt;code&gt;createTodo&lt;/code&gt;.
+I&amp;rsquo;m using a simple data fixture to handle model operations. There will be another
+blog post that integrate this application with Postgres for data persistent.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;// repo.go
 package main
@@ -121,18 +125,15 @@ func RepoFindTodo(id string) Todo {
         }
     }
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;frontend-overview&#34;&gt;Frontend overview&lt;/h3&gt;
+&lt;h2 id=&#34;frontend-overview&#34;&gt;Frontend overview&lt;/h2&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;webapp&lt;/em&gt;: Simple Ember app that lists all todos, and all user to create todo.
+&lt;p&gt;Simple Ember app that lists all todos, and all user to create todo.
 If you&amp;rsquo;re interested in learning Ember for building frontend. Feel free to
-check out the github repo for this.&lt;/li&gt;
-&lt;/ul&gt;
+check out the github repo for this.&lt;/p&gt;
 
-&lt;h3 id=&#34;future-development&#34;&gt;Future development&lt;/h3&gt;
+&lt;h2 id=&#34;future-development&#34;&gt;Future development&lt;/h2&gt;
 
 &lt;p&gt;Eventhough this was a very simple app, I have learnt a lot from building it from
 the ground up. Using Go for backend API is quite astonishing and simple, I think
