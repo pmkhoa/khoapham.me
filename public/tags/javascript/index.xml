@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Khoa Pham </title>
-        <link>http://khoapham.me/tags/javascript/index.xml</link>
+        <link>http://khoapham.me/tags/javascript/</link>
         <language>en-us</language>
         <author>Khoa Pham</author>
         <rights>(C) 2016</rights>
-        <updated>0001-01-01 00:00:00 &#43;0000 UTC</updated>
+        <updated>2016-05-03 22:31:31 -0700 PDT</updated>
 
         
             
@@ -49,7 +49,7 @@ global state such as global notification, or error handling. This doesn&amp;rsqu
 into &lt;code&gt;Route&lt;/code&gt;, &lt;code&gt;Controller&lt;/code&gt;, or &lt;code&gt;Component&lt;/code&gt;. Ember offers an easy way to manage
 this using &lt;code&gt;Service&lt;/code&gt; and &lt;code&gt;Initializers&lt;/code&gt;.&lt;/p&gt;
 
-&lt;h4 id=&#34;create-a-service-to-hold-notification-data&#34;&gt;Create a service to hold notification data&lt;/h4&gt;
+&lt;h2 id=&#34;create-a-service-to-hold-notification-data&#34;&gt;Create a service to hold notification data&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;//app/services/global-notification.js
 import Ember from &#39;ember&#39;;
@@ -62,7 +62,7 @@ export default Ember.Service.extend({
 });
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id=&#34;create-an-initializer-to-inject-global-notification-service-in-application&#34;&gt;Create an initializer to inject global notification service in application&lt;/h4&gt;
+&lt;h2 id=&#34;create-an-initializer-to-inject-global-notification-service-in-application&#34;&gt;Create an initializer to inject global notification service in application&lt;/h2&gt;
 
 &lt;p&gt;This allows us to use GlobalNotification service in route, and component.&lt;/p&gt;
 
@@ -81,7 +81,7 @@ export default {
 };
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id=&#34;using-our-global-notification-service&#34;&gt;Using our global notification service.&lt;/h4&gt;
+&lt;h2 id=&#34;using-our-global-notification-service&#34;&gt;Using our global notification service.&lt;/h2&gt;
 
 &lt;p&gt;Assuming you have a user settings form, and want to display notification when
 user changes settings.&lt;/p&gt;
@@ -631,9 +631,9 @@ class LinkedList {
             
             <item>
                 <title>MenuOnScroll - jQuery Plugin</title>
-                <link>http://khoapham.me/blog/menuOnScroll-jquery-plugin/</link>
+                <link>http://khoapham.me/blog/menuonscroll-jquery-plugin/</link>
                 <pubDate>Tue, 25 Nov 2014 00:00:00 UTC</pubDate>
-                <guid>http://khoapham.me/blog/menuOnScroll-jquery-plugin/</guid>
+                <guid>http://khoapham.me/blog/menuonscroll-jquery-plugin/</guid>
                 <description>&lt;p&gt;Today I just released menuOnScroll - jQuery plugin that automatically updates the menu
 navigation when you scroll. This functionality is extremely common on the web,
 especially for the single page website. 

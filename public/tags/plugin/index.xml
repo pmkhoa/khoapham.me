@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Khoa Pham </title>
-        <link>http://khoapham.me/tags/plugin/index.xml</link>
+        <link>http://khoapham.me/tags/plugin/</link>
         <language>en-us</language>
         <author>Khoa Pham</author>
         <rights>(C) 2016</rights>
-        <updated>0001-01-01 00:00:00 &#43;0000 UTC</updated>
+        <updated>2014-11-25 00:00:00 &#43;0000 UTC</updated>
 
         
             
             <item>
                 <title>MenuOnScroll - jQuery Plugin</title>
-                <link>http://khoapham.me/blog/menuOnScroll-jquery-plugin/</link>
+                <link>http://khoapham.me/blog/menuonscroll-jquery-plugin/</link>
                 <pubDate>Tue, 25 Nov 2014 00:00:00 UTC</pubDate>
-                <guid>http://khoapham.me/blog/menuOnScroll-jquery-plugin/</guid>
+                <guid>http://khoapham.me/blog/menuonscroll-jquery-plugin/</guid>
                 <description>&lt;p&gt;Today I just released menuOnScroll - jQuery plugin that automatically updates the menu
 navigation when you scroll. This functionality is extremely common on the web,
 especially for the single page website. 

@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Khoa Pham </title>
-        <link>http://khoapham.me/tags/devops/index.xml</link>
+        <link>http://khoapham.me/tags/devops/</link>
         <language>en-us</language>
         <author>Khoa Pham</author>
         <rights>(C) 2016</rights>
-        <updated>0001-01-01 00:00:00 &#43;0000 UTC</updated>
+        <updated>2016-04-25 15:46:17 -0700 PDT</updated>
 
         
             
@@ -23,7 +23,8 @@
 &lt;p&gt;Here are steps that I used to deploy my recent open source tool &lt;a href=&#34;http://pmkhoa.github.io/meta-tags-generator/&#34;&gt;Meta Tags
 Generator&lt;/a&gt;:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;//Update baseURL from config environment
+&lt;pre&gt;&lt;code&gt;
+//Update baseURL from config environment
 //Change meta-tags-generator to reflect your github page url
 //ENV.baseURL = &#39;/meta-tags-generator&#39;;
 
@@ -53,7 +54,8 @@ git subtree push --prefix=dist git@github.com:pmkhoa/meta-tags-generator.git gh-
 &lt;p&gt;To make it easier for deploying process, we can create an shell script to handle
 &lt;code&gt;git commit&lt;/code&gt;, &lt;code&gt;ember build&lt;/code&gt;, and &lt;code&gt;git push&lt;/code&gt;. Create a deploy.sh file like this:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;#!/bin/bash
+&lt;pre&gt;&lt;code&gt;
+#!/bin/bash
 
 echo -e &amp;quot;\033[0;32mDeploying updates to Github...\033[0m&amp;quot;
 
