@@ -11,10 +11,10 @@
         
             
             <item>
-                <title>Full Stack Development with Ember and Go</title>
-                <link>http://khoapham.me/blog/full-stack-development-with-ember-and-go/</link>
+                <title>Full Stack Development with Ember and Golang</title>
+                <link>http://khoapham.me/blog/full-stack-development-with-ember-and-golang/</link>
                 <pubDate>Mon, 27 Jun 2016 12:09:16 PDT</pubDate>
-                <guid>http://khoapham.me/blog/full-stack-development-with-ember-and-go/</guid>
+                <guid>http://khoapham.me/blog/full-stack-development-with-ember-and-golang/</guid>
                 <description>&lt;p&gt;One of my personal 2016 resolution was learning Go, and get familiar with
 writing restful API using Go. After couple of months learning Go, I started a
 simple application that use Go, and Ember to develop a Todo app.
