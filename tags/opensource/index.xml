@@ -1,36 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Khoa Pham </title>
-        <link>http://khoapham.me/tags/opensource/</link>
-        <language>en-us</language>
-        <author>Khoa Pham</author>
-        <rights>(C) 2016</rights>
-        <updated>2016-04-24 13:11:54 -0700 PDT</updated>
-
-        
-            
-            <item>
-                <title>Meta Tags Generator</title>
-                <link>http://khoapham.me/blog/meta-tags-generator/</link>
-                <pubDate>Sun, 24 Apr 2016 13:11:54 PDT</pubDate>
-                <guid>http://khoapham.me/blog/meta-tags-generator/</guid>
-                <description>&lt;p&gt;&lt;a href=&#34;http://pmkhoa.github.io/meta-tags-generator/&#34;&gt;&lt;img src=&#34;http://khoapham.me/img/meta-tags-generator.png&#34; alt=&#34;Meta Tags Generator&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+  <channel>
+    <title>Opensource on Khoa Pham</title>
+    <link>http://khoapham.me/tags/opensource/</link>
+    <description>Recent content in Opensource on Khoa Pham</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 24 Apr 2016 13:11:54 -0700</lastBuildDate>
+    
+	<atom:link href="http://khoapham.me/tags/opensource/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Meta Tags Generator</title>
+      <link>http://khoapham.me/blog/meta-tags-generator/</link>
+      <pubDate>Sun, 24 Apr 2016 13:11:54 -0700</pubDate>
+      
+      <guid>http://khoapham.me/blog/meta-tags-generator/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pmkhoa.github.io/meta-tags-generator/&#34;&gt;&lt;img src=&#34;http://khoapham.me/img/meta-tags-generator.png&#34; alt=&#34;Meta Tags Generator&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Meta tags are important because they help search engine to crawl your website properly, and make your website display correctly when sharing on social networks such as Facebook, Twitter, and Google Plus. This is why I created a simple tool to generate these standard meta tags &amp;amp; social tags.
-&lt;/p&gt;
-
-&lt;p&gt;Here is the link to that tool:
-&lt;a href=&#34;http://pmkhoa.github.io/meta-tags-generator/&#34;&gt;http://pmkhoa.github.io/meta-tags-generator/&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The app is built using EmberJS. If you like it or want to contribute, feel free
-to fork it from here:
-&lt;a href=&#34;https://github.com/pmkhoa/meta-tags-generator&#34;&gt;https://github.com/pmkhoa/meta-tags-generator&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Happy developing &amp;amp; happy sharing!&lt;/p&gt;</description>
-            </item>
-            
-        
-
-    </channel>
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
 </rss>

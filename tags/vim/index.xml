@@ -1,116 +1,37 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Khoa Pham </title>
-        <link>http://khoapham.me/tags/vim/</link>
-        <language>en-us</language>
-        <author>Khoa Pham</author>
-        <rights>(C) 2016</rights>
-        <updated>2014-11-12 00:00:00 &#43;0000 UTC</updated>
-
-        
-            
-            <item>
-                <title>Vim Commmon Helpful Leader</title>
-                <link>http://khoapham.me/blog/vim-common-helpful-leader/</link>
-                <pubDate>Wed, 12 Nov 2014 00:00:00 UTC</pubDate>
-                <guid>http://khoapham.me/blog/vim-common-helpful-leader/</guid>
-                <description>&lt;p&gt;I have really enjoyed using Vim for a month now, and I have to admit that I
+  <channel>
+    <title>Vim on Khoa Pham</title>
+    <link>http://khoapham.me/tags/vim/</link>
+    <description>Recent content in Vim on Khoa Pham</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 12 Nov 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://khoapham.me/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Vim Commmon Helpful Leader</title>
+      <link>http://khoapham.me/blog/vim-common-helpful-leader/</link>
+      <pubDate>Wed, 12 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://khoapham.me/blog/vim-common-helpful-leader/</guid>
+      <description>&lt;p&gt;I have really enjoyed using Vim for a month now, and I have to admit that I
 love the feeling of learning new things from Vim everyday. Today I would love to
 share some of my favorite Vim Leaders that I found they&amp;rsquo;re extremely helpful. You
 can add these into your .vimrc file, and give it a try.
-&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Open another file in same directory&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;map &amp;lt;Leader&amp;gt;e :e &amp;lt;C-R&amp;gt;=escape(expand(&amp;quot;%:p:h&amp;quot;),&#39; &#39;) . &#39;/&#39;&amp;lt;CR&amp;gt;
-map &amp;lt;Leader&amp;gt;s :split &amp;lt;C-R&amp;gt;=escape(expand(&amp;quot;%:p:h&amp;quot;), &#39; &#39;) . &#39;/&#39;&amp;lt;CR&amp;gt;
-map &amp;lt;Leader&amp;gt;v :vnew &amp;lt;C-R&amp;gt;=escape(expand(&amp;quot;%:p:h&amp;quot;), &#39; &#39;) . &#39;/&#39;&amp;lt;CR&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Rename current file. This is a little bit more complex that requires us do
-define a helper function.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;function! RenameFile()
-    let old_name = expand(&#39;%&#39;)
-    let new_name = input(&#39;New file name: &#39;, expand(&#39;%&#39;), &#39;file&#39;)
-    if new_name != &#39;&#39; &amp;amp;&amp;amp; new_name != old_name
-        exec &#39;:saveas &#39; . new_name
-        exec &#39;:silent !rm &#39; . old_name
-        redraw!
-    endif
-endfunction
-map &amp;lt;Leader&amp;gt;n :call RenameFile()&amp;lt;cr&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
-            </item>
-            
-        
-            
-            <item>
-                <title>How I switched to vim in 2 weeks</title>
-                <link>http://khoapham.me/blog/how-i-switched-to-vim-in-2-weeks/</link>
-                <pubDate>Wed, 29 Oct 2014 00:00:00 UTC</pubDate>
-                <guid>http://khoapham.me/blog/how-i-switched-to-vim-in-2-weeks/</guid>
-                <description>&lt;p&gt;I have played with Vim so many times since I was in college, in fact that I
-loved it every time I used it. However, I don&amp;rsquo;t think I ever spent time
-long enough to get used to it. I&amp;rsquo;ve seen people dancing their fingers on the
-keyboard using Vim, this made me wanted to try harder this time.
-Finally I totally switched to Vim as my main text editor.&lt;/p&gt;
-
-&lt;p&gt;Here is the timeline that I setup my goal.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Be prepared for couple unproductive days.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;This means that your productivity level from go down from 100% to 10%-20%
-which means you probably won&amp;rsquo;t be able to get your work done in couple of
-first days. This is totally normal since you will be focusing on learning
-Vim rather than focusing on anything else. With this being said, please
-don&amp;rsquo;t try to learn Vim when you&amp;rsquo;re in the middle of tight deadline
-project. :)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Learn the basic and the one that you use most.(3 days)&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;- Try &lt;a href=&#34;http://vim-adventures.com&#34;&gt;Vim Adventures&lt;/a&gt;: this will help you get
-around quickly by using h, j, k, l&lt;/li&gt;
-&lt;li&gt;- Learn the most common keystrokes: insert, deleting, copy/paste, undo/redo, search/replace.&lt;/li&gt;
-&lt;li&gt;- Learn how to open a file inside Vim (using :e), or open in new tab
-(:tabe), how to navigate through tabs using (gt or gT).&lt;/li&gt;
-&lt;li&gt;- Read this &lt;a href=&#34;https://upcase.com/vim&#34;&gt;Vim Trais&lt;/a&gt; from Thoughtbot to see where
-you&amp;rsquo;re at with your skill.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Time to get more serious (4 days) - this is where most of people give up!&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;- Read through Vim tutorial until split window chapter.&lt;/li&gt;
-&lt;li&gt;- Install Vim plugins that help you navigate files such as NerdTree, or
-CtrlP files quickly. The best dotfiles resource is from &lt;a href=&#34;https://github.com/thoughtbot/dotfiles&#34;&gt;Thoughtbot
-dotfiles&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;- It&amp;rsquo;s time to learn Tmux, I found &lt;a href=&#34;https://www.youtube.com/watch?v=9jzWDr24UHQ&#34;&gt;this
-video&lt;/a&gt; from Chris Hunt was
-very helpful to understand some common use of tmux, and Vim plugins.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Practice makes perfect! (7 days)&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;At this point, all you need to do is keep practicing, taking notes, and
-learning. You will see yourself getting better everyday, and you will be
-surprised how much faster you can use with your&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;I hope you find this useful, and good luck!&lt;/p&gt;
-</description>
-            </item>
-            
-        
-
-    </channel>
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How I switched to vim in 2 weeks</title>
+      <link>http://khoapham.me/blog/how-i-switched-to-vim-in-2-weeks/</link>
+      <pubDate>Wed, 29 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://khoapham.me/blog/how-i-switched-to-vim-in-2-weeks/</guid>
+      <description>I have played with Vim so many times since I was in college, in fact that I loved it every time I used it. However, I don&amp;rsquo;t think I ever spent time long enough to get used to it. I&amp;rsquo;ve seen people dancing their fingers on the keyboard using Vim, this made me wanted to try harder this time. Finally I totally switched to Vim as my main text editor.</description>
+    </item>
+    
+  </channel>
 </rss>

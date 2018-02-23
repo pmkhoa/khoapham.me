@@ -1,344 +1,107 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Khoa Pham </title>
-        <link>http://khoapham.me/tags/motivation/</link>
-        <language>en-us</language>
-        <author>Khoa Pham</author>
-        <rights>(C) 2016</rights>
-        <updated>2016-04-24 13:11:54 -0700 PDT</updated>
-
-        
-            
-            <item>
-                <title>Meta Tags Generator</title>
-                <link>http://khoapham.me/blog/meta-tags-generator/</link>
-                <pubDate>Sun, 24 Apr 2016 13:11:54 PDT</pubDate>
-                <guid>http://khoapham.me/blog/meta-tags-generator/</guid>
-                <description>&lt;p&gt;&lt;a href=&#34;http://pmkhoa.github.io/meta-tags-generator/&#34;&gt;&lt;img src=&#34;http://khoapham.me/img/meta-tags-generator.png&#34; alt=&#34;Meta Tags Generator&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+  <channel>
+    <title>Motivation on Khoa Pham</title>
+    <link>http://khoapham.me/tags/motivation/</link>
+    <description>Recent content in Motivation on Khoa Pham</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 24 Apr 2016 13:11:54 -0700</lastBuildDate>
+    
+	<atom:link href="http://khoapham.me/tags/motivation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Meta Tags Generator</title>
+      <link>http://khoapham.me/blog/meta-tags-generator/</link>
+      <pubDate>Sun, 24 Apr 2016 13:11:54 -0700</pubDate>
+      
+      <guid>http://khoapham.me/blog/meta-tags-generator/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pmkhoa.github.io/meta-tags-generator/&#34;&gt;&lt;img src=&#34;http://khoapham.me/img/meta-tags-generator.png&#34; alt=&#34;Meta Tags Generator&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Meta tags are important because they help search engine to crawl your website properly, and make your website display correctly when sharing on social networks such as Facebook, Twitter, and Google Plus. This is why I created a simple tool to generate these standard meta tags &amp;amp; social tags.
-&lt;/p&gt;
-
-&lt;p&gt;Here is the link to that tool:
-&lt;a href=&#34;http://pmkhoa.github.io/meta-tags-generator/&#34;&gt;http://pmkhoa.github.io/meta-tags-generator/&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The app is built using EmberJS. If you like it or want to contribute, feel free
-to fork it from here:
-&lt;a href=&#34;https://github.com/pmkhoa/meta-tags-generator&#34;&gt;https://github.com/pmkhoa/meta-tags-generator&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Happy developing &amp;amp; happy sharing!&lt;/p&gt;</description>
-            </item>
-            
-        
-            
-            <item>
-                <title>Great Attitude Makes Great Developers</title>
-                <link>http://khoapham.me/blog/great-developer-comes-from-great-attitude/</link>
-                <pubDate>Sat, 09 Apr 2016 22:20:42 PDT</pubDate>
-                <guid>http://khoapham.me/blog/great-developer-comes-from-great-attitude/</guid>
-                <description>&lt;p&gt;I was struck with a simple story about working with great attitude would have a
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Great Attitude Makes Great Developers</title>
+      <link>http://khoapham.me/blog/great-developer-comes-from-great-attitude/</link>
+      <pubDate>Sat, 09 Apr 2016 22:20:42 -0700</pubDate>
+      
+      <guid>http://khoapham.me/blog/great-developer-comes-from-great-attitude/</guid>
+      <description>&lt;p&gt;I was struck with a simple story about working with great attitude would have a
 great impact on the outcome of the work.
-&lt;/p&gt;
-
-&lt;p&gt;Here is that little story:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;There were three workers working on a construction site. One day, a man came over and asked the
-first worker &amp;ldquo;Why do work on this job?&amp;rdquo; I need money to feed my family, the first worker answered.&lt;/p&gt;
-
-&lt;p&gt;Then the man asked the second worker that same question. The answer was &amp;ldquo;that
-is because my boss told me to&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;The third worker was also asked that question, and he said &amp;ldquo;I want to build a
-nice building for people living here to be safe and happy.&amp;rdquo;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I kept asking myself what I would answer if people ask me that same question about
-my work. In the last five years, I always had positive attitude about any works that I did, whether it was small
-or big. Simply because I wanted to make great things for people to use.&lt;/p&gt;
-
-&lt;p&gt;I think all of three workers had made valid points about what motivated them
-for doing their works. However, to get the work done properly, and perfectly, the third worker would be the one. That is why I think great attitude will have a great impact on the work. I also strongly believe this also applies for all everyone in general, and developer in particularly.&lt;/p&gt;
-
-&lt;p&gt;To all developers, when working on any projects, please give it a little more
-love. It will make your users happy too.&lt;/p&gt;</description>
-            </item>
-            
-        
-            
-            <item>
-                <title>2015 Retrospective</title>
-                <link>http://khoapham.me/blog/2015-retrospective/</link>
-                <pubDate>Tue, 29 Dec 2015 15:02:48 PST</pubDate>
-                <guid>http://khoapham.me/blog/2015-retrospective/</guid>
-                <description>&lt;p&gt;It was a great year of works, and an exciting year of life.
-&lt;/p&gt;
-
-&lt;h2 id=&#34;works&#34;&gt;&lt;strong&gt;Works&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;h3 id=&#34;1-leaving-the-agency-world&#34;&gt;1. Leaving the agency world&lt;/h3&gt;
-
-&lt;p&gt;In the past few years, I worked for great creative agencies such as &lt;a href=&#34;http://sincerelytruman.com&#34;&gt;Sincerely Truman&lt;/a&gt;, and &lt;a href=&#34;http://theprogrampdx.com&#34;&gt;The Program&lt;/a&gt;
-in Portland, Oregon, it was tough to leave the agency working
-environment. Working with creative agencies gave me lot of opportunities to explore new technologies, and ideas. For instance, here are the list of things that worked with:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Back-end: PHP, Ruby, Javascript.&lt;/li&gt;
-&lt;li&gt;Javascript: BackboneJS, EmberJS, MeteorJS, NodeJS, ReactJS.&lt;/li&gt;
-&lt;li&gt;Frameworks: Rails, Wordpress, Meteor, Yii, Shopify, Squarespace, Facebook App,
-Twitter App.&lt;/li&gt;
-&lt;li&gt;Database: MongoDB, Mysql, Postgresql.&lt;/li&gt;
-&lt;li&gt;Lot of other libraries, and third-party applications.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;However, I always wanted to deepen my knowledge for the one that I most loved and cared about. That was when I made my best decision to join the &lt;a href=&#34;http://www.seastar.io/team/&#34;&gt;Seastar team&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;2-entering-the-start-up-world&#34;&gt;2. Entering the start-up world&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://startupljackson.com/post/135800367395/how-to-get-rich-in-tech-guaranteed?&#34;&gt;Start-up is
-tough&lt;/a&gt;. I basically have to live and breath with it.&lt;/p&gt;
-
-&lt;p&gt;Differently from what I worked in several previous positions, now I can focus on some technologies that I think they will have some great influences in the future: such as EmberJS, Golang, Cassandra, and hopefully Swift too.&lt;/p&gt;
-
-&lt;p&gt;My role is in charged for the front-end of Seastar product, focusing on developing UX and design. I am very lucky to be a part of the Seastar team.&lt;/p&gt;
-
-&lt;h3 id=&#34;3-accomplishments&#34;&gt;3. Accomplishments&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Launched: &lt;a href=&#34;http://programs.omsi.edu/professionals/traveling-exhibits/zoo-you-human-microbiome&#34;&gt;OMSI Zoo in
-You&lt;/a&gt;, &lt;a href=&#34;http://classfare.com&#34;&gt;Classfare&lt;/a&gt;, &lt;a href=&#34;http://ratiocoffee.com&#34;&gt;Ratio Coffee&lt;/a&gt;, &lt;a href=&#34;http://my.onesight.org&#34;&gt;My OneSight&lt;/a&gt;, &lt;a href=&#34;http://seastar.io&#34;&gt;Seastar.io&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Switched code editor from Sublime to Vim.&lt;/li&gt;
-&lt;li&gt;Switched personal blog from Middleman to Hugo.&lt;/li&gt;
-&lt;li&gt;Read 10 books: 3 fiction, 2 inspiration, 2 startup, 3 technical.&lt;/li&gt;
-&lt;li&gt;Deepened knowledge in Ember 2.0.&lt;/li&gt;
-&lt;li&gt;Worked as lead of UI &amp;amp; UX Developer.&lt;/li&gt;
-&lt;li&gt;Cassandra training &amp;amp; Cassandra Summit.&lt;/li&gt;
-&lt;li&gt;Started learning Golang, and Swift.&lt;/li&gt;
-&lt;li&gt;Implemented data visualization D3, Rickshaw, and ThreeJS.&lt;/li&gt;
-&lt;li&gt;Implemented animation with canvas and Tweenmax.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;life&#34;&gt;&lt;strong&gt;Life&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;I&amp;rsquo;m grateful that my works allow me to work remotely any days in the week, this
-helped me a lot for my work-life balance.&lt;/li&gt;
-&lt;li&gt;My 2 years old has kept me busy through the year. She started to talk more, and
-asked more questions. Sometimes it was hard to answer all of her questions.&lt;/li&gt;
-&lt;li&gt;The 4 days vacation in Disneyland.&lt;/li&gt;
-&lt;li&gt;Multiple day trips to Cannon beach were really great.&lt;/li&gt;
-&lt;li&gt;The Apple Watch motivated me to exercise more regularly.&lt;/li&gt;
-&lt;li&gt;Ride bicycle to work everyday.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;It was a joyful year of 2015, and I look forward to the 2016. Happy New Year!!!&lt;/p&gt;</description>
-            </item>
-            
-        
-            
-            <item>
-                <title>My First Hugo Theme</title>
-                <link>http://khoapham.me/blog/first-hugo-theme/</link>
-                <pubDate>Thu, 03 Dec 2015 23:13:30 PST</pubDate>
-                <guid>http://khoapham.me/blog/first-hugo-theme/</guid>
-                <description>&lt;p&gt;When I started to get back to blogging, I felt my website
-took a little long to compile. As a revolution of redesigning my blog, I want to switch my blog platform to something faster. 
-My blog was previously developed using &lt;a href=&#34;http://middlemanapp.com&#34;&gt;Middleman&lt;/a&gt;, and now it&amp;rsquo;s powered by &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;, a faster static site
-generator. I&amp;rsquo;m really pleased with the transition so far.&lt;/p&gt;
-
-&lt;p&gt;I also wrote a simple Hugo theme called &lt;a href=&#34;https://github.com/pmkhoa/hugo-minimalist&#34;&gt;Hugo
-Minimalist&lt;/a&gt;, this is just a mimic of
-my current blog style, which I explained in &lt;a href=&#34;http://khoapham.me/blog/minimalist-in-design-and-development/&#34;&gt;Minimalist in
-design&lt;/a&gt;. Of
-course, it&amp;rsquo;s free to use if you want to try.&lt;/p&gt;
-
-&lt;p&gt;Another thing that I&amp;rsquo;d like to share is the better workflow for my website
-deployment. With Middleman, I host the website on
-&lt;a href=&#34;https://aws.amazon.com/s3/&#34;&gt;S3&lt;/a&gt;, use Markdown to write content, and use
-Middleman extension
-&lt;a href=&#34;http://localhost:1313/blog/sync-middleman-with-amazon-s3/&#34;&gt;s3_deployment&lt;/a&gt; to deploy to S3, and then commit to github.
-The whole process wasn&amp;rsquo;t taking too long, but it can be simplified.
-With Hugo, the website is hosted on Github (free), and I wrote a &lt;a href=&#34;https://github.com/pmkhoa/khoapham.me/blob/master/deploy.sh&#34;&gt;simple script&lt;/a&gt; to deploy and commit to github just one command when the
-content is ready for production. I think the whole process is just better now.&lt;/p&gt;
-
-&lt;p&gt;If you plan to write lot of blog posts, and want to use static site generator
-for it, I highly recommend &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;.&lt;/p&gt;</description>
-            </item>
-            
-        
-            
-            <item>
-                <title>Minimalist in Design and Development</title>
-                <link>http://khoapham.me/blog/minimalist-in-design-and-development/</link>
-                <pubDate>Sat, 21 Nov 2015 00:00:00 UTC</pubDate>
-                <guid>http://khoapham.me/blog/minimalist-in-design-and-development/</guid>
-                <description>&lt;p&gt;My website has gone through countless design iterations, not because its look
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2015 Retrospective</title>
+      <link>http://khoapham.me/blog/2015-retrospective/</link>
+      <pubDate>Tue, 29 Dec 2015 15:02:48 -0800</pubDate>
+      
+      <guid>http://khoapham.me/blog/2015-retrospective/</guid>
+      <description>&lt;p&gt;It was a great year of works, and an exciting year of life.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>My First Hugo Theme</title>
+      <link>http://khoapham.me/blog/first-hugo-theme/</link>
+      <pubDate>Thu, 03 Dec 2015 23:13:30 -0800</pubDate>
+      
+      <guid>http://khoapham.me/blog/first-hugo-theme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Minimalist in Design and Development</title>
+      <link>http://khoapham.me/blog/minimalist-in-design-and-development/</link>
+      <pubDate>Sat, 21 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://khoapham.me/blog/minimalist-in-design-and-development/</guid>
+      <description>&lt;p&gt;My website has gone through countless design iterations, not because its look
 was outdated, but my sense of simplicity has changed from time to time, and I
 wanted my personal website to reflect that.
-&lt;/p&gt;
-
-&lt;p&gt;Unlike previous versions in which I wanted to prove my dev skills by developing a
-fairly complicated website with lot of technologies under the hood, this time I rebuilt the website with a single purpose &amp;ldquo;minimalist in design and development&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;As a result, my website now becomes much more simpler, and requires only 6 - 8
-requests (total ~200KB) per page load in less than a second. Moreover, I wrote
-zero Javascript code in this website even though I usually write about 50,000 lines of
-javascript a year.&lt;/p&gt;
-
-&lt;p&gt;This doesn&amp;rsquo;t mean that writing less code is better, but this is a process that I will start to do from now &amp;ldquo;Just write the code that matters&amp;rdquo;.&lt;/p&gt;</description>
-            </item>
-            
-        
-            
-            <item>
-                <title>How I switched to vim in 2 weeks</title>
-                <link>http://khoapham.me/blog/how-i-switched-to-vim-in-2-weeks/</link>
-                <pubDate>Wed, 29 Oct 2014 00:00:00 UTC</pubDate>
-                <guid>http://khoapham.me/blog/how-i-switched-to-vim-in-2-weeks/</guid>
-                <description>&lt;p&gt;I have played with Vim so many times since I was in college, in fact that I
-loved it every time I used it. However, I don&amp;rsquo;t think I ever spent time
-long enough to get used to it. I&amp;rsquo;ve seen people dancing their fingers on the
-keyboard using Vim, this made me wanted to try harder this time.
-Finally I totally switched to Vim as my main text editor.&lt;/p&gt;
-
-&lt;p&gt;Here is the timeline that I setup my goal.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Be prepared for couple unproductive days.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;This means that your productivity level from go down from 100% to 10%-20%
-which means you probably won&amp;rsquo;t be able to get your work done in couple of
-first days. This is totally normal since you will be focusing on learning
-Vim rather than focusing on anything else. With this being said, please
-don&amp;rsquo;t try to learn Vim when you&amp;rsquo;re in the middle of tight deadline
-project. :)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Learn the basic and the one that you use most.(3 days)&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;- Try &lt;a href=&#34;http://vim-adventures.com&#34;&gt;Vim Adventures&lt;/a&gt;: this will help you get
-around quickly by using h, j, k, l&lt;/li&gt;
-&lt;li&gt;- Learn the most common keystrokes: insert, deleting, copy/paste, undo/redo, search/replace.&lt;/li&gt;
-&lt;li&gt;- Learn how to open a file inside Vim (using :e), or open in new tab
-(:tabe), how to navigate through tabs using (gt or gT).&lt;/li&gt;
-&lt;li&gt;- Read this &lt;a href=&#34;https://upcase.com/vim&#34;&gt;Vim Trais&lt;/a&gt; from Thoughtbot to see where
-you&amp;rsquo;re at with your skill.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Time to get more serious (4 days) - this is where most of people give up!&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;- Read through Vim tutorial until split window chapter.&lt;/li&gt;
-&lt;li&gt;- Install Vim plugins that help you navigate files such as NerdTree, or
-CtrlP files quickly. The best dotfiles resource is from &lt;a href=&#34;https://github.com/thoughtbot/dotfiles&#34;&gt;Thoughtbot
-dotfiles&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;- It&amp;rsquo;s time to learn Tmux, I found &lt;a href=&#34;https://www.youtube.com/watch?v=9jzWDr24UHQ&#34;&gt;this
-video&lt;/a&gt; from Chris Hunt was
-very helpful to understand some common use of tmux, and Vim plugins.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Practice makes perfect! (7 days)&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;At this point, all you need to do is keep practicing, taking notes, and
-learning. You will see yourself getting better everyday, and you will be
-surprised how much faster you can use with your&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;I hope you find this useful, and good luck!&lt;/p&gt;
-</description>
-            </item>
-            
-        
-            
-            <item>
-                <title>Inspiration videos from Steve Jobs</title>
-                <link>http://khoapham.me/blog/inspiration-video-from-steve-jobs/</link>
-                <pubDate>Thu, 04 Jul 2013 00:00:00 UTC</pubDate>
-                <guid>http://khoapham.me/blog/inspiration-video-from-steve-jobs/</guid>
-                <description>&lt;p&gt;
-&lt;div class=&#34;videoWrapper&#34;&gt;
-    &lt;iframe src=&#34;https://www.youtube.com/embed/KuNQgln6TL0?feature=player_embedded&#34; height=&#34;360&#34; width=&#34;640&#34; allowfullscreen=&#34;&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;&lt;/p&gt;
-
-&lt;div class=&#34;videoWrapper&#34;&gt;
-    &lt;iframe height=&#34;360&#34; width=&#34;640&#34; src=&#34;https://www.youtube.com/embed/FF-tKLISfPE&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;</description>
-            </item>
-            
-        
-            
-            <item>
-                <title>Learning to See</title>
-                <link>http://khoapham.me/blog/learning-to-see/</link>
-                <pubDate>Fri, 17 May 2013 23:12:14 -0800</pubDate>
-                <guid>http://khoapham.me/blog/learning-to-see/</guid>
-                <description>&lt;p&gt;People asked me why I had a computer science degree but spending most of my time working as user experience developer.
-Here is the article that hooked me into it: &lt;a href=&#34;https://ia.net/know-how/learning-to-see&#34;&gt;https://ia.net/know-how/learning-to-see&lt;/a&gt;.
-It has changed the way I saw thing since I read it. I highly recommend you read it too.&lt;/p&gt;
-
-&lt;p&gt;Sincerely,&lt;/p&gt;
-
-&lt;p&gt;Khoa&lt;/p&gt;</description>
-            </item>
-            
-        
-            
-            <item>
-                <title>My favorite poem</title>
-                <link>http://khoapham.me/blog/if/</link>
-                <pubDate>Fri, 17 May 2013 00:06:51 -0800</pubDate>
-                <guid>http://khoapham.me/blog/if/</guid>
-                <description>&lt;p&gt;When it comes to my favority poem, &amp;ldquo;If - Rudyard Kipling&amp;rdquo; is definitely the one.&lt;br /&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How I switched to vim in 2 weeks</title>
+      <link>http://khoapham.me/blog/how-i-switched-to-vim-in-2-weeks/</link>
+      <pubDate>Wed, 29 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://khoapham.me/blog/how-i-switched-to-vim-in-2-weeks/</guid>
+      <description>I have played with Vim so many times since I was in college, in fact that I loved it every time I used it. However, I don&amp;rsquo;t think I ever spent time long enough to get used to it. I&amp;rsquo;ve seen people dancing their fingers on the keyboard using Vim, this made me wanted to try harder this time. Finally I totally switched to Vim as my main text editor.</description>
+    </item>
+    
+    <item>
+      <title>Inspiration videos from Steve Jobs</title>
+      <link>http://khoapham.me/blog/inspiration-video-from-steve-jobs/</link>
+      <pubDate>Thu, 04 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://khoapham.me/blog/inspiration-video-from-steve-jobs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning to See</title>
+      <link>http://khoapham.me/blog/learning-to-see/</link>
+      <pubDate>Fri, 17 May 2013 23:12:14 -0800</pubDate>
+      
+      <guid>http://khoapham.me/blog/learning-to-see/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>My favorite poem</title>
+      <link>http://khoapham.me/blog/if/</link>
+      <pubDate>Fri, 17 May 2013 00:06:51 -0800</pubDate>
+      
+      <guid>http://khoapham.me/blog/if/</guid>
+      <description>&lt;p&gt;When it comes to my favority poem, &amp;ldquo;If - Rudyard Kipling&amp;rdquo; is definitely the one.&lt;br /&gt;
 It simply reminds me how to be a man, and a good person.
-&lt;/p&gt;
-
-&lt;h3 id=&#34;if&#34;&gt;If&lt;/h3&gt;
-
-&lt;p&gt;If you can keep your head when all about you&lt;br /&gt;
-Are losing theirs and blaming it on you;&lt;br /&gt;
-If you can trust yourself when all men doubt you,&lt;br /&gt;
-But make allowance for their doubting too:&lt;br /&gt;
-If you can wait and not be tired by waiting,&lt;br /&gt;
-Or, being lied about, don&amp;rsquo;t deal in lies,&lt;br /&gt;
-Or being hated don&amp;rsquo;t give way to hating,&lt;br /&gt;
-And yet don&amp;rsquo;t look too good, nor talk too wise;&lt;/p&gt;
-
-&lt;p&gt;If you can dream—and not make dreams your master;&lt;br /&gt;
-If you can think—and not make thoughts your aim,&lt;br /&gt;
-If you can meet with Triumph and Disaster&lt;br /&gt;
-And treat those two impostors just the same:&lt;br /&gt;
-If you can bear to hear the truth you&amp;rsquo;ve spoken&lt;br /&gt;
-Twisted by knaves to make a trap for fools,&lt;br /&gt;
-Or watch the things you gave your life to, broken,&lt;br /&gt;
-And stoop and build&amp;rsquo;em up with worn-out tools;&lt;/p&gt;
-
-&lt;p&gt;If you can make one heap of all your winnings&lt;br /&gt;
-And risk it on one turn of pitch-and-toss,&lt;br /&gt;
-And lose, and start again at your beginnings,&lt;br /&gt;
-And never breathe a word about your loss:&lt;br /&gt;
-If you can force your heart and nerve and sinew&lt;br /&gt;
-To serve your turn long after they are gone,&lt;br /&gt;
-And so hold on when there is nothing in you&lt;br /&gt;
-Except the Will which says to them: &amp;ldquo;Hold on!&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;If you can talk with crowds and keep your virtue,&lt;br /&gt;
-Or walk with Kings—nor lose the common touch,&lt;br /&gt;
-If neither foes nor loving friends can hurt you,&lt;br /&gt;
-If all men count with you, but none too much:&lt;br /&gt;
-If you can fill the unforgiving minute&lt;br /&gt;
-With sixty seconds&amp;rsquo; worth of distance run,&lt;br /&gt;
-Yours is the Earth and everything that&amp;rsquo;s in it,&lt;br /&gt;
-And—which is more—you&amp;rsquo;ll be a Man, my son!&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Rudyard Kipling&lt;/strong&gt;&lt;/p&gt;</description>
-            </item>
-            
-        
-
-    </channel>
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
 </rss>
