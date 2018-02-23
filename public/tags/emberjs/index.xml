@@ -1,381 +1,70 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Khoa Pham </title>
-        <link>http://khoapham.me/tags/emberjs/</link>
-        <language>en-us</language>
-        <author>Khoa Pham</author>
-        <rights>(C) 2016</rights>
-        <updated>2016-06-27 12:09:16 -0700 PDT</updated>
-
-        
-            
-            <item>
-                <title>Full Stack Development with Ember and Golang</title>
-                <link>http://khoapham.me/blog/full-stack-development-with-ember-and-golang/</link>
-                <pubDate>Mon, 27 Jun 2016 12:09:16 PDT</pubDate>
-                <guid>http://khoapham.me/blog/full-stack-development-with-ember-and-golang/</guid>
-                <description>&lt;p&gt;One of my personal 2016 resolution was learning Go, and get familiar with
+  <channel>
+    <title>Emberjs on Khoa Pham</title>
+    <link>http://khoapham.me/tags/emberjs/</link>
+    <description>Recent content in Emberjs on Khoa Pham</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Jun 2016 12:09:16 -0700</lastBuildDate>
+    
+	<atom:link href="http://khoapham.me/tags/emberjs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Full Stack Development with Ember and Golang</title>
+      <link>http://khoapham.me/blog/full-stack-development-with-ember-and-golang/</link>
+      <pubDate>Mon, 27 Jun 2016 12:09:16 -0700</pubDate>
+      
+      <guid>http://khoapham.me/blog/full-stack-development-with-ember-and-golang/</guid>
+      <description>&lt;p&gt;One of my personal 2016 resolution was learning Go, and get familiar with
 writing restful API using Go. After couple of months learning Go, I started a
 simple application that use Go, and Ember to develop a Todo app.
 
 Yes, you read it right, I&amp;rsquo;m also creating another Todo app. Yet this one is different from the
 other you have seen because it&amp;rsquo;s built with Go for backend api, and Ember for
-frontend.&lt;/p&gt;
-
-&lt;p&gt;The source code can be found here:
-&lt;a href=&#34;https://github.com/pmkhoa/restful-api-go-and-ember&#34;&gt;https://github.com/pmkhoa/restful-api-go-and-ember&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;backend-overview&#34;&gt;Backend overview&lt;/h2&gt;
-
-&lt;h3 id=&#34;model&#34;&gt;Model&lt;/h3&gt;
-
-&lt;p&gt;Todo model includes &lt;code&gt;Id&lt;/code&gt;, &lt;code&gt;Name&lt;/code&gt;, &lt;code&gt;Completed&lt;/code&gt;, &lt;code&gt;Due&lt;/code&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-package main
-import &amp;quot;time&amp;quot;
-type Todo struct {
-    Id          string `json:&amp;quot;id&amp;quot;`
-    Name        string `json:&amp;quot;name&amp;quot;`
-    Completed   bool `json:&amp;quot;completed&amp;quot;`
-    Due         time.Time `json:&amp;quot;due&amp;quot;`
-}
-type Todos []Todo
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;We create type Todo, and Todos to hold our Todo object, and Todo list&lt;/p&gt;
-
-&lt;h3 id=&#34;server&#34;&gt;Server&lt;/h3&gt;
-
-&lt;p&gt;Bootstrap http server, response to request made from the client.
-For our server code, we use &lt;code&gt;httprouter&lt;/code&gt; to for our api handler, and enable CORS
-so that our frontend app can talk to the server when they&amp;rsquo;re on different
-domains.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-package main
-import (
-    ... // import our dependencies here
-)
-func main() {
-    router := httprouter.New()
-    router.GET(&amp;quot;/todos&amp;quot;, TodosIndex)
-    router.GET(&amp;quot;/todos/:todoId&amp;quot;, ShowTodo)
-    // More routes are defined similarly
-
-    // Enable the CORS
-    c := cors.New(cors.Options{
-        AllowedOrigins: []string{&amp;quot;*&amp;quot;},
-        AllowedMethods: []string{&amp;quot;GET&amp;quot;, &amp;quot;POST&amp;quot;, &amp;quot;DELETE&amp;quot;, &amp;quot;PUT&amp;quot;, &amp;quot;PATCH&amp;quot;, &amp;quot;OPTIONS&amp;quot;}
-    })
-}
-
-func TodosIndex(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
-    w.Header().Set(&amp;quot;Content-Type&amp;quot;, &amp;quot;application/json; charset=UTF-8&amp;quot;)
-    w.WriteHeader(http.StatusOK)
-    err := json.NewEncoder(w).Encode(todos)
-    if err != nil {
-        panic(err)
-    }
-}
-
-func ShowTodo(w http.ResponseWriter, r *http.Request, params httprouter.Params) {
-    todoId := params.ByName(&amp;quot;todoId&amp;quot;)
-    todo := RepoFindTodo(todoId)
-    w.Header().Set(&amp;quot;Content-Type&amp;quot;, &amp;quot;application/json; charset=UTF-8&amp;quot;)
-    w.WriteHeader(http.StatusOK)
-    err := json.NewEncoder(w).Encode(todo)
-    if err != nil {
-        panic(err)
-    }
-}
-// more handlers can be defined with other httprouter 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;data-fixture&#34;&gt;Data fixture&lt;/h3&gt;
-
-&lt;p&gt;Definining Data fixture for &lt;code&gt;findTodo&lt;/code&gt;, &lt;code&gt;updateTodo&lt;/code&gt;, &lt;code&gt;deleteTodo&lt;/code&gt;, &lt;code&gt;createTodo&lt;/code&gt;.
-I&amp;rsquo;m using a simple data fixture to handle model operations. There will be another
-blog post that integrate this application with Postgres for data persistent.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;// repo.go
-package main
-import (
-    &amp;quot;fmt&amp;quot;
-    &amp;quot;strconv&amp;quot;
-)
-var currentId int // keep track of our current todo
-var todos Todos
-func init() {
-    // When initialize the app, we will create two sample todos
-    RepoCreateTodo(Todo{Name: &amp;quot;Test Todo 1&amp;quot;, Completed: false})
-    RepoCreateTodo(Todo{Name: &amp;quot;Test Todo 2&amp;quot;, Complete: false})
-}
-func RepoCreateTodo(t Todo) Todo {
-    currentId += 1
-    t.Id = strconv.Itoa(currentId)
-    todos = append(todos, t)
-    return t
-}
-func RepoFindTodo(id string) Todo {
-    for _, todo := range todos {
-        if todo.Id == id {
-            return todo
-        }
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;frontend-overview&#34;&gt;Frontend overview&lt;/h2&gt;
-
-&lt;p&gt;Simple Ember app that lists all todos, and all user to create todo.
-If you&amp;rsquo;re interested in learning Ember for building frontend. Feel free to
-check out the github repo for this.&lt;/p&gt;
-
-&lt;h2 id=&#34;future-development&#34;&gt;Future development&lt;/h2&gt;
-
-&lt;p&gt;Eventhough this was a very simple app, I have learnt a lot from building it from
-the ground up. Using Go for backend API is quite astonishing and simple, I think
-it&amp;rsquo;s a great choice for anyone who is looking for a fast, simple way to build
-API. There are a lot of things the can improve from this app.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Write README&lt;/li&gt;
-&lt;li&gt;Better handling errors for both backend &amp;amp; frontend&lt;/li&gt;
-&lt;li&gt;Write integration test &amp;amp; unit tests&lt;/li&gt;
-&lt;li&gt;Use Postgres for data persistent.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If you&amp;rsquo;re interested in all the source code, feel free to check it out here:
-&lt;a href=&#34;https://github.com/pmkhoa/restful-api-go-and-ember&#34;&gt;https://github.com/pmkhoa/restful-api-go-and-ember&lt;/a&gt;&lt;/p&gt;</description>
-            </item>
-            
-        
-            
-            <item>
-                <title>Deploy Ember App on Github Pages</title>
-                <link>http://khoapham.me/blog/deploy-ember-app-on-github-pages/</link>
-                <pubDate>Mon, 25 Apr 2016 15:46:17 PDT</pubDate>
-                <guid>http://khoapham.me/blog/deploy-ember-app-on-github-pages/</guid>
-                <description>&lt;p&gt;Github pages is ideal for hosting static websites. Especially if you&amp;rsquo;re developing a open source project, and want to have a simple website for it.
-&lt;/p&gt;
-
-&lt;p&gt;When using Ember Cli, the application is built into &lt;code&gt;/dist&lt;/code&gt; folder, this includes static assets such as index.html, application.js, etc&amp;hellip; Would it be nice if you create a gh-pages branch for just the &lt;code&gt;/dist&lt;/code&gt; folder?&lt;/p&gt;
-
-&lt;p&gt;Here are steps that I used to deploy my recent open source tool &lt;a href=&#34;http://pmkhoa.github.io/meta-tags-generator/&#34;&gt;Meta Tags
-Generator&lt;/a&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-//Update baseURL from config environment
-//Change meta-tags-generator to reflect your github page url
-//ENV.baseURL = &#39;/meta-tags-generator&#39;;
-
-//From master branch
-//Remove /dist from your .gitignore
-//Remove /dist folder
-git commit -am &amp;quot;Ready to deploy &amp;quot; &amp;amp;&amp;amp; git push origin master
-
-//Create orphan gh-pages branch
-git checkout --orphan gh-pages
-git rm --cached $(git ls-files)
-git add README.md
-git commit -am &amp;quot;Init gh-pages&amp;quot;
-git push origin gh-pages
-git co master
-
-//Make sure to change meta-tags-generator to reflect your repo
-git subtree add --prefix=dist git@github.com:pmkhoa/meta-tags-generator.git gh-pages --squash
-
-//Build ember app &amp;amp; push to gh-pages
-ember build --prod
-git add -am &amp;quot;Update latest /dist&amp;quot;
-git push origin master
-git subtree push --prefix=dist git@github.com:pmkhoa/meta-tags-generator.git gh-pages
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;To make it easier for deploying process, we can create an shell script to handle
-&lt;code&gt;git commit&lt;/code&gt;, &lt;code&gt;ember build&lt;/code&gt;, and &lt;code&gt;git push&lt;/code&gt;. Create a deploy.sh file like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-#!/bin/bash
-
-echo -e &amp;quot;\033[0;32mDeploying updates to Github...\033[0m&amp;quot;
-
-# Build the project.
-ember build --prod
-
-# Add changes to git.
-git add -A
-
-# Commit changes.
-msg=&amp;quot;rebuilding site `date`&amp;quot;
-if [ $# -eq 1 ]
-then msg=&amp;quot;$1&amp;quot;
-fi
-git commit -m &amp;quot;$msg&amp;quot;
-
-# Push source and build repos.
-# Make sure to change meta-tags-generator here to your repo name.
-git push origin master
-git subtree push --prefix=dist git@github.com:pmkhoa/meta-tags-generator.git gh-pages
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You can run deploy.sh script like this: &lt;code&gt;./deploy.sh -m &amp;quot;Update website&amp;quot;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Happy coding &amp;amp; happy deploying!&lt;/p&gt;</description>
-            </item>
-            
-        
-            
-            <item>
-                <title>Meta Tags Generator</title>
-                <link>http://khoapham.me/blog/meta-tags-generator/</link>
-                <pubDate>Sun, 24 Apr 2016 13:11:54 PDT</pubDate>
-                <guid>http://khoapham.me/blog/meta-tags-generator/</guid>
-                <description>&lt;p&gt;&lt;a href=&#34;http://pmkhoa.github.io/meta-tags-generator/&#34;&gt;&lt;img src=&#34;http://khoapham.me/img/meta-tags-generator.png&#34; alt=&#34;Meta Tags Generator&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+frontend.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Deploy Ember App on Github Pages</title>
+      <link>http://khoapham.me/blog/deploy-ember-app-on-github-pages/</link>
+      <pubDate>Mon, 25 Apr 2016 15:46:17 -0700</pubDate>
+      
+      <guid>http://khoapham.me/blog/deploy-ember-app-on-github-pages/</guid>
+      <description>&lt;p&gt;Github pages is ideal for hosting static websites. Especially if you&amp;rsquo;re developing a open source project, and want to have a simple website for it.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Meta Tags Generator</title>
+      <link>http://khoapham.me/blog/meta-tags-generator/</link>
+      <pubDate>Sun, 24 Apr 2016 13:11:54 -0700</pubDate>
+      
+      <guid>http://khoapham.me/blog/meta-tags-generator/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pmkhoa.github.io/meta-tags-generator/&#34;&gt;&lt;img src=&#34;http://khoapham.me/img/meta-tags-generator.png&#34; alt=&#34;Meta Tags Generator&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Meta tags are important because they help search engine to crawl your website properly, and make your website display correctly when sharing on social networks such as Facebook, Twitter, and Google Plus. This is why I created a simple tool to generate these standard meta tags &amp;amp; social tags.
-&lt;/p&gt;
-
-&lt;p&gt;Here is the link to that tool:
-&lt;a href=&#34;http://pmkhoa.github.io/meta-tags-generator/&#34;&gt;http://pmkhoa.github.io/meta-tags-generator/&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The app is built using EmberJS. If you like it or want to contribute, feel free
-to fork it from here:
-&lt;a href=&#34;https://github.com/pmkhoa/meta-tags-generator&#34;&gt;https://github.com/pmkhoa/meta-tags-generator&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Happy developing &amp;amp; happy sharing!&lt;/p&gt;</description>
-            </item>
-            
-        
-            
-            <item>
-                <title>Global Notification Using Ember Initializer and Service</title>
-                <link>http://khoapham.me/blog/global-notification-using-ember-initializer-and-service/</link>
-                <pubDate>Tue, 12 Apr 2016 11:18:20 PDT</pubDate>
-                <guid>http://khoapham.me/blog/global-notification-using-ember-initializer-and-service/</guid>
-                <description>&lt;p&gt;When developing Ember app, you may want to have a singleton to handle
-global state such as global notification, or error handling. This doesn&amp;rsquo;t fall
-into &lt;code&gt;Route&lt;/code&gt;, &lt;code&gt;Controller&lt;/code&gt;, or &lt;code&gt;Component&lt;/code&gt;. Ember offers an easy way to manage
-this using &lt;code&gt;Service&lt;/code&gt; and &lt;code&gt;Initializers&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;create-a-service-to-hold-notification-data&#34;&gt;Create a service to hold notification data&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;//app/services/global-notification.js
-import Ember from &#39;ember&#39;;
-
-export default Ember.Service.extend({
-    notification: null,
-    init() {
-        this.set(&#39;notification&#39;, null);
-    }
-});
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;create-an-initializer-to-inject-global-notification-service-in-application&#34;&gt;Create an initializer to inject global notification service in application&lt;/h2&gt;
-
-&lt;p&gt;This allows us to use GlobalNotification service in route, and component.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;//app/initializers/global-notification.js
-import GlobalNotification from &#39;../services/global-notification&#39;;
-
-export function initialize(application) {
-    application.register(&#39;globalNotification:main&#39;, GlobalNotification, {singleton: true});
-    application.inject(&#39;component&#39;, &#39;GlobalNotification&#39;, &#39;service:global-notification&#39;);
-    application.inject(&#39;route&#39;, &#39;GlobalNotification&#39;, &#39;service:global-notification&#39;);
-}
-
-export default {
-    name: &#39;global-notification&#39;,
-    initialize
-};
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;using-our-global-notification-service&#34;&gt;Using our global notification service.&lt;/h2&gt;
-
-&lt;p&gt;Assuming you have a user settings form, and want to display notification when
-user changes settings.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;//app/components/user-settings.js
-import Ember from &#39;ember&#39;;
-export default Ember.Component.extend({
-    globalNotification: Ember.inject.service(&#39;global-notification&#39;),
-    actions: {
-        saveSettings() {
-            let accountInfo = this.getProperties(&amp;quot;firstName&amp;quot;, &amp;quot;lastName&amp;quot;, &amp;quot;email&amp;quot;, &amp;quot;password&amp;quot;);
-            Ember.$.ajax({
-                url: &amp;quot;/api/user&amp;quot;,
-                type: &amp;quot;POST&amp;quot;,
-                data: JSON.stringify(accountInfo)
-            }).then(function(response) {
-                // We want to set notification data to global notification
-                service.
-               this.set(&amp;quot;globalNotification.notification&amp;quot;, &amp;quot;User settings
-               saved&amp;quot;); 
-            });
-        }
-    }
-});
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In the user setting forms, we can put &lt;code&gt;{{GlobalNotification.notification}}&lt;/code&gt;
-where we want to display the notification.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;//app/templates/components/user-settings.hbs
-&amp;lt;form id=&amp;quot;user-settings&amp;quot;&amp;gt;
-    &amp;lt;p class=&amp;quot;notification&amp;quot;&amp;gt;{{GlobalNotification.notification}}&amp;lt;/p&amp;gt;
-    ....
-&amp;lt;/form&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;That is it. Now you can call &lt;code&gt;global-notification&lt;/code&gt; service anywhere in your
-application, and use its injection via &lt;code&gt;initializers&lt;/code&gt; to display the data in
-your template.&lt;/p&gt;</description>
-            </item>
-            
-        
-            
-            <item>
-                <title>What Missing at Emberconf 2016</title>
-                <link>http://khoapham.me/blog/what-missing-at-emberconf-2016/</link>
-                <pubDate>Sat, 02 Apr 2016 15:46:04 -0200</pubDate>
-                <guid>http://khoapham.me/blog/what-missing-at-emberconf-2016/</guid>
-                <description>&lt;p&gt;EmberConf 2016 was really a great conference.  There were about 950 attendees this year, and the conference was very well-organized.&lt;/p&gt;
-
-&lt;p&gt;I had a chance to talk with great people at the conference,
-especially core team members, Ember Simple Auth author, Brian at Dockyard, and
-other amazing developers. Some of the talks were very informative, such as:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Opening Keynote by Yehuda Katz and Tom Dale&lt;/li&gt;
-&lt;li&gt;Using Service Workers in Ember by John Kleinschmidt&lt;/li&gt;
-&lt;li&gt;Compose Yourself with Ember and D3 by Ivan Vanderbyl&lt;/li&gt;
-&lt;li&gt;Idiomatic Ember: Sweet Spot of Performance and Productivity by Lauren Tan&lt;/li&gt;
-&lt;li&gt;The Future of Ember Templating by Godfrey Chan &amp;amp; Yehuda Katz&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I was surprised that there were quite lot of talks only scratched the surface of
-Ember. Here are list of missing topics that I wish they were discussed at the
-conference:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Ember Service&lt;/li&gt;
-&lt;li&gt;Ember Data&lt;/li&gt;
-&lt;li&gt;Ember Initializers&lt;/li&gt;
-&lt;li&gt;Experience with deprecation when migrating from Ember v1 - v2&lt;/li&gt;
-&lt;li&gt;Component best practice. Lauren Tan had put together
-&lt;a href=&#34;https://github.com/poteto/component-best-practices&#34;&gt;this repo&lt;/a&gt;, however
-there was no talk similar to about.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I wasn&amp;rsquo;t sure why these topics were not in the conference this year, but I do
-they will be in next year. In the meantime, I will probably just enjoy &lt;strong&gt;&lt;a href=&#34;https://github.com/tildeio/glimmer&#34;&gt;Glimmer 2&lt;/a&gt;&lt;/strong&gt;
-and &lt;strong&gt;&lt;a href=&#34;http://www.ember-fastboot.com/&#34;&gt;Fastboot&lt;/a&gt;&lt;/strong&gt;. Thanks to the Ember team for such hard works everyone putting
-into this to make the conference successful.&lt;/p&gt;</description>
-            </item>
-            
-        
-
-    </channel>
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Global Notification Using Ember Initializer and Service</title>
+      <link>http://khoapham.me/blog/global-notification-using-ember-initializer-and-service/</link>
+      <pubDate>Tue, 12 Apr 2016 11:18:20 -0700</pubDate>
+      
+      <guid>http://khoapham.me/blog/global-notification-using-ember-initializer-and-service/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>What Missing at Emberconf 2016</title>
+      <link>http://khoapham.me/blog/what-missing-at-emberconf-2016/</link>
+      <pubDate>Sat, 02 Apr 2016 15:46:04 -0200</pubDate>
+      
+      <guid>http://khoapham.me/blog/what-missing-at-emberconf-2016/</guid>
+      <description>&lt;p&gt;EmberConf 2016 was really a great conference.  There were about 950 attendees this year, and the conference was very well-organized.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
 </rss>

@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Khoa Pham </title>
-        <link>http://khoapham.me/tags/nginx/</link>
-        <language>en-us</language>
-        <author>Khoa Pham</author>
-        <rights>(C) 2016</rights>
-        <updated>2015-11-18 00:00:00 &#43;0000 UTC</updated>
-
-        
-            
-            <item>
-                <title>Set up Nginx with Centos</title>
-                <link>http://khoapham.me/blog/set-up-nginx-with-centos/</link>
-                <pubDate>Wed, 18 Nov 2015 00:00:00 UTC</pubDate>
-                <guid>http://khoapham.me/blog/set-up-nginx-with-centos/</guid>
-                <description>&lt;p&gt;Recently I had a chance to have my hand on setting up a web server using Nginx
+  <channel>
+    <title>Nginx on Khoa Pham</title>
+    <link>http://khoapham.me/tags/nginx/</link>
+    <description>Recent content in Nginx on Khoa Pham</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Nov 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://khoapham.me/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Set up Nginx with Centos</title>
+      <link>http://khoapham.me/blog/set-up-nginx-with-centos/</link>
+      <pubDate>Wed, 18 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://khoapham.me/blog/set-up-nginx-with-centos/</guid>
+      <description>&lt;p&gt;Recently I had a chance to have my hand on setting up a web server using Nginx
 and Centos. The requirements were simple:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -23,137 +25,8 @@ and Centos. The requirements were simple:&lt;/p&gt;
 &lt;li&gt;Each domain web folder is stored under different user account.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;In this post, I&amp;rsquo;d like to give you a walkthrough how to set up a server like
-this on any private Centos server:&lt;/p&gt;
-
-&lt;h4 id=&#34;1-first-thing-you-want-to-do-is-to-update-system&#34;&gt;1. First thing you want to do is to update system&lt;/h4&gt;
-
-&lt;pre&gt;&lt;code&gt;$ sudo yum update
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&#34;2-install-nginx&#34;&gt;2. Install nginx&lt;/h4&gt;
-
-&lt;p&gt;Create a yum repo for nginx at /etc/yum.repos.d/nginx.repo&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ sudo vi /etc/yum.repos.d/nginx.repo
-# Add following content
-[nginx]
-name=nginx repo
-baseurl=http://nginx.org/packages/centos/$releasever/$basearch/
-gpgcheck=0
-enabled=1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Install nginx&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ sudo yum install nginx
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Enable nginx service&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ sudo chkconfig nginx on
-# Now you can use
-# service nginx start
-# service nginx stop
-# service nginx restart
-# service nginx status
-# service nginx reload
-
-# Now you can run
-$ sudo service nginx start
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Congrats! You just got your nginx set up on your Centos server.&lt;/p&gt;
-
-&lt;h4 id=&#34;3-configure-nginx-and-setup-domains&#34;&gt;3. Configure nginx, and setup domains&lt;/h4&gt;
-
-&lt;p&gt;Default nginx configuration file is located at: /etc/nginx/nginx.conf. From the
-last line of nginx.conf is where other custom configurations are loaded. This is
-where we will setup our domains or subdomains.&lt;/p&gt;
-
-&lt;p&gt;Let&amp;rsquo;s setup our first domain (example.com). We create a user call example to
-manage this domain.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ sudo adduser example
-$ passwd example
-# Make sure to add your public key to this user so you can ssh to it
-
-$ cd /home/example
-$ mkdir public
-$ vim index.html
-# Add &amp;lt;h1&amp;gt;Hello world&amp;lt;/h1&amp;gt;
-# If you are using su or centos account to create these files,
-# do not forget to change those file &amp;amp; folder owner to example, using chmod.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now we want to create a nginx config for example.com domain at
-/etc/nginx/conf.d&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ cd /ect/nginx/conf.d
-$ mv default.conf example.default # disable default nginx message
-$ vim example.com.conf
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Change the example.com.conf as follow&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;server {
-
-    # ipv4
-    listen 80 default_server;
-
-    # ipv6
-    listen [::]:80 default_server;
-
-    #    listen 80 default_server;
-    server_name localhost example.com www.example.com;
-
-    access_log /var/log/nginx/example.com-access.log  main;
-    error_log /var/log/nginx/example.com-error.log debug;
-
-    client_max_body_size 20m;
-
-    location / {
-        root /home/example/public/;
-        index  index.html index.htm;
-    }
-
-    # redirect server error pages to the static page /50x.html
-    #
-    error_page   500 502 503 504  /50x.html;
-    location = /50x.html {
-        root   /usr/share/nginx/html;
-    }
-
-    # deny access to .htaccess files, if Apache&#39;s document root
-    # concurs with nginx&#39;s one
-    #
-    # location ~ /\.ht {
-    #    deny  all;
-    # }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&#34;4-fix-permission-issues&#34;&gt;4. Fix permission issues&lt;/h4&gt;
-
-&lt;p&gt;Now if everything went well, when you visit your server, you should see the 403
-permission error. Calm down, this is expected. Since nginx doesn&amp;rsquo;t have access
-to the user folder at /home/example/public, the server will return permission
-error. We need to add nginx user to example user group.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ gpasswd -a nginx example # Add nginx user to example group
-$ chown -R example:example /home/example
-$ chmod g+x /home/example &amp;amp;&amp;amp; chmod g+x /home/example/public
-$ sudo -u nginx stat /home/example/public # make sure your all access to public
-# Disable SE Linux enforce
-$ setenforce 0
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Congrats! Now you can try to access new server using: &lt;code&gt;curl localhost&lt;/code&gt;&lt;/p&gt;</description>
-            </item>
-            
-        
-
-    </channel>
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
 </rss>

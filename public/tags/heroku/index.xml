@@ -1,84 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Khoa Pham </title>
-        <link>http://khoapham.me/tags/heroku/</link>
-        <language>en-us</language>
-        <author>Khoa Pham</author>
-        <rights>(C) 2016</rights>
-        <updated>2014-10-14 00:00:00 &#43;0000 UTC</updated>
-
-        
-            
-            <item>
-                <title>Deploy Middleman to Heroku</title>
-                <link>http://khoapham.me/blog/deploy-middleman-to-heroku/</link>
-                <pubDate>Tue, 14 Oct 2014 00:00:00 UTC</pubDate>
-                <guid>http://khoapham.me/blog/deploy-middleman-to-heroku/</guid>
-                <description>&lt;p&gt;Heroku is a great cloud service, it uses git for version control and deployment which is very handy for me to just update my blog in one command.
+  <channel>
+    <title>Heroku on Khoa Pham</title>
+    <link>http://khoapham.me/tags/heroku/</link>
+    <description>Recent content in Heroku on Khoa Pham</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 14 Oct 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://khoapham.me/tags/heroku/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Deploy Middleman to Heroku</title>
+      <link>http://khoapham.me/blog/deploy-middleman-to-heroku/</link>
+      <pubDate>Tue, 14 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://khoapham.me/blog/deploy-middleman-to-heroku/</guid>
+      <description>&lt;p&gt;Heroku is a great cloud service, it uses git for version control and deployment which is very handy for me to just update my blog in one command.
 Here are some simple step that you can set it up.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;In your Gemfile, add puma and rake:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;gem &#39;puma&#39;,      &#39;~&amp;gt; 2.7&#39;
-gem &#39;rake&#39;,      &#39;~&amp;gt; 10.1&#39;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Create a Procfile, and add this code&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;web: bundle exec puma -p $PORT
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Since we&amp;rsquo;re going to tell Heroku to use our build folder under our Middlemanapp, we will use the rake task to compile our build assets. Under your root app, create: Rakefile&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;namespace :assets do
-  task :precompile do
-    sh &#39;middleman build&#39;
-  end
-end
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Finally we need to setup a Rack server to tell Heroku to load our build folder, and its assets&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;module Rack
-  class TryStatic
-    def initialize(app, options)
-      @app = app
-      @try = [&#39;&#39;, *options.delete(:try)]
-      @static = ::Rack::Static.new(lambda { [404, {}, []] }, options)
-    end
-    def call(env)
-      orig_path = env[&#39;PATH_INFO&#39;]
-      found = nil
-      @try.each do |path|
-        resp = @static.call(env.merge!({&#39;PATH_INFO&#39; =&amp;gt; orig_path + path}))
-        break if 404 != resp[0] &amp;amp;&amp;amp; found = resp
-      end
-      found or @app.call(env.merge!(&#39;PATH_INFO&#39; =&amp;gt; orig_path))
-    end
-  end
-end
-use Rack::Deflater
-use Rack::TryStatic, :root =&amp;gt; &amp;quot;build&amp;quot;, :urls =&amp;gt; %w[/], :try =&amp;gt; [&#39;.html&#39;, &#39;index.html&#39;, &#39;/index.html&#39;]
-# Run your own Rack app here or use this one to serve 404 messages:
-run lambda{ |env|
-  not_found_page = File.expand_path(&amp;quot;../build/404.html&amp;quot;, __FILE__)
-  if File.exist?(not_found_page)
-    [ 404, { &#39;Content-Type&#39;  =&amp;gt; &#39;text/html&#39;}, [File.read(not_found_page)] ]
-  else
-    [ 404, { &#39;Content-Type&#39;  =&amp;gt; &#39;text/html&#39; }, [&#39;404 - page not found&#39;] ]
-  end
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now your site is ready to deploy to Heroku. Just create a Heroku app and add Heroku git remote link, and enjoy!&lt;/p&gt;
-
-&lt;p&gt;P.S. Don&amp;rsquo;t forget to add the build directory to your .gitignore&lt;/p&gt;</description>
-            </item>
-            
-        
-
-    </channel>
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
 </rss>

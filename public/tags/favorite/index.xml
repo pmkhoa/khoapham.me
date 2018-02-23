@@ -1,66 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Khoa Pham </title>
-        <link>http://khoapham.me/tags/favorite/</link>
-        <language>en-us</language>
-        <author>Khoa Pham</author>
-        <rights>(C) 2016</rights>
-        <updated>2013-05-17 00:06:51 -0800 -0800</updated>
-
-        
-            
-            <item>
-                <title>My favorite poem</title>
-                <link>http://khoapham.me/blog/if/</link>
-                <pubDate>Fri, 17 May 2013 00:06:51 -0800</pubDate>
-                <guid>http://khoapham.me/blog/if/</guid>
-                <description>&lt;p&gt;When it comes to my favority poem, &amp;ldquo;If - Rudyard Kipling&amp;rdquo; is definitely the one.&lt;br /&gt;
+  <channel>
+    <title>Favorite on Khoa Pham</title>
+    <link>http://khoapham.me/tags/favorite/</link>
+    <description>Recent content in Favorite on Khoa Pham</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 17 May 2013 00:06:51 -0800</lastBuildDate>
+    
+	<atom:link href="http://khoapham.me/tags/favorite/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My favorite poem</title>
+      <link>http://khoapham.me/blog/if/</link>
+      <pubDate>Fri, 17 May 2013 00:06:51 -0800</pubDate>
+      
+      <guid>http://khoapham.me/blog/if/</guid>
+      <description>&lt;p&gt;When it comes to my favority poem, &amp;ldquo;If - Rudyard Kipling&amp;rdquo; is definitely the one.&lt;br /&gt;
 It simply reminds me how to be a man, and a good person.
-&lt;/p&gt;
-
-&lt;h3 id=&#34;if&#34;&gt;If&lt;/h3&gt;
-
-&lt;p&gt;If you can keep your head when all about you&lt;br /&gt;
-Are losing theirs and blaming it on you;&lt;br /&gt;
-If you can trust yourself when all men doubt you,&lt;br /&gt;
-But make allowance for their doubting too:&lt;br /&gt;
-If you can wait and not be tired by waiting,&lt;br /&gt;
-Or, being lied about, don&amp;rsquo;t deal in lies,&lt;br /&gt;
-Or being hated don&amp;rsquo;t give way to hating,&lt;br /&gt;
-And yet don&amp;rsquo;t look too good, nor talk too wise;&lt;/p&gt;
-
-&lt;p&gt;If you can dream—and not make dreams your master;&lt;br /&gt;
-If you can think—and not make thoughts your aim,&lt;br /&gt;
-If you can meet with Triumph and Disaster&lt;br /&gt;
-And treat those two impostors just the same:&lt;br /&gt;
-If you can bear to hear the truth you&amp;rsquo;ve spoken&lt;br /&gt;
-Twisted by knaves to make a trap for fools,&lt;br /&gt;
-Or watch the things you gave your life to, broken,&lt;br /&gt;
-And stoop and build&amp;rsquo;em up with worn-out tools;&lt;/p&gt;
-
-&lt;p&gt;If you can make one heap of all your winnings&lt;br /&gt;
-And risk it on one turn of pitch-and-toss,&lt;br /&gt;
-And lose, and start again at your beginnings,&lt;br /&gt;
-And never breathe a word about your loss:&lt;br /&gt;
-If you can force your heart and nerve and sinew&lt;br /&gt;
-To serve your turn long after they are gone,&lt;br /&gt;
-And so hold on when there is nothing in you&lt;br /&gt;
-Except the Will which says to them: &amp;ldquo;Hold on!&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;If you can talk with crowds and keep your virtue,&lt;br /&gt;
-Or walk with Kings—nor lose the common touch,&lt;br /&gt;
-If neither foes nor loving friends can hurt you,&lt;br /&gt;
-If all men count with you, but none too much:&lt;br /&gt;
-If you can fill the unforgiving minute&lt;br /&gt;
-With sixty seconds&amp;rsquo; worth of distance run,&lt;br /&gt;
-Yours is the Earth and everything that&amp;rsquo;s in it,&lt;br /&gt;
-And—which is more—you&amp;rsquo;ll be a Man, my son!&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Rudyard Kipling&lt;/strong&gt;&lt;/p&gt;</description>
-            </item>
-            
-        
-
-    </channel>
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
 </rss>

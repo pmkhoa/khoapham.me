@@ -1,227 +1,46 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Khoa Pham </title>
-        <link>http://khoapham.me/tags/es6/</link>
-        <language>en-us</language>
-        <author>Khoa Pham</author>
-        <rights>(C) 2016</rights>
-        <updated>2016-05-03 22:31:31 -0700 PDT</updated>
-
-        
-            
-            <item>
-                <title>Webpack Starter - Use ES6 Today</title>
-                <link>http://khoapham.me/blog/webpack-starter/</link>
-                <pubDate>Tue, 03 May 2016 22:31:31 PDT</pubDate>
-                <guid>http://khoapham.me/blog/webpack-starter/</guid>
-                <description>&lt;p&gt;Back in early 2015, when I started &lt;a href=&#34;http://khoapham.me/blog/es6-review-part-1&#34;&gt;writing Javascript in ES6&lt;/a&gt;; it was not easy to get everything running smoothly at that time. Today some developers are still not sure where to get started using ES6 even though it&amp;rsquo;s widely adopted by Javascript community. I spent an evening writing a simple &lt;a href=&#34;https://github.com/pmkhoa/webpack-start&#34;&gt;Webpack Boilerplate&lt;/a&gt; to help new developers to use it for their new projects.&lt;/p&gt;
-
-&lt;p&gt;What does this &lt;a href=&#34;https://github.com/pmkhoa/webpack-start&#34;&gt;minimalist boilerplate&lt;/a&gt; include?&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Webpack core&lt;/li&gt;
-&lt;li&gt;Webpack dev server&lt;/li&gt;
-&lt;li&gt;Webpack module loader&lt;/li&gt;
-&lt;li&gt;SASS compiler&lt;/li&gt;
-&lt;li&gt;ES6 (using Babel)&lt;/li&gt;
-&lt;li&gt;Livereload&lt;/li&gt;
-&lt;li&gt;Production build ready&lt;/li&gt;
-&lt;li&gt;Example code for loading modules &amp;amp; scss&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;This is, hopefully, enough for ES6 newcomers can give it a try for their
-projects.&lt;/p&gt;
-
-&lt;p&gt;Happy coding &amp;amp; happy sharing.&lt;/p&gt;
-</description>
-            </item>
-            
-        
-            
-            <item>
-                <title>ES6 Review Part 2</title>
-                <link>http://khoapham.me/blog/es6-review-part-2/</link>
-                <pubDate>Mon, 20 Jul 2015 00:00:00 UTC</pubDate>
-                <guid>http://khoapham.me/blog/es6-review-part-2/</guid>
-                <description>
-
-&lt;p&gt;This is a second review post for new ES6 features that I&amp;rsquo;d love to share. You
-can find the first review here &lt;a href=&#34;http://khoapham.me/blog/es6-review-part-1/&#34;&gt;ES6 Review Part 1&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;arrows&#34;&gt;Arrows&lt;/h3&gt;
-
-&lt;p&gt;I have been using arrow (-&amp;gt;) and fat-arrow (=&amp;gt;) key in Coffeescript for while, and I was happy when ES6 would support arrow key (=&amp;gt;) as a short-hand of function keyword. Of course, if you’re familiar with arrow keys in Coffeescript, this feature will be similar. Here are some common use cases:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  $(“button”).on(“click”, (event) =&amp;gt; {
-    runApp();
-  });
-
-  var sum = (x, y) =&amp;gt; { return x + y; };
-  let x = 2;
-  let y = 3;
-  sum(x, y); // return 5
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;strings&#34;&gt;Strings&lt;/h3&gt;
-
-&lt;p&gt;ES6 provides a better way to work with Strings, such as multiline strings, or string interpolation.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  `Multiline javascript
-    strings`
-
-  `${x} + ${y} = ${sum(x, y)}`
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;better-managing-your-javascript-files-with-modules&#34;&gt;Better managing your javascript files with modules&lt;/h3&gt;
-
-&lt;p&gt;With ES6 Modules, it’s much easier to organize your javascript files across the app. For instance:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  // lib/utility.js
-  export function sum(x, y) {
-    return x + y;
-  }
-  // app.js
-  import * as utility from “lib/utility”;
-  console.log(`2 + 3 = ${utility.sum(2, 3)}`)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Of course, there are more exciting features coming in ES6. I don’t tend to review them all, instead the one that I found myself using most of the time. To see other features, you can visit this &lt;a href=&#34;https://github.com/lukehoban/es6features#template-strings&#34;&gt;Github page&lt;/a&gt;.&lt;/p&gt;
-</description>
-            </item>
-            
-        
-            
-            <item>
-                <title>ES6 Review Part 1</title>
-                <link>http://khoapham.me/blog/es6-review-part-1/</link>
-                <pubDate>Tue, 03 Mar 2015 00:00:00 UTC</pubDate>
-                <guid>http://khoapham.me/blog/es6-review-part-1/</guid>
-                <description>
-
-&lt;p&gt;ECMAScript 6 (ES6) is the upcoming version of ECMACScript standard which is
-supposed to be ready soon. There are number of significant changes in
-this new standard version of Javascript. So far I can tell, this is indeed the
-future of Javascript, and I love it.&lt;/p&gt;
-
-&lt;p&gt;In this short blog, I use ES6 to demonstrate some new features of ES6 by writing
-the linked list data structure.&lt;/p&gt;
-
-&lt;div class=&#34;center&#34;&gt;&lt;img src=&#34;http://khoapham.me/img/LinkedLists-deletingnode.png&#34; alt=&#34;Linked List&#34; /&gt;&lt;/div&gt;
-
-&lt;h3 id=&#34;classes&#34;&gt;Classes&lt;/h3&gt;
-
-&lt;p&gt;ES6 finally allows you to declare your object using class keyword. This is one
-big step forward of Javascript.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;class Node {
-  constructor(data, nextNode) {
-    this.data = data;
-    this.next = nextNode;
-  }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The Class comes with the &lt;code&gt;constructor&lt;/code&gt; method. This method will execute right
-after the object is initiated.&lt;/p&gt;
-
-&lt;h3 id=&#34;better-variable-scope-with-let&#34;&gt;Better variable scope with let&lt;/h3&gt;
-
-&lt;p&gt;What is it wrong with &lt;code&gt;var&lt;/code&gt; keyword? Here is a short example showing what wrong
-with var keyword:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;function foo(flag) {
-  if (flag) {
-    var foobar = 2;
-  }
-  return foobar;
-};
-console.log(foo(true)); // Return 2
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;As we can see in the example above, the &lt;code&gt;foobar&lt;/code&gt; variable is declared inside the
-if block, not the function scope. But it&amp;rsquo;s still working when we &lt;code&gt;return foobar&lt;/code&gt;
-at the end of function.&lt;/p&gt;
-
-&lt;p&gt;However, this is not working in ES6 with the &lt;code&gt;let&lt;/code&gt; keyword. Clearly, &lt;code&gt;let&lt;/code&gt; gives us a better way to scope the variable correctly in
-Javascript.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;function foo(flag) {
-  if (flag) {
-    let foobar = 2;
-  }
-  return foobar;
-}
-console.log(foo(true)); // Error. foobar is not defined.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Here is the full source code of how I implemented linked list in ES6.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;class Node {
-  constructor(data, nextNode) {
-    this.data = data;
-    this.next = nextNode;
-  }
-}
-class LinkedList {
-  constructor() {
-    this.length = 0;
-    this.head = null;
-  }
-  insert(data) {
-    let node = new Node(data, null);
-    let currentNode;
-    if ( ! this.head  ) {
-      this.head = node;
-    }
-    else {
-      currentNode = this.head;
-      while ( currentNode.next ) {
-        currentNode = currentNode.next;
-      }
-      currentNode.next = node;
-    }
-    this.length++;
-  }
-  remove(index) {
-    if ( index &amp;gt; -1 &amp;amp;&amp;amp; index &amp;lt; this.length ) {
-      let currentNode = this.head,
-          previousNode,
-          i = 0;
-      if ( index === 0 ) {
-        this.head = currentNode.next;
-      } else {
-        while ( i++ &amp;lt; index ) {
-          previousNode = currentNode;
-          currentNode = currentNode.next;
-        }
-        previousNode.next = currentNode.next;
-      }
-      this.length--;
-      return currentNode.data;
-    } else {
-      return null;
-    }
-  }
-
-  getAt(index) {
-    if ( index &amp;gt; -1 &amp;amp;&amp;amp; index &amp;lt; this.length ) {
-      let currentNode = this.head,
-          i = 0;
-      while (i++ &amp;lt; index) {
-        currentNode = currentNode.next;
-      }
-      return currentNode.data;
-    } else {
-      return null;
-    }
-  }
-}
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-            </item>
-            
-        
-
-    </channel>
+  <channel>
+    <title>Es6 on Khoa Pham</title>
+    <link>http://khoapham.me/tags/es6/</link>
+    <description>Recent content in Es6 on Khoa Pham</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 03 May 2016 22:31:31 -0700</lastBuildDate>
+    
+	<atom:link href="http://khoapham.me/tags/es6/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Webpack Starter - Use ES6 Today</title>
+      <link>http://khoapham.me/blog/webpack-starter/</link>
+      <pubDate>Tue, 03 May 2016 22:31:31 -0700</pubDate>
+      
+      <guid>http://khoapham.me/blog/webpack-starter/</guid>
+      <description>Back in early 2015, when I started writing Javascript in ES6; it was not easy to get everything running smoothly at that time. Today some developers are still not sure where to get started using ES6 even though it&amp;rsquo;s widely adopted by Javascript community. I spent an evening writing a simple Webpack Boilerplate to help new developers to use it for their new projects.
+What does this minimalist boilerplate include?</description>
+    </item>
+    
+    <item>
+      <title>ES6 Review Part 2</title>
+      <link>http://khoapham.me/blog/es6-review-part-2/</link>
+      <pubDate>Mon, 20 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://khoapham.me/blog/es6-review-part-2/</guid>
+      <description>This is a second review post for new ES6 features that I&amp;rsquo;d love to share. You can find the first review here ES6 Review Part 1
+Arrows I have been using arrow (-&amp;gt;) and fat-arrow (=&amp;gt;) key in Coffeescript for while, and I was happy when ES6 would support arrow key (=&amp;gt;) as a short-hand of function keyword. Of course, if you’re familiar with arrow keys in Coffeescript, this feature will be similar.</description>
+    </item>
+    
+    <item>
+      <title>ES6 Review Part 1</title>
+      <link>http://khoapham.me/blog/es6-review-part-1/</link>
+      <pubDate>Tue, 03 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://khoapham.me/blog/es6-review-part-1/</guid>
+      <description>ECMAScript 6 (ES6) is the upcoming version of ECMACScript standard which is supposed to be ready soon. There are number of significant changes in this new standard version of Javascript. So far I can tell, this is indeed the future of Javascript, and I love it.
+In this short blog, I use ES6 to demonstrate some new features of ES6 by writing the linked list data structure.
+ Classes ES6 finally allows you to declare your object using class keyword.</description>
+    </item>
+    
+  </channel>
 </rss>
