@@ -27,7 +27,8 @@ What does this minimalist boilerplate include?</description>
       <pubDate>Tue, 12 Apr 2016 11:18:20 -0700</pubDate>
       
       <guid>http://khoapham.me/blog/global-notification-using-ember-initializer-and-service/</guid>
-      <description></description>
+      <description>When developing Ember app, you may want to have a singleton to handle global state such as global notification, or error handling. This doesn&amp;rsquo;t fall into Route, Controller, or Component. Ember offers an easy way to manage this using Service and Initializers.
+Create a service to hold notification data //app/services/global-notification.js import Ember from &#39;ember&#39;; export default Ember.Service.extend({ notification: null, init() { this.set(&#39;notification&#39;, null); } });  Create an initializer to inject global notification service in application This allows us to use GlobalNotification service in route, and component.</description>
     </item>
     
     <item>
