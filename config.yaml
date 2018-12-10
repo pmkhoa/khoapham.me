@@ -14,7 +14,7 @@ Params:
     AuthorImage: "https://avatars0.githubusercontent.com/u/1144585"
     GooglePlus: "https://plus.google.com/103713398374675106375/"
     Keywords: "Khoa Pham, web developer, frontend developer, UX, UI, web developer Portland"
-    ShowRelatedPost: true
+    ShowRelatedPost: false
     SiteName: "Khoa Pham"
 
 MetadataFormat: "yaml"

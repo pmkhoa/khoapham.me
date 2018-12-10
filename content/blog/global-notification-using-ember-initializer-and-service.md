@@ -1,6 +1,6 @@
 ---
 date: 2016-04-12T11:18:20-07:00
-draft: false
+draft: true
 title: Global Notification Using Ember Initializer and Service
 tags: [EmberJS, Javascript]
 ---

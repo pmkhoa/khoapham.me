@@ -1,6 +1,6 @@
 ---
 date: 2016-04-02T15:46:04-02:00
-draft: false
+draft: true
 title: What Missing at Emberconf 2016
 tags: [EmberJS, Javascript]
 ---

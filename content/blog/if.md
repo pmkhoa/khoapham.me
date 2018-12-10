@@ -5,7 +5,7 @@ title: "My favorite poem"
 tags: [Favorite, Bookmark, Motivation]
 ---
 
-When it comes to my favority poem, "If - Rudyard Kipling" is definitely the one.  
+When it comes to my favorite poem, "If - Rudyard Kipling" is definitely the one.  
 It simply reminds me how to be a man, and a good person.
 <!--more-->
 

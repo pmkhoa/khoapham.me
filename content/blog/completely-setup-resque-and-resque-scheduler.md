@@ -1,6 +1,7 @@
 ---
 title: Completely setup Resque + Resque Schedule and Resque Mailer
 date: 2014-09-10
+draft: true
 tags: [Rails, Resque, Resque Mailer, Resque Scheduler, Ruby]
 ---
 When developing Rails app, there will be a chance that you will need to setup

@@ -1,6 +1,7 @@
 ---
 title: Tower of Hanoi
 date: 2014-12-02
+draft: true
 tags: [Ruby, Recursion, Fun]
 ---
 

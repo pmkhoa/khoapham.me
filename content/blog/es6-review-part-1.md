@@ -1,6 +1,7 @@
 ---
 title: ES6 Review Part 1
 date: 2015-03-03
+draft: true
 tags: [Javascript, ES6]
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Sync Middleman with Amazon S3
 date: 2013-05-27T22:18:14-08:00
+draft: true
 tags: [Web Development, Middleman, AWS, S3]
 ---
 
