@@ -17,20 +17,8 @@
       <pubDate>Thu, 03 Dec 2015 23:13:30 -0800</pubDate>
       
       <guid>http://khoapham.me/blog/first-hugo-theme/</guid>
-      <description>When I started to get back to blogging, I felt my website took a little long to compile. As a revolution of redesigning my blog, I want to switch my blog platform to something faster. My blog was previously developed using Middleman, and now it&amp;rsquo;s powered by Hugo, a faster static site generator. I&amp;rsquo;m really pleased with the transition so far.
-I also wrote a simple Hugo theme called Hugo Minimalist, this is just a mimic of my current blog style, which I explained in Minimalist in design.</description>
-    </item>
-    
-    <item>
-      <title>Minimalist in Design and Development</title>
-      <link>http://khoapham.me/blog/minimalist-in-design-and-development/</link>
-      <pubDate>Sat, 21 Nov 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://khoapham.me/blog/minimalist-in-design-and-development/</guid>
-      <description>&lt;p&gt;My website has gone through countless design iterations, not because its look
-was outdated, but my sense of simplicity has changed from time to time, and I
-wanted my personal website to reflect that.
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;When I started to get back to blogging, I felt my website
+took a little long to compile. As a revolution of redesigning my blog, I want to switch my blog platform to something faster.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -39,9 +27,8 @@ wanted my personal website to reflect that.
       <pubDate>Fri, 17 May 2013 23:12:14 -0800</pubDate>
       
       <guid>http://khoapham.me/blog/learning-to-see/</guid>
-      <description>People asked me why I had a computer science degree but spending most of my time working as user experience developer. Here is the article that hooked me into it: https://ia.net/know-how/learning-to-see. It has changed the way I saw thing since I read it. I highly recommend you read it too.
-Sincerely,
-Khoa</description>
+      <description>&lt;p&gt;People asked me why I had a computer science degree but spending most of my time working as user experience developer.
+Here is the article that hooked me into it:&lt;/p&gt;</description>
     </item>
     
   </channel>

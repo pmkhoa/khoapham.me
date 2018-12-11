@@ -19,11 +19,7 @@
       <guid>http://khoapham.me/blog/full-stack-development-with-ember-and-golang/</guid>
       <description>&lt;p&gt;One of my personal 2016 resolution was learning Go, and get familiar with
 writing restful API using Go. After couple of months learning Go, I started a
-simple application that use Go, and Ember to develop a Todo app.
-
-Yes, you read it right, I&amp;rsquo;m also creating another Todo app. Yet this one is different from the
-other you have seen because it&amp;rsquo;s built with Go for backend api, and Ember for
-frontend.&lt;/p&gt;</description>
+simple application that use Go, and Ember to develop a Todo app.&lt;/p&gt;</description>
     </item>
     
   </channel>

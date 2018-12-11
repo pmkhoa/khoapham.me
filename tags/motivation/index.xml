@@ -19,29 +19,7 @@
       <guid>http://khoapham.me/blog/meta-tags-generator/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://pmkhoa.github.io/meta-tags-generator/&#34;&gt;&lt;img src=&#34;http://khoapham.me/img/meta-tags-generator.png&#34; alt=&#34;Meta Tags Generator&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Meta tags are important because they help search engine to crawl your website properly, and make your website display correctly when sharing on social networks such as Facebook, Twitter, and Google Plus. This is why I created a simple tool to generate these standard meta tags &amp;amp; social tags.
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Great Attitude Makes Great Developers</title>
-      <link>http://khoapham.me/blog/great-developer-comes-from-great-attitude/</link>
-      <pubDate>Sat, 09 Apr 2016 22:20:42 -0700</pubDate>
-      
-      <guid>http://khoapham.me/blog/great-developer-comes-from-great-attitude/</guid>
-      <description>&lt;p&gt;I was struck with a simple story about working with great attitude would have a
-great impact on the outcome of the work.
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>2015 Retrospective</title>
-      <link>http://khoapham.me/blog/2015-retrospective/</link>
-      <pubDate>Tue, 29 Dec 2015 15:02:48 -0800</pubDate>
-      
-      <guid>http://khoapham.me/blog/2015-retrospective/</guid>
-      <description>&lt;p&gt;It was a great year of works, and an exciting year of life.
-&lt;/p&gt;</description>
+&lt;p&gt;Meta tags are important because they help search engine to crawl your website properly, and make your website display correctly when sharing on social networks such as Facebook, Twitter, and Google Plus. This is why I created a simple tool to generate these standard meta tags &amp;amp; social tags.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -50,39 +28,8 @@ great impact on the outcome of the work.
       <pubDate>Thu, 03 Dec 2015 23:13:30 -0800</pubDate>
       
       <guid>http://khoapham.me/blog/first-hugo-theme/</guid>
-      <description>When I started to get back to blogging, I felt my website took a little long to compile. As a revolution of redesigning my blog, I want to switch my blog platform to something faster. My blog was previously developed using Middleman, and now it&amp;rsquo;s powered by Hugo, a faster static site generator. I&amp;rsquo;m really pleased with the transition so far.
-I also wrote a simple Hugo theme called Hugo Minimalist, this is just a mimic of my current blog style, which I explained in Minimalist in design.</description>
-    </item>
-    
-    <item>
-      <title>Minimalist in Design and Development</title>
-      <link>http://khoapham.me/blog/minimalist-in-design-and-development/</link>
-      <pubDate>Sat, 21 Nov 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://khoapham.me/blog/minimalist-in-design-and-development/</guid>
-      <description>&lt;p&gt;My website has gone through countless design iterations, not because its look
-was outdated, but my sense of simplicity has changed from time to time, and I
-wanted my personal website to reflect that.
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>How I switched to vim in 2 weeks</title>
-      <link>http://khoapham.me/blog/how-i-switched-to-vim-in-2-weeks/</link>
-      <pubDate>Wed, 29 Oct 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://khoapham.me/blog/how-i-switched-to-vim-in-2-weeks/</guid>
-      <description>I have played with Vim so many times since I was in college, in fact that I loved it every time I used it. However, I don&amp;rsquo;t think I ever spent time long enough to get used to it. I&amp;rsquo;ve seen people dancing their fingers on the keyboard using Vim, this made me wanted to try harder this time. Finally I totally switched to Vim as my main text editor.</description>
-    </item>
-    
-    <item>
-      <title>Inspiration videos from Steve Jobs</title>
-      <link>http://khoapham.me/blog/inspiration-video-from-steve-jobs/</link>
-      <pubDate>Thu, 04 Jul 2013 00:00:00 +0000</pubDate>
-      
-      <guid>http://khoapham.me/blog/inspiration-video-from-steve-jobs/</guid>
-      <description>  
- </description>
+      <description>&lt;p&gt;When I started to get back to blogging, I felt my website
+took a little long to compile. As a revolution of redesigning my blog, I want to switch my blog platform to something faster.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -91,9 +38,8 @@ wanted my personal website to reflect that.
       <pubDate>Fri, 17 May 2013 23:12:14 -0800</pubDate>
       
       <guid>http://khoapham.me/blog/learning-to-see/</guid>
-      <description>People asked me why I had a computer science degree but spending most of my time working as user experience developer. Here is the article that hooked me into it: https://ia.net/know-how/learning-to-see. It has changed the way I saw thing since I read it. I highly recommend you read it too.
-Sincerely,
-Khoa</description>
+      <description>&lt;p&gt;People asked me why I had a computer science degree but spending most of my time working as user experience developer.
+Here is the article that hooked me into it:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -102,9 +48,8 @@ Khoa</description>
       <pubDate>Fri, 17 May 2013 00:06:51 -0800</pubDate>
       
       <guid>http://khoapham.me/blog/if/</guid>
-      <description>&lt;p&gt;When it comes to my favority poem, &amp;ldquo;If - Rudyard Kipling&amp;rdquo; is definitely the one.&lt;br /&gt;
-It simply reminds me how to be a man, and a good person.
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;When it comes to my favorite poem, &amp;ldquo;If - Rudyard Kipling&amp;rdquo; is definitely the one.&lt;br /&gt;
+It simply reminds me how to be a man, and a good person.&lt;/p&gt;</description>
     </item>
     
   </channel>

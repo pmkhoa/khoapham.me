@@ -17,8 +17,7 @@
       <pubDate>Wed, 05 Jun 2013 00:00:00 +0000</pubDate>
       
       <guid>http://khoapham.me/blog/middleman-localization/</guid>
-      <description>Recently when developing a site using middleman, my client wonder that if we can do localization for the website. Fortunately, Middleman comes with the localization extension i18n which is pretty simple to integrate it into the site. Although there&amp;rsquo;s a quick overview of Middleman Localization available on the middlemanapp.com, I still find it a little bit confused for Middleman beginners. Here are quick steps how to set it up:
-1. Activate i18n and update your bundle.</description>
+      <description></description>
     </item>
     
     <item>

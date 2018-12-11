@@ -6,20 +6,10 @@
     <description>Recent content in Devops on Khoa Pham</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 25 Apr 2016 15:46:17 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2015 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://khoapham.me/tags/devops/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Deploy Ember App on Github Pages</title>
-      <link>http://khoapham.me/blog/deploy-ember-app-on-github-pages/</link>
-      <pubDate>Mon, 25 Apr 2016 15:46:17 -0700</pubDate>
-      
-      <guid>http://khoapham.me/blog/deploy-ember-app-on-github-pages/</guid>
-      <description>&lt;p&gt;Github pages is ideal for hosting static websites. Especially if you&amp;rsquo;re developing a open source project, and want to have a simple website for it.
-&lt;/p&gt;</description>
-    </item>
     
     <item>
       <title>Set up Nginx with Centos</title>
@@ -33,21 +23,7 @@ and Centos. The requirements were simple:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Server can serve multiple domains or subdomains.&lt;/li&gt;
 &lt;li&gt;Each domain web folder is stored under different user account.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Deploy Middleman to Heroku</title>
-      <link>http://khoapham.me/blog/deploy-middleman-to-heroku/</link>
-      <pubDate>Tue, 14 Oct 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://khoapham.me/blog/deploy-middleman-to-heroku/</guid>
-      <description>&lt;p&gt;Heroku is a great cloud service, it uses git for version control and deployment which is very handy for me to just update my blog in one command.
-Here are some simple step that you can set it up.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -57,8 +33,7 @@ Here are some simple step that you can set it up.&lt;/p&gt;
       
       <guid>http://khoapham.me/blog/setting-up-amazon-web-services/</guid>
       <description>&lt;p&gt;To setting up Amazon Web Services, the process of setting up an EC2 on Amazon Web Services (AWS) is not complicated, all you need to get a server up and running are Apache, PHP,  MySQL.
-Here are some initial steps that help you get started:
-&lt;/p&gt;</description>
+Here are some initial steps that help you get started:&lt;/p&gt;</description>
     </item>
     
   </channel>

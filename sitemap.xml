@@ -8,38 +8,8 @@
   </url>
   
   <url>
-    <loc>http://khoapham.me/blog/webpack-starter/</loc>
-    <lastmod>2016-05-03T22:31:31-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://khoapham.me/blog/deploy-ember-app-on-github-pages/</loc>
-    <lastmod>2016-04-25T15:46:17-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://khoapham.me/blog/meta-tags-generator/</loc>
     <lastmod>2016-04-24T13:11:54-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://khoapham.me/blog/global-notification-using-ember-initializer-and-service/</loc>
-    <lastmod>2016-04-12T11:18:20-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://khoapham.me/blog/great-developer-comes-from-great-attitude/</loc>
-    <lastmod>2016-04-09T22:20:42-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://khoapham.me/blog/what-missing-at-emberconf-2016/</loc>
-    <lastmod>2016-04-02T15:46:04-02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://khoapham.me/blog/2015-retrospective/</loc>
-    <lastmod>2015-12-29T15:02:48-08:00</lastmod>
   </url>
   
   <url>
@@ -53,11 +23,6 @@
   </url>
   
   <url>
-    <loc>http://khoapham.me/blog/minimalist-in-design-and-development/</loc>
-    <lastmod>2015-11-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://khoapham.me/blog/set-up-nginx-with-centos/</loc>
     <lastmod>2015-11-18T00:00:00+00:00</lastmod>
   </url>
@@ -68,21 +33,6 @@
   </url>
   
   <url>
-    <loc>http://khoapham.me/blog/es6-review-part-2/</loc>
-    <lastmod>2015-07-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://khoapham.me/blog/es6-review-part-1/</loc>
-    <lastmod>2015-03-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://khoapham.me/blog/tower-of-hanoi/</loc>
-    <lastmod>2014-12-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://khoapham.me/blog/menuonscroll-jquery-plugin/</loc>
     <lastmod>2014-11-25T00:00:00+00:00</lastmod>
   </url>
@@ -90,41 +40,6 @@
   <url>
     <loc>http://khoapham.me/blog/vim-common-helpful-leader/</loc>
     <lastmod>2014-11-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://khoapham.me/blog/how-i-switched-to-vim-in-2-weeks/</loc>
-    <lastmod>2014-10-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://khoapham.me/blog/deploy-middleman-to-heroku/</loc>
-    <lastmod>2014-10-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://khoapham.me/blog/completely-setup-resque-and-resque-scheduler/</loc>
-    <lastmod>2014-09-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://khoapham.me/blog/create-app-with-meteor/</loc>
-    <lastmod>2013-10-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://khoapham.me/blog/inspiration-video-from-steve-jobs/</loc>
-    <lastmod>2013-07-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://khoapham.me/blog/middleman-localization/</loc>
-    <lastmod>2013-06-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://khoapham.me/blog/sync-middleman-with-amazon-s3/</loc>
-    <lastmod>2013-05-27T22:18:14-08:00</lastmod>
   </url>
   
   <url>
@@ -150,7 +65,7 @@
   
   <url>
     <loc>http://khoapham.me/tags/aws/</loc>
-    <lastmod>2013-05-27T22:18:14-08:00</lastmod>
+    <lastmod>2013-05-17T23:14:51-08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -162,7 +77,7 @@
   
   <url>
     <loc>http://khoapham.me/tags/bookmark/</loc>
-    <lastmod>2013-07-04T00:00:00+00:00</lastmod>
+    <lastmod>2013-05-17T00:06:51-08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -179,7 +94,7 @@
   
   <url>
     <loc>http://khoapham.me/tags/devops/</loc>
-    <lastmod>2016-04-25T15:46:17-07:00</lastmod>
+    <lastmod>2015-11-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -190,20 +105,8 @@
   </url>
   
   <url>
-    <loc>http://khoapham.me/tags/es6/</loc>
-    <lastmod>2016-05-03T22:31:31-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://khoapham.me/tags/favorite/</loc>
     <lastmod>2013-05-17T00:06:51-08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://khoapham.me/tags/fun/</loc>
-    <lastmod>2014-12-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -226,12 +129,6 @@
   </url>
   
   <url>
-    <loc>http://khoapham.me/tags/heroku/</loc>
-    <lastmod>2014-10-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://khoapham.me/tags/http/</loc>
     <lastmod>2013-05-17T23:14:51-08:00</lastmod>
     <priority>0</priority>
@@ -245,7 +142,7 @@
   
   <url>
     <loc>http://khoapham.me/tags/javascript/</loc>
-    <lastmod>2016-05-03T22:31:31-07:00</lastmod>
+    <lastmod>2015-12-23T12:00:31-08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -258,30 +155,6 @@
   <url>
     <loc>http://khoapham.me/</loc>
     <lastmod>2016-06-27T12:09:16-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://khoapham.me/tags/meteor/</loc>
-    <lastmod>2013-10-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://khoapham.me/tags/middleman/</loc>
-    <lastmod>2013-06-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://khoapham.me/tags/middlemanapp/</loc>
-    <lastmod>2014-10-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://khoapham.me/tags/minimalist/</loc>
-    <lastmod>2015-11-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -316,50 +189,8 @@
   </url>
   
   <url>
-    <loc>http://khoapham.me/tags/rails/</loc>
-    <lastmod>2014-10-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://khoapham.me/tags/recursion/</loc>
-    <lastmod>2014-12-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://khoapham.me/tags/resource/</loc>
     <lastmod>2014-11-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://khoapham.me/tags/resque/</loc>
-    <lastmod>2014-09-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://khoapham.me/tags/resque-mailer/</loc>
-    <lastmod>2014-09-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://khoapham.me/tags/resque-scheduler/</loc>
-    <lastmod>2014-09-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://khoapham.me/tags/ruby/</loc>
-    <lastmod>2014-12-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://khoapham.me/tags/s3/</loc>
-    <lastmod>2013-05-27T22:18:14-08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -378,12 +209,6 @@
   <url>
     <loc>http://khoapham.me/tags/tutorial/</loc>
     <lastmod>2016-06-27T12:09:16-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://khoapham.me/tags/video/</loc>
-    <lastmod>2013-07-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -408,12 +233,6 @@
   <url>
     <loc>http://khoapham.me/tags/web-service/</loc>
     <lastmod>2013-05-17T23:14:51-08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://khoapham.me/tags/webpack/</loc>
-    <lastmod>2016-05-03T22:31:31-07:00</lastmod>
     <priority>0</priority>
   </url>
   
