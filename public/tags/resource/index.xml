@@ -20,19 +20,7 @@
       <description>&lt;p&gt;I have really enjoyed using Vim for a month now, and I have to admit that I
 love the feeling of learning new things from Vim everyday. Today I would love to
 share some of my favorite Vim Leaders that I found they&amp;rsquo;re extremely helpful. You
-can add these into your .vimrc file, and give it a try.
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Create App With Meteor</title>
-      <link>http://khoapham.me/blog/create-app-with-meteor/</link>
-      <pubDate>Wed, 16 Oct 2013 00:00:00 +0000</pubDate>
-      
-      <guid>http://khoapham.me/blog/create-app-with-meteor/</guid>
-      <description>&lt;p&gt;When I started to build the DearJJAbrams.com site, I came across a very simple functionality which was the realtime counter. This realtime counter worked as follow, when the user submitted their email, the counter would increase 1. However, this counter had to automatically update and synchronize with the server whenever anyone around the world submit their email, in other words, I had to create real time app with Meteor.
-
-At this point, things were getting little more complicated. The big question was how could the browser know when the database was updated in order to get synchronized? But, I was lucky to found out that &lt;a href=&#34;http://www.meteor.com&#34;&gt;Meteor&lt;/a&gt; was a perfect tool for this simple counter app.&lt;/p&gt;</description>
+can add these into your .vimrc file, and give it a try.&lt;/p&gt;</description>
     </item>
     
   </channel>

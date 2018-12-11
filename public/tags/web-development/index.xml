@@ -23,39 +23,7 @@ and Centos. The requirements were simple:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Server can serve multiple domains or subdomains.&lt;/li&gt;
 &lt;li&gt;Each domain web folder is stored under different user account.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Create App With Meteor</title>
-      <link>http://khoapham.me/blog/create-app-with-meteor/</link>
-      <pubDate>Wed, 16 Oct 2013 00:00:00 +0000</pubDate>
-      
-      <guid>http://khoapham.me/blog/create-app-with-meteor/</guid>
-      <description>&lt;p&gt;When I started to build the DearJJAbrams.com site, I came across a very simple functionality which was the realtime counter. This realtime counter worked as follow, when the user submitted their email, the counter would increase 1. However, this counter had to automatically update and synchronize with the server whenever anyone around the world submit their email, in other words, I had to create real time app with Meteor.
-
-At this point, things were getting little more complicated. The big question was how could the browser know when the database was updated in order to get synchronized? But, I was lucky to found out that &lt;a href=&#34;http://www.meteor.com&#34;&gt;Meteor&lt;/a&gt; was a perfect tool for this simple counter app.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Middleman Localization</title>
-      <link>http://khoapham.me/blog/middleman-localization/</link>
-      <pubDate>Wed, 05 Jun 2013 00:00:00 +0000</pubDate>
-      
-      <guid>http://khoapham.me/blog/middleman-localization/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sync Middleman with Amazon S3</title>
-      <link>http://khoapham.me/blog/sync-middleman-with-amazon-s3/</link>
-      <pubDate>Mon, 27 May 2013 22:18:14 -0800</pubDate>
-      
-      <guid>http://khoapham.me/blog/sync-middleman-with-amazon-s3/</guid>
-      <description>&lt;p&gt;One thing that I love using Middleman and Amazon S3 is that they&amp;rsquo;re a perfect combination for building and hosting a static HTML5 site.&lt;br /&gt;
-&lt;/p&gt;</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -65,8 +33,7 @@ At this point, things were getting little more complicated. The big question was
       
       <guid>http://khoapham.me/blog/setting-up-amazon-web-services/</guid>
       <description>&lt;p&gt;To setting up Amazon Web Services, the process of setting up an EC2 on Amazon Web Services (AWS) is not complicated, all you need to get a server up and running are Apache, PHP,  MySQL.
-Here are some initial steps that help you get started:
-&lt;/p&gt;</description>
+Here are some initial steps that help you get started:&lt;/p&gt;</description>
     </item>
     
   </channel>

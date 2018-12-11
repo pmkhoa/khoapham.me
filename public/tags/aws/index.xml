@@ -6,20 +6,10 @@
     <description>Recent content in Aws on Khoa Pham</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 May 2013 22:18:14 -0800</lastBuildDate>
+    <lastBuildDate>Fri, 17 May 2013 23:14:51 -0800</lastBuildDate>
     
 	<atom:link href="http://khoapham.me/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Sync Middleman with Amazon S3</title>
-      <link>http://khoapham.me/blog/sync-middleman-with-amazon-s3/</link>
-      <pubDate>Mon, 27 May 2013 22:18:14 -0800</pubDate>
-      
-      <guid>http://khoapham.me/blog/sync-middleman-with-amazon-s3/</guid>
-      <description>&lt;p&gt;One thing that I love using Middleman and Amazon S3 is that they&amp;rsquo;re a perfect combination for building and hosting a static HTML5 site.&lt;br /&gt;
-&lt;/p&gt;</description>
-    </item>
     
     <item>
       <title>Setting up Amazon Web Services</title>
@@ -28,8 +18,7 @@
       
       <guid>http://khoapham.me/blog/setting-up-amazon-web-services/</guid>
       <description>&lt;p&gt;To setting up Amazon Web Services, the process of setting up an EC2 on Amazon Web Services (AWS) is not complicated, all you need to get a server up and running are Apache, PHP,  MySQL.
-Here are some initial steps that help you get started:
-&lt;/p&gt;</description>
+Here are some initial steps that help you get started:&lt;/p&gt;</description>
     </item>
     
   </channel>
