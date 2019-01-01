@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://khoapham.me/blog/2018-retrospective/</loc>
+    <lastmod>2018-12-31T13:06:48-08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://khoapham.me/blog/full-stack-development-with-ember-and-golang/</loc>
     <lastmod>2016-06-27T12:09:16-07:00</lastmod>
   </url>
@@ -71,7 +76,7 @@
   
   <url>
     <loc>http://khoapham.me/blog/</loc>
-    <lastmod>2016-06-27T12:09:16-07:00</lastmod>
+    <lastmod>2018-12-31T13:06:48-08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -154,13 +159,13 @@
   
   <url>
     <loc>http://khoapham.me/</loc>
-    <lastmod>2016-06-27T12:09:16-07:00</lastmod>
+    <lastmod>2018-12-31T13:06:48-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://khoapham.me/tags/motivation/</loc>
-    <lastmod>2016-04-24T13:11:54-07:00</lastmod>
+    <lastmod>2018-12-31T13:06:48-08:00</lastmod>
     <priority>0</priority>
   </url>
   

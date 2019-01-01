@@ -6,10 +6,20 @@
     <description>Recent content in Blogs on Khoa Pham</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Jun 2016 12:09:16 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 31 Dec 2018 13:06:48 -0800</lastBuildDate>
     
 	<atom:link href="http://khoapham.me/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2018 Retrospective</title>
+      <link>http://khoapham.me/blog/2018-retrospective/</link>
+      <pubDate>Mon, 31 Dec 2018 13:06:48 -0800</pubDate>
+      
+      <guid>http://khoapham.me/blog/2018-retrospective/</guid>
+      <description>The new year 2019 is just hours away, I decide to take some moment to reflect myself for the last year. 2018 was full of changes and challenges for both family and work.
+The Good Family The whole family went through unexpected events very bravely together. This has helped us to love, grow and understand the important of family. I couldn&amp;rsquo;t thank enough for my wife devoting herself to give our best to our children.</description>
+    </item>
     
     <item>
       <title>Full Stack Development with Ember and Golang</title>
