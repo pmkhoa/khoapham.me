@@ -24,14 +24,5 @@ can add these into your .vimrc file, and give it a try.
 &lt;/p&gt;</description>
     </item>
     
-    <item>
-      <title>How I switched to vim in 2 weeks</title>
-      <link>http://khoapham.me/blog/how-i-switched-to-vim-in-2-weeks/</link>
-      <pubDate>Wed, 29 Oct 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://khoapham.me/blog/how-i-switched-to-vim-in-2-weeks/</guid>
-      <description>I have played with Vim so many times since I was in college, in fact that I loved it every time I used it. However, I don&amp;rsquo;t think I ever spent time long enough to get used to it. I&amp;rsquo;ve seen people dancing their fingers on the keyboard using Vim, this made me wanted to try harder this time. Finally I totally switched to Vim as my main text editor.</description>
-    </item>
-    
   </channel>
 </rss>

@@ -1,6 +1,7 @@
 ---
 title: Minimalist in Design and Development
 date: 2015-11-21
+draft: true
 tags: [Design, Minimalist, Motivation]
 ---
 

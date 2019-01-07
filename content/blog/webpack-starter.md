@@ -1,6 +1,6 @@
 ---
 date: 2016-05-03T22:31:31-07:00
-draft: false
+draft: true
 title: Webpack Starter - Use ES6 Today
 tags: [Webpack, Javascript, ES6]
 ---

@@ -1,6 +1,7 @@
 ---
 title: Create App With Meteor
 date: 2013-10-16
+draft: true
 tags: [Web Development, Meteor, Javascript, Tutorial, Resource]
 ---
 

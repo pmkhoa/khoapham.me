@@ -6,10 +6,20 @@
     <description>Recent content in Blogs on Khoa Pham</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Jun 2016 12:09:16 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 31 Dec 2018 13:06:48 -0800</lastBuildDate>
     
 	<atom:link href="http://khoapham.me/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2018 Retrospective</title>
+      <link>http://khoapham.me/blog/2018-retrospective/</link>
+      <pubDate>Mon, 31 Dec 2018 13:06:48 -0800</pubDate>
+      
+      <guid>http://khoapham.me/blog/2018-retrospective/</guid>
+      <description>The new year 2019 is just hours away, I decide to take some moment to reflect myself for the last year. 2018 was full of changes and challenges for both family and work.
+The Good Family The whole family went through unexpected events very bravely together. This has helped us to love, grow and understand the important of family. I couldn&amp;rsquo;t thank enough for my wife devoting herself to give our best to our children.</description>
+    </item>
     
     <item>
       <title>Full Stack Development with Ember and Golang</title>
@@ -27,26 +37,6 @@ frontend.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Webpack Starter - Use ES6 Today</title>
-      <link>http://khoapham.me/blog/webpack-starter/</link>
-      <pubDate>Tue, 03 May 2016 22:31:31 -0700</pubDate>
-      
-      <guid>http://khoapham.me/blog/webpack-starter/</guid>
-      <description>Back in early 2015, when I started writing Javascript in ES6; it was not easy to get everything running smoothly at that time. Today some developers are still not sure where to get started using ES6 even though it&amp;rsquo;s widely adopted by Javascript community. I spent an evening writing a simple Webpack Boilerplate to help new developers to use it for their new projects.
-What does this minimalist boilerplate include?</description>
-    </item>
-    
-    <item>
-      <title>Deploy Ember App on Github Pages</title>
-      <link>http://khoapham.me/blog/deploy-ember-app-on-github-pages/</link>
-      <pubDate>Mon, 25 Apr 2016 15:46:17 -0700</pubDate>
-      
-      <guid>http://khoapham.me/blog/deploy-ember-app-on-github-pages/</guid>
-      <description>&lt;p&gt;Github pages is ideal for hosting static websites. Especially if you&amp;rsquo;re developing a open source project, and want to have a simple website for it.
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Meta Tags Generator</title>
       <link>http://khoapham.me/blog/meta-tags-generator/</link>
       <pubDate>Sun, 24 Apr 2016 13:11:54 -0700</pubDate>
@@ -55,46 +45,6 @@ What does this minimalist boilerplate include?</description>
       <description>&lt;p&gt;&lt;a href=&#34;http://pmkhoa.github.io/meta-tags-generator/&#34;&gt;&lt;img src=&#34;http://khoapham.me/img/meta-tags-generator.png&#34; alt=&#34;Meta Tags Generator&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Meta tags are important because they help search engine to crawl your website properly, and make your website display correctly when sharing on social networks such as Facebook, Twitter, and Google Plus. This is why I created a simple tool to generate these standard meta tags &amp;amp; social tags.
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Global Notification Using Ember Initializer and Service</title>
-      <link>http://khoapham.me/blog/global-notification-using-ember-initializer-and-service/</link>
-      <pubDate>Tue, 12 Apr 2016 11:18:20 -0700</pubDate>
-      
-      <guid>http://khoapham.me/blog/global-notification-using-ember-initializer-and-service/</guid>
-      <description>When developing Ember app, you may want to have a singleton to handle global state such as global notification, or error handling. This doesn&amp;rsquo;t fall into Route, Controller, or Component. Ember offers an easy way to manage this using Service and Initializers.
-Create a service to hold notification data //app/services/global-notification.js import Ember from &#39;ember&#39;; export default Ember.Service.extend({ notification: null, init() { this.set(&#39;notification&#39;, null); } });  Create an initializer to inject global notification service in application This allows us to use GlobalNotification service in route, and component.</description>
-    </item>
-    
-    <item>
-      <title>Great Attitude Makes Great Developers</title>
-      <link>http://khoapham.me/blog/great-developer-comes-from-great-attitude/</link>
-      <pubDate>Sat, 09 Apr 2016 22:20:42 -0700</pubDate>
-      
-      <guid>http://khoapham.me/blog/great-developer-comes-from-great-attitude/</guid>
-      <description>&lt;p&gt;I was struck with a simple story about working with great attitude would have a
-great impact on the outcome of the work.
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>What Missing at Emberconf 2016</title>
-      <link>http://khoapham.me/blog/what-missing-at-emberconf-2016/</link>
-      <pubDate>Sat, 02 Apr 2016 15:46:04 -0200</pubDate>
-      
-      <guid>http://khoapham.me/blog/what-missing-at-emberconf-2016/</guid>
-      <description>&lt;p&gt;EmberConf 2016 was really a great conference.  There were about 950 attendees this year, and the conference was very well-organized.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>2015 Retrospective</title>
-      <link>http://khoapham.me/blog/2015-retrospective/</link>
-      <pubDate>Tue, 29 Dec 2015 15:02:48 -0800</pubDate>
-      
-      <guid>http://khoapham.me/blog/2015-retrospective/</guid>
-      <description>&lt;p&gt;It was a great year of works, and an exciting year of life.
 &lt;/p&gt;</description>
     </item>
     
@@ -123,18 +73,6 @@ I also wrote a simple Hugo theme called Hugo Minimalist, this is just a mimic of
     </item>
     
     <item>
-      <title>Minimalist in Design and Development</title>
-      <link>http://khoapham.me/blog/minimalist-in-design-and-development/</link>
-      <pubDate>Sat, 21 Nov 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://khoapham.me/blog/minimalist-in-design-and-development/</guid>
-      <description>&lt;p&gt;My website has gone through countless design iterations, not because its look
-was outdated, but my sense of simplicity has changed from time to time, and I
-wanted my personal website to reflect that.
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Set up Nginx with Centos</title>
       <link>http://khoapham.me/blog/set-up-nginx-with-centos/</link>
       <pubDate>Wed, 18 Nov 2015 00:00:00 +0000</pubDate>
@@ -149,36 +87,6 @@ and Centos. The requirements were simple:&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>ES6 Review Part 2</title>
-      <link>http://khoapham.me/blog/es6-review-part-2/</link>
-      <pubDate>Mon, 20 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://khoapham.me/blog/es6-review-part-2/</guid>
-      <description>This is a second review post for new ES6 features that I&amp;rsquo;d love to share. You can find the first review here ES6 Review Part 1
-Arrows I have been using arrow (-&amp;gt;) and fat-arrow (=&amp;gt;) key in Coffeescript for while, and I was happy when ES6 would support arrow key (=&amp;gt;) as a short-hand of function keyword. Of course, if you’re familiar with arrow keys in Coffeescript, this feature will be similar.</description>
-    </item>
-    
-    <item>
-      <title>ES6 Review Part 1</title>
-      <link>http://khoapham.me/blog/es6-review-part-1/</link>
-      <pubDate>Tue, 03 Mar 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://khoapham.me/blog/es6-review-part-1/</guid>
-      <description>ECMAScript 6 (ES6) is the upcoming version of ECMACScript standard which is supposed to be ready soon. There are number of significant changes in this new standard version of Javascript. So far I can tell, this is indeed the future of Javascript, and I love it.
-In this short blog, I use ES6 to demonstrate some new features of ES6 by writing the linked list data structure.
- Classes ES6 finally allows you to declare your object using class keyword.</description>
-    </item>
-    
-    <item>
-      <title>Tower of Hanoi</title>
-      <link>http://khoapham.me/blog/tower-of-hanoi/</link>
-      <pubDate>Tue, 02 Dec 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://khoapham.me/blog/tower-of-hanoi/</guid>
-      <description>One of my favorite childhood game was the Tower of Hanoi which I loved playing it with my neighbor friends all the time. Also, one of my very first project in college was implementing the tower of Hanoi in C, C++, or Java. I guess this game has stuck with me for a very long time, so that today I decided to implement it again in my new favorite language - Ruby.</description>
     </item>
     
     <item>
@@ -203,80 +111,6 @@ Since everyone just keeps build the similar thing over and over again, I think i
 love the feeling of learning new things from Vim everyday. Today I would love to
 share some of my favorite Vim Leaders that I found they&amp;rsquo;re extremely helpful. You
 can add these into your .vimrc file, and give it a try.
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>How I switched to vim in 2 weeks</title>
-      <link>http://khoapham.me/blog/how-i-switched-to-vim-in-2-weeks/</link>
-      <pubDate>Wed, 29 Oct 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://khoapham.me/blog/how-i-switched-to-vim-in-2-weeks/</guid>
-      <description>I have played with Vim so many times since I was in college, in fact that I loved it every time I used it. However, I don&amp;rsquo;t think I ever spent time long enough to get used to it. I&amp;rsquo;ve seen people dancing their fingers on the keyboard using Vim, this made me wanted to try harder this time. Finally I totally switched to Vim as my main text editor.</description>
-    </item>
-    
-    <item>
-      <title>Deploy Middleman to Heroku</title>
-      <link>http://khoapham.me/blog/deploy-middleman-to-heroku/</link>
-      <pubDate>Tue, 14 Oct 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://khoapham.me/blog/deploy-middleman-to-heroku/</guid>
-      <description>&lt;p&gt;Heroku is a great cloud service, it uses git for version control and deployment which is very handy for me to just update my blog in one command.
-Here are some simple step that you can set it up.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Completely setup Resque &#43; Resque Schedule and Resque Mailer</title>
-      <link>http://khoapham.me/blog/completely-setup-resque-and-resque-scheduler/</link>
-      <pubDate>Wed, 10 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://khoapham.me/blog/completely-setup-resque-and-resque-scheduler/</guid>
-      <description>&lt;p&gt;When developing Rails app, there will be a chance that you will need to setup
-job scheduler using Resque. In this post, I&amp;rsquo;d like to share my experience
-setting up Resque schedule, and resque mailer on my recent Rails application
- &lt;a href=&#34;https://my.onesight.org/en&#34;&gt;My OneSight&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Create App With Meteor</title>
-      <link>http://khoapham.me/blog/create-app-with-meteor/</link>
-      <pubDate>Wed, 16 Oct 2013 00:00:00 +0000</pubDate>
-      
-      <guid>http://khoapham.me/blog/create-app-with-meteor/</guid>
-      <description>&lt;p&gt;When I started to build the DearJJAbrams.com site, I came across a very simple functionality which was the realtime counter. This realtime counter worked as follow, when the user submitted their email, the counter would increase 1. However, this counter had to automatically update and synchronize with the server whenever anyone around the world submit their email, in other words, I had to create real time app with Meteor.
-
-At this point, things were getting little more complicated. The big question was how could the browser know when the database was updated in order to get synchronized? But, I was lucky to found out that &lt;a href=&#34;http://www.meteor.com&#34;&gt;Meteor&lt;/a&gt; was a perfect tool for this simple counter app.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Inspiration videos from Steve Jobs</title>
-      <link>http://khoapham.me/blog/inspiration-video-from-steve-jobs/</link>
-      <pubDate>Thu, 04 Jul 2013 00:00:00 +0000</pubDate>
-      
-      <guid>http://khoapham.me/blog/inspiration-video-from-steve-jobs/</guid>
-      <description>  
- </description>
-    </item>
-    
-    <item>
-      <title>Middleman Localization</title>
-      <link>http://khoapham.me/blog/middleman-localization/</link>
-      <pubDate>Wed, 05 Jun 2013 00:00:00 +0000</pubDate>
-      
-      <guid>http://khoapham.me/blog/middleman-localization/</guid>
-      <description>Recently when developing a site using middleman, my client wonder that if we can do localization for the website. Fortunately, Middleman comes with the localization extension i18n which is pretty simple to integrate it into the site. Although there&amp;rsquo;s a quick overview of Middleman Localization available on the middlemanapp.com, I still find it a little bit confused for Middleman beginners. Here are quick steps how to set it up:
-1. Activate i18n and update your bundle.</description>
-    </item>
-    
-    <item>
-      <title>Sync Middleman with Amazon S3</title>
-      <link>http://khoapham.me/blog/sync-middleman-with-amazon-s3/</link>
-      <pubDate>Mon, 27 May 2013 22:18:14 -0800</pubDate>
-      
-      <guid>http://khoapham.me/blog/sync-middleman-with-amazon-s3/</guid>
-      <description>&lt;p&gt;One thing that I love using Middleman and Amazon S3 is that they&amp;rsquo;re a perfect combination for building and hosting a static HTML5 site.&lt;br /&gt;
 &lt;/p&gt;</description>
     </item>
     
@@ -308,7 +142,7 @@ Khoa</description>
       <pubDate>Fri, 17 May 2013 00:06:51 -0800</pubDate>
       
       <guid>http://khoapham.me/blog/if/</guid>
-      <description>&lt;p&gt;When it comes to my favority poem, &amp;ldquo;If - Rudyard Kipling&amp;rdquo; is definitely the one.&lt;br /&gt;
+      <description>&lt;p&gt;When it comes to my favorite poem, &amp;ldquo;If - Rudyard Kipling&amp;rdquo; is definitely the one.&lt;br /&gt;
 It simply reminds me how to be a man, and a good person.
 &lt;/p&gt;</description>
     </item>

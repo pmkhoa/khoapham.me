@@ -1,6 +1,7 @@
 ---
 title: Deploy Middleman to Heroku
 date: 2014-10-14
+draft: true
 tags: [Rails, Heroku, Middlemanapp, Ruby, Devops]
 ---
 

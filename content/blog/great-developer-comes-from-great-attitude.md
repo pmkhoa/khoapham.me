@@ -1,6 +1,6 @@
 ---
 date: 2016-04-09T22:20:42-07:00
-draft: false
+draft: true
 title: Great Attitude Makes Great Developers
 tags: [Motivation]
 ---

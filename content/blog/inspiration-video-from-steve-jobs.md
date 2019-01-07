@@ -1,6 +1,7 @@
 ---
 title: Inspiration videos from Steve Jobs
 date: 2013-07-04
+draft: true
 tags: [Motivation, Video, Bookmark]
 ---
 

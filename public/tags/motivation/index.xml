@@ -6,10 +6,20 @@
     <description>Recent content in Motivation on Khoa Pham</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 Apr 2016 13:11:54 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 31 Dec 2018 13:06:48 -0800</lastBuildDate>
     
 	<atom:link href="http://khoapham.me/tags/motivation/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2018 Retrospective</title>
+      <link>http://khoapham.me/blog/2018-retrospective/</link>
+      <pubDate>Mon, 31 Dec 2018 13:06:48 -0800</pubDate>
+      
+      <guid>http://khoapham.me/blog/2018-retrospective/</guid>
+      <description>The new year 2019 is just hours away, I decide to take some moment to reflect myself for the last year. 2018 was full of changes and challenges for both family and work.
+The Good Family The whole family went through unexpected events very bravely together. This has helped us to love, grow and understand the important of family. I couldn&amp;rsquo;t thank enough for my wife devoting herself to give our best to our children.</description>
+    </item>
     
     <item>
       <title>Meta Tags Generator</title>
@@ -24,27 +34,6 @@
     </item>
     
     <item>
-      <title>Great Attitude Makes Great Developers</title>
-      <link>http://khoapham.me/blog/great-developer-comes-from-great-attitude/</link>
-      <pubDate>Sat, 09 Apr 2016 22:20:42 -0700</pubDate>
-      
-      <guid>http://khoapham.me/blog/great-developer-comes-from-great-attitude/</guid>
-      <description>&lt;p&gt;I was struck with a simple story about working with great attitude would have a
-great impact on the outcome of the work.
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>2015 Retrospective</title>
-      <link>http://khoapham.me/blog/2015-retrospective/</link>
-      <pubDate>Tue, 29 Dec 2015 15:02:48 -0800</pubDate>
-      
-      <guid>http://khoapham.me/blog/2015-retrospective/</guid>
-      <description>&lt;p&gt;It was a great year of works, and an exciting year of life.
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>My First Hugo Theme</title>
       <link>http://khoapham.me/blog/first-hugo-theme/</link>
       <pubDate>Thu, 03 Dec 2015 23:13:30 -0800</pubDate>
@@ -52,37 +41,6 @@ great impact on the outcome of the work.
       <guid>http://khoapham.me/blog/first-hugo-theme/</guid>
       <description>When I started to get back to blogging, I felt my website took a little long to compile. As a revolution of redesigning my blog, I want to switch my blog platform to something faster. My blog was previously developed using Middleman, and now it&amp;rsquo;s powered by Hugo, a faster static site generator. I&amp;rsquo;m really pleased with the transition so far.
 I also wrote a simple Hugo theme called Hugo Minimalist, this is just a mimic of my current blog style, which I explained in Minimalist in design.</description>
-    </item>
-    
-    <item>
-      <title>Minimalist in Design and Development</title>
-      <link>http://khoapham.me/blog/minimalist-in-design-and-development/</link>
-      <pubDate>Sat, 21 Nov 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://khoapham.me/blog/minimalist-in-design-and-development/</guid>
-      <description>&lt;p&gt;My website has gone through countless design iterations, not because its look
-was outdated, but my sense of simplicity has changed from time to time, and I
-wanted my personal website to reflect that.
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>How I switched to vim in 2 weeks</title>
-      <link>http://khoapham.me/blog/how-i-switched-to-vim-in-2-weeks/</link>
-      <pubDate>Wed, 29 Oct 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://khoapham.me/blog/how-i-switched-to-vim-in-2-weeks/</guid>
-      <description>I have played with Vim so many times since I was in college, in fact that I loved it every time I used it. However, I don&amp;rsquo;t think I ever spent time long enough to get used to it. I&amp;rsquo;ve seen people dancing their fingers on the keyboard using Vim, this made me wanted to try harder this time. Finally I totally switched to Vim as my main text editor.</description>
-    </item>
-    
-    <item>
-      <title>Inspiration videos from Steve Jobs</title>
-      <link>http://khoapham.me/blog/inspiration-video-from-steve-jobs/</link>
-      <pubDate>Thu, 04 Jul 2013 00:00:00 +0000</pubDate>
-      
-      <guid>http://khoapham.me/blog/inspiration-video-from-steve-jobs/</guid>
-      <description>  
- </description>
     </item>
     
     <item>
@@ -102,7 +60,7 @@ Khoa</description>
       <pubDate>Fri, 17 May 2013 00:06:51 -0800</pubDate>
       
       <guid>http://khoapham.me/blog/if/</guid>
-      <description>&lt;p&gt;When it comes to my favority poem, &amp;ldquo;If - Rudyard Kipling&amp;rdquo; is definitely the one.&lt;br /&gt;
+      <description>&lt;p&gt;When it comes to my favorite poem, &amp;ldquo;If - Rudyard Kipling&amp;rdquo; is definitely the one.&lt;br /&gt;
 It simply reminds me how to be a man, and a good person.
 &lt;/p&gt;</description>
     </item>

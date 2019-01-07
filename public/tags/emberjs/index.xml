@@ -27,16 +27,6 @@ frontend.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Deploy Ember App on Github Pages</title>
-      <link>http://khoapham.me/blog/deploy-ember-app-on-github-pages/</link>
-      <pubDate>Mon, 25 Apr 2016 15:46:17 -0700</pubDate>
-      
-      <guid>http://khoapham.me/blog/deploy-ember-app-on-github-pages/</guid>
-      <description>&lt;p&gt;Github pages is ideal for hosting static websites. Especially if you&amp;rsquo;re developing a open source project, and want to have a simple website for it.
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Meta Tags Generator</title>
       <link>http://khoapham.me/blog/meta-tags-generator/</link>
       <pubDate>Sun, 24 Apr 2016 13:11:54 -0700</pubDate>
@@ -46,25 +36,6 @@ frontend.&lt;/p&gt;</description>
 
 &lt;p&gt;Meta tags are important because they help search engine to crawl your website properly, and make your website display correctly when sharing on social networks such as Facebook, Twitter, and Google Plus. This is why I created a simple tool to generate these standard meta tags &amp;amp; social tags.
 &lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Global Notification Using Ember Initializer and Service</title>
-      <link>http://khoapham.me/blog/global-notification-using-ember-initializer-and-service/</link>
-      <pubDate>Tue, 12 Apr 2016 11:18:20 -0700</pubDate>
-      
-      <guid>http://khoapham.me/blog/global-notification-using-ember-initializer-and-service/</guid>
-      <description>When developing Ember app, you may want to have a singleton to handle global state such as global notification, or error handling. This doesn&amp;rsquo;t fall into Route, Controller, or Component. Ember offers an easy way to manage this using Service and Initializers.
-Create a service to hold notification data //app/services/global-notification.js import Ember from &#39;ember&#39;; export default Ember.Service.extend({ notification: null, init() { this.set(&#39;notification&#39;, null); } });  Create an initializer to inject global notification service in application This allows us to use GlobalNotification service in route, and component.</description>
-    </item>
-    
-    <item>
-      <title>What Missing at Emberconf 2016</title>
-      <link>http://khoapham.me/blog/what-missing-at-emberconf-2016/</link>
-      <pubDate>Sat, 02 Apr 2016 15:46:04 -0200</pubDate>
-      
-      <guid>http://khoapham.me/blog/what-missing-at-emberconf-2016/</guid>
-      <description>&lt;p&gt;EmberConf 2016 was really a great conference.  There were about 950 attendees this year, and the conference was very well-organized.&lt;/p&gt;</description>
     </item>
     
   </channel>

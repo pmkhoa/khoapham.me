@@ -1,0 +1,41 @@
+.Page-about .about-inner-content {
+  margin-bottom: 40px;
+  padding: 0 15px; 
+}
+.Page-about #home-container h2 {
+  margin-bottom: 80px; 
+}
+
+.inner-header {
+  padding: 25px 15px !important;
+}
+#logo {
+  border: 0;
+  font-size: 2.15em;
+}
+.header-nav {
+  padding: 0;
+  margin: 0;
+}
+.nav-item {
+  display: inline-block;
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+
+.footer-copyright {
+  font-size: 1em;
+  margin-top: 80px;
+  padding: 5px 0;
+}
+
+.Article-summary {
+  transition: all 0.3s ease;
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+  padding: 30px 15px 20px 15px;
+}
+
+.page__about {
+  min-height: 60vh;
+  padding: 0 15px;
+}

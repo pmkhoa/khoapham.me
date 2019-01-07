@@ -6,39 +6,10 @@
     <description>Recent content in Javascript on Khoa Pham</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 May 2016 22:31:31 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 23 Dec 2015 12:00:31 -0800</lastBuildDate>
     
 	<atom:link href="http://khoapham.me/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Webpack Starter - Use ES6 Today</title>
-      <link>http://khoapham.me/blog/webpack-starter/</link>
-      <pubDate>Tue, 03 May 2016 22:31:31 -0700</pubDate>
-      
-      <guid>http://khoapham.me/blog/webpack-starter/</guid>
-      <description>Back in early 2015, when I started writing Javascript in ES6; it was not easy to get everything running smoothly at that time. Today some developers are still not sure where to get started using ES6 even though it&amp;rsquo;s widely adopted by Javascript community. I spent an evening writing a simple Webpack Boilerplate to help new developers to use it for their new projects.
-What does this minimalist boilerplate include?</description>
-    </item>
-    
-    <item>
-      <title>Global Notification Using Ember Initializer and Service</title>
-      <link>http://khoapham.me/blog/global-notification-using-ember-initializer-and-service/</link>
-      <pubDate>Tue, 12 Apr 2016 11:18:20 -0700</pubDate>
-      
-      <guid>http://khoapham.me/blog/global-notification-using-ember-initializer-and-service/</guid>
-      <description>When developing Ember app, you may want to have a singleton to handle global state such as global notification, or error handling. This doesn&amp;rsquo;t fall into Route, Controller, or Component. Ember offers an easy way to manage this using Service and Initializers.
-Create a service to hold notification data //app/services/global-notification.js import Ember from &#39;ember&#39;; export default Ember.Service.extend({ notification: null, init() { this.set(&#39;notification&#39;, null); } });  Create an initializer to inject global notification service in application This allows us to use GlobalNotification service in route, and component.</description>
-    </item>
-    
-    <item>
-      <title>What Missing at Emberconf 2016</title>
-      <link>http://khoapham.me/blog/what-missing-at-emberconf-2016/</link>
-      <pubDate>Sat, 02 Apr 2016 15:46:04 -0200</pubDate>
-      
-      <guid>http://khoapham.me/blog/what-missing-at-emberconf-2016/</guid>
-      <description>&lt;p&gt;EmberConf 2016 was really a great conference.  There were about 950 attendees this year, and the conference was very well-organized.&lt;/p&gt;</description>
-    </item>
     
     <item>
       <title>Rickshaw Chart Hovering Multiple Values</title>
@@ -55,27 +26,6 @@ extension from D3, so you can get greatness from both of them.
     </item>
     
     <item>
-      <title>ES6 Review Part 2</title>
-      <link>http://khoapham.me/blog/es6-review-part-2/</link>
-      <pubDate>Mon, 20 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://khoapham.me/blog/es6-review-part-2/</guid>
-      <description>This is a second review post for new ES6 features that I&amp;rsquo;d love to share. You can find the first review here ES6 Review Part 1
-Arrows I have been using arrow (-&amp;gt;) and fat-arrow (=&amp;gt;) key in Coffeescript for while, and I was happy when ES6 would support arrow key (=&amp;gt;) as a short-hand of function keyword. Of course, if you’re familiar with arrow keys in Coffeescript, this feature will be similar.</description>
-    </item>
-    
-    <item>
-      <title>ES6 Review Part 1</title>
-      <link>http://khoapham.me/blog/es6-review-part-1/</link>
-      <pubDate>Tue, 03 Mar 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://khoapham.me/blog/es6-review-part-1/</guid>
-      <description>ECMAScript 6 (ES6) is the upcoming version of ECMACScript standard which is supposed to be ready soon. There are number of significant changes in this new standard version of Javascript. So far I can tell, this is indeed the future of Javascript, and I love it.
-In this short blog, I use ES6 to demonstrate some new features of ES6 by writing the linked list data structure.
- Classes ES6 finally allows you to declare your object using class keyword.</description>
-    </item>
-    
-    <item>
       <title>MenuOnScroll - jQuery Plugin</title>
       <link>http://khoapham.me/blog/menuonscroll-jquery-plugin/</link>
       <pubDate>Tue, 25 Nov 2014 00:00:00 +0000</pubDate>
@@ -85,17 +35,6 @@ In this short blog, I use ES6 to demonstrate some new features of ES6 by writing
 navigation when you scroll. This functionality is extremely common on the web,
 especially for the single page website. 
 Since everyone just keeps build the similar thing over and over again, I think it&amp;rsquo;s better to create a simple plugin that will help to save our time.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Create App With Meteor</title>
-      <link>http://khoapham.me/blog/create-app-with-meteor/</link>
-      <pubDate>Wed, 16 Oct 2013 00:00:00 +0000</pubDate>
-      
-      <guid>http://khoapham.me/blog/create-app-with-meteor/</guid>
-      <description>&lt;p&gt;When I started to build the DearJJAbrams.com site, I came across a very simple functionality which was the realtime counter. This realtime counter worked as follow, when the user submitted their email, the counter would increase 1. However, this counter had to automatically update and synchronize with the server whenever anyone around the world submit their email, in other words, I had to create real time app with Meteor.
-
-At this point, things were getting little more complicated. The big question was how could the browser know when the database was updated in order to get synchronized? But, I was lucky to found out that &lt;a href=&#34;http://www.meteor.com&#34;&gt;Meteor&lt;/a&gt; was a perfect tool for this simple counter app.&lt;/p&gt;</description>
     </item>
     
   </channel>

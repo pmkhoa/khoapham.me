@@ -1,6 +1,7 @@
 ---
 title: How I switched to vim in 2 weeks 
 date: 2014-10-29 
+draft: true
 tags: [Vim, Motivation]
 ---
 

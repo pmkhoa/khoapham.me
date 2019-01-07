@@ -1,6 +1,6 @@
 ---
 date: 2016-04-25T15:46:17-07:00
-draft: false
+draft: true
 title: Deploy Ember App on Github Pages
 tags: [EmberJS, Devops]
 ---

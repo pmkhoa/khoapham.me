@@ -1,6 +1,7 @@
 ---
 title: Middleman Localization
 date: 2013-06-05
+draft: true
 tags: [Web Development, Middleman]
 ---
 
