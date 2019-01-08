@@ -19,11 +19,7 @@
       <guid>http://khoapham.me/blog/full-stack-development-with-ember-and-golang/</guid>
       <description>&lt;p&gt;One of my personal 2016 resolution was learning Go, and get familiar with
 writing restful API using Go. After couple of months learning Go, I started a
-simple application that use Go, and Ember to develop a Todo app.
-
-Yes, you read it right, I&amp;rsquo;m also creating another Todo app. Yet this one is different from the
-other you have seen because it&amp;rsquo;s built with Go for backend api, and Ember for
-frontend.&lt;/p&gt;</description>
+simple application that use Go, and Ember to develop a Todo app.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -34,8 +30,7 @@ frontend.&lt;/p&gt;</description>
       <guid>http://khoapham.me/blog/meta-tags-generator/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://pmkhoa.github.io/meta-tags-generator/&#34;&gt;&lt;img src=&#34;http://khoapham.me/img/meta-tags-generator.png&#34; alt=&#34;Meta Tags Generator&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Meta tags are important because they help search engine to crawl your website properly, and make your website display correctly when sharing on social networks such as Facebook, Twitter, and Google Plus. This is why I created a simple tool to generate these standard meta tags &amp;amp; social tags.
-&lt;/p&gt;</description>
+&lt;p&gt;Meta tags are important because they help search engine to crawl your website properly, and make your website display correctly when sharing on social networks such as Facebook, Twitter, and Google Plus. This is why I created a simple tool to generate these standard meta tags &amp;amp; social tags.&lt;/p&gt;</description>
     </item>
     
   </channel>

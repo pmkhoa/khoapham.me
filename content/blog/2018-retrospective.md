@@ -12,46 +12,44 @@ and work.
 # The Good
 
 ## Family
-The whole family went through unexpected events very bravely together. This
-has helped us to love, grow and understand the important of family. I couldn't
-thank enough for my wife devoting herself to give our best to our children.
-She's always patient, gentle and thoughtful. My daughter started kindergarten in
-2018, we were so nervous when taking her to school the first day. It turned out
-parents seem to easily overreact things comparing to children, Sophia coped very
-well with school. She made new friends, learnt ton of new things. It has been
-only 4 months, but she could read some children books by herself and draw and
-make up stories. My son is indeed a mommy boy. For his first day at pre-school,
-he cried almost the whole time. It took him for a month to stop crying. He's
-bright, and can learn things very quickly. It's rare to see my my kids sharing
-and playing together, but when they do, it's such a blessing! My parents-in-law
-have always been willing to help us when we need, I'm so thankful for that. My parents are still living in Vietnam. I miss them very much and wish I can spend more time with them. 
+The whole family went through an unexpected event together very bravely. This
+has helped us to love, grow and understand the important of family. 
+
+- I couldn't thank enough for my wife devoting herself to give our best to the children. She's always patient, gentle and thoughtful. 
+- My daughter started kindergarten in 2018, we were so nervous when taking her to school the first day. It turned out
+    parents seem to easily overreact things comparing to children. She coped very well with school, made new friends, learnt ton of new things. It has been
+    only 4 months, but she could read some children books by herself, draw and
+    make up stories. 
+- My son also started pre-school this year. For his first day at pre-school,
+    he cried almost the whole time. It took him for a month to stop crying. He's
+    bright and can learn things very quickly. 
+- It's such a blessing to see my kids playing together.
 
 
 ## Work
-There are lot of opportunities and challenges at work. I left Cambia
+There has been lot of opportunities and challenges at work. I left Cambia
 (Healthsparq) for over a year working there. I realized that I love working in a
-fast pace start-up environment instead. Which is lead me to join Nike Valiant
-Labs, a hub spot for building startups at Nike. It's been really fun to meet new
-people and working on a excited projects. I join the team as a <b>Senior Application
-Engineering</b> with more focus on the UX, and UI side.
+fast pace start-up environment instead. Therefore, I joint Nike Valiant
+Labs, a hub spot for building innovation technologies at Nike. It's been really fun to meet new
+people and working on excited projects. I join the team as a <b>Senior Application
+Engineering</b> with more focus on the UX and UI.
 I also had great time working with new technologies such as: GraphQL,
 Serverless, AWS Lamda, AWS Elastic Beanstalk, Server side rendering with React,
 Styled Components, Node and Express...
 
 #### Joyn.co
-My first project at the Nike is to help leading the front-end team to build the user experience for
+My first project was to lead the front-end team to build the user experience for
 Joyn.co (https://joyn.co), a community fitness that help instructors can easily setup
-their classes and let students sign up through the platform easily. We developed
+their classes and let people sign up through the application easily. We developed
 the application for 4 months and launched the beta and then pilot in 8 months.
 Unfortunately, we had to pivot into different direction and decided to shutdown
 Joyn for 8 months running it, but we've learnt so much from it. For now we're
 keeping an eye on the online content based for fitness. 
 
 #### Resku
-The other project that I'm helping now is Resku (https://resku.co). We're selling a more affordable
-Nike shoes (from returned or cosmetically flawed shoes.) This has been gaining
-great traction from the market, and I'm excited for its future.
-
+The other project that I'm working now is Resku (https://resku.co), an e-commerce site for selling affordable
+Nike shoes (either returned or cosmetically flawed shoes.) This has been gaining
+great traction from the market and I'm excited for its future.
 
 ## Side Projects
 The work at Nike always kept me busy, but to stay fresh I also enjoyed on
@@ -62,13 +60,14 @@ accomplish their mission.
 Working with the two awesome creative directors in Portland, OR to build an
 unconventional and incredible website for the Last Heavy (https://lastheavy.com)
 brand. We spent endless amount of time to think creatively and fine-tuning the
-experience. I ❤ this site so much.
+experience. I ❤ this site.
 
 #### Non Profit Projects
 Since my daughter and my son joined co-op preschool at
 Oswego Playschool (https://www.oswegoplayschool.com/), I feel really passionate
 with helping non-profit organization to rebrand, develop and rebuild their
-websites. Here are some of it:
+website. Here are some websites that I helped for non-profit org during the
+year: 
 
 - Oswego Playschool: https://www.oswegoplayschool.com/
 - Language Skill Therapy: https://www.languageskillstherapy.org/
@@ -82,22 +81,20 @@ websites. Here are some of it:
 # The Bad
 
 ## Personal
-- I usually cook and eat most of health food for the family; however, I didn't
-really take care of myself as much as I wanted. I didn't do much exercise or
-meditation during the year. 
-- I also keep thinking about changing from night owl to morning person, I blame
-    it for the busy schedule and side projects.
-- I started the investment, but it's so hard to keep emotion from making
-    mistake. I shouldn't let emotion takes control when doing investment.
-- I wasn't very good at letting personal belongings go which I end up collect so
-    many stuffs.
+- I usually cook most of health food for the family; however, I didn't
+    really take care of myself as much as I wanted. I didn't do much exercise or
+    meditation during the year. 
+- I keep thinking of changing from night owl to morning person, but never doing
+    it. (I blame the busy schedule and side projects.)
+- I started the investment, but it's so hard to keep emotion from it.
+- I wasn't very good at letting go old stuffs.
+- I didn't finish books that i bought.
 
 ## Work
 - Got several ideas to work on personal side projects, but I didn't really have
     time or find motivation to work on them.
 - I didn't achieve my goal to learn more about database and containers.
 - I didn't do much pair programming with other team members.
-- I didn't finish books that i bought.
 - I wasn't very good at writing retrospective notes after finishing projects.
 - I didn't contribute to open source projects.
 
@@ -106,16 +103,16 @@ There are several things that I need to improve in this year.
 
 - Start running.
 - Meditation for 30 minutes a day: 15 minutes morning and 15 minutes before bed.
-- Go to sleep early and wake up early. Set goal for 10:00 to sleep.
-- Start minimalism by decluttering things that not bringing any value or
-    happiness to our life.
+- Go to sleep early and wake up early. Set goal for 10:30 to sleep.
+- Start minimalism by de-cluttering things that not bringing joy. 
 - Start saving more (recession, I'm looking at you).
-- Hike more.
+- Spend more time with family.
 - Read more books.
-- Get to know more with people at work, should spend more time at lunch time.
+- Get to know more with people at work.
 - Need to think of investment as long term.
-- Start contributing to favorite open source projects and between the team.
-- Suggesting pair programming at work with other team.
+- Start contributing to favorite open source projects and help create open
+    source projects for the team.
+- Encourage the team to do more pair programming.
 - Write notes after finishing projects.
 - Technologies to invest in 2019: React, NodeJS, Go, Docker,
     Kubernetes, Serverless, and Postgres.

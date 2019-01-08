@@ -21,8 +21,7 @@
 been a big fan of it for over a year now. However, whenever I need to develop a
 quick chart prototype, I use an alternative library called
 &lt;a href=&#34;http://code.shutterstock.com/rickshaw/examples/&#34;&gt;Rickshaw&lt;/a&gt;. It&amp;rsquo;s an
-extension from D3, so you can get greatness from both of them.
-&lt;/p&gt;</description>
+extension from D3, so you can get greatness from both of them.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -33,8 +32,7 @@ extension from D3, so you can get greatness from both of them.
       <guid>http://khoapham.me/blog/menuonscroll-jquery-plugin/</guid>
       <description>&lt;p&gt;Today I just released menuOnScroll - jQuery plugin that automatically updates the menu
 navigation when you scroll. This functionality is extremely common on the web,
-especially for the single page website. 
-Since everyone just keeps build the similar thing over and over again, I think it&amp;rsquo;s better to create a simple plugin that will help to save our time.&lt;/p&gt;</description>
+especially for the single page website.&lt;/p&gt;</description>
     </item>
     
   </channel>

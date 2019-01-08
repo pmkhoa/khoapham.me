@@ -23,9 +23,7 @@ and Centos. The requirements were simple:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Server can serve multiple domains or subdomains.&lt;/li&gt;
 &lt;li&gt;Each domain web folder is stored under different user account.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -35,8 +33,7 @@ and Centos. The requirements were simple:&lt;/p&gt;
       
       <guid>http://khoapham.me/blog/setting-up-amazon-web-services/</guid>
       <description>&lt;p&gt;To setting up Amazon Web Services, the process of setting up an EC2 on Amazon Web Services (AWS) is not complicated, all you need to get a server up and running are Apache, PHP,  MySQL.
-Here are some initial steps that help you get started:
-&lt;/p&gt;</description>
+Here are some initial steps that help you get started:&lt;/p&gt;</description>
     </item>
     
   </channel>

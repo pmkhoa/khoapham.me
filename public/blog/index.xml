@@ -18,7 +18,8 @@
       
       <guid>http://khoapham.me/blog/2018-retrospective/</guid>
       <description>The new year 2019 is just hours away, I decide to take some moment to reflect myself for the last year. 2018 was full of changes and challenges for both family and work.
-The Good Family The whole family went through unexpected events very bravely together. This has helped us to love, grow and understand the important of family. I couldn&amp;rsquo;t thank enough for my wife devoting herself to give our best to our children.</description>
+The Good Family The whole family went through an unexpected event together very bravely. This has helped us to love, grow and understand the important of family.
+ I couldn&amp;rsquo;t thank enough for my wife devoting herself to give our best to the children.</description>
     </item>
     
     <item>
@@ -29,11 +30,7 @@ The Good Family The whole family went through unexpected events very bravely tog
       <guid>http://khoapham.me/blog/full-stack-development-with-ember-and-golang/</guid>
       <description>&lt;p&gt;One of my personal 2016 resolution was learning Go, and get familiar with
 writing restful API using Go. After couple of months learning Go, I started a
-simple application that use Go, and Ember to develop a Todo app.
-
-Yes, you read it right, I&amp;rsquo;m also creating another Todo app. Yet this one is different from the
-other you have seen because it&amp;rsquo;s built with Go for backend api, and Ember for
-frontend.&lt;/p&gt;</description>
+simple application that use Go, and Ember to develop a Todo app.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -44,8 +41,7 @@ frontend.&lt;/p&gt;</description>
       <guid>http://khoapham.me/blog/meta-tags-generator/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://pmkhoa.github.io/meta-tags-generator/&#34;&gt;&lt;img src=&#34;http://khoapham.me/img/meta-tags-generator.png&#34; alt=&#34;Meta Tags Generator&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Meta tags are important because they help search engine to crawl your website properly, and make your website display correctly when sharing on social networks such as Facebook, Twitter, and Google Plus. This is why I created a simple tool to generate these standard meta tags &amp;amp; social tags.
-&lt;/p&gt;</description>
+&lt;p&gt;Meta tags are important because they help search engine to crawl your website properly, and make your website display correctly when sharing on social networks such as Facebook, Twitter, and Google Plus. This is why I created a simple tool to generate these standard meta tags &amp;amp; social tags.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -58,8 +54,7 @@ frontend.&lt;/p&gt;</description>
 been a big fan of it for over a year now. However, whenever I need to develop a
 quick chart prototype, I use an alternative library called
 &lt;a href=&#34;http://code.shutterstock.com/rickshaw/examples/&#34;&gt;Rickshaw&lt;/a&gt;. It&amp;rsquo;s an
-extension from D3, so you can get greatness from both of them.
-&lt;/p&gt;</description>
+extension from D3, so you can get greatness from both of them.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -68,8 +63,8 @@ extension from D3, so you can get greatness from both of them.
       <pubDate>Thu, 03 Dec 2015 23:13:30 -0800</pubDate>
       
       <guid>http://khoapham.me/blog/first-hugo-theme/</guid>
-      <description>When I started to get back to blogging, I felt my website took a little long to compile. As a revolution of redesigning my blog, I want to switch my blog platform to something faster. My blog was previously developed using Middleman, and now it&amp;rsquo;s powered by Hugo, a faster static site generator. I&amp;rsquo;m really pleased with the transition so far.
-I also wrote a simple Hugo theme called Hugo Minimalist, this is just a mimic of my current blog style, which I explained in Minimalist in design.</description>
+      <description>&lt;p&gt;When I started to get back to blogging, I felt my website
+took a little long to compile. As a revolution of redesigning my blog, I want to switch my blog platform to something faster.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -84,9 +79,7 @@ and Centos. The requirements were simple:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Server can serve multiple domains or subdomains.&lt;/li&gt;
 &lt;li&gt;Each domain web folder is stored under different user account.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -97,8 +90,7 @@ and Centos. The requirements were simple:&lt;/p&gt;
       <guid>http://khoapham.me/blog/menuonscroll-jquery-plugin/</guid>
       <description>&lt;p&gt;Today I just released menuOnScroll - jQuery plugin that automatically updates the menu
 navigation when you scroll. This functionality is extremely common on the web,
-especially for the single page website. 
-Since everyone just keeps build the similar thing over and over again, I think it&amp;rsquo;s better to create a simple plugin that will help to save our time.&lt;/p&gt;</description>
+especially for the single page website.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -110,8 +102,7 @@ Since everyone just keeps build the similar thing over and over again, I think i
       <description>&lt;p&gt;I have really enjoyed using Vim for a month now, and I have to admit that I
 love the feeling of learning new things from Vim everyday. Today I would love to
 share some of my favorite Vim Leaders that I found they&amp;rsquo;re extremely helpful. You
-can add these into your .vimrc file, and give it a try.
-&lt;/p&gt;</description>
+can add these into your .vimrc file, and give it a try.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -121,8 +112,7 @@ can add these into your .vimrc file, and give it a try.
       
       <guid>http://khoapham.me/blog/setting-up-amazon-web-services/</guid>
       <description>&lt;p&gt;To setting up Amazon Web Services, the process of setting up an EC2 on Amazon Web Services (AWS) is not complicated, all you need to get a server up and running are Apache, PHP,  MySQL.
-Here are some initial steps that help you get started:
-&lt;/p&gt;</description>
+Here are some initial steps that help you get started:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -131,9 +121,8 @@ Here are some initial steps that help you get started:
       <pubDate>Fri, 17 May 2013 23:12:14 -0800</pubDate>
       
       <guid>http://khoapham.me/blog/learning-to-see/</guid>
-      <description>People asked me why I had a computer science degree but spending most of my time working as user experience developer. Here is the article that hooked me into it: https://ia.net/know-how/learning-to-see. It has changed the way I saw thing since I read it. I highly recommend you read it too.
-Sincerely,
-Khoa</description>
+      <description>&lt;p&gt;People asked me why I had a computer science degree but spending most of my time working as user experience developer.
+Here is the article that hooked me into it:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -143,8 +132,7 @@ Khoa</description>
       
       <guid>http://khoapham.me/blog/if/</guid>
       <description>&lt;p&gt;When it comes to my favorite poem, &amp;ldquo;If - Rudyard Kipling&amp;rdquo; is definitely the one.&lt;br /&gt;
-It simply reminds me how to be a man, and a good person.
-&lt;/p&gt;</description>
+It simply reminds me how to be a man, and a good person.&lt;/p&gt;</description>
     </item>
     
   </channel>
