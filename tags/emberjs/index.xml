@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Emberjs on Khoa Pham</title>
+    <title>EmberJS on Khoa Pham</title>
     <link>http://khoapham.me/tags/emberjs/</link>
-    <description>Recent content in Emberjs on Khoa Pham</description>
+    <description>Recent content in EmberJS on Khoa Pham</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 27 Jun 2016 12:09:16 -0700</lastBuildDate>

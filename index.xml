@@ -1,152 +1,1008 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Khoa Pham</title>
-    <link>http://khoapham.me/</link>
-    <description>Recent content on Khoa Pham</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 31 Dec 2018 13:06:48 -0800</lastBuildDate>
-    
-	<atom:link href="http://khoapham.me/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>2018 Retrospective</title>
-      <link>http://khoapham.me/blog/2018-retrospective/</link>
-      <pubDate>Mon, 31 Dec 2018 13:06:48 -0800</pubDate>
-      
-      <guid>http://khoapham.me/blog/2018-retrospective/</guid>
-      <description>The new year 2019 is just hours away, I decide to take some moment to reflect myself for the last year. 2018 was full of changes and challenges for both family and work.
-The Good Family The whole family went through an unexpected event together very bravely. This has helped us to love, grow and understand the important of family.
- I couldn&amp;rsquo;t thank enough for my wife devoting herself to give our best to the children.</description>
-    </item>
-    
-    <item>
-      <title>Full Stack Development with Ember and Golang</title>
-      <link>http://khoapham.me/blog/full-stack-development-with-ember-and-golang/</link>
-      <pubDate>Mon, 27 Jun 2016 12:09:16 -0700</pubDate>
-      
-      <guid>http://khoapham.me/blog/full-stack-development-with-ember-and-golang/</guid>
-      <description>&lt;p&gt;One of my personal 2016 resolution was learning Go, and get familiar with
-writing restful API using Go. After couple of months learning Go, I started a
-simple application that use Go, and Ember to develop a Todo app.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Meta Tags Generator</title>
-      <link>http://khoapham.me/blog/meta-tags-generator/</link>
-      <pubDate>Sun, 24 Apr 2016 13:11:54 -0700</pubDate>
-      
-      <guid>http://khoapham.me/blog/meta-tags-generator/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://pmkhoa.github.io/meta-tags-generator/&#34;&gt;&lt;img src=&#34;http://khoapham.me/img/meta-tags-generator.png&#34; alt=&#34;Meta Tags Generator&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+    <channel>
+        <title>Khoa Pham </title>
+        <link>http://khoapham.me/</link>
+        <language>en-us</language>
+        <author>Khoa Pham</author>
+        <rights>(C) 2018</rights>
+        <updated>2018-12-31 13:06:48 -0800 PST</updated>
 
-&lt;p&gt;Meta tags are important because they help search engine to crawl your website properly, and make your website display correctly when sharing on social networks such as Facebook, Twitter, and Google Plus. This is why I created a simple tool to generate these standard meta tags &amp;amp; social tags.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Rickshaw Chart Hovering Multiple Values</title>
-      <link>http://khoapham.me/blog/rickshaw-chart-hovering/</link>
-      <pubDate>Wed, 23 Dec 2015 12:00:31 -0800</pubDate>
-      
-      <guid>http://khoapham.me/blog/rickshaw-chart-hovering/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://d3js.org/&#34;&gt;D3&lt;/a&gt; is a great javascript library for creating data visualization chart. I have
+        
+            
+            <item>
+                <title>2018 Retrospective</title>
+                <link>http://khoapham.me/blog/2018-retrospective/</link>
+                <pubDate>Mon, 31 Dec 2018 13:06:48 PST</pubDate>
+                <guid>http://khoapham.me/blog/2018-retrospective/</guid>
+                <description>
+
+&lt;p&gt;The new year 2019 is just hours away, I decide to take some moment to reflect
+myself for the last year. 2018 was full of changes and challenges for both family
+and work.&lt;/p&gt;
+
+&lt;h1 id=&#34;the-good&#34;&gt;The Good&lt;/h1&gt;
+
+&lt;h2 id=&#34;family&#34;&gt;Family&lt;/h2&gt;
+
+&lt;p&gt;The whole family went through an unexpected event together very bravely. This
+has helped us to love, grow and understand the important of family.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I couldn&amp;rsquo;t thank enough for my wife devoting herself to give our best to the children. She&amp;rsquo;s always patient, gentle and thoughtful.&lt;/li&gt;
+&lt;li&gt;My daughter started kindergarten in 2018, we were so nervous when taking her to school the first day. It turned out
+parents seem to easily overreact things comparing to children. She coped very well with school, made new friends, learnt ton of new things. It has been
+only 4 months, but she could read some children books by herself, draw and
+make up stories.&lt;/li&gt;
+&lt;li&gt;My son also started pre-school this year. For his first day at pre-school,
+he cried almost the whole time. It took him for a month to stop crying. He&amp;rsquo;s
+bright and can learn things very quickly.&lt;/li&gt;
+&lt;li&gt;It&amp;rsquo;s such a blessing to see my kids playing together.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;work&#34;&gt;Work&lt;/h2&gt;
+
+&lt;p&gt;There has been lot of opportunities and challenges at work. I left Cambia
+(Healthsparq) for over a year working there. I realized that I love working in a
+fast pace start-up environment instead. Therefore, I joint Nike Valiant
+Labs, a hub spot for building innovation technologies at Nike. It&amp;rsquo;s been really fun to meet new
+people and working on excited projects. I join the team as a &lt;b&gt;Senior Application
+Engineering&lt;/b&gt; with more focus on the UX and UI.
+I also had great time working with new technologies such as: GraphQL,
+Serverless, AWS Lamda, AWS Elastic Beanstalk, Server side rendering with React,
+Styled Components, Node and Express&amp;hellip;&lt;/p&gt;
+
+&lt;h4 id=&#34;joyn-co&#34;&gt;Joyn.co&lt;/h4&gt;
+
+&lt;p&gt;My first project was to lead the front-end team to build the user experience for
+Joyn.co (&lt;a href=&#34;https://joyn.co&#34;&gt;https://joyn.co&lt;/a&gt;), a community fitness that help instructors can easily setup
+their classes and let people sign up through the application easily. We developed
+the application for 4 months and launched the beta and then pilot in 8 months.
+Unfortunately, we had to pivot into different direction and decided to shutdown
+Joyn for 8 months running it, but we&amp;rsquo;ve learnt so much from it. For now we&amp;rsquo;re
+keeping an eye on the online content based for fitness.&lt;/p&gt;
+
+&lt;h4 id=&#34;resku&#34;&gt;Resku&lt;/h4&gt;
+
+&lt;p&gt;The other project that I&amp;rsquo;m working now is Resku (&lt;a href=&#34;https://resku.co&#34;&gt;https://resku.co&lt;/a&gt;), an e-commerce site for selling affordable
+Nike shoes (either returned or cosmetically flawed shoes.) This has been gaining
+great traction from the market and I&amp;rsquo;m excited for its future.&lt;/p&gt;
+
+&lt;h2 id=&#34;side-projects&#34;&gt;Side Projects&lt;/h2&gt;
+
+&lt;p&gt;The work at Nike always kept me busy, but to stay fresh I also enjoyed on
+working on side projects with friends and helping local non-profit businesses to
+accomplish their mission.&lt;/p&gt;
+
+&lt;h4 id=&#34;last-heavy&#34;&gt;Last Heavy&lt;/h4&gt;
+
+&lt;p&gt;Working with the two awesome creative directors in Portland, OR to build an
+unconventional and incredible website for the Last Heavy (&lt;a href=&#34;https://lastheavy.com&#34;&gt;https://lastheavy.com&lt;/a&gt;)
+brand. We spent endless amount of time to think creatively and fine-tuning the
+experience. I ❤ this site.&lt;/p&gt;
+
+&lt;h4 id=&#34;non-profit-projects&#34;&gt;Non Profit Projects&lt;/h4&gt;
+
+&lt;p&gt;Since my daughter and my son joined co-op preschool at
+Oswego Playschool (&lt;a href=&#34;https://www.oswegoplayschool.com/&#34;&gt;https://www.oswegoplayschool.com/&lt;/a&gt;), I feel really passionate
+with helping non-profit organization to rebrand, develop and rebuild their
+website. Here are some websites that I helped for non-profit org during the
+year:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Oswego Playschool: &lt;a href=&#34;https://www.oswegoplayschool.com/&#34;&gt;https://www.oswegoplayschool.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Language Skill Therapy: &lt;a href=&#34;https://www.languageskillstherapy.org/&#34;&gt;https://www.languageskillstherapy.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Language and Literacy Fund: &lt;a href=&#34;https://www.languageandliteracyfund.org/&#34;&gt;https://www.languageandliteracyfund.org/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;other-projects-that-worth-mentioning&#34;&gt;Other projects that worth mentioning.&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.sammedical.com/&#34;&gt;https://www.sammedical.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.lytics.com/&#34;&gt;https://www.lytics.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.workspot.com/&#34;&gt;https://www.workspot.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;the-bad&#34;&gt;The Bad&lt;/h1&gt;
+
+&lt;h2 id=&#34;personal&#34;&gt;Personal&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I usually cook most of health food for the family; however, I didn&amp;rsquo;t
+really take care of myself as much as I wanted. I didn&amp;rsquo;t do much exercise or
+meditation during the year.&lt;/li&gt;
+&lt;li&gt;I keep thinking of changing from night owl to morning person, but never doing
+it. (I blame the busy schedule and side projects.)&lt;/li&gt;
+&lt;li&gt;I started the investment, but it&amp;rsquo;s so hard to keep emotion from it.&lt;/li&gt;
+&lt;li&gt;I wasn&amp;rsquo;t very good at letting go old stuffs.&lt;/li&gt;
+&lt;li&gt;I didn&amp;rsquo;t finish books that i bought.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;work-1&#34;&gt;Work&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Got several ideas to work on personal side projects, but I didn&amp;rsquo;t really have
+time or find motivation to work on them.&lt;/li&gt;
+&lt;li&gt;I didn&amp;rsquo;t achieve my goal to learn more about database and containers.&lt;/li&gt;
+&lt;li&gt;I didn&amp;rsquo;t do much pair programming with other team members.&lt;/li&gt;
+&lt;li&gt;I wasn&amp;rsquo;t very good at writing retrospective notes after finishing projects.&lt;/li&gt;
+&lt;li&gt;I didn&amp;rsquo;t contribute to open source projects.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;the-improvement&#34;&gt;The Improvement&lt;/h1&gt;
+
+&lt;p&gt;There are several things that I need to improve in this year.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Start running.&lt;/li&gt;
+&lt;li&gt;Meditation for 30 minutes a day: 15 minutes morning and 15 minutes before bed.&lt;/li&gt;
+&lt;li&gt;Go to sleep early and wake up early. Set goal for 10:30 to sleep.&lt;/li&gt;
+&lt;li&gt;Start minimalism by de-cluttering things that not bringing joy.&lt;/li&gt;
+&lt;li&gt;Start saving more (recession, I&amp;rsquo;m looking at you).&lt;/li&gt;
+&lt;li&gt;Spend more time with family.&lt;/li&gt;
+&lt;li&gt;Read more books.&lt;/li&gt;
+&lt;li&gt;Get to know more with people at work.&lt;/li&gt;
+&lt;li&gt;Need to think of investment as long term.&lt;/li&gt;
+&lt;li&gt;Start contributing to favorite open source projects and help create open
+source projects for the team.&lt;/li&gt;
+&lt;li&gt;Encourage the team to do more pair programming.&lt;/li&gt;
+&lt;li&gt;Write notes after finishing projects.&lt;/li&gt;
+&lt;li&gt;Technologies to invest in 2019: React, NodeJS, Go, Docker,
+Kubernetes, Serverless, and Postgres.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+            </item>
+            
+        
+            
+            <item>
+                <title>Full Stack Development with Ember and Golang</title>
+                <link>http://khoapham.me/blog/full-stack-development-with-ember-and-golang/</link>
+                <pubDate>Mon, 27 Jun 2016 12:09:16 PDT</pubDate>
+                <guid>http://khoapham.me/blog/full-stack-development-with-ember-and-golang/</guid>
+                <description>&lt;p&gt;One of my personal 2016 resolution was learning Go, and get familiar with
+writing restful API using Go. After couple of months learning Go, I started a
+simple application that use Go, and Ember to develop a Todo app.&lt;/p&gt;
+
+&lt;p&gt;Yes, you read it right, I&amp;rsquo;m also creating another Todo app. Yet this one is different from the
+other you have seen because it&amp;rsquo;s built with Go for backend api, and Ember for
+frontend.&lt;/p&gt;
+
+&lt;p&gt;The source code can be found here:
+&lt;a href=&#34;https://github.com/pmkhoa/restful-api-go-and-ember&#34;&gt;https://github.com/pmkhoa/restful-api-go-and-ember&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;backend-overview&#34;&gt;Backend overview&lt;/h2&gt;
+
+&lt;h3 id=&#34;model&#34;&gt;Model&lt;/h3&gt;
+
+&lt;p&gt;Todo model includes &lt;code&gt;Id&lt;/code&gt;, &lt;code&gt;Name&lt;/code&gt;, &lt;code&gt;Completed&lt;/code&gt;, &lt;code&gt;Due&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+package main
+import &amp;quot;time&amp;quot;
+type Todo struct {
+    Id          string `json:&amp;quot;id&amp;quot;`
+    Name        string `json:&amp;quot;name&amp;quot;`
+    Completed   bool `json:&amp;quot;completed&amp;quot;`
+    Due         time.Time `json:&amp;quot;due&amp;quot;`
+}
+type Todos []Todo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We create type Todo, and Todos to hold our Todo object, and Todo list&lt;/p&gt;
+
+&lt;h3 id=&#34;server&#34;&gt;Server&lt;/h3&gt;
+
+&lt;p&gt;Bootstrap http server, response to request made from the client.
+For our server code, we use &lt;code&gt;httprouter&lt;/code&gt; to for our api handler, and enable CORS
+so that our frontend app can talk to the server when they&amp;rsquo;re on different
+domains.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+package main
+import (
+    ... // import our dependencies here
+)
+func main() {
+    router := httprouter.New()
+    router.GET(&amp;quot;/todos&amp;quot;, TodosIndex)
+    router.GET(&amp;quot;/todos/:todoId&amp;quot;, ShowTodo)
+    // More routes are defined similarly
+
+    // Enable the CORS
+    c := cors.New(cors.Options{
+        AllowedOrigins: []string{&amp;quot;*&amp;quot;},
+        AllowedMethods: []string{&amp;quot;GET&amp;quot;, &amp;quot;POST&amp;quot;, &amp;quot;DELETE&amp;quot;, &amp;quot;PUT&amp;quot;, &amp;quot;PATCH&amp;quot;, &amp;quot;OPTIONS&amp;quot;}
+    })
+}
+
+func TodosIndex(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
+    w.Header().Set(&amp;quot;Content-Type&amp;quot;, &amp;quot;application/json; charset=UTF-8&amp;quot;)
+    w.WriteHeader(http.StatusOK)
+    err := json.NewEncoder(w).Encode(todos)
+    if err != nil {
+        panic(err)
+    }
+}
+
+func ShowTodo(w http.ResponseWriter, r *http.Request, params httprouter.Params) {
+    todoId := params.ByName(&amp;quot;todoId&amp;quot;)
+    todo := RepoFindTodo(todoId)
+    w.Header().Set(&amp;quot;Content-Type&amp;quot;, &amp;quot;application/json; charset=UTF-8&amp;quot;)
+    w.WriteHeader(http.StatusOK)
+    err := json.NewEncoder(w).Encode(todo)
+    if err != nil {
+        panic(err)
+    }
+}
+// more handlers can be defined with other httprouter 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;data-fixture&#34;&gt;Data fixture&lt;/h3&gt;
+
+&lt;p&gt;Definining Data fixture for &lt;code&gt;findTodo&lt;/code&gt;, &lt;code&gt;updateTodo&lt;/code&gt;, &lt;code&gt;deleteTodo&lt;/code&gt;, &lt;code&gt;createTodo&lt;/code&gt;.
+I&amp;rsquo;m using a simple data fixture to handle model operations. There will be another
+blog post that integrate this application with Postgres for data persistent.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// repo.go
+package main
+import (
+    &amp;quot;fmt&amp;quot;
+    &amp;quot;strconv&amp;quot;
+)
+var currentId int // keep track of our current todo
+var todos Todos
+func init() {
+    // When initialize the app, we will create two sample todos
+    RepoCreateTodo(Todo{Name: &amp;quot;Test Todo 1&amp;quot;, Completed: false})
+    RepoCreateTodo(Todo{Name: &amp;quot;Test Todo 2&amp;quot;, Complete: false})
+}
+func RepoCreateTodo(t Todo) Todo {
+    currentId += 1
+    t.Id = strconv.Itoa(currentId)
+    todos = append(todos, t)
+    return t
+}
+func RepoFindTodo(id string) Todo {
+    for _, todo := range todos {
+        if todo.Id == id {
+            return todo
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;frontend-overview&#34;&gt;Frontend overview&lt;/h2&gt;
+
+&lt;p&gt;Simple Ember app that lists all todos, and all user to create todo.
+If you&amp;rsquo;re interested in learning Ember for building frontend. Feel free to
+check out the github repo for this.&lt;/p&gt;
+
+&lt;h2 id=&#34;future-development&#34;&gt;Future development&lt;/h2&gt;
+
+&lt;p&gt;Eventhough this was a very simple app, I have learnt a lot from building it from
+the ground up. Using Go for backend API is quite astonishing and simple, I think
+it&amp;rsquo;s a great choice for anyone who is looking for a fast, simple way to build
+API. There are a lot of things the can improve from this app.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Write README&lt;/li&gt;
+&lt;li&gt;Better handling errors for both backend &amp;amp; frontend&lt;/li&gt;
+&lt;li&gt;Write integration test &amp;amp; unit tests&lt;/li&gt;
+&lt;li&gt;Use Postgres for data persistent.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you&amp;rsquo;re interested in all the source code, feel free to check it out here:
+&lt;a href=&#34;https://github.com/pmkhoa/restful-api-go-and-ember&#34;&gt;https://github.com/pmkhoa/restful-api-go-and-ember&lt;/a&gt;&lt;/p&gt;</description>
+            </item>
+            
+        
+            
+            <item>
+                <title>Meta Tags Generator</title>
+                <link>http://khoapham.me/blog/meta-tags-generator/</link>
+                <pubDate>Sun, 24 Apr 2016 13:11:54 PDT</pubDate>
+                <guid>http://khoapham.me/blog/meta-tags-generator/</guid>
+                <description>&lt;p&gt;&lt;a href=&#34;http://pmkhoa.github.io/meta-tags-generator/&#34;&gt;&lt;img src=&#34;http://khoapham.me/img/meta-tags-generator.png&#34; alt=&#34;Meta Tags Generator&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Meta tags are important because they help search engine to crawl your website properly, and make your website display correctly when sharing on social networks such as Facebook, Twitter, and Google Plus. This is why I created a simple tool to generate these standard meta tags &amp;amp; social tags.&lt;/p&gt;
+
+&lt;p&gt;Here is the link to that tool:
+&lt;a href=&#34;http://pmkhoa.github.io/meta-tags-generator/&#34;&gt;http://pmkhoa.github.io/meta-tags-generator/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The app is built using EmberJS. If you like it or want to contribute, feel free
+to fork it from here:
+&lt;a href=&#34;https://github.com/pmkhoa/meta-tags-generator&#34;&gt;https://github.com/pmkhoa/meta-tags-generator&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Happy developing &amp;amp; happy sharing!&lt;/p&gt;</description>
+            </item>
+            
+        
+            
+            <item>
+                <title>Rickshaw Chart Hovering Multiple Values</title>
+                <link>http://khoapham.me/blog/rickshaw-chart-hovering/</link>
+                <pubDate>Wed, 23 Dec 2015 12:00:31 PST</pubDate>
+                <guid>http://khoapham.me/blog/rickshaw-chart-hovering/</guid>
+                <description>&lt;p&gt;&lt;a href=&#34;http://d3js.org/&#34;&gt;D3&lt;/a&gt; is a great javascript library for creating data visualization chart. I have
 been a big fan of it for over a year now. However, whenever I need to develop a
 quick chart prototype, I use an alternative library called
 &lt;a href=&#34;http://code.shutterstock.com/rickshaw/examples/&#34;&gt;Rickshaw&lt;/a&gt;. It&amp;rsquo;s an
-extension from D3, so you can get greatness from both of them.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>My First Hugo Theme</title>
-      <link>http://khoapham.me/blog/first-hugo-theme/</link>
-      <pubDate>Thu, 03 Dec 2015 23:13:30 -0800</pubDate>
-      
-      <guid>http://khoapham.me/blog/first-hugo-theme/</guid>
-      <description>&lt;p&gt;When I started to get back to blogging, I felt my website
-took a little long to compile. As a revolution of redesigning my blog, I want to switch my blog platform to something faster.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Set up Nginx with Centos</title>
-      <link>http://khoapham.me/blog/set-up-nginx-with-centos/</link>
-      <pubDate>Wed, 18 Nov 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://khoapham.me/blog/set-up-nginx-with-centos/</guid>
-      <description>&lt;p&gt;Recently I had a chance to have my hand on setting up a web server using Nginx
+extension from D3, so you can get greatness from both of them.&lt;/p&gt;
+
+&lt;p&gt;One thing that was challenging me recently that I needed to create a chart
+when user hovered on it, it would reveal all y-values at the cursor position.&lt;/p&gt;
+
+&lt;div id=&#34;chart_container&#34;&gt;
+    &lt;div id=&#34;chart&#34;&gt;&lt;/div&gt;
+    &lt;div id=&#34;legend&#34;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+#chart_container {
+    background: rgba(0, 0, 0, 0.05);
+    max-width: 100%;
+}
+.swatch {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 8px 0 0;
+}
+.label {
+    display: inline-block;
+}
+#legend {
+    text-align: center;
+}
+.rickshaw_graph .detail {
+    background: none;
+}
+.line-wrapper {
+    opacity: 1;
+    background: #f3f7f8;
+    padding: 7px 10px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    white-space: nowrap;
+    left: 10px;
+    position: absolute;
+    min-width: 300px;
+}
+.line-wrapper .line {
+    position: relative;
+    margin-top: 3px;
+}
+.line-wrapper .swatch {
+    border-radius: 10px;
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 3px;
+}
+.line-wrapper .label {
+    font-weight: 600;
+    padding-left: 18px;
+}
+.line-wrapper .label   span {
+    font-weight: 400;
+}
+.line-wrapper .label .metric-legend-label {
+    margin-right: 5px;
+    padding-right: 5px;
+}
+.line-wrapper .label .metric-legend-label .text {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+&lt;/style&gt;
+
+&lt;p&gt;&lt;link rel=&#34;stylesheet&#34; href=&#34;http://khoapham.me/blog-vendor/rickshaw.min.css&#34;&gt;
+&lt;script src=&#34;http://khoapham.me/blog-vendor/d3.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;http://khoapham.me/blog-vendor/rickshaw.min.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;script type=&#34;text/javascript&#34;&gt;
+
+    // set up our data series with 50 random data points
+
+    var seriesData = [ [], [], [] ];
+    var random = new Rickshaw.Fixtures.RandomData(150);
+
+    for (var i = 0; i &lt; 150; i++) {
+        random.addData(seriesData);
+    }
+
+    // instantiate our graph!
+
+    var graph = new Rickshaw.Graph( {
+        element: document.getElementById(&#34;chart&#34;),
+        width: Math.max(document.getElementById(&#34;chart&#34;).offsetWidth, 200),
+        height: 300,
+        renderer: &#39;line&#39;,
+        series: [
+            {
+                color: &#34;#c05020&#34;,
+                data: seriesData[0],
+                name: &#39;New York&#39;
+            }, {
+                color: &#34;#30c020&#34;,
+                data: seriesData[1],
+                name: &#39;London&#39;
+            }, {
+                color: &#34;#6060c0&#34;,
+                data: seriesData[2],
+                name: &#39;Tokyo&#39;
+            }
+        ]
+    } );
+
+    graph.render();
+
+    var Hover = Rickshaw.Class.create(Rickshaw.Graph.HoverDetail, {
+
+        render: function(args) {
+
+            var lines = document.createElement(&#39;div&#39;);
+            lines.className = &#39;line-wrapper&#39;;
+            lines.innerHTML = args.formattedXValue;
+            lines.style.top = args.mouseY + &#34;px&#34;;
+            this.element.appendChild(lines);
+            var boundingRect = this.element.parentNode.getBoundingClientRect();
+            if ( args.mouseX &gt; ( boundingRect.width * 2 / 3 ) ) {
+                this.element.classList.remove(&#39;left&#39;);
+                this.element.classList.add(&#39;right&#39;);
+            } else {
+                this.element.classList.remove(&#39;right&#39;);
+                this.element.classList.add(&#39;left&#39;);
+            }
+
+            args.detail.sort(function(a, b) { return a.order - b.order }).forEach( function(d) {
+
+                var line = document.createElement(&#39;div&#39;);
+                line.className = &#39;line&#39;;
+
+                var swatch = document.createElement(&#39;div&#39;);
+                swatch.className = &#39;swatch&#39;;
+                swatch.style.backgroundColor = d.series.color;
+
+                var label = document.createElement(&#39;div&#39;);
+                label.className = &#39;label&#39;;
+                label.innerHTML = d.name + &#34;: &#34;+ d.formattedYValue;
+
+                line.appendChild(swatch);
+                line.appendChild(label);
+
+                lines.appendChild(line);
+
+                var dot = document.createElement(&#39;div&#39;);
+                dot.className = &#39;dot&#39;;
+                dot.style.top = graph.y(d.value.y0 + d.value.y) + &#39;px&#39;;
+                dot.style.borderColor = d.series.color;
+
+                this.element.appendChild(dot);
+
+                dot.className = &#39;dot active&#39;;
+
+                // Assume left alignment until the element has been displayed and
+                // bounding box calculations are possible.
+
+                this.show();
+
+            }, this );
+        }
+    });
+
+    var hover = new Hover( { graph: graph } ); 
+
+&lt;/script&gt;
+
+&lt;p&gt;The source code for this was simple, as seen below:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div id=&amp;quot;chart_container&amp;quot;&amp;gt;
+    &amp;lt;div id=&amp;quot;chart&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;!--break--&gt;
+
+&lt;pre&gt;&lt;code&gt;// set up our data series with 50 random data points
+
+var seriesData = [ [], [], [] ];
+var random = new Rickshaw.Fixtures.RandomData(150);
+
+for (var i = 0; i &amp;lt; 150; i++) {
+    random.addData(seriesData);
+}
+
+// instantiate our graph!
+
+var graph = new Rickshaw.Graph( {
+    element: document.getElementById(&amp;quot;chart&amp;quot;),
+    width: 600,
+    height: 300,
+    renderer: &#39;line&#39;,
+    series: [
+        {
+            color: &amp;quot;#c05020&amp;quot;,
+            data: seriesData[0],
+            name: &#39;New York&#39;
+        }, {
+            color: &amp;quot;#30c020&amp;quot;,
+            data: seriesData[1],
+            name: &#39;London&#39;
+        }, {
+            color: &amp;quot;#6060c0&amp;quot;,
+            data: seriesData[2],
+            name: &#39;Tokyo&#39;
+        }
+    ]
+} );
+
+graph.render();
+var Hover = Rickshaw.Class.create(Rickshaw.Graph.HoverDetail, {
+    render: function(args) {
+        var lines = document.createElement(&#39;div&#39;);
+        lines.className = &#39;line-wrapper&#39;;
+        lines.innerHTML = args.formattedXValue;
+        lines.style.top = args.mouseY + &amp;quot;px&amp;quot;;
+        this.element.appendChild(lines);
+        var boundingRect = this.element.parentNode.getBoundingClientRect();
+        if ( args.mouseX &amp;gt; ( boundingRect.width * 2 / 3 ) ) {
+            this.element.classList.remove(&#39;left&#39;);
+            this.element.classList.add(&#39;right&#39;);
+        } else {
+            this.element.classList.remove(&#39;right&#39;);
+            this.element.classList.add(&#39;left&#39;);
+        }
+
+        args.detail.sort(function(a, b) { return a.order - b.order }).forEach( function(d) {
+
+            var line = document.createElement(&#39;div&#39;);
+            line.className = &#39;line&#39;;
+
+            var swatch = document.createElement(&#39;div&#39;);
+            swatch.className = &#39;swatch&#39;;
+            swatch.style.backgroundColor = d.series.color;
+
+            var label = document.createElement(&#39;div&#39;);
+            label.className = &#39;label&#39;;
+            label.innerHTML = d.name + &amp;quot;: &amp;quot;+ d.formattedYValue;
+
+            line.appendChild(swatch);
+            line.appendChild(label);
+
+            lines.appendChild(line);
+
+            var dot = document.createElement(&#39;div&#39;);
+            dot.className = &#39;dot&#39;;
+            dot.style.top = graph.y(d.value.y0 + d.value.y) + &#39;px&#39;;
+            dot.style.borderColor = d.series.color;
+
+            this.element.appendChild(dot);
+
+            dot.className = &#39;dot active&#39;;
+
+            // Assume left alignment until the element has been displayed and
+            // bounding box calculations are possible.
+
+            this.show();
+
+        }, this );
+    }
+});
+
+var hover = new Hover( { graph: graph } ); 
+&lt;/code&gt;&lt;/pre&gt;</description>
+            </item>
+            
+        
+            
+            <item>
+                <title>My First Hugo Theme</title>
+                <link>http://khoapham.me/blog/first-hugo-theme/</link>
+                <pubDate>Thu, 03 Dec 2015 23:13:30 PST</pubDate>
+                <guid>http://khoapham.me/blog/first-hugo-theme/</guid>
+                <description>&lt;p&gt;When I started to get back to blogging, I felt my website
+took a little long to compile. As a revolution of redesigning my blog, I want to switch my blog platform to something faster.&lt;/p&gt;
+
+&lt;p&gt;My blog was previously developed using &lt;a href=&#34;http://middlemanapp.com&#34;&gt;Middleman&lt;/a&gt;, and now it&amp;rsquo;s powered by &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;, a faster static site
+generator. I&amp;rsquo;m really pleased with the transition so far.&lt;/p&gt;
+
+&lt;p&gt;I also wrote a simple Hugo theme called &lt;a href=&#34;https://github.com/pmkhoa/hugo-minimalist&#34;&gt;Hugo
+Minimalist&lt;/a&gt;, this is just a mimic of
+my current blog style, which I explained in &lt;a href=&#34;http://khoapham.me/blog/minimalist-in-design-and-development/&#34;&gt;Minimalist in
+design&lt;/a&gt;. Of
+course, it&amp;rsquo;s free to use if you want to try.&lt;/p&gt;
+
+&lt;p&gt;Another thing that I&amp;rsquo;d like to share is the better workflow for my website
+deployment. With Middleman, I host the website on
+&lt;a href=&#34;https://aws.amazon.com/s3/&#34;&gt;S3&lt;/a&gt;, use Markdown to write content, and use
+Middleman extension
+&lt;a href=&#34;http://localhost:1313/blog/sync-middleman-with-amazon-s3/&#34;&gt;s3_deployment&lt;/a&gt; to deploy to S3, and then commit to github.
+The whole process wasn&amp;rsquo;t taking too long, but it can be simplified.
+With Hugo, the website is hosted on Github (free), and I wrote a &lt;a href=&#34;https://github.com/pmkhoa/khoapham.me/blob/master/deploy.sh&#34;&gt;simple script&lt;/a&gt; to deploy and commit to github just one command when the
+content is ready for production. I think the whole process is just better now.&lt;/p&gt;
+
+&lt;p&gt;If you plan to write lot of blog posts, and want to use static site generator
+for it, I highly recommend &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;.&lt;/p&gt;</description>
+            </item>
+            
+        
+            
+            <item>
+                <title>Set up Nginx with Centos</title>
+                <link>http://khoapham.me/blog/set-up-nginx-with-centos/</link>
+                <pubDate>Wed, 18 Nov 2015 00:00:00 UTC</pubDate>
+                <guid>http://khoapham.me/blog/set-up-nginx-with-centos/</guid>
+                <description>&lt;p&gt;Recently I had a chance to have my hand on setting up a web server using Nginx
 and Centos. The requirements were simple:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Server can serve multiple domains or subdomains.&lt;/li&gt;
 &lt;li&gt;Each domain web folder is stored under different user account.&lt;/li&gt;
-&lt;/ul&gt;</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>http://khoapham.me/about/</link>
-      <pubDate>Sun, 15 Nov 2015 22:02:58 -0800</pubDate>
-      
-      <guid>http://khoapham.me/about/</guid>
-      <description>Hi There! I&#39;m Khoa Pham, a web developer in Portland Oregon.
-I&#39;m currently working at Network Redux on a project called Seastar.io, a managed Apache Cassandra Hosting. You can also find me on Twitter, Linkedin, and Github.
-My resume is available for download here.
-In the past few years, I was lucky to work with lot of talented people to finish these projects:
-  Visit Site    Visit Site    Visit Site    Visit Site    Visit Site    Visit Site    Visit Site    Visit Site    Visit Site    Visit Site    Visit Site    Visit Site    Visit Site    Visit Site    Visit Site    Visit Site    Visit Site    Visit Site    Visit Site    Visit Site        </description>
-    </item>
-    
-    <item>
-      <title>MenuOnScroll - jQuery Plugin</title>
-      <link>http://khoapham.me/blog/menuonscroll-jquery-plugin/</link>
-      <pubDate>Tue, 25 Nov 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://khoapham.me/blog/menuonscroll-jquery-plugin/</guid>
-      <description>&lt;p&gt;Today I just released menuOnScroll - jQuery plugin that automatically updates the menu
+&lt;/ul&gt;
+
+&lt;p&gt;In this post, I&amp;rsquo;d like to give you a walkthrough how to set up a server like
+this on any private Centos server:&lt;/p&gt;
+
+&lt;h4 id=&#34;1-first-thing-you-want-to-do-is-to-update-system&#34;&gt;1. First thing you want to do is to update system&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;$ sudo yum update
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;2-install-nginx&#34;&gt;2. Install nginx&lt;/h4&gt;
+
+&lt;p&gt;Create a yum repo for nginx at /etc/yum.repos.d/nginx.repo&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ sudo vi /etc/yum.repos.d/nginx.repo
+# Add following content
+[nginx]
+name=nginx repo
+baseurl=http://nginx.org/packages/centos/$releasever/$basearch/
+gpgcheck=0
+enabled=1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Install nginx&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ sudo yum install nginx
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Enable nginx service&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ sudo chkconfig nginx on
+# Now you can use
+# service nginx start
+# service nginx stop
+# service nginx restart
+# service nginx status
+# service nginx reload
+
+# Now you can run
+$ sudo service nginx start
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Congrats! You just got your nginx set up on your Centos server.&lt;/p&gt;
+
+&lt;h4 id=&#34;3-configure-nginx-and-setup-domains&#34;&gt;3. Configure nginx, and setup domains&lt;/h4&gt;
+
+&lt;p&gt;Default nginx configuration file is located at: /etc/nginx/nginx.conf. From the
+last line of nginx.conf is where other custom configurations are loaded. This is
+where we will setup our domains or subdomains.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s setup our first domain (example.com). We create a user call example to
+manage this domain.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ sudo adduser example
+$ passwd example
+# Make sure to add your public key to this user so you can ssh to it
+
+$ cd /home/example
+$ mkdir public
+$ vim index.html
+# Add &amp;lt;h1&amp;gt;Hello world&amp;lt;/h1&amp;gt;
+# If you are using su or centos account to create these files,
+# do not forget to change those file &amp;amp; folder owner to example, using chmod.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now we want to create a nginx config for example.com domain at
+/etc/nginx/conf.d&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ cd /ect/nginx/conf.d
+$ mv default.conf example.default # disable default nginx message
+$ vim example.com.conf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Change the example.com.conf as follow&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;server {
+
+    # ipv4
+    listen 80 default_server;
+
+    # ipv6
+    listen [::]:80 default_server;
+
+    #    listen 80 default_server;
+    server_name localhost example.com www.example.com;
+
+    access_log /var/log/nginx/example.com-access.log  main;
+    error_log /var/log/nginx/example.com-error.log debug;
+
+    client_max_body_size 20m;
+
+    location / {
+        root /home/example/public/;
+        index  index.html index.htm;
+    }
+
+    # redirect server error pages to the static page /50x.html
+    #
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+
+    # deny access to .htaccess files, if Apache&#39;s document root
+    # concurs with nginx&#39;s one
+    #
+    # location ~ /\.ht {
+    #    deny  all;
+    # }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;4-fix-permission-issues&#34;&gt;4. Fix permission issues&lt;/h4&gt;
+
+&lt;p&gt;Now if everything went well, when you visit your server, you should see the 403
+permission error. Calm down, this is expected. Since nginx doesn&amp;rsquo;t have access
+to the user folder at /home/example/public, the server will return permission
+error. We need to add nginx user to example user group.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ gpasswd -a nginx example # Add nginx user to example group
+$ chown -R example:example /home/example
+$ chmod g+x /home/example &amp;amp;&amp;amp; chmod g+x /home/example/public
+$ sudo -u nginx stat /home/example/public # make sure your all access to public
+# Disable SE Linux enforce
+$ setenforce 0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Congrats! Now you can try to access new server using: &lt;code&gt;curl localhost&lt;/code&gt;&lt;/p&gt;</description>
+            </item>
+            
+        
+            
+        
+            
+            <item>
+                <title>MenuOnScroll - jQuery Plugin</title>
+                <link>http://khoapham.me/blog/menuonscroll-jquery-plugin/</link>
+                <pubDate>Tue, 25 Nov 2014 00:00:00 UTC</pubDate>
+                <guid>http://khoapham.me/blog/menuonscroll-jquery-plugin/</guid>
+                <description>&lt;p&gt;Today I just released menuOnScroll - jQuery plugin that automatically updates the menu
 navigation when you scroll. This functionality is extremely common on the web,
-especially for the single page website.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Vim Commmon Helpful Leader</title>
-      <link>http://khoapham.me/blog/vim-common-helpful-leader/</link>
-      <pubDate>Wed, 12 Nov 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://khoapham.me/blog/vim-common-helpful-leader/</guid>
-      <description>&lt;p&gt;I have really enjoyed using Vim for a month now, and I have to admit that I
+especially for the single page website.&lt;/p&gt;
+
+&lt;p&gt;Since everyone just keeps build the similar thing over and over again, I think it&amp;rsquo;s better to create a simple plugin that will help to save our time.&lt;/p&gt;
+
+&lt;p&gt;This plugin is the first open source (MIT) project that I&amp;rsquo;ve done, and I am
+super excited about this. Writing open source code really help me to write my
+code cleaner because I kept refactoring my code over and over again in order to
+make it not only easy to read but also to maintain. This is very important
+factor that helps me to become a better developer.&lt;/p&gt;
+
+&lt;p&gt;I hope you will find this plugin useful in some way. Here is the &lt;a href=&#34;https://github.com/pmkhoa/jquery-menuOnScroll&#34;&gt;source
+code&lt;/a&gt; if you want to check it
+out.&lt;/p&gt;
+
+&lt;p&gt;Cheers! Happy Thanksgiving!&lt;/p&gt;</description>
+            </item>
+            
+        
+            
+            <item>
+                <title>Vim Commmon Helpful Leader</title>
+                <link>http://khoapham.me/blog/vim-common-helpful-leader/</link>
+                <pubDate>Wed, 12 Nov 2014 00:00:00 UTC</pubDate>
+                <guid>http://khoapham.me/blog/vim-common-helpful-leader/</guid>
+                <description>&lt;p&gt;I have really enjoyed using Vim for a month now, and I have to admit that I
 love the feeling of learning new things from Vim everyday. Today I would love to
 share some of my favorite Vim Leaders that I found they&amp;rsquo;re extremely helpful. You
-can add these into your .vimrc file, and give it a try.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Setting up Amazon Web Services</title>
-      <link>http://khoapham.me/blog/setting-up-amazon-web-services/</link>
-      <pubDate>Fri, 17 May 2013 23:14:51 -0800</pubDate>
-      
-      <guid>http://khoapham.me/blog/setting-up-amazon-web-services/</guid>
-      <description>&lt;p&gt;To setting up Amazon Web Services, the process of setting up an EC2 on Amazon Web Services (AWS) is not complicated, all you need to get a server up and running are Apache, PHP,  MySQL.
-Here are some initial steps that help you get started:&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Learning to See</title>
-      <link>http://khoapham.me/blog/learning-to-see/</link>
-      <pubDate>Fri, 17 May 2013 23:12:14 -0800</pubDate>
-      
-      <guid>http://khoapham.me/blog/learning-to-see/</guid>
-      <description>&lt;p&gt;People asked me why I had a computer science degree but spending most of my time working as user experience developer.
-Here is the article that hooked me into it:&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>My favorite poem</title>
-      <link>http://khoapham.me/blog/if/</link>
-      <pubDate>Fri, 17 May 2013 00:06:51 -0800</pubDate>
-      
-      <guid>http://khoapham.me/blog/if/</guid>
-      <description>&lt;p&gt;When it comes to my favorite poem, &amp;ldquo;If - Rudyard Kipling&amp;rdquo; is definitely the one.&lt;br /&gt;
-It simply reminds me how to be a man, and a good person.&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
+can add these into your .vimrc file, and give it a try.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Open another file in same directory&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;map &amp;lt;Leader&amp;gt;e :e &amp;lt;C-R&amp;gt;=escape(expand(&amp;quot;%:p:h&amp;quot;),&#39; &#39;) . &#39;/&#39;&amp;lt;CR&amp;gt;
+map &amp;lt;Leader&amp;gt;s :split &amp;lt;C-R&amp;gt;=escape(expand(&amp;quot;%:p:h&amp;quot;), &#39; &#39;) . &#39;/&#39;&amp;lt;CR&amp;gt;
+map &amp;lt;Leader&amp;gt;v :vnew &amp;lt;C-R&amp;gt;=escape(expand(&amp;quot;%:p:h&amp;quot;), &#39; &#39;) . &#39;/&#39;&amp;lt;CR&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Rename current file. This is a little bit more complex that requires us do
+define a helper function.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function! RenameFile()
+    let old_name = expand(&#39;%&#39;)
+    let new_name = input(&#39;New file name: &#39;, expand(&#39;%&#39;), &#39;file&#39;)
+    if new_name != &#39;&#39; &amp;amp;&amp;amp; new_name != old_name
+        exec &#39;:saveas &#39; . new_name
+        exec &#39;:silent !rm &#39; . old_name
+        redraw!
+    endif
+endfunction
+map &amp;lt;Leader&amp;gt;n :call RenameFile()&amp;lt;cr&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+            </item>
+            
+        
+            
+            <item>
+                <title>Setting up Amazon Web Services</title>
+                <link>http://khoapham.me/blog/setting-up-amazon-web-services/</link>
+                <pubDate>Fri, 17 May 2013 23:14:51 -0800</pubDate>
+                <guid>http://khoapham.me/blog/setting-up-amazon-web-services/</guid>
+                <description>&lt;p&gt;To setting up Amazon Web Services, the process of setting up an EC2 on Amazon Web Services (AWS) is not complicated, all you need to get a server up and running are Apache, PHP,  MySQL.
+Here are some initial steps that help you get started:&lt;/p&gt;
+
+&lt;p&gt;###1. SSH connect to you EC2 instance.
+To connect to your instance, you need the private key and the elastic IP address that associate with your instance. You can create an associated elastic IP address right in your Amazon Console Management.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ssh -i [FILE NAME].pem ec2-user@[IP ADDRESS]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;###2. Once you&amp;rsquo;re connected, install update on your instance.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo yum -y update
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;3-install-php-amp-its-package&#34;&gt;3. Install PHP &amp;amp; its package.&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo yum install php php-mysql php-xml php-mcrypt php-mbstring php-cli php-devel php-pdo php-pear
+sudo pear install Log
+sudo yum install -y pcre-devel
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;4-install-apache-http&#34;&gt;4. Install Apache http.&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo yum install httpd
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;5-install-mysql&#34;&gt;5. Install MySQL&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo yum install mysql-server mysql-devel mysql
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;6-install-php-apc-module&#34;&gt;6. Install PHP APC module&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo yum install php-pecl-apc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;7-configure-mysql-and-php&#34;&gt;7. Configure MySQL and PHP&lt;/h3&gt;
+
+&lt;p&gt; Before you get everything running, make sure to check the PHP and MySQL configuration files.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;The PHP configuration file is php.ini, which is located under /etc/php.ini. Open the php.ini and increase memory limit to: 128M (or bigger if you wish to).&lt;/p&gt;
+
+&lt;pre&gt;sudo vim /etc/php.ini
+memory_limit = 128M&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The MySQL configuration file is my.cnf located under /etc/my.cnf. Change it to this:&lt;/p&gt;
+
+&lt;pre&gt;[mysqld]
+datadir=/var/lib/mysql
+socket=/var/lib/mysql/mysql.sock
+
+# Disabling symbolic-links is recommended to prevent assorted security risks
+symbolic-links=0
+# Settings user and group are ignored when systemd is used.
+# If you need to run mysqld under a different user or group,
+# customize your systemd unit file for mysqld according to the
+# instructions in http://fedoraproject.org/wiki/Systemd
+skip-external-locking
+long_query_time=1
+slow_query_log
+slow_query_log_file=/var/log/log-slow-queries.log
+log-bin=mysql-bin
+server-id= 1
+key_buffer_size = 256M
+max_allowed_packet = 3M
+table_open_cache = 64
+read_buffer_size = 4M
+read_rnd_buffer_size = 8M
+myisam_sort_buffer_size = 16M
+thread_cache_size = 8
+query_cache_size= 32M
+thread_concurrency = 8
+[mysqld_safe]
+log-error=/var/log/mysqld.log
+pid-file=/var/run/mysqld/mysqld.pid
+myisam_recover_options&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Now you have all packages installed, you can start your web server by starting mysql-server and httpd.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo service mysqld start
+sudo service httpd start
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Auto start mysql server, and httpd.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo /sbin/chkconfig --levels 235 mysqld on
+sudo /sbin/chkconfig --levels 235 httpd on
+&lt;/code&gt;&lt;/pre&gt;</description>
+            </item>
+            
+        
+            
+            <item>
+                <title>Learning to See</title>
+                <link>http://khoapham.me/blog/learning-to-see/</link>
+                <pubDate>Fri, 17 May 2013 23:12:14 -0800</pubDate>
+                <guid>http://khoapham.me/blog/learning-to-see/</guid>
+                <description>&lt;p&gt;People asked me why I had a computer science degree but spending most of my time working as user experience developer.
+Here is the article that hooked me into it:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://ia.net/know-how/learning-to-see&#34;&gt;https://ia.net/know-how/learning-to-see&lt;/a&gt;.
+It has changed the way I saw thing since I read it. I highly recommend you read it too.&lt;/p&gt;
+
+&lt;p&gt;Sincerely,&lt;/p&gt;
+
+&lt;p&gt;Khoa&lt;/p&gt;</description>
+            </item>
+            
+        
+            
+            <item>
+                <title>My favorite poem</title>
+                <link>http://khoapham.me/blog/if/</link>
+                <pubDate>Fri, 17 May 2013 00:06:51 -0800</pubDate>
+                <guid>http://khoapham.me/blog/if/</guid>
+                <description>&lt;p&gt;When it comes to my favorite poem, &amp;ldquo;If - Rudyard Kipling&amp;rdquo; is definitely the one.&lt;br /&gt;
+It simply reminds me how to be a man, and a good person.&lt;/p&gt;
+
+&lt;h3 id=&#34;if&#34;&gt;If&lt;/h3&gt;
+
+&lt;p&gt;If you can keep your head when all about you&lt;br /&gt;
+Are losing theirs and blaming it on you;&lt;br /&gt;
+If you can trust yourself when all men doubt you,&lt;br /&gt;
+But make allowance for their doubting too:&lt;br /&gt;
+If you can wait and not be tired by waiting,&lt;br /&gt;
+Or, being lied about, don&amp;rsquo;t deal in lies,&lt;br /&gt;
+Or being hated don&amp;rsquo;t give way to hating,&lt;br /&gt;
+And yet don&amp;rsquo;t look too good, nor talk too wise;&lt;/p&gt;
+
+&lt;p&gt;If you can dream—and not make dreams your master;&lt;br /&gt;
+If you can think—and not make thoughts your aim,&lt;br /&gt;
+If you can meet with Triumph and Disaster&lt;br /&gt;
+And treat those two impostors just the same:&lt;br /&gt;
+If you can bear to hear the truth you&amp;rsquo;ve spoken&lt;br /&gt;
+Twisted by knaves to make a trap for fools,&lt;br /&gt;
+Or watch the things you gave your life to, broken,&lt;br /&gt;
+And stoop and build&amp;rsquo;em up with worn-out tools;&lt;/p&gt;
+
+&lt;p&gt;If you can make one heap of all your winnings&lt;br /&gt;
+And risk it on one turn of pitch-and-toss,&lt;br /&gt;
+And lose, and start again at your beginnings,&lt;br /&gt;
+And never breathe a word about your loss:&lt;br /&gt;
+If you can force your heart and nerve and sinew&lt;br /&gt;
+To serve your turn long after they are gone,&lt;br /&gt;
+And so hold on when there is nothing in you&lt;br /&gt;
+Except the Will which says to them: &amp;ldquo;Hold on!&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;If you can talk with crowds and keep your virtue,&lt;br /&gt;
+Or walk with Kings—nor lose the common touch,&lt;br /&gt;
+If neither foes nor loving friends can hurt you,&lt;br /&gt;
+If all men count with you, but none too much:&lt;br /&gt;
+If you can fill the unforgiving minute&lt;br /&gt;
+With sixty seconds&amp;rsquo; worth of distance run,&lt;br /&gt;
+Yours is the Earth and everything that&amp;rsquo;s in it,&lt;br /&gt;
+And—which is more—you&amp;rsquo;ll be a Man, my son!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Rudyard Kipling&lt;/strong&gt;&lt;/p&gt;</description>
+            </item>
+            
+        
+
+    </channel>
 </rss>

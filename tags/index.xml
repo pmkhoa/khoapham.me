@@ -6,71 +6,26 @@
     <description>Recent content in Tags on Khoa Pham</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 May 2013 23:14:51 -0800</lastBuildDate>
+    <lastBuildDate>Mon, 31 Dec 2018 13:06:48 -0800</lastBuildDate>
     
 	<atom:link href="http://khoapham.me/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Apache</title>
-      <link>http://khoapham.me/tags/apache/</link>
-      <pubDate>Fri, 17 May 2013 23:14:51 -0800</pubDate>
+      <title>Motivation</title>
+      <link>http://khoapham.me/tags/motivation/</link>
+      <pubDate>Mon, 31 Dec 2018 13:06:48 -0800</pubDate>
       
-      <guid>http://khoapham.me/tags/apache/</guid>
+      <guid>http://khoapham.me/tags/motivation/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Aws</title>
-      <link>http://khoapham.me/tags/aws/</link>
-      <pubDate>Fri, 17 May 2013 23:14:51 -0800</pubDate>
-      
-      <guid>http://khoapham.me/tags/aws/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Bookmark</title>
-      <link>http://khoapham.me/tags/bookmark/</link>
-      <pubDate>Fri, 17 May 2013 00:06:51 -0800</pubDate>
-      
-      <guid>http://khoapham.me/tags/bookmark/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Design</title>
-      <link>http://khoapham.me/tags/design/</link>
-      <pubDate>Thu, 03 Dec 2015 23:13:30 -0800</pubDate>
-      
-      <guid>http://khoapham.me/tags/design/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Devops</title>
-      <link>http://khoapham.me/tags/devops/</link>
-      <pubDate>Wed, 18 Nov 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://khoapham.me/tags/devops/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Emberjs</title>
+      <title>EmberJS</title>
       <link>http://khoapham.me/tags/emberjs/</link>
       <pubDate>Mon, 27 Jun 2016 12:09:16 -0700</pubDate>
       
       <guid>http://khoapham.me/tags/emberjs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Favorite</title>
-      <link>http://khoapham.me/tags/favorite/</link>
-      <pubDate>Fri, 17 May 2013 00:06:51 -0800</pubDate>
-      
-      <guid>http://khoapham.me/tags/favorite/</guid>
       <description></description>
     </item>
     
@@ -84,11 +39,20 @@
     </item>
     
     <item>
-      <title>Golang</title>
-      <link>http://khoapham.me/tags/golang/</link>
-      <pubDate>Thu, 03 Dec 2015 23:13:30 -0800</pubDate>
+      <title>Tutorial</title>
+      <link>http://khoapham.me/tags/tutorial/</link>
+      <pubDate>Mon, 27 Jun 2016 12:09:16 -0700</pubDate>
       
-      <guid>http://khoapham.me/tags/golang/</guid>
+      <guid>http://khoapham.me/tags/tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Opensource</title>
+      <link>http://khoapham.me/tags/opensource/</link>
+      <pubDate>Sun, 24 Apr 2016 13:11:54 -0700</pubDate>
+      
+      <guid>http://khoapham.me/tags/opensource/</guid>
       <description></description>
     </item>
     
@@ -102,11 +66,29 @@
     </item>
     
     <item>
-      <title>Http</title>
-      <link>http://khoapham.me/tags/http/</link>
-      <pubDate>Fri, 17 May 2013 23:14:51 -0800</pubDate>
+      <title>Javascript</title>
+      <link>http://khoapham.me/tags/javascript/</link>
+      <pubDate>Wed, 23 Dec 2015 12:00:31 -0800</pubDate>
       
-      <guid>http://khoapham.me/tags/http/</guid>
+      <guid>http://khoapham.me/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Design</title>
+      <link>http://khoapham.me/tags/design/</link>
+      <pubDate>Thu, 03 Dec 2015 23:13:30 -0800</pubDate>
+      
+      <guid>http://khoapham.me/tags/design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang</title>
+      <link>http://khoapham.me/tags/golang/</link>
+      <pubDate>Thu, 03 Dec 2015 23:13:30 -0800</pubDate>
+      
+      <guid>http://khoapham.me/tags/golang/</guid>
       <description></description>
     </item>
     
@@ -120,38 +102,11 @@
     </item>
     
     <item>
-      <title>Javascript</title>
-      <link>http://khoapham.me/tags/javascript/</link>
-      <pubDate>Wed, 23 Dec 2015 12:00:31 -0800</pubDate>
+      <title>Devops</title>
+      <link>http://khoapham.me/tags/devops/</link>
+      <pubDate>Wed, 18 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://khoapham.me/tags/javascript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Jquery</title>
-      <link>http://khoapham.me/tags/jquery/</link>
-      <pubDate>Tue, 25 Nov 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://khoapham.me/tags/jquery/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Motivation</title>
-      <link>http://khoapham.me/tags/motivation/</link>
-      <pubDate>Mon, 31 Dec 2018 13:06:48 -0800</pubDate>
-      
-      <guid>http://khoapham.me/tags/motivation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mysql</title>
-      <link>http://khoapham.me/tags/mysql/</link>
-      <pubDate>Fri, 17 May 2013 23:14:51 -0800</pubDate>
-      
-      <guid>http://khoapham.me/tags/mysql/</guid>
+      <guid>http://khoapham.me/tags/devops/</guid>
       <description></description>
     </item>
     
@@ -165,11 +120,29 @@
     </item>
     
     <item>
-      <title>Opensource</title>
-      <link>http://khoapham.me/tags/opensource/</link>
-      <pubDate>Sun, 24 Apr 2016 13:11:54 -0700</pubDate>
+      <title>Server</title>
+      <link>http://khoapham.me/tags/server/</link>
+      <pubDate>Wed, 18 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://khoapham.me/tags/opensource/</guid>
+      <guid>http://khoapham.me/tags/server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web Development</title>
+      <link>http://khoapham.me/tags/web-development/</link>
+      <pubDate>Wed, 18 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://khoapham.me/tags/web-development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jquery</title>
+      <link>http://khoapham.me/tags/jquery/</link>
+      <pubDate>Tue, 25 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://khoapham.me/tags/jquery/</guid>
       <description></description>
     </item>
     
@@ -192,24 +165,6 @@
     </item>
     
     <item>
-      <title>Server</title>
-      <link>http://khoapham.me/tags/server/</link>
-      <pubDate>Wed, 18 Nov 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://khoapham.me/tags/server/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tutorial</title>
-      <link>http://khoapham.me/tags/tutorial/</link>
-      <pubDate>Mon, 27 Jun 2016 12:09:16 -0700</pubDate>
-      
-      <guid>http://khoapham.me/tags/tutorial/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Vim</title>
       <link>http://khoapham.me/tags/vim/</link>
       <pubDate>Wed, 12 Nov 2014 00:00:00 +0000</pubDate>
@@ -228,11 +183,38 @@
     </item>
     
     <item>
-      <title>Web Development</title>
-      <link>http://khoapham.me/tags/web-development/</link>
-      <pubDate>Wed, 18 Nov 2015 00:00:00 +0000</pubDate>
+      <title>Apache</title>
+      <link>http://khoapham.me/tags/apache/</link>
+      <pubDate>Fri, 17 May 2013 23:14:51 -0800</pubDate>
       
-      <guid>http://khoapham.me/tags/web-development/</guid>
+      <guid>http://khoapham.me/tags/apache/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AWS</title>
+      <link>http://khoapham.me/tags/aws/</link>
+      <pubDate>Fri, 17 May 2013 23:14:51 -0800</pubDate>
+      
+      <guid>http://khoapham.me/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HTTP</title>
+      <link>http://khoapham.me/tags/http/</link>
+      <pubDate>Fri, 17 May 2013 23:14:51 -0800</pubDate>
+      
+      <guid>http://khoapham.me/tags/http/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MySQL</title>
+      <link>http://khoapham.me/tags/mysql/</link>
+      <pubDate>Fri, 17 May 2013 23:14:51 -0800</pubDate>
+      
+      <guid>http://khoapham.me/tags/mysql/</guid>
       <description></description>
     </item>
     
@@ -242,6 +224,24 @@
       <pubDate>Fri, 17 May 2013 23:14:51 -0800</pubDate>
       
       <guid>http://khoapham.me/tags/web-service/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bookmark</title>
+      <link>http://khoapham.me/tags/bookmark/</link>
+      <pubDate>Fri, 17 May 2013 00:06:51 -0800</pubDate>
+      
+      <guid>http://khoapham.me/tags/bookmark/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Favorite</title>
+      <link>http://khoapham.me/tags/favorite/</link>
+      <pubDate>Fri, 17 May 2013 00:06:51 -0800</pubDate>
+      
+      <guid>http://khoapham.me/tags/favorite/</guid>
       <description></description>
     </item>
     
