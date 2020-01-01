@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogs on Khoa Pham</title>
@@ -6,10 +6,20 @@
     <description>Recent content in Blogs on Khoa Pham</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 31 Dec 2018 13:06:48 -0800</lastBuildDate>
+    <lastBuildDate>Tue, 31 Dec 2019 13:06:48 -0800</lastBuildDate>
     
 	<atom:link href="http://khoapham.me/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2019 Retrospective</title>
+      <link>http://khoapham.me/blog/2019-restrospective/</link>
+      <pubDate>Tue, 31 Dec 2019 13:06:48 -0800</pubDate>
+      
+      <guid>http://khoapham.me/blog/2019-restrospective/</guid>
+      <description>For over a decade being in the United States, I&#39;ve learnt and experienced so much things that I&#39;ve never thought I would have that opportunity anywhere else. I feel the year of 2019 has gone by so fast, but I&#39;m very excited for 2020, starting a new decade for me to learn, work, and explore more.
+2019 Highlights  Worked with amazing team at Nike Valiant Labs to test new ideas by helping to launch new version of Joyn.</description>
+    </item>
     
     <item>
       <title>2018 Retrospective</title>
@@ -19,7 +29,7 @@
       <guid>http://khoapham.me/blog/2018-retrospective/</guid>
       <description>The new year 2019 is just hours away, I decide to take some moment to reflect myself for the last year. 2018 was full of changes and challenges for both family and work.
 The Good Family The whole family went through an unexpected event together very bravely. This has helped us to love, grow and understand the important of family.
- I couldn&amp;rsquo;t thank enough for my wife devoting herself to give our best to the children.</description>
+ I couldn&#39;t thank enough for my wife devoting herself to give our best to the children.</description>
     </item>
     
     <item>
@@ -39,8 +49,7 @@ simple application that use Go, and Ember to develop a Todo app.&lt;/p&gt;</desc
       <pubDate>Sun, 24 Apr 2016 13:11:54 -0700</pubDate>
       
       <guid>http://khoapham.me/blog/meta-tags-generator/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://pmkhoa.github.io/meta-tags-generator/&#34;&gt;&lt;img src=&#34;http://khoapham.me/img/meta-tags-generator.png&#34; alt=&#34;Meta Tags Generator&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
+      <description>&lt;p&gt;&lt;a href=&#34;http://pmkhoa.github.io/meta-tags-generator/&#34;&gt;&lt;img src=&#34;http://khoapham.me/img/meta-tags-generator.png&#34; alt=&#34;Meta Tags Generator&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Meta tags are important because they help search engine to crawl your website properly, and make your website display correctly when sharing on social networks such as Facebook, Twitter, and Google Plus. This is why I created a simple tool to generate these standard meta tags &amp;amp; social tags.&lt;/p&gt;</description>
     </item>
     
@@ -53,7 +62,7 @@ simple application that use Go, and Ember to develop a Todo app.&lt;/p&gt;</desc
       <description>&lt;p&gt;&lt;a href=&#34;http://d3js.org/&#34;&gt;D3&lt;/a&gt; is a great javascript library for creating data visualization chart. I have
 been a big fan of it for over a year now. However, whenever I need to develop a
 quick chart prototype, I use an alternative library called
-&lt;a href=&#34;http://code.shutterstock.com/rickshaw/examples/&#34;&gt;Rickshaw&lt;/a&gt;. It&amp;rsquo;s an
+&lt;a href=&#34;http://code.shutterstock.com/rickshaw/examples/&#34;&gt;Rickshaw&lt;/a&gt;. It&#39;s an
 extension from D3, so you can get greatness from both of them.&lt;/p&gt;</description>
     </item>
     
@@ -75,7 +84,6 @@ took a little long to compile. As a revolution of redesigning my blog, I want to
       <guid>http://khoapham.me/blog/set-up-nginx-with-centos/</guid>
       <description>&lt;p&gt;Recently I had a chance to have my hand on setting up a web server using Nginx
 and Centos. The requirements were simple:&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;Server can serve multiple domains or subdomains.&lt;/li&gt;
 &lt;li&gt;Each domain web folder is stored under different user account.&lt;/li&gt;
@@ -101,7 +109,7 @@ especially for the single page website.&lt;/p&gt;</description>
       <guid>http://khoapham.me/blog/vim-common-helpful-leader/</guid>
       <description>&lt;p&gt;I have really enjoyed using Vim for a month now, and I have to admit that I
 love the feeling of learning new things from Vim everyday. Today I would love to
-share some of my favorite Vim Leaders that I found they&amp;rsquo;re extremely helpful. You
+share some of my favorite Vim Leaders that I found they&#39;re extremely helpful. You
 can add these into your .vimrc file, and give it a try.&lt;/p&gt;</description>
     </item>
     
@@ -131,7 +139,7 @@ Here is the article that hooked me into it:&lt;/p&gt;</description>
       <pubDate>Fri, 17 May 2013 00:06:51 -0800</pubDate>
       
       <guid>http://khoapham.me/blog/if/</guid>
-      <description>&lt;p&gt;When it comes to my favorite poem, &amp;ldquo;If - Rudyard Kipling&amp;rdquo; is definitely the one.&lt;br /&gt;
+      <description>&lt;p&gt;When it comes to my favorite poem, &amp;ldquo;If - Rudyard Kipling&amp;rdquo; is definitely the one.&lt;br&gt;
 It simply reminds me how to be a man, and a good person.&lt;/p&gt;</description>
     </item>
     

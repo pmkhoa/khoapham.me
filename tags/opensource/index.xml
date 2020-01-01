@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Opensource on Khoa Pham</title>
@@ -17,8 +17,7 @@
       <pubDate>Sun, 24 Apr 2016 13:11:54 -0700</pubDate>
       
       <guid>http://khoapham.me/blog/meta-tags-generator/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://pmkhoa.github.io/meta-tags-generator/&#34;&gt;&lt;img src=&#34;http://khoapham.me/img/meta-tags-generator.png&#34; alt=&#34;Meta Tags Generator&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
+      <description>&lt;p&gt;&lt;a href=&#34;http://pmkhoa.github.io/meta-tags-generator/&#34;&gt;&lt;img src=&#34;http://khoapham.me/img/meta-tags-generator.png&#34; alt=&#34;Meta Tags Generator&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Meta tags are important because they help search engine to crawl your website properly, and make your website display correctly when sharing on social networks such as Facebook, Twitter, and Google Plus. This is why I created a simple tool to generate these standard meta tags &amp;amp; social tags.&lt;/p&gt;</description>
     </item>
     

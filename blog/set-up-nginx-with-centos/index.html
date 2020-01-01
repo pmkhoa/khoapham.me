@@ -59,24 +59,17 @@
             <time datetime="2015-11-18 00:00:00 &#43;0000 UTC"><em>November 18, 2015</em></time>
             <p>Recently I had a chance to have my hand on setting up a web server using Nginx
 and Centos. The requirements were simple:</p>
-
 <ul>
 <li>Server can serve multiple domains or subdomains.</li>
 <li>Each domain web folder is stored under different user account.</li>
 </ul>
-
-<p>In this post, I&rsquo;d like to give you a walkthrough how to set up a server like
+<p>In this post, I'd like to give you a walkthrough how to set up a server like
 this on any private Centos server:</p>
-
 <h4 id="1-first-thing-you-want-to-do-is-to-update-system">1. First thing you want to do is to update system</h4>
-
 <pre><code>$ sudo yum update
 </code></pre>
-
 <h4 id="2-install-nginx">2. Install nginx</h4>
-
 <p>Create a yum repo for nginx at /etc/yum.repos.d/nginx.repo</p>
-
 <pre><code>$ sudo vi /etc/yum.repos.d/nginx.repo
 # Add following content
 [nginx]
@@ -85,14 +78,10 @@ baseurl=http://nginx.org/packages/centos/$releasever/$basearch/
 gpgcheck=0
 enabled=1
 </code></pre>
-
 <p>Install nginx</p>
-
 <pre><code>$ sudo yum install nginx
 </code></pre>
-
 <p>Enable nginx service</p>
-
 <pre><code>$ sudo chkconfig nginx on
 # Now you can use
 # service nginx start
@@ -104,18 +93,13 @@ enabled=1
 # Now you can run
 $ sudo service nginx start
 </code></pre>
-
 <p>Congrats! You just got your nginx set up on your Centos server.</p>
-
 <h4 id="3-configure-nginx-and-setup-domains">3. Configure nginx, and setup domains</h4>
-
 <p>Default nginx configuration file is located at: /etc/nginx/nginx.conf. From the
 last line of nginx.conf is where other custom configurations are loaded. This is
 where we will setup our domains or subdomains.</p>
-
-<p>Let&rsquo;s setup our first domain (example.com). We create a user call example to
+<p>Let's setup our first domain (example.com). We create a user call example to
 manage this domain.</p>
-
 <pre><code>$ sudo adduser example
 $ passwd example
 # Make sure to add your public key to this user so you can ssh to it
@@ -127,17 +111,13 @@ $ vim index.html
 # If you are using su or centos account to create these files,
 # do not forget to change those file &amp; folder owner to example, using chmod.
 </code></pre>
-
 <p>Now we want to create a nginx config for example.com domain at
 /etc/nginx/conf.d</p>
-
 <pre><code>$ cd /ect/nginx/conf.d
 $ mv default.conf example.default # disable default nginx message
 $ vim example.com.conf
 </code></pre>
-
 <p>Change the example.com.conf as follow</p>
-
 <pre><code>server {
 
     # ipv4
@@ -174,14 +154,11 @@ $ vim example.com.conf
     # }
 }
 </code></pre>
-
 <h4 id="4-fix-permission-issues">4. Fix permission issues</h4>
-
 <p>Now if everything went well, when you visit your server, you should see the 403
-permission error. Calm down, this is expected. Since nginx doesn&rsquo;t have access
+permission error. Calm down, this is expected. Since nginx doesn't have access
 to the user folder at /home/example/public, the server will return permission
 error. We need to add nginx user to example user group.</p>
-
 <pre><code>$ gpasswd -a nginx example # Add nginx user to example group
 $ chown -R example:example /home/example
 $ chmod g+x /home/example &amp;&amp; chmod g+x /home/example/public
@@ -189,7 +166,6 @@ $ sudo -u nginx stat /home/example/public # make sure your all access to public
 # Disable SE Linux enforce
 $ setenforce 0
 </code></pre>
-
 <p>Congrats! Now you can try to access new server using: <code>curl localhost</code></p>
         </div>
         

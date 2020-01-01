@@ -59,31 +59,31 @@
             <time datetime="2014-11-12 00:00:00 &#43;0000 UTC"><em>November 12, 2014</em></time>
             <p>I have really enjoyed using Vim for a month now, and I have to admit that I
 love the feeling of learning new things from Vim everyday. Today I would love to
-share some of my favorite Vim Leaders that I found they&rsquo;re extremely helpful. You
+share some of my favorite Vim Leaders that I found they're extremely helpful. You
 can add these into your .vimrc file, and give it a try.</p>
-
 <ul>
-<li><p>Open another file in same directory</p>
-
-<pre><code>map &lt;Leader&gt;e :e &lt;C-R&gt;=escape(expand(&quot;%:p:h&quot;),' ') . '/'&lt;CR&gt;
-map &lt;Leader&gt;s :split &lt;C-R&gt;=escape(expand(&quot;%:p:h&quot;), ' ') . '/'&lt;CR&gt;
-map &lt;Leader&gt;v :vnew &lt;C-R&gt;=escape(expand(&quot;%:p:h&quot;), ' ') . '/'&lt;CR&gt;
-</code></pre></li>
-
-<li><p>Rename current file. This is a little bit more complex that requires us do
+<li>
+<p>Open another file in same directory</p>
+<pre><code>  map &lt;Leader&gt;e :e &lt;C-R&gt;=escape(expand(&quot;%:p:h&quot;),' ') . '/'&lt;CR&gt;
+  map &lt;Leader&gt;s :split &lt;C-R&gt;=escape(expand(&quot;%:p:h&quot;), ' ') . '/'&lt;CR&gt;
+  map &lt;Leader&gt;v :vnew &lt;C-R&gt;=escape(expand(&quot;%:p:h&quot;), ' ') . '/'&lt;CR&gt;
+</code></pre>
+</li>
+<li>
+<p>Rename current file. This is a little bit more complex that requires us do
 define a helper function.</p>
-
-<pre><code>function! RenameFile()
-    let old_name = expand('%')
-    let new_name = input('New file name: ', expand('%'), 'file')
-    if new_name != '' &amp;&amp; new_name != old_name
-        exec ':saveas ' . new_name
-        exec ':silent !rm ' . old_name
-        redraw!
-    endif
-endfunction
-map &lt;Leader&gt;n :call RenameFile()&lt;cr&gt;
-</code></pre></li>
+<pre><code>  function! RenameFile()
+      let old_name = expand('%')
+      let new_name = input('New file name: ', expand('%'), 'file')
+      if new_name != '' &amp;&amp; new_name != old_name
+          exec ':saveas ' . new_name
+          exec ':silent !rm ' . old_name
+          redraw!
+      endif
+  endfunction
+  map &lt;Leader&gt;n :call RenameFile()&lt;cr&gt;
+</code></pre>
+</li>
 </ul>
         </div>
         

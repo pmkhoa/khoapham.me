@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nginx on Khoa Pham</title>
@@ -19,7 +19,6 @@
       <guid>http://khoapham.me/blog/set-up-nginx-with-centos/</guid>
       <description>&lt;p&gt;Recently I had a chance to have my hand on setting up a web server using Nginx
 and Centos. The requirements were simple:&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;Server can serve multiple domains or subdomains.&lt;/li&gt;
 &lt;li&gt;Each domain web folder is stored under different user account.&lt;/li&gt;

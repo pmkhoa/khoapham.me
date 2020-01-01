@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Guide on Khoa Pham</title>
@@ -20,7 +20,7 @@
       <description>&lt;p&gt;&lt;a href=&#34;http://d3js.org/&#34;&gt;D3&lt;/a&gt; is a great javascript library for creating data visualization chart. I have
 been a big fan of it for over a year now. However, whenever I need to develop a
 quick chart prototype, I use an alternative library called
-&lt;a href=&#34;http://code.shutterstock.com/rickshaw/examples/&#34;&gt;Rickshaw&lt;/a&gt;. It&amp;rsquo;s an
+&lt;a href=&#34;http://code.shutterstock.com/rickshaw/examples/&#34;&gt;Rickshaw&lt;/a&gt;. It&#39;s an
 extension from D3, so you can get greatness from both of them.&lt;/p&gt;</description>
     </item>
     

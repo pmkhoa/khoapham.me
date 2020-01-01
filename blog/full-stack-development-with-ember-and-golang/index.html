@@ -60,20 +60,14 @@
             <p>One of my personal 2016 resolution was learning Go, and get familiar with
 writing restful API using Go. After couple of months learning Go, I started a
 simple application that use Go, and Ember to develop a Todo app.</p>
-
-<p>Yes, you read it right, I&rsquo;m also creating another Todo app. Yet this one is different from the
-other you have seen because it&rsquo;s built with Go for backend api, and Ember for
+<p>Yes, you read it right, I'm also creating another Todo app. Yet this one is different from the
+other you have seen because it's built with Go for backend api, and Ember for
 frontend.</p>
-
 <p>The source code can be found here:
 <a href="https://github.com/pmkhoa/restful-api-go-and-ember">https://github.com/pmkhoa/restful-api-go-and-ember</a></p>
-
 <h2 id="backend-overview">Backend overview</h2>
-
 <h3 id="model">Model</h3>
-
 <p>Todo model includes <code>Id</code>, <code>Name</code>, <code>Completed</code>, <code>Due</code></p>
-
 <pre><code>
 package main
 import &quot;time&quot;
@@ -84,17 +78,12 @@ type Todo struct {
     Due         time.Time `json:&quot;due&quot;`
 }
 type Todos []Todo
-</code></pre>
-
-<p>We create type Todo, and Todos to hold our Todo object, and Todo list</p>
-
+</code></pre><p>We create type Todo, and Todos to hold our Todo object, and Todo list</p>
 <h3 id="server">Server</h3>
-
 <p>Bootstrap http server, response to request made from the client.
 For our server code, we use <code>httprouter</code> to for our api handler, and enable CORS
-so that our frontend app can talk to the server when they&rsquo;re on different
+so that our frontend app can talk to the server when they're on different
 domains.</p>
-
 <pre><code>
 package main
 import (
@@ -133,14 +122,10 @@ func ShowTodo(w http.ResponseWriter, r *http.Request, params httprouter.Params) 
     }
 }
 // more handlers can be defined with other httprouter 
-</code></pre>
-
-<h3 id="data-fixture">Data fixture</h3>
-
+</code></pre><h3 id="data-fixture">Data fixture</h3>
 <p>Definining Data fixture for <code>findTodo</code>, <code>updateTodo</code>, <code>deleteTodo</code>, <code>createTodo</code>.
-I&rsquo;m using a simple data fixture to handle model operations. There will be another
+I'm using a simple data fixture to handle model operations. There will be another
 blog post that integrate this application with Postgres for data persistent.</p>
-
 <pre><code>// repo.go
 package main
 import (
@@ -167,29 +152,22 @@ func RepoFindTodo(id string) Todo {
         }
     }
 }
-</code></pre>
-
-<h2 id="frontend-overview">Frontend overview</h2>
-
+</code></pre><h2 id="frontend-overview">Frontend overview</h2>
 <p>Simple Ember app that lists all todos, and all user to create todo.
-If you&rsquo;re interested in learning Ember for building frontend. Feel free to
+If you're interested in learning Ember for building frontend. Feel free to
 check out the github repo for this.</p>
-
 <h2 id="future-development">Future development</h2>
-
 <p>Eventhough this was a very simple app, I have learnt a lot from building it from
 the ground up. Using Go for backend API is quite astonishing and simple, I think
-it&rsquo;s a great choice for anyone who is looking for a fast, simple way to build
+it's a great choice for anyone who is looking for a fast, simple way to build
 API. There are a lot of things the can improve from this app.</p>
-
 <ul>
 <li>Write README</li>
 <li>Better handling errors for both backend &amp; frontend</li>
 <li>Write integration test &amp; unit tests</li>
 <li>Use Postgres for data persistent.</li>
 </ul>
-
-<p>If you&rsquo;re interested in all the source code, feel free to check it out here:
+<p>If you're interested in all the source code, feel free to check it out here:
 <a href="https://github.com/pmkhoa/restful-api-go-and-ember">https://github.com/pmkhoa/restful-api-go-and-ember</a></p>
         </div>
         
